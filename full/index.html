@@ -28,10 +28,20 @@
     <script type="text/javascript" src="plugins/jquery.fullPage.js"></script>
 
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/preloader.css">
 
 </head>
 <body>
-
+<div class="preloaderWrapper">
+    <div class="preloader loading">
+        <span class="slice"></span>
+        <span class="slice"></span>
+        <span class="slice"></span>
+        <span class="slice"></span>
+        <span class="slice"></span>
+        <span class="slice"></span>
+    </div>
+</div>
 <div id="header">
     <div class="container">
         <div class="row">
@@ -211,7 +221,15 @@
 </body>
 <script>
     $(document).ready(function () {
-
+        setTimeout(function () {
+            $('.preloaderWrapper').addClass('animated fadeOut')
+        },800);
+        $('#s1l1').addClass('animated fadeOutDown');
+        $('#s1l2').addClass('animated fadeOutDown');
+        $('#s1l3').addClass('animated fadeOutDown');
+        $('#s1l4').addClass('animated fadeOutDown');
+        $('#s1bt1').addClass('animated fadeOutDown');
+        $('#s1i1').addClass('animated fadeOutDown');
         $('#s2e1').addClass('animated fadeOutDown');
         $('#s2e2').addClass('animated fadeOutDown');
         $('#s2e3').addClass('animated fadeOutDown');
@@ -220,6 +238,7 @@
         $('#s2e6').addClass('animated fadeOutDown');
         $('#s2e7').addClass('animated fadeOutDown');
         $('#s2e8').addClass('animated fadeOutDown');
+        $('#s3e0').addClass('animated fadeOutDown');
         $('#s3e1').addClass('animated fadeOutDown');
         $('#s3e2').addClass('animated fadeOutDown');
         $('#s3e3').addClass('animated fadeOutDown');
@@ -308,12 +327,12 @@
         setTimeout(function () {
             switch(index){
                 case 1:{
-                    setTimeout(function () {$('#s1l1').removeClass('fadeOutLeft').show().addClass('animated fadeInLeft')},1);
-                    setTimeout(function () {$('#s1l2').removeClass('fadeOutLeft').show().addClass('animated fadeInLeft')},300);
-                    setTimeout(function () {$('#s1l3').removeClass('fadeOutLeft').show().addClass('animated fadeInLeft')},500);
-                    setTimeout(function () {$('#s1l4').removeClass('fadeOutLeft').show().addClass('animated fadeInLeft')},700);
-                    setTimeout(function () {$('#s1bt1').removeClass('fadeOutLeft').show().addClass('animated fadeInLeft')},900);
-                    setTimeout(function () {$('#s1i1').removeClass('fadeOutRight').show().addClass('animated fadeInRight')},500);
+                    setTimeout(function () {$('#s1l1').removeClass('fadeOutDown').removeClass('fadeOutLeft').show().addClass('animated fadeInLeft')},1);
+                    setTimeout(function () {$('#s1l2').removeClass('fadeOutDown').removeClass('fadeOutLeft').show().addClass('animated fadeInLeft')},300);
+                    setTimeout(function () {$('#s1l3').removeClass('fadeOutDown').removeClass('fadeOutLeft').show().addClass('animated fadeInLeft')},500);
+                    setTimeout(function () {$('#s1l4').removeClass('fadeOutDown').removeClass('fadeOutLeft').show().addClass('animated fadeInLeft')},700);
+                    setTimeout(function () {$('#s1bt1').removeClass('fadeOutDown').removeClass('fadeOutLeft').show().addClass('animated fadeInLeft')},900);
+                    setTimeout(function () {$('#s1i1').removeClass('fadeOutDown').removeClass('fadeOutRight').show().addClass('animated fadeInRight')},500);
                 }break;
                 case 2:{
                     setTimeout(function () {$('#s2e1').removeClass('fadeOutDown').show().addClass('animated fadeInDown')},100);
