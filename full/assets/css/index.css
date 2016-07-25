@@ -1,12 +1,12 @@
 /*FllpageJS fade*/
 
 .fullpage-wrapper {
-    width: 100%!important;
-    transform: none!important;
+    width: 100% !important;
+    transform: none !important;
 }
 
 .fp-section {
-    width: 100%!important;
+    width: 100% !important;
     position: absolute;
     left: 0;
     top: 0;
@@ -22,14 +22,13 @@
     z-index: 1;
 }
 
-
 .fp-slidesContainer {
-    width: 100%!important;
-    transform: none!important;
+    width: 100% !important;
+    transform: none !important;
 }
 
 .fp-slide {
-    width: 100%!important;
+    width: 100% !important;
     position: absolute;
     left: 0;
     top: 0;
@@ -44,52 +43,147 @@
     opacity: 1;
     z-index: 1;
 }
+
+/*fonts*/
+@font-face {
+    font-family: SofiaProLightCondensed;
+    src: url('../fonts/SofiaProLightCondensed.eot');
+    src: url('../fonts/SofiaProLightCondensed.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProLightCondensed.woff2') format('woff2'), url('../fonts/SofiaProLightCondensed.woff') format('woff'), url('../fonts/SofiaProLightCondensed.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SofiaProRegular;
+    src: url('../fonts/SofiaProRegular.eot');
+    src: url('../fonts/SofiaProRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProRegular.woff2') format('woff2'), url('../fonts/SofiaProRegular.woff') format('woff'), url('../fonts/SofiaProRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SofiaProSoftLight;
+    src: url('../fonts/SofiaProSoftLight.eot');
+    src: url('../fonts/SofiaProSoftLight.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProSoftLight.woff2') format('woff2'), url('../fonts/SofiaProSoftLight.woff') format('woff'), url('../fonts/SofiaProSoftLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SofiaProMedium;
+    src: url('../fonts/SofiaProMedium.eot');
+    src: url('../fonts/SofiaProMedium.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProMedium.woff2') format('woff2'), url('../fonts/SofiaProMedium.woff') format('woff'), url('../fonts/SofiaProMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SofiaProExtraLight;
+    src: url('../fonts/SofiaProExtraLight.eot');
+    src: url('../fonts/SofiaProExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProExtraLight.woff2') format('woff2'), url('../fonts/SofiaProExtraLight.woff') format('woff'), url('../fonts/SofiaProExtraLight.ttf') format('truetype');
+}
+
 /* Style for our header texts
 * --------------------------------------- */
-body{
+body {
     background: #cf3d4c;
 }
-.intro p{
+
+.intro p {
     color: #fff;
+}
+
+h1 {
+    font-family: SofiaProMedium;
+    color: white;
+}
+
+.section h4 {
+    font-family: SofiaProSoftLight;
+    color: white;
+    margin: 5px 0;
+}
+
+.space {
+    margin: 40px 0;
+}
+
+.btn-white {
+    font-family: SofiaProSoftLight;
+    color: #a92140;
+    font-size: 20px;
+    background: white;
+    padding: 10px 45px;
+    border-radius: 6px;
+    line-height: 40px;
+    vertical-align: middle;
+    opacity: 0.8;
+}
+
+.btn-white:hover {
+    opacity: 1.0;
+    color: #a92140;
+    background: white;
+}
+
+#header .container {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px;
 }
 
 /* Centered texts in each section
 * --------------------------------------- */
-.section{
-    text-align:center;
+.section {
+    text-align: center;
+}
+
+.opc08 {
+    opacity: 0.8;
+}
+
+.opc10 {
+    opacity: 1;
+}
+
+.opc09 {
+    opacity: 0.9;
+}
+
+.opc05 {
+    opacity: 0.5;
 }
 
 /* Fixed header and footer.
 * --------------------------------------- */
-#header, #footer{
-    position:fixed;
+#header, #footer {
+    position: fixed;
     height: 60px;
-    display:block;
+    display: block;
     width: 100%;
     /*background: #333;*/
-    z-index:9;
+    z-index: 9;
     color: #f2f2f2;
 }
 
-#header{
-    top:0px;
+#header {
+    top: 0px;
 }
 
-.logo{
+#footer {
+    bottom: 0px;
+    line-height: 40px;
+}
+
+.logo {
     background: url("../img/logo.png") left center no-repeat;
     height: 60px;
     width: auto;
     background-size: auto 25px;
     opacity: 0.8;
 }
-.navBtn{
+
+.navBtn {
     height: 60px;
     line-height: 60px;
     opacity: 0.8;
     padding: 0 20px;
+    cursor: pointer;
+    font-family: SofiaProSoftLight;
 }
 
-.navBtn.inverseBtn{
+.navBtn.inverseBtn {
     height: 50px;
     line-height: 60px;
     opacity: 0.8;
@@ -101,28 +195,168 @@ body{
 
 }
 
-
-.sec1{
+.sec1 {
     background: #cf3d4c;
-    background-image: -webkit-radial-gradient(closest-corner, rgba(70, 20, 38, 0) 60%, rgba(70, 15, 30, 0.26)),-webkit-linear-gradient(bottom right, #d02f59, #801227 90%);
-    background-image: radial-gradient(closest-corner,rgba(70, 20, 38,0) 60%,rgba(70, 15, 30,.26)),linear-gradient(to top left,#d02f59,#801227 90%);
+    background-image: -webkit-radial-gradient(closest-corner, rgba(70, 20, 38, 0) 60%, rgba(70, 15, 30, 0.26)), -webkit-linear-gradient(bottom right, #d02f59, #801227 90%);
+    background-image: radial-gradient(closest-corner, rgba(70, 20, 38, 0) 60%, rgba(70, 15, 30, .26)), linear-gradient(to top left, #d02f59, #801227 90%);
 }
-.sec2{
+
+.sec2 {
     background: #58090c;
-    background-image: -webkit-radial-gradient(closest-corner,rgba(16,47,70,0) 60%, rgba(70, 21, 37, 0.2)),-webkit-linear-gradient(bottom right, #ef675e, #e04a50 10%, #580b0e 90%);
-    background-image: radial-gradient(closest-corner,rgba(16,47,70,0) 60%,rgba(70, 21, 37,.2)),linear-gradient(to top left,#ef675e,#e04a50 10%,#580b0e 90%);
+    background-image: -webkit-radial-gradient(closest-corner, rgba(16, 47, 70, 0) 60%, rgba(70, 21, 37, 0.2)), -webkit-linear-gradient(bottom right, #ef675e, #e04a50 10%, #580b0e 90%);
+    background-image: radial-gradient(closest-corner, rgba(16, 47, 70, 0) 60%, rgba(70, 21, 37, .2)), linear-gradient(to top left, #ef675e, #e04a50 10%, #580b0e 90%);
 }
-.sec3{
+
+.sec3 {
     background: #3a1314;
     background-image: -webkit-radial-gradient(circle farthest-side at right bottom, #f86670, #640d0e 80%, #3a0809);
-    background-image: radial-gradient(circle farthest-side at right bottom,#f86670,#640d0e 80%,#3a0809);
-}
-.sec4{
-    background: #350909;
-    background: -webkit-linear-gradient(bottom right, #ff86ac, #ca5c6a 10%, #a5384d 20%, #91383e 27%, #811b1a 35%,#612626 50%,#491c1c 63%,#3f0606 93%,#000);
-    background: linear-gradient(to top left,#ff86ac,#ca5c6a 10%,#a5384d 20%,#91383e 27%,#811b1a 35%,#612626 50%,#491c1c 63%,#3f0606 93%,#000);
+    background-image: radial-gradient(circle farthest-side at right bottom, #f86670, #640d0e 80%, #3a0809);
 }
 
-#fp-nav ul li a span, .fp-slidesNav ul li a span{
-    background: rgba(255,255,255,0.8);
+.sec4 {
+    background: #350909;
+    background: -webkit-linear-gradient(bottom right, #ff86ac, #ca5c6a 10%, #a5384d 20%, #91383e 27%, #811b1a 35%, #612626 50%, #491c1c 63%, #3f0606 93%, #000);
+    background: linear-gradient(to top left, #ff86ac, #ca5c6a 10%, #a5384d 20%, #91383e 27%, #811b1a 35%, #612626 50%, #491c1c 63%, #3f0606 93%, #000);
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.verticalOuter {
+    height: 450px;
+    display: table;
+}
+
+.verticalInner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.logoQuote {
+    font-family: SofiaProExtraLight;
+    text-transform: uppercase;
+    letter-spacing: 0.6em;
+    color: white;
+    opacity: 0.9;
+    font-size: 18px;
+    margin: 28px auto;
+}
+
+.sec2Text {
+    font-family: SofiaProSoftLight;
+    color: white;
+    font-size: 20px;
+    width: 60%;
+    margin: 50px auto;
+    opacity: 0.8;
+    line-height: 35px;
+}
+
+.sec2 .logosWrap img {
+    margin: 5px auto;
+}
+
+.sec3 h2 {
+    font-family: SofiaProSoftLight;
+    color: white;
+    font-size: 35px;
+}
+
+.sec3 .row.logos img {
+    margin: 50px 10px;
+}
+
+.quotes {
+    color: white;
+}
+
+.quotes .content {
+    font-family: SofiaProRegular;
+    font-size: 18px;
+    margin: 15px auto 30px;
+}
+
+.quotes h4 {
+    font-family: SofiaProMedium;
+    margin: 25px auto 10px;
+}
+
+.quotes .title {
+    font-family: SofiaProLightCondensed;
+    margin: 10px auto;
+}
+
+.logosClick {
+    cursor: pointer;
+}
+
+.logosClick:hover {
+    opacity: 1.0;
+}
+
+.sec4 .container .row img {
+    margin: 5px auto;
+}
+
+.featureList {
+    color: white;
+    font-family: SofiaProSoftLight;
+}
+
+.featureList h3 {
+    font-size: 26px;
+    margin: 10px auto;
+}
+
+.featureList ul li {
+    font-size: 18px;
+    font-family: SofiaProExtraLight;
+    margin: 8px auto;
+}
+
+.featureList ul {
+    list-style-image: url('../img/check.png');
+}
+
+.search-box {
+    font-family: SofiaProSoftLight;
+    color: #a92140;
+    font-size: 20px;
+    background: white;
+    padding: 10px 45px;
+    border-radius: 6px;
+    line-height: 60px;
+    vertical-align: middle;
+    opacity: 0.8;
+    height: 60px;
+}
+
+.btn-wrap .input-group-addon {
+    padding: 6px 20px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.sec4 .glyphicon {
+    font-size: 25px;
+    color: #a92140;
+}
+
+.sec4 ::-webkit-input-placeholder { /* Chrome */
+    color: #a92140;
+}
+
+.sec4 :-ms-input-placeholder { /* IE 10+ */
+    color: #a92140;
+}
+
+.sec4 ::-moz-placeholder { /* Firefox 19+ */
+    color: #a92140;
+    opacity: 1;
+}
+
+.sec4 :-moz-placeholder { /* Firefox 4 - 18 */
+    color: #a92140;
+    opacity: 1;
 }
