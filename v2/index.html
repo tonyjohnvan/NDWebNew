@@ -186,16 +186,16 @@
 
 <div id="sec-quotes" class="container quotes">
 
-    <div id="CarouselQuotes" class="carousel slide" data-ride="carousel">
+    <div id="CarouselQuotes" class="carousel slide" data-ride="carousel2">
         <!-- Indicators -->
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner revUp" role="listbox">
             <div class="item active">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-2 text-right revLeft">
+                        <div class="col-sm-2 text-right">
                             <img src="assets/img/Quotes-user1.png" alt="" width="75" height="75">
                         </div>
-                        <div class="col-sm-9 text-left revRight">
+                        <div class="col-sm-9 text-left">
                             <h5>Performance tuning is difficult, tedious and time consuming. NimbleDroid makes the task
                                 suck infinitely less. The saving on many dev hours is just a bonus.</h5>
                             <p class="nametitle"><span class="name">Bryan Li</span>Senior Mobile Engineering Manager</p>
@@ -206,10 +206,10 @@
             <div class="item">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-2 text-right revLeft">
+                        <div class="col-sm-2 text-right">
                             <img src="assets/img/Quotes-user1.png" alt="" width="75" height="75">
                         </div>
-                        <div class="col-sm-9 text-left revRight">
+                        <div class="col-sm-9 text-left">
                             <h5>I would highly recommend nimbledroid for anyone looking to improve startup performance
                                 of their Android application. Over the past few months, nimbledroid have helped us
                                 reduce our app startup time by 40% while pinpointing our own and third party SDKs
@@ -222,10 +222,10 @@
             <div class="item">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-2 text-right revLeft">
+                        <div class="col-sm-2 text-right">
                             <img src="assets/img/Quotes-user1.png" alt="" width="75" height="75">
                         </div>
-                        <div class="col-sm-9 text-left revRight">
+                        <div class="col-sm-9 text-left">
                             <h5>Network usage tends to be tricky and overlooked. At Azimo, we think about those users
                                 for whom every KB matters. NimbleDroid makes the task easier and more pleasant.</h5>
                             <p class="nametitle"><span class="name">Marcin Szulc</span>Software Engineer</p>
@@ -236,10 +236,10 @@
             <div class="item">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-2 text-right revLeft">
+                        <div class="col-sm-2 text-right">
                             <img src="assets/img/Quotes-user1.png" alt="" width="75" height="75">
                         </div>
-                        <div class="col-sm-9 text-left revRight">
+                        <div class="col-sm-9 text-left">
                             <h5>Automatic discovery of user flows was so good we thought it was humans doing it via
                                 Mechanical Turk!</h5>
                             <p class="nametitle"><span class="name">Mike Oliver</span>VP of Product Engineering</p>
@@ -500,6 +500,9 @@
 <script>
     $(document).ready(function () {
         $('#myCarousel').carousel({
+            interval: 5000
+        })
+        $('#CarouselQuotes').carousel({
             interval: 5000
         })
 
