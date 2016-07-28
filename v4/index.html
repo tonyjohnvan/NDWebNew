@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Nimbledorid new homepage v3</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="plugins/animate.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/index.css" rel="stylesheet">
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+<div class="navbar-wrapper">
+    <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="logo"></div>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse pull-right">
+                    <ul class="nav navbar-nav">
+                        <li class="navBtn inverseBtn">Upload APK</li>
+                        <li class="navBtn">Play Apps</li>
+                        <li class="navBtn">Sign up / Sign in</li>
+                        <li class="navBtn"><i class="glyphicon glyphicon-search"></i></li>
+                        <li class="navBtn"><i class="glyphicon glyphicon-menu-hamburger"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide carousel-fade carousel-big" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators opc05">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div class="item active sec1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-7 verticalOuter text-right">
+                        <div class="verticalInner">
+                            <h1 class="opc08 animated fadeInLeft" id="s1l1">Automated performance analysis for every
+                                build of your app</h1>
+                            <div class="space"></div>
+                            <h4 class="opc08 animated fadeInLeft" id="s1l2">Pinpoint slow methods, slow SDKs, and memory
+                                leaks.</h4>
+                            <h4 class="opc08 animated fadeInLeft" id="s1l3">Measure speed, network, memory, and disk
+                                usage across builds.</h4>
+                            <h4 class="opc08 animated fadeInLeft" id="s1l4">No SDK to install, we analyze your
+                                APKs.</h4>
+                            <div class="space"></div>
+                            <button class="btn btn-white animated fadeInLeft" id="s1bt1">Get Started With NimbleDroid
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 verticalOuter">
+                        <div class="verticalInner">
+                            <img class="animated fadeInRight" id="s1i1" src="assets/img/bot1.png" alt="" width="auto"
+                                 height="66%">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item sec2">
+            <div class="container">
+                <div class="verticalOuter">
+                    <div class="verticalInner">
+                        <div class="row logosWrap">
+                            <div class="col-sm-3 text-center">
+                                <img src="assets/img/logo1.png" id="s2e1" class="animated fadeInDown" alt=""
+                                     width="auto" height="40">
+                            </div>
+                            <div class="col-sm-3 text-center">
+                                <img src="assets/img/logo2.png" id="s2e2" class="animated fadeInDown" alt=""
+                                     width="auto" height="40">
+                            </div>
+                            <div class="col-sm-2 text-center">
+                                <img src="assets/img/logo3.png" id="s2e3" class="animated fadeInDown" alt=""
+                                     width="auto" height="40">
+                            </div>
+                            <div class="col-sm-2 text-center">
+                                <img src="assets/img/logo4.png" id="s2e4" class="animated fadeInDown" alt=""
+                                     width="auto" height="40">
+                            </div>
+                            <div class="col-sm-2 text-center">
+                                <img src="assets/img/logo5.png" id="s2e5" class="animated fadeInDown" alt=""
+                                     width="auto" height="40">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="logoQuote" id="s2e6">Awarded, Profiled, Backed and Invested</p>
+                            <p class="sec2Text" id="s2e7">Crafted with patent-pending technology and our heart. Team
+                                members includes
+                                academics and hackers of all stripes, from CS PhDs to developers with 2,000+ stars on
+                                GitHub.</p>
+                            <button class="btn btn-white" id="s2e8">More About Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item sec3">
+            <div class="container">
+                <div class="verticalOuter">
+                    <div class="verticalInner">
+                        <div class="row">
+                            <div class="col-sm-5 verticalOuter">
+                                <div class="verticalInner">
+                                    <img id="s3e0" src="assets/img/bot2.png" alt="" width="auto" height="50%">
+                                </div>
+                            </div>
+                            <div class="col-sm-7 verticalOuter text-left opc08">
+                                <div class="verticalInner" id="sad">
+                                    <h2 id="s3e1">Now we having 63327 profiled apps and it still counting!</h2>
+                                    <div class="row logos">
+                                        <img class="logosClick opc10" src="assets/img/logo-yahoo.png" alt=""
+                                             width="auto" id="s3e2"
+                                             height="25">
+                                        <img class="logosClick opc05" src="assets/img/logo-abercrombie-fitch.png" alt=""
+                                             id="s3e3"
+                                             width="auto" height="25">
+                                        <img class="logosClick opc05" src="assets/img/logo-azimo.png" alt=""
+                                             width="auto" id="s3e4"
+                                             height="25">
+                                        <img class="logosClick opc05" src="assets/img/logo-runkeeper.png" alt=""
+                                             width="auto" id="s3e5"
+                                             height="25">
+                                    </div>
+                                    <div class="quotes">
+                                        <p class="content" id="s3e6"> Performance tuning is difficult, tedious and time
+                                            consuming. NimbleDroid
+                                            makes the task
+                                            suck infinitely less. The saving on many dev hours is just a bonus.
+                                        </p>
+                                        <h4 id="s3e7">Bryan Li</h4>
+                                        <p class="title" id="s3e8">Senior Mobile Engineering Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div><!-- /.carousel -->
+
+<div class="contentWrapper">
+
+    <div class="logosContainer">
+        <div class="container">
+            <div class="row logosWrapB text-center">
+                <img src="assets/img/logo1b.png" class="animated revDown" alt=""
+                     width="auto" height="36">
+                <img src="assets/img/logo2b.png" class="animated revDown" alt=""
+                     width="auto" height="36">
+                <img src="assets/img/logo3b.png" class="animated revDown" alt=""
+                     width="auto" height="36">
+                <img src="assets/img/logo4b.png" class="animated revDown" alt=""
+                     width="auto" height="36">
+                <img src="assets/img/logo5b.png" class="animated revDown" alt=""
+                     width="auto" height="36">
+            </div>
+            <div class="row revDown">
+                <p class="logoQuoteB">Awarded, Profiled, Backed and Invested</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="sec-quotes" class="quotes">
+        <div class="container">
+            <div id="CarouselQuotes" class="carousel slide" data-ride="carousel2">
+                <!-- Indicators -->
+                <div class="carousel-inner revUp" role="listbox">
+                    <div class="item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-2 text-right">
+                                    <img src="assets/img/Quotes-user1.png" alt="" width="75" height="75">
+                                </div>
+                                <div class="col-sm-9 text-left">
+                                    <h5>Performance tuning is difficult, tedious and time consuming. NimbleDroid makes the task
+                                        suck infinitely less. The saving on many dev hours is just a bonus.</h5>
+                                    <p class="nametitle"><span class="name">Bryan Li</span>Senior Mobile Engineering Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-2 text-right">
+                                    <img src="assets/img/Quotes-user1.png" alt="" width="75" height="75">
+                                </div>
+                                <div class="col-sm-9 text-left">
+                                    <h5>I would highly recommend nimbledroid for anyone looking to improve startup performance
+                                        of their Android application. Over the past few months, nimbledroid have helped us
+                                        reduce our app startup time by 40% while pinpointing our own and third party SDKs
+                                        bottlenecks.</h5>
+                                    <p class="nametitle"><span class="name">Ben Celebicic</span>Mobile Practice Lead</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-2 text-right">
+                                    <img src="assets/img/Quotes-user1.png" alt="" width="75" height="75">
+                                </div>
+                                <div class="col-sm-9 text-left">
+                                    <h5>Network usage tends to be tricky and overlooked. At Azimo, we think about those users
+                                        for whom every KB matters. NimbleDroid makes the task easier and more pleasant.</h5>
+                                    <p class="nametitle"><span class="name">Marcin Szulc</span>Software Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-2 text-right">
+                                    <img src="assets/img/Quotes-user1.png" alt="" width="75" height="75">
+                                </div>
+                                <div class="col-sm-9 text-left">
+                                    <h5>Automatic discovery of user flows was so good we thought it was humans doing it via
+                                        Mechanical Turk!</h5>
+                                    <p class="nametitle"><span class="name">Mike Oliver</span>VP of Product Engineering</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <ol class="carousel-indicators revDown">
+                    <li id="logoIndicator1" data-target="#CarouselQuotes" data-slide-to="0" class="comLogo1 active"></li>
+                    <li id="logoIndicator2" data-target="#CarouselQuotes" data-slide-to="1" class="comLogo2"></li>
+                    <li id="logoIndicator3" data-target="#CarouselQuotes" data-slide-to="2" class="comLogo3"></li>
+                    <li id="logoIndicator4" data-target="#CarouselQuotes" data-slide-to="3" class="comLogo4"></li>
+                </ol>
+            </div><!-- /.carousel -->
+
+        </div>
+    </div>
+
+    <div class="marketing">
+        <div class="deviceBanner">
+            <div class="container">
+                <img src="assets/img/device2.png" alt="" width="80%">
+                <div class="backgroundStrap"></div>
+            </div>
+        </div>
+        <div class="featuresWrap">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 class="featurette-heading revLeft">See Detailed <span class="text-muted">Diagnoses</span></h2>
+                        <ul class="featureDetailList">
+                            <li class="revLeft">Aenean eu nulla eu sapien dictum pharetra.</li>
+                            <li class="revLeft">Ut feugiat tortor eu enim volutpat, sit amet venenatis ligula hendrerit.
+                            </li>
+                            <li class="revLeft">Quisque lobortis massa nec rhoncus iaculis.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="featurette-heading revLeft">See Detailed <span class="text-muted">Diagnoses</span></h2>
+                        <ul class="featureDetailList">
+                            <li class="revLeft">Aenean eu nulla eu sapien dictum pharetra.</li>
+                            <li class="revLeft">Ut feugiat tortor eu enim volutpat, sit amet venenatis ligula hendrerit.
+                            </li>
+                            <li class="revLeft">Quisque lobortis massa nec rhoncus iaculis.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="featurette-heading revLeft">See Detailed <span class="text-muted">Diagnoses</span></h2>
+                        <ul class="featureDetailList">
+                            <li class="revLeft">Aenean eu nulla eu sapien dictum pharetra.</li>
+                            <li class="revLeft">Ut feugiat tortor eu enim volutpat, sit amet venenatis ligula hendrerit.
+                            </li>
+                            <li class="revLeft">Quisque lobortis massa nec rhoncus iaculis.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-right">
+                        <button class="btn btn-red">See an Example Profile</button>
+                    </div>
+                    <div class="col-md-4 text-left">
+                        <div class="input-group searchAppWrap">
+                            <input type="text" class="form-control searchAppInput"
+                                   placeholder="Search for your Google Play app...">
+                          <span class="input-group-btn">
+                            <button class="btn btn-red-inner" type="button"><i
+                                    class="glyphicon glyphicon-search"></i></button>
+                          </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="statics">
+        <div class="row text-center gradientBorder">
+            <div class="col-md-3 revLeft">
+                <i class="staticsIcon icon1"></i>
+                <p><span class="numbers">63,816</span>Apps Profiled</p>
+            </div>
+            <div class="col-md-3 revUp">
+                <i class="staticsIcon icon2"></i>
+                <p><span class="numbers">1,327</span>Questions Answered</p>
+            </div>
+            <div class="col-md-3 revUp">
+                <i class="staticsIcon icon3"></i>
+                <p><span class="numbers">957,240</span>Sec Optimized</p>
+            </div>
+            <div class="col-md-3 revRight">
+                <i class="staticsIcon icon4"></i>
+                <p><span class="numbers">93,128</span>Solutions Provided</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 revLeft">
+                <div class="footerLogo"></div>
+                <p class="text-center comAddress">
+                    588 Broadway, Suite 503 <br>
+                    New York, NY 10012
+                </p>
+                <p class="text-center comAddress">contact@nimbledroid.com</p>
+                <p class="text-center comAddress small">&copy; 2016 Nimbledroid, Inc | <a
+                        href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            </div>
+            <div class="col-md-3 footerListWrapper revDown">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Play</a></li>
+                            <li><a href="">Apps</a></li>
+                            <li><a href="">Pricing</a></li>
+                            <li><a href="">Account</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Jobs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 footerListWrapperSmall revDown">
+                <ul>
+                    <li>
+                        <div class="row">
+                            <div class="col-md-2"><i class="fa fa-facebook"></i></div>
+                            <div class="col-md-10"><a href="">Facebook</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-md-2"><i class="fa fa-twitter"></i></div>
+                            <div class="col-md-10"><a href="">Twitter</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-md-2"><i class="fa fa-google-plus"></i></div>
+                            <div class="col-md-10"><a href="">Google</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-md-2"><i class="fa fa-linkedin"></i></div>
+                            <div class="col-md-10"><a href="">LinkedIn</a></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 revRight">
+                <h3 class="footerTitle">Keep updated</h3>
+                <button class="btn footerButton">subscribe</button>
+            </div>
+        </div>
+    </div>
+</footer>
+</div><!-- /.container -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="vendors/scrollreveal.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#myCarousel').carousel({
+            interval: 5000
+        })
+        $('#CarouselQuotes').carousel({
+            interval: 5000
+        })
+
+//        hide(1);
+        hide(2);
+        hide(3);
+//        fadeIn(1);
+
+        // Changing the defaults
+        window.sr = ScrollReveal({ reset: true });
+
+        // Customizing a reveal set
+//    sr.reveal('.row', { duration: 800 });
+        sr.reveal('.revDown', { duration: 800, delay: 60, origin: 'bottom' });
+        sr.reveal('.revLeft', { duration: 800, delay: 60, origin: 'left' });
+        sr.reveal('.revRight', { duration: 800, delay: 60, origin: 'right' });
+        sr.reveal('.revUp', { duration: 800, delay: 60, origin: 'top' });
+
+        $('#myCarousel').on('slide.bs.carousel', function (e) {
+            if ($(e.relatedTarget).hasClass('sec1')) {
+                fadeIn(1);
+                hide(2);
+                hide(3);
+
+            } else if ($(e.relatedTarget).hasClass('sec2')) {
+                fadeIn(2);
+                hide(1);
+                hide(3);
+
+            } else if ($(e.relatedTarget).hasClass('sec3')) {
+                fadeIn(3);
+                hide(1);
+                hide(2);
+
+            }
+        })
+    })
+
+    function fadeOut(num) {
+        switch (num) {
+            case 3:
+            {
+                setTimeout(function () {
+                    $('#s3e0').removeClass('fadeInLeft').addClass('animated fadeOutLeft')
+                }, 1);
+                setTimeout(function () {
+                    $('#s3e1').removeClass('fadeInRight').addClass('animated fadeOutRight')
+                }, 1);
+                setTimeout(function () {
+                    $('#s3e2').removeClass('fadeInRight').addClass('animated fadeOutRight')
+                }, 1);
+                setTimeout(function () {
+                    $('#s3e3').removeClass('fadeInRight').addClass('animated fadeOutRight')
+                }, 1);
+                setTimeout(function () {
+                    $('#s3e4').removeClass('fadeInRight').addClass('animated fadeOutRight')
+                }, 1);
+                setTimeout(function () {
+                    $('#s3e5').removeClass('fadeInRight').addClass('animated fadeOutRight')
+                }, 1);
+                setTimeout(function () {
+                    $('#s3e6').removeClass('fadeInRight').addClass('animated fadeOutRight')
+                }, 1);
+                setTimeout(function () {
+                    $('#s3e7').removeClass('fadeInRight').addClass('animated fadeOutRight')
+                }, 1);
+                setTimeout(function () {
+                    $('#s3e8').removeClass('fadeInRight').addClass('animated fadeOutRight')
+                }, 1);
+            }
+                break;
+            case 1:
+            {
+                setTimeout(function () {
+                    $('#s1l1').removeClass('fadeInLeft').addClass('animated fadeOutLeft')
+                }, 1);
+                setTimeout(function () {
+                    $('#s1l2').removeClass('fadeInLeft').addClass('animated fadeOutLeft')
+                }, 1);
+                setTimeout(function () {
+                    $('#s1l3').removeClass('fadeInLeft').addClass('animated fadeOutLeft')
+                }, 1);
+                setTimeout(function () {
+                    $('#s1l4').removeClass('fadeInLeft').addClass('animated fadeOutLeft')
+                }, 1);
+                setTimeout(function () {
+                    $('#s1bt1').removeClass('fadeInLeft').addClass('animated fadeOutLeft')
+                }, 1);
+                setTimeout(function () {
+                    $('#s1i1').removeClass('fadeInRight').addClass('animated fadeOutRight')
+                }, 1);
+            }
+                break;
+            case 2:
+            {
+                setTimeout(function () {
+                    $('#s2e1').removeClass('fadeInDown').addClass('animated fadeOutDown')
+                }, 1);
+                setTimeout(function () {
+                    $('#s2e2').removeClass('fadeInDown').addClass('animated fadeOutDown')
+                }, 1);
+                setTimeout(function () {
+                    $('#s2e3').removeClass('fadeInDown').addClass('animated fadeOutDown')
+                }, 1);
+                setTimeout(function () {
+                    $('#s2e4').removeClass('fadeInDown').addClass('animated fadeOutDown')
+                }, 1);
+                setTimeout(function () {
+                    $('#s2e5').removeClass('fadeInDown').addClass('animated fadeOutDown')
+                }, 1);
+                setTimeout(function () {
+                    $('#s2e6').removeClass('fadeInDown').addClass('animated fadeOutDown')
+                }, 1);
+                setTimeout(function () {
+                    $('#s2e7').removeClass('fadeInDown').addClass('animated fadeOutDown')
+                }, 1);
+                setTimeout(function () {
+                    $('#s2e8').removeClass('fadeInDown').addClass('animated fadeOutDown')
+                }, 1);
+            }
+                break;
+        }
+    }
+    function fadeIn(num) {
+        switch (num) {
+            case 1:
+            {
+                setTimeout(function () {
+                    $('#s1l1').removeClass('fadeOutDown').removeClass('fadeOutLeft').css('opacity', 1).addClass('animated fadeInLeft')
+                }, 1);
+                setTimeout(function () {
+                    $('#s1l2').removeClass('fadeOutDown').removeClass('fadeOutLeft').css('opacity', 1).addClass('animated fadeInLeft')
+                }, 300);
+                setTimeout(function () {
+                    $('#s1l3').removeClass('fadeOutDown').removeClass('fadeOutLeft').css('opacity', 1).addClass('animated fadeInLeft')
+                }, 500);
+                setTimeout(function () {
+                    $('#s1l4').removeClass('fadeOutDown').removeClass('fadeOutLeft').css('opacity', 1).addClass('animated fadeInLeft')
+                }, 700);
+                setTimeout(function () {
+                    $('#s1bt1').removeClass('fadeOutDown').removeClass('fadeOutLeft').css('opacity', 1).addClass('animated fadeInLeft')
+                }, 900);
+                setTimeout(function () {
+                    $('#s1i1').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
+                }, 500);
+            }
+                break;
+            case 2:
+            {
+                setTimeout(function () {
+                    $('#s2e1').removeClass('fadeOutDown').css('opacity', 1).addClass('animated fadeInDown')
+                }, 100);
+                setTimeout(function () {
+                    $('#s2e2').removeClass('fadeOutDown').css('opacity', 1).addClass('animated fadeInDown')
+                }, 200);
+                setTimeout(function () {
+                    $('#s2e3').removeClass('fadeOutDown').css('opacity', 1).addClass('animated fadeInDown')
+                }, 300);
+                setTimeout(function () {
+                    $('#s2e4').removeClass('fadeOutDown').css('opacity', 1).addClass('animated fadeInDown')
+                }, 400);
+                setTimeout(function () {
+                    $('#s2e5').removeClass('fadeOutDown').css('opacity', 1).addClass('animated fadeInDown')
+                }, 500);
+                setTimeout(function () {
+                    $('#s2e6').removeClass('fadeOutDown').css('opacity', 1).addClass('animated fadeInDown')
+                }, 600);
+                setTimeout(function () {
+                    $('#s2e7').removeClass('fadeOutDown').css('opacity', 1).addClass('animated fadeInDown')
+                }, 700);
+                setTimeout(function () {
+                    $('#s2e8').removeClass('fadeOutDown').css('opacity', 1).addClass('animated fadeInDown')
+                }, 800);
+            }
+                break;
+            case 3:
+            {
+                setTimeout(function () {
+                    $('#s3e0').removeClass('fadeOutDown').removeClass('fadeOutLeft').css('opacity', 1).addClass('animated fadeInLeft')
+                }, 100);
+                setTimeout(function () {
+                    $('#s3e1').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
+                }, 100);
+                setTimeout(function () {
+                    $('#s3e2').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
+                }, 200);
+                setTimeout(function () {
+                    $('#s3e3').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
+                }, 300);
+                setTimeout(function () {
+                    $('#s3e4').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
+                }, 400);
+                setTimeout(function () {
+                    $('#s3e5').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
+                }, 500);
+                setTimeout(function () {
+                    $('#s3e6').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
+                }, 600);
+                setTimeout(function () {
+                    $('#s3e7').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
+                }, 700);
+                setTimeout(function () {
+                    $('#s3e8').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
+                }, 800);
+            }
+                break;
+        }
+    }
+    function hide(num) {
+        switch (num) {
+            case 3:
+            {
+                setTimeout(function () {
+                    $('#s3e0').removeClass('fadeInLeft').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s3e1').removeClass('fadeInRight').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s3e2').removeClass('fadeInRight').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s3e3').removeClass('fadeInRight').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s3e4').removeClass('fadeInRight').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s3e5').removeClass('fadeInRight').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s3e6').removeClass('fadeInRight').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s3e7').removeClass('fadeInRight').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s3e8').removeClass('fadeInRight').css('opacity', '0')
+                }, 1);
+            }
+                break;
+            case 1:
+            {
+                setTimeout(function () {
+                    $('#s1l1').removeClass('fadeInLeft').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s1l2').removeClass('fadeInLeft').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s1l3').removeClass('fadeInLeft').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s1l4').removeClass('fadeInLeft').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s1bt1').removeClass('fadeInLeft').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s1i1').removeClass('fadeInRight').css('opacity', '0')
+                }, 1);
+            }
+                break;
+            case 2:
+            {
+                setTimeout(function () {
+                    $('#s2e1').removeClass('fadeInDown').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s2e2').removeClass('fadeInDown').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s2e3').removeClass('fadeInDown').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s2e4').removeClass('fadeInDown').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s2e5').removeClass('fadeInDown').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s2e6').removeClass('fadeInDown').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s2e7').removeClass('fadeInDown').css('opacity', '0')
+                }, 1);
+                setTimeout(function () {
+                    $('#s2e8').removeClass('fadeInDown').css('opacity', '0')
+                }, 1);
+            }
+                break;
+        }
+    }
+
+</script>
+</body>
+</html>
