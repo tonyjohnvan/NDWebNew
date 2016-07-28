@@ -1,0 +1,969 @@
+/*fonts*/
+@font-face {
+    font-family: SofiaProLightCondensed;
+    src: url('../fonts/SofiaProLightCondensed.eot');
+    src: url('../fonts/SofiaProLightCondensed.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProLightCondensed.woff2') format('woff2'), url('../fonts/SofiaProLightCondensed.woff') format('woff'), url('../fonts/SofiaProLightCondensed.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SofiaProRegular;
+    src: url('../fonts/SofiaProRegular.eot');
+    src: url('../fonts/SofiaProRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProRegular.woff2') format('woff2'), url('../fonts/SofiaProRegular.woff') format('woff'), url('../fonts/SofiaProRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SofiaProSoftLight;
+    src: url('../fonts/SofiaProSoftLight.eot');
+    src: url('../fonts/SofiaProSoftLight.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProSoftLight.woff2') format('woff2'), url('../fonts/SofiaProSoftLight.woff') format('woff'), url('../fonts/SofiaProSoftLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SofiaProMedium;
+    src: url('../fonts/SofiaProMedium.eot');
+    src: url('../fonts/SofiaProMedium.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProMedium.woff2') format('woff2'), url('../fonts/SofiaProMedium.woff') format('woff'), url('../fonts/SofiaProMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SofiaProExtraLight;
+    src: url('../fonts/SofiaProExtraLight.eot');
+    src: url('../fonts/SofiaProExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProExtraLight.woff2') format('woff2'), url('../fonts/SofiaProExtraLight.woff') format('woff'), url('../fonts/SofiaProExtraLight.ttf') format('truetype');
+}
+
+.carousel-fade {
+    /*background-color: #cf3d4c;*/
+    background: transparent;
+}
+
+.carousel-fade .carousel-inner .item {
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    color: #5a5a5a;
+    font-family: SofiaProSoftLight;
+
+    background: #cf3d4c;
+    background-image: -webkit-radial-gradient(closest-corner, rgba(70, 20, 38, 0) 60%, rgba(70, 15, 30, 0.26)), -webkit-linear-gradient(bottom right, #d02f59, #801227 90%);
+    background-image: radial-gradient(closest-corner, rgba(70, 20, 38, 0) 60%, rgba(70, 15, 30, .26)), linear-gradient(to top left, #d02f59, #801227 90%);
+}
+
+a {
+    color: #d32500;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel.carousel-big {
+    min-height: 600px;
+    /*margin-bottom: 60px;*/
+    text-align: center;
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel.carousel-big .item {
+    min-height: 600px;
+    /*background-color: #777;*/
+}
+
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 600px;
+}
+
+.sec1 .container,
+.sec1 .container .row,
+.sec1 .container .row .verticalOuter,
+.sec2 .container,
+.sec2 .container .verticalOuter,
+.sec3 .container,
+.sec3 .container .verticalOuter {
+    min-height: 600px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: normal;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        /*margin-top: 20px;*/
+    }
+
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 38px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        /*margin-top: 120px;*/
+    }
+}
+
+.logo {
+    background: url("../img/logo.png") left center no-repeat;
+    height: 60px;
+    width: 200px;
+    background-size: auto 25px;
+    opacity: 0.8;
+}
+
+.navbar {
+    background: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: transparent;
+    opacity: 1.0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+    opacity: 0.8;
+}
+
+.navbar-inverse {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.navBtn {
+    height: 60px;
+    line-height: 60px;
+    opacity: 0.8;
+    padding: 0 20px;
+    cursor: pointer;
+    font-family: SofiaProSoftLight;
+    color: white;
+}
+
+.navBtn.inverseBtn {
+    height: 40px;
+    line-height: 20px;
+    opacity: 0.8;
+    padding: 10px 15px;
+    margin: 10px 0;
+    background: white;
+    border-radius: 5px;
+    color: #D02F59;
+}
+
+.sec1 {
+    /*background: #cf3d4c;*/
+    /*background-image: -webkit-radial-gradient(closest-corner, rgba(70, 20, 38, 0) 60%, rgba(70, 15, 30, 0.26)), -webkit-linear-gradient(bottom right, #d02f59, #801227 90%);*/
+    /*background-image: radial-gradient(closest-corner, rgba(70, 20, 38, 0) 60%, rgba(70, 15, 30, .26)), linear-gradient(to top left, #d02f59, #801227 90%);*/
+    background: transparent;
+}
+
+.sec2 {
+    /*background: #58090c;*/
+    /*background-image: -webkit-radial-gradient(closest-corner, rgba(16, 47, 70, 0) 60%, rgba(70, 21, 37, 0.2)), -webkit-linear-gradient(bottom right, #ef675e, #e04a50 10%, #580b0e 90%);*/
+    /*background-image: radial-gradient(closest-corner, rgba(16, 47, 70, 0) 60%, rgba(70, 21, 37, .2)), linear-gradient(to top left, #ef675e, #e04a50 10%, #580b0e 90%);*/
+    background: transparent;
+}
+
+.sec3 {
+    /*background: #3a1314;*/
+    /*background-image: -webkit-radial-gradient(circle farthest-side at right bottom, #f86670, #640d0e 80%, #3a0809);*/
+    /*background-image: radial-gradient(circle farthest-side at right bottom, #f86670, #640d0e 80%, #3a0809);*/
+    background: transparent;
+}
+
+.sec4 {
+    /*background: #350909;*/
+    /*background: -webkit-linear-gradient(bottom right, #ff86ac, #ca5c6a 10%, #a5384d 20%, #91383e 27%, #811b1a 35%, #612626 50%, #491c1c 63%, #3f0606 93%, #000);*/
+    /*background: linear-gradient(to top left, #ff86ac, #ca5c6a 10%, #a5384d 20%, #91383e 27%, #811b1a 35%, #612626 50%, #491c1c 63%, #3f0606 93%, #000);*/
+    background: transparent;
+}
+
+.verticalOuter {
+    height: 450px;
+    display: table;
+}
+
+.verticalInner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.btn-white {
+    font-family: SofiaProSoftLight;
+    color: #a92140;
+    font-size: 20px;
+    background: white;
+    padding: 10px 45px;
+    border-radius: 6px;
+    line-height: 40px;
+    vertical-align: middle;
+    opacity: 0.8;
+}
+
+.btn-white:hover {
+    opacity: 1.0;
+    color: #a92140;
+    background: white;
+}
+
+h1 {
+    font-family: SofiaProMedium;
+    color: white;
+}
+
+h4 {
+    font-family: SofiaProSoftLight;
+    color: white;
+    margin: 5px 0;
+}
+
+.space {
+    margin: 40px 0;
+}
+
+.logoQuote {
+    font-family: SofiaProExtraLight;
+    text-transform: uppercase;
+    letter-spacing: 0.6em;
+    color: white;
+    opacity: 0.9;
+    font-size: 18px;
+    margin: 28px auto;
+}
+
+.sec2Text {
+    font-family: SofiaProSoftLight;
+    color: white;
+    font-size: 20px;
+    width: 60%;
+    margin: 50px auto;
+    opacity: 0.8;
+    line-height: 35px;
+}
+
+.sec2 .logosWrap img {
+    margin: 5px auto;
+}
+
+.sec3 h2 {
+    font-family: SofiaProSoftLight;
+    color: white;
+    font-size: 35px;
+}
+
+.sec3 .row.logos img {
+    margin: 50px 10px;
+}
+
+.quotes {
+    color: white;
+}
+
+.quotes .content {
+    font-family: SofiaProRegular;
+    font-size: 18px;
+    margin: 15px auto 30px;
+}
+
+.quotes h4 {
+    font-family: SofiaProMedium;
+    margin: 25px auto 10px;
+}
+
+.quotes .title {
+    font-family: SofiaProLightCondensed;
+    margin: 10px auto;
+}
+
+.logosClick {
+    cursor: pointer;
+}
+
+.logosClick:hover {
+    opacity: 1.0;
+}
+
+.sec4 .container .row img {
+    margin: 5px auto;
+}
+
+.featureList {
+    color: white;
+    font-family: SofiaProSoftLight;
+}
+
+.featureList h3 {
+    font-size: 26px;
+    margin: 10px auto;
+}
+
+.featureList ul li {
+    font-size: 18px;
+    font-family: SofiaProExtraLight;
+    margin: 8px auto;
+}
+
+.featureList ul {
+    list-style-image: url('../img/check.png');
+}
+
+.search-box {
+    font-family: SofiaProSoftLight;
+    color: #a92140;
+    font-size: 20px;
+    background: white;
+    padding: 10px 45px;
+    border-radius: 6px;
+    line-height: 60px;
+    vertical-align: middle;
+    opacity: 0.8;
+    height: 60px;
+}
+
+.btn-wrap .input-group-addon {
+    padding: 6px 20px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.sec4 .glyphicon {
+    font-size: 25px;
+    color: #a92140;
+}
+
+.sec4 ::-webkit-input-placeholder { /* Chrome */
+    color: #a92140;
+}
+
+.sec4 :-ms-input-placeholder { /* IE 10+ */
+    color: #a92140;
+}
+
+.sec4 ::-moz-placeholder { /* Firefox 19+ */
+    color: #a92140;
+    opacity: 1;
+}
+
+.sec4 :-moz-placeholder { /* Firefox 4 - 18 */
+    color: #a92140;
+    opacity: 1;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    /*opacity: 0.1;*/
+    background-image: none;
+}
+
+.opc08 {
+    opacity: 0.8;
+}
+
+.opc10 {
+    opacity: 1;
+}
+
+.opc09 {
+    opacity: 0.9;
+}
+
+.opc05 {
+    opacity: 0.5;
+}
+
+/*================================== quotes ==================================*/
+
+#sec-quotes {
+    background: white;
+    color: #444;
+    margin: 50px auto;
+    min-height: 200px;
+}
+
+#sec-quotes .carousel-indicators {
+    width: 100%;
+    text-align: center;
+    left: 0;
+    margin-left: 0;
+}
+
+#sec-quotes .carousel-indicators {
+    top: 0px;
+}
+
+#sec-quotes .carousel-inner {
+    top: 90px;
+}
+
+#sec-quotes .carousel-inner .item {
+    min-height: 120px;
+}
+
+#logoIndicator1,
+#logoIndicator2,
+#logoIndicator3,
+#logoIndicator4 {
+    width: 23%;
+    height: 50px;
+    opacity: 0.5;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#logoIndicator1 {
+    background: url(../img/logo-yahoo-c.png) center center no-repeat;
+    background-size: auto 28px;
+}
+
+#logoIndicator2 {
+    background: url(../img/logo-abercrombie-fitch-c.png) center center no-repeat;
+    background-size: auto 28px;
+}
+
+#logoIndicator3 {
+    background: url(../img/logo-azimo-c.png) center center no-repeat;
+    background-size: auto 28px;
+}
+
+#logoIndicator4 {
+    background: url(../img/logo-runkeeper-c.png) center center no-repeat;
+    background-size: auto 28px;
+}
+
+#logoIndicator1.active,
+#logoIndicator2.active,
+#logoIndicator3.active,
+#logoIndicator4.active {
+    opacity: 1.0;
+    border: none;
+    width: 23%;
+    height: 50px;
+}
+
+#sec-quotes .nametitle {
+    font-family: SofiaProLightCondensed;
+}
+
+#sec-quotes h5 {
+    font-family: SofiaProRegular;
+    font-size: 20px;
+}
+
+#sec-quotes .name {
+    font-family: SofiaProMedium;
+    padding-right: 10px;
+}
+
+/*================================== marketing ==================================*/
+.marketing .feature1,
+.marketing .feature3 {
+    background: #f7f7f7;
+    /*padding: 30px 0;*/
+}
+
+.marketing .feature2 {
+    background: #FFF;
+    /*padding: 30px 0;*/
+}
+
+.featureList {
+    color: #444;
+    font-family: SofiaProSoftLight;
+}
+
+.featureList h3 {
+    font-size: 26px;
+    margin: 10px auto;
+}
+
+.featureList ul li {
+    font-size: 18px;
+    font-family: SofiaProExtraLight;
+    margin: 8px auto;
+}
+
+.featureList ul {
+    list-style-image: url('../img/checkRed.png');
+}
+
+.featureDetailList {
+    margin: 25px auto;
+}
+
+/*================================== statics ==================================*/
+
+.statics {
+    background: white;
+    margin: 50px auto;
+}
+
+.statics p {
+    font-size: 16px;
+}
+
+.statics p .numbers {
+    font-family: SofiaProMedium;
+    padding-right: 10px;
+}
+
+.staticsIcon {
+    display: block;
+    width: 43px;
+    height: 43px;
+    margin: 0px auto 20px;
+}
+
+.staticsIcon.icon1 {
+    background: url(../img/static1.png) center center no-repeat;
+    background-size: 43px 43px;
+}
+
+.staticsIcon.icon2 {
+    background: url(../img/static2.png) center center no-repeat;
+    background-size: 43px 43px;
+}
+
+.staticsIcon.icon3 {
+    background: url(../img/static3.png) center center no-repeat;
+    background-size: 43px 43px;
+}
+
+.staticsIcon.icon4 {
+    background: url(../img/static4.png) center center no-repeat;
+    background-size: 43px 43px;
+}
+
+.gradientBorder .col-md-3 {
+    /*border-right: 10px solid red;*/
+    /*-moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);*/
+    /*-webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);*/
+    /*border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);*/
+}
+
+/*================================== blog ==================================*/
+
+.blog {
+    background: #f7f7f7;
+    padding: 50px 0;
+}
+
+.blog p.subTitle {
+    font-family: SofiaProRegular;
+    font-size: 18px;
+    color: #444;
+}
+
+.blogTitle {
+    line-height: 30px;
+}
+
+.blogCard {
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.blogCard h3 {
+    font-size: 15px;
+    font-family: SofiaProMedium;
+}
+
+.blogCard p {
+    width: 100%;
+    max-height: 80px;
+    display: block;
+    overflow: hidden;
+}
+
+.blogCard .date {
+    text-transform: uppercase;
+    color: #666;
+}
+
+.blog .col-md-4 {
+    margin: 5px 0;
+}
+
+/*================================== Footer ==================================*/
+footer {
+    padding: 30px;
+    background: #282836;
+    color: white;
+}
+
+footer .verticalOuter {
+    height: 200px;
+}
+
+.comAddress {
+    font-family: SofiaProExtraLight;
+    line-height: 28px;
+}
+
+.comAddress.small {
+    font-family: SofiaProExtraLight;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.comAddress.small a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.comAddress.small a:hover,
+.comAddress.small a:active {
+    color: rgba(255, 255, 255, 1.0);
+}
+
+footer .footerLogo {
+    width: 100%;
+    height: 60px;
+    background: url(../img/logo.png) center center no-repeat;
+    background-size: auto 30px;
+}
+
+.footerListWrapper ul {
+    list-style: none;
+    font-size: 16px;
+    font-family: SofiaProSoftLight;
+}
+
+.footerListWrapper ul li {
+    margin: 10px auto;
+    width: 80px;
+}
+
+.footerListWrapper ul li a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footerListWrapper ul li a:hover,
+.footerListWrapper ul li a:active {
+    color: rgba(255, 255, 255, 1.0);
+}
+
+.footerListWrapperSmall ul {
+    list-style: none;
+}
+
+.footerListWrapperSmall ul li {
+    width: 150px;
+    margin: 15px auto;
+}
+
+.footerListWrapperSmall ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    font-family: SofiaProExtraLight;
+}
+
+.footerListWrapperSmall ul li a:hover,
+.footerListWrapperSmall ul li a:active {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+h3.footerTitle {
+    font-family: SofiaProRegular;
+    font-size: 16px;
+}
+
+.footerButton {
+    font-family: SofiaProExtraLight;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 10px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    padding-left: 10px;
+    width: 100%;
+    height: 40px;
+    margin: 15px 5px;
+}
+
+.footerButton:hover {
+    background: rgb(93, 94, 105);
+    color: #111;
+}
+
+.contentWrapper {
+    background: white;
+    padding: 0px;
+}
+
+.logosWrapB img {
+    padding: 0 20px;
+}
+
+.logosWrapB {
+    padding: 40px 0 5px;
+}
+
+.logoQuoteB {
+    font-family: SofiaProExtraLight;
+    text-transform: uppercase;
+    letter-spacing: 0.6em;
+    color: #666;
+    opacity: 0.9;
+    font-size: 18px;
+    margin: 28px auto;
+    text-align: center;
+}
+
+.logosContainer {
+    background: #f7f7f7;
+}
+
+.marketing .deviceBanner {
+    background: white;
+    text-align: center;
+}
+
+.featuresWrap {
+    background: #f7f7f7;
+    padding: 0 20px;
+}
+
+.featureDetailList {
+    /*list-style-image: url('../img/checkRed.png');*/
+    list-style: none;
+    padding-left: 10px;
+    margin: 10px auto 30px;
+}
+
+.featureDetailList li {
+    line-height: 30px;
+    font-family: SofiaProRegular;
+}
+
+.featureDetailList li:before {
+    content: '';
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background: url('../img/checkRed.png') center center no-repeat;
+    background-size: 20px auto;
+    position: relative;
+    top: 8px;
+    padding-right: 30px;
+
+}
+
+.featurette-heading {
+    font-family: SofiaProRegular;
+    font-size: 28px;
+}
+
+.backgroundStrap {
+    background: #f7f7f7;
+    width: 100%;
+    height: 100px;
+    margin-top: -100px;
+}
+
+.btn-red {
+    height: 50px;
+    -webkit-transition: all 180ms ease-in-out;
+    transition: all 180ms ease-in-out;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-family: SofiaProRegular;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    background: #d32500;
+    box-shadow: 0 2px 0 #b30e03;
+    border-radius: 6px;
+    color: white;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.btn-red:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.searchAppWrap {
+    margin-left: 30px;
+    background: #d32500;
+    box-shadow: 0 2px 0 #b30e03;
+    border-radius: 6px;
+    color: white;
+    padding: 8px 10px;
+}
+
+.searchAppInput::-webkit-input-placeholder {
+    color: rgba(200, 0, 0, 0.66);
+    font-style: italic;
+}
+
+.searchAppInput:-moz-placeholder { /* Firefox 18- */
+    color: rgba(200, 0, 0, 0.66);
+    font-style: italic;
+}
+
+.searchAppInput::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(200, 0, 0, 0.66);
+    font-style: italic;
+}
+
+.searchAppInput:-ms-input-placeholder {
+    color: rgba(200, 0, 0, 0.66);
+    font-style: italic;
+}
+
+.searchAppInput {
+    border-radius: 5px;
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    color: #d32500;
+}
+
+.btn-red-inner {
+    background: #d32500;
+    color: white;
+    font-size: 14px;
+    padding: 4px 8px 0px 16px;
+}
+
+.btn-red-inner:hover {
+    color: white;
+}
+
+.grayIcons {
+    background: #f7f7f7;
+    height: 80px;
+    padding-top: 15px;
+}
+.quotesWrapper{
+    padding: 20px 50px;
+    text-align: center;
+    background: transparent;
+}
