@@ -841,7 +841,7 @@ h3.footerTitle {
 
 .featuresWrap {
     background: #ad2126;
-    padding: 20px 20px 50px;
+    padding: 0 20px 50px;
 }
 
 .featureDetailList {
@@ -875,7 +875,8 @@ h3.footerTitle {
     font-size: 28px;
     color: white;
 }
-.featurette-heading .text-muted{
+
+.featurette-heading .text-muted {
     color: #d0d0d0;
 }
 
@@ -975,12 +976,3 @@ h3.footerTitle {
     background: transparent;
 }
 
-.AppStoreSearch input {
-    padding: 10px 20px;
-    font-size: 18px;
-}
-
-.AppStoreSearch .input-group-addon{
-    font-size: 20px;
-    cursor: pointer;
-}
