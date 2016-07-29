@@ -836,7 +836,16 @@ h3.footerTitle {
 .marketing .deviceBanner {
     /*background: #f7f7f7;*/
     text-align: center;
-    padding-top: 50px;
+}
+.deviceBannerGray{
+    background: #f7f7f7;
+}
+.backgroundStrapWhite{
+    background: white;
+    height: 80px;
+}
+.pullUpForBG{
+    margin-top: -60px;
 }
 
 .featuresWrap {
@@ -882,8 +891,8 @@ h3.footerTitle {
 .backgroundStrap {
     background: #ad2126;
     width: 100%;
-    height: 100px;
-    margin-top: -100px;
+    height: 60px;
+    margin-top: -60px;
 }
 
 .btn-red {
