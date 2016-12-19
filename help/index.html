@@ -54,491 +54,455 @@
 <!-- Carousel
 ================================================== -->
 <style>
-    #submenu a{
+    #submenu a {
         font-size: 12px;
         padding: 5px 5px 5px 15px;
     }
-    h4{
+
+    h4 {
         font-size: 20px;
         color: black;
         padding: 15px 1px 1px;
     }
+    .font-red{
+        color: blue;
+    }
 </style>
 <div class="container" id="help">
+    <div class="page-header">
+        <div class="help">
+            <h1 class="jumbo center">Help and FAQ</h1>
+        </div>
+    </div>
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
             <div class="sideNav">
-                <ul class="nav" role="menu" aria-labelledby="btn-1">
-                    <h4>General</h4>
-                    <li><a href="#heading1">
-                        Does my app have to be in the Google Play store to be analyzed by NimbleDroid?
-                    </a></li>
-                    <li><a href="#heading2">
-                        Can I still profile my app if it requires a user login to access its features?
-                    </a></li>
-                    <li><a href="#heading3">
-                        I develop multiple applications, can I use the same account on NimbleDroid to profile them?
-                    </a></li>
-                    <li><a href="#heading4">
-                        What kind of improvement can I expect after implementing NimbleDroid’s enhancements?
-                    </a></li>
-                    <li><a href="#heading5">
-                        What kind of apps (Games, Productivity, Social) does NimbleDroid work for?
-                    </a></li>
-                    <li><a href="#heading6">
-                        I use a third-party framework or app builder, can I still use NimbleDroid?
-                    </a></li>
-                    <h4>Profiling</h4>
-                    <li><a href="#heading7">
-                        What version(s) of Android does NimbleDroid profile with?
-                    </a></li>
-                    <li><a href="#heading8">
-                        What device(s) does NimbleDroid profile with?
-                    </a></li>
-                    <li><a href="#heading9">
-                        How and when does NimbleDroid change or add versions of Android for profiling?
-                    </a></li>
-                    <li><a href="#heading10">
-                        What kind of internet connection does NimbleDroid provide for apps being profiled?
-                    </a></li>
-                    <li><a href="#heading11">
-                        How does NimbleDroid know that my app finishes startup?
-                    </a></li>
-                    <li><a href="#heading12">
-                        What exactly is “Cold Start?”
-                    </a></li>
-                    <li><a href="#heading13">
-                        What exactly is a “hung method?”
-                    </a></li>
-                    <li><a href="#heading14">
-                        What exactly is a “hot method?”
-                    </a></li>
-                    <li><a href="#heading15">
-                        How is NimbleDroid different from Android’s profiling tools?
-                    </a></li>
-                    <h4>Automatic Optimization</h4>
-                    <li><a href="#heading16">
-                        What does NimbleDroid do when it automatically optimizes my apk?
-                    </a></li>
-                    <li><a href="#heading17">
-                        Can I submit my app to the Google Play after it’s been auto-optimized?
-                    </a></li>
-                    <h4>Workflow and Integrations</h4>
-                    <li><a href="#heading18">
-                        What are my options for integrating NimbleDroid with my development workflow?
-                    </a></li>
-                    <h4>Security</h4>
-                    <li><a href="#heading19">
-                        Physical security
-                    </a></li>
-                    <li><a href="#heading20">
-                        System and operational security
-                    </a></li>
-                    <li><a href="#heading21">
-                        File systems and communication
-                    </a></li>
-                    <li><a href="#heading22">
-                        Credit card safety
-                    </a></li>
-                    <li><a href="#heading23">
-                        Security concerns
-                    </a></li>
+                <ul aria-labelledby="btn-1" class="nav" id="scrollSpySideNav" role="menu">
+                    <li>
+                        <h4>
+                            <a href="#general">General</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="#profiling">Profiling</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="#automatic">Automatic Optimization</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="#workflow">Workflow and Integrations</a>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>
+                            <a href="#security">Security</a>
+                        </h4>
+                    </li>
+                </ul>
+                <ul class="helperMenuOptions">
+                    <li>
+                        <a class="small" onclick="$('.collapse').collapse('show')">Expand all Answers</a>
+                    </li>
+                    <li>
+                        <a class="small" onclick="$('.collapse').collapse('hide')">Collapse all Answers</a>
+                    </li>
                 </ul>
             </div>
         </div>
-        <div class="col-md-8">
-            <div class="page-header">
-                <div class="help">
-                    <h1 class="jumbo center">Help</h1>
-                    <div class="p">
-                        See our FAQ below. If you have a question that isn't addressed there, please email <a href="mailto:support@nimbledroid.com">support@nimbledroid.com</a>.
-                    </div>
+        <div class="col-md-9 gray-help-bg">
+            <div class="help">
+                <div class="p">
+                    See our FAQ below. If you have a question that isn't addressed there, please email
+                    <a href="mailto:support@nimbledroid.com">support@nimbledroid.com</a>.
                 </div>
-                <h2 class="jumbo center">FAQ
-                    <a class="small" onclick="$('.collapse').collapse('show')">expand all</a>
-                </h2>
-                <h3>General</h3>
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading1">
-                            <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
-                                    Does my app have to be in the Google Play store to be analyzed by NimbleDroid?
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
-                            <div class="panel-body">
-                                No. We are very close to allowing users to directly upload APKs for analysis. This is a primary goal of ours, to allow developers to integrate NimbleDroid into their build process.
-                            </div>
-                        </div>
+            </div>
+            <h3 id="general">General</h3>
+            <div aria-multiselectable="true" class="panel-group" id="accordion" role="tablist">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading1" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse1" aria-expanded="true" data-toggle="collapse" href="#collapse1" role="button">
+                                Does my app have to be in the Google Play store to be analyzed by NimbleDroid?
+                            </a>
+                        </h4>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading2">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                    Can I still profile my app if it requires a user login to access its features?
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
-                            <div class="panel-body">
-                                Yes, this feature will be added together with the upload APK feature. When uploading your apk file, click the "My app requires login with username and password" and fill in the requested information. NimbleDroid will automatically crawl your app's UI and fill the login information you provided at the right places to login. In the unlikely case, NimbleDroid may be unable to auto-login your app. Please don’t hesitate to contact us and we’ll figure out a fix.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading3">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                                    I develop multiple applications, can I use the same account on NimbleDroid to profile them?
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
-                            <div class="panel-body">
-                                Yes, absolutely. We keep track of each app by its package name, which is unique across apps.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading4">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                                    What kind of improvement can I expect after implementing NimbleDroid’s enhancements?
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
-                            <div class="panel-body">
-                                It depends. If your app is not well optimized to start with and NimbleDroid has detected many performance issues, you can get significant speedup, in some cases, more than 40%.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading5">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                                    What kind of apps (Games, Productivity, Social) does NimbleDroid work for?
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
-                            <div class="panel-body">
-                                Our current product is designed to profile non-game apps.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading6">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                                    I use a third-party framework or app builder, can I still use NimbleDroid?
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
-                            <div class="panel-body">
-                                Yes, NimbleDroid can still detect performance issues in your app. One caveat is that you may not be able to optimize away these issues if they are problems of the app builder you use.
-                            </div>
+                    <div aria-labelledby="heading1" class="panel-collapse collapse in" id="collapse1" role="tabpanel">
+                        <div class="panel-body">
+                            No. We are very close to allowing users to directly upload APKs for analysis. This is a primary goal of ours, to allow developers to integrate NimbleDroid into their build process.
                         </div>
                     </div>
                 </div>
-
-                <h3>Profiling</h3>
-                <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading7">
-                            <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse7" aria-expanded="true" aria-controls="collapse7">
-                                    What version(s) of Android does NimbleDroid profile with?
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
-                            <div class="panel-body">
-                                We support Android KitKat for now which is installed on over 39% of the Android devices. We plan to add more versions later. However, you don’t really have to care about the specific versions of Android we use that much because the performance issues we detect generally affect a large percentage of your users and exist for other versions of Android.
-                            </div>
-                        </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading2" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse2" aria-expanded="false" class="collapsed" data-toggle="collapse" href="#collapse2" role="button">
+                                Can I still profile my app if it requires a user login to access its features?
+                            </a>
+                        </h4>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading8">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                                    What device(s) does NimbleDroid profile with?
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
-                            <div class="panel-body">
-                                We currently use a Nexus 5 for profiling, and plan to add more devices later. However, you don’t really have to care that much about the device we use because the performance issues we detect generally exist for other devices.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading9">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                                    How and when does NimbleDroid change or add versions of Android for profiling?
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
-                            <div class="panel-body">
-                                It is straightforward to support more versions of Android. It just hasn’t reached our top priority yet.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading10">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
-                                    What kind of internet connection does NimbleDroid provide for apps being profiled?
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
-                            <div class="panel-body">
-                                We support wifi for now. We plan to add more network conditions later.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading11">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
-                                    How does NimbleDroid know that my app finishes startup?
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
-                            <div class="panel-body">
-                                <p>We use a heuristic to tell when an app finishes startup by detecting when (1) the main Activity has been displayed and (2) things like animated progress bars in the main Activity have stopped. Based on our experiments, this heuristic works in most cases.</p>
-                                <p>To identify the main Activity, we run the app at least twice, wait for up to 30 seconds, and check the last Activity displayed. If this is consistent across multiple startups, it is designated the main Activity. Once identified, the app is started and measured multiple times, and the average is reported.</p>
-                                <p>To allow even more precise results, we plan to add a feature to let you use logging to specify exactly when startup is done.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading12">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse12" aria-expanded="false" aria-controls="collapse12">
-                                    What exactly is “Cold Start?”
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
-                            <div class="panel-body">
-                                <p>There are three different kinds of app startups:</p>
-                                <ul>
-                                    <li>First start, which occurs when a user runs your app for the first time after a fresh installation of your app. During the first start, Android or your app does some extra work, such as initializing SQLite.</li>
-                                    <li>Cold start, which occurs when a user runs your app after she hasn’t used your app for a while. If an app is not used for a while, Android typically removes the app from the cache to save memory. Cold start is generally the most typical case, and affects UX the most.</li>
-                                    <li>Warm start, which occurs when a user switches away from app then switch back. Your app is still in Android’s cache, so warm start is typically fast.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading13">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse13" aria-expanded="false" aria-controls="collapse13">
-                                    What exactly is a “hung method?”
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
-                            <div class="panel-body">
-                                <p>
-                                    A hung method is one that runs/blocks the UI thread for longer than 32ms. In Android, the UI thread is the main thread of execution for your app, and the only thread that can update UI. If a method call runs for too long in the UI thread, your app won't be responsive to any user action during the call.  In addition, users will notice a "lag"/"gap"/"stutter"/"choppiness"/"jitter" — to maintain a 60 frames-per-second refresh rate supported by today's most devices, your app must finish drawing each frame withing ~16ms.  We chose 32ms as the threshold for flagging a hung method because it corresponds to two dropped frames.
-                                    <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2826883/figure/F2/">On average, humans can detect lag as short as 22ms, and a fourth of the population can perceive lag between 2ms and 16ms</a>
-                                    Among the apps we analyzed, we found hung methods that run for over a second! A hung method may be caused by many reasons such as network I/O, expensive computation, and lock contention.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading14">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
-                                    What exactly is a “hot method?”
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
-                            <div class="panel-body">
-                                <p>
-                                    A hot method is one that consumes a large percentage of CPU time. It can steal CPU time from the UI thread or background thread that are doing work on behalf of the UI thread, therefore making your app less responsive.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading15">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapse15" aria-expanded="false" aria-controls="collapse15">
-                                    How is NimbleDroid different from Android’s profiling tools?
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
-                            <div class="panel-body">
-                                <p>
-                                    Unlike other profilers, NimbleDroid does automatic, in-depth performance diagnosis for you, including comparisons to other apps, version monitoring, auto-detection of performance issues, and sometimes auto-optimizations. NimbleDroid is also very easy to use -- simply upload your APK!
-                                </p>
-                            </div>
+                    <div aria-labelledby="heading2" class="panel-collapse collapse" id="collapse2" role="tabpanel">
+                        <div class="panel-body">
+                            Yes, this feature will be added together with the upload APK feature. When uploading your apk file, click the "My app requires login with username and password" and fill in the requested information. NimbleDroid will automatically crawl your app's UI and fill the login information you provided at the right places to login. In the unlikely case, NimbleDroid may be unable to auto-login your app. Please don’t hesitate to contact us and we’ll figure out a fix.
                         </div>
                     </div>
                 </div>
-
-
-                <h3>Automatic Optimization (This feature is coming soon)</h3>
-                <div class="panel-group" id="accordion3" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading16">
-                            <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapse16" aria-expanded="true" aria-controls="collapse16">
-                                    What does NimbleDroid do when it automatically optimizes my apk?
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading16">
-                            <div class="panel-body">
-                                We’ll unpack your apk, patch the DEX code to fix the performance issues we know how to fix, and repack everything into a new apk file for you to download.
-                            </div>
-                        </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading3" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse3" aria-expanded="false" class="collapsed" data-toggle="collapse" href="#collapse3" role="button">
+                                I develop multiple applications, can I use the same account on NimbleDroid to profile them?
+                            </a>
+                        </h4>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading17">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion3" href="#collapse17" aria-expanded="false" aria-controls="collapse17">
-
-                                    Can I submit my app to the Google Play after it’s been auto-optimized?
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading17">
-                            <div class="panel-body">
-                                Yes, absolutely! You’ll need to sign the apk (as usual) before submitting to Google Play.
-                            </div>
+                    <div aria-labelledby="heading3" class="panel-collapse collapse" id="collapse3" role="tabpanel">
+                        <div class="panel-body">
+                            Yes, absolutely. We keep track of each app by its package name, which is unique across apps.
                         </div>
                     </div>
                 </div>
-
-                <h3>Workflow and Integrations</h3>
-                <div class="panel-group" id="accordion4" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading18">
-                            <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion4" href="#collapse18" aria-expanded="true" aria-controls="collapse18">
-                                    What are my options for integrating NimbleDroid with my development workflow?
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading18">
-                            <div class="panel-body">
-                                <p>
-                                    We offer an
-                                    <a href="https://github.com/NimbleDroid/gradle-profiler">open-source</a>
-                                    Gradle plugin which allows you to upload builds automatically from your CI server.  Check out our
-                                    <a href="/help/ci">CI integration help page</a>
-                                    for instructions on setting it up.
-                                </p>
-                                <p>
-                                    We will also offer a REST API in future offerings,
-                                    <a href="mailto:support@nimbledroid.com">Contact us</a>
-                                    if you want to know more.
-                                </p>
-                            </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading4" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse4" aria-expanded="false" class="collapsed" data-toggle="collapse" href="#collapse4" role="button">
+                                What kind of improvement can I expect after implementing NimbleDroid’s enhancements?
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading4" class="panel-collapse collapse" id="collapse4" role="tabpanel">
+                        <div class="panel-body">
+                            It depends. If your app is not well optimized to start with and NimbleDroid has detected many performance issues, you can get significant speedup, in some cases, more than 40%.
                         </div>
                     </div>
                 </div>
-
-                <h3>Security</h3>
-                <p>We understand the security of your company's (pre-release) apps is extremely important. This page describes select measures we employ to ensure your apps are safe. If you have any questions, please don't hesitate to contact us.</p>
-                <div class="panel-group" id="accordion5" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading19">
-                            <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion5" href="#collapse19" aria-expanded="true" aria-controls="collapse19">
-                                    Physical security
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse19" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading19">
-                            <div class="panel-body">
-                                <ul>
-                                    <li>Our website is hosted in ISO 27001 and FISMA certified data centers managed by Amazon Web Services</li>
-                                    <li>Physical access to data centers is strictly controlled both at the perimeter and at building ingress points</li>
-                                    <li>Data centers employ onsite security staff, video surveillance, and intrusion detection systems</li>
-                                    <li>Authorized staff must pass two-factor authentication a minimum of two times to access data center floors</li>
-                                    <li>Data centers are housed in nondescript facilities</li>
-                                    <li>Physical security verified by third-party auditorsFor more information see http://aws.amazon.com/security/</li>
-                                </ul>
-                            </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading5" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse5" aria-expanded="false" class="collapsed" data-toggle="collapse" href="#collapse5" role="button">
+                                What kind of apps (Games, Productivity, Social) does NimbleDroid work for?
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading5" class="panel-collapse collapse" id="collapse5" role="tabpanel">
+                        <div class="panel-body">
+                            Our current product is designed to profile non-game apps.
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading20">
-                            <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion5" href="#collapse20" aria-expanded="true" aria-controls="collapse20">
-                                    System and operational security
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse20" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading20">
-                            <div class="panel-body">
-                                <ul>
-                                    <li>Security policies and procedures, regularly reviewed as part of the Amazon Web Services SSAE 16 Type II audit process</li>
-                                    <li>Systems access logged and tracked for auditing purposes</li>
-                                    <li>Regular system patching processes to provide ongoing protection from exploits</li>
-                                    <li>Firewall to prohibit unauthorized system access</li>
-                                    <li>Intrusion detection systems to provide an additional layer of protection against unauthorized system access</li>
-                                </ul>
-                            </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading6" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse6" aria-expanded="false" class="collapsed" data-toggle="collapse" href="#collapse6" role="button">
+                                I use a third-party framework or app builder, can I still use NimbleDroid?
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading6" class="panel-collapse collapse" id="collapse6" role="tabpanel">
+                        <div class="panel-body">
+                            Yes, NimbleDroid can still detect performance issues in your app. One caveat is that you may not be able to optimize away these issues if they are problems of the app builder you use.
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading21">
-                            <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion5" href="#collapse21" aria-expanded="true" aria-controls="collapse21">
-                                    File systems and communication
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse21" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading21">
-                            <div class="panel-body">
-                                <p>All access to the NimbleDroid website is restricted to HTTPS encrypted connections. All apps are uploaded through HTTPS encrypted connections so that no one can eavesdrop on the network sockets.  Once uploaded, apps are temporarily stored within the Amazon Simple Storage Service, part of the Amazon Web Services and subject to the same high security standards.  Apps are deleted as soon as performance analysis succeeds to provide extremely high assurance for your company’s (pre-release) apps.</p>
-                                <p>User passwords are secured with BCrypt (more specifically, 10 rounds of salted and peppered BCrypt). They are never stored in the database in plaintext and are not readable by staff. Passwords do provide access to the NimbleDroid website, however, and it is the responsibility of the end user to protect his password with care. NimbleDroid also offers and recommends optional OAuth2 login integration with Google for users who would like additional authentication security and convenience.</p>
-                                <p>NimbleDroid never collects or stores passwords for external applications like Google and Slack. Integration with third-party apps is done via either OAuth or API keys.</p>
-                            </div>
+                </div>
+            </div>
+            <h3 id="profiling">Profiling</h3>
+            <div aria-multiselectable="true" class="panel-group" id="accordion2" role="tablist">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading7" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse7" aria-expanded="true" data-toggle="collapse" href="#collapse7" role="button">
+                                What version(s) of Android does NimbleDroid profile with?
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading7" class="panel-collapse collapse" id="collapse7" role="tabpanel">
+                        <div class="panel-body">
+                            We support Android KitKat for now which is installed on over 39% of the Android devices. We plan to add more versions later. However, you don’t really have to care about the specific versions of Android we use that much because the performance issues we detect generally affect a large percentage of your users and exist for other versions of Android.
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading22">
-                            <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion5" href="#collapse22" aria-expanded="true" aria-controls="collapse22">
-                                    Credit card safety
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapse22" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading22">
-                            <div class="panel-body">
-                                <p>When you purchase a paid NimbleDroid subscription, your credit card data is not transmitted through nor stored on our systems. Instead, we depend on Stripe, a company dedicated to this task. Stripe is certified to PCI Service Provider Level 1, the most stringent level of certification available. <a href="https://stripe.com/help/security">Stripe's security information</a> is available online.</p>
-                            </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading8" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse8" aria-expanded="false" class="collapsed" data-toggle="collapse" href="#collapse8" role="button">
+                                What device(s) does NimbleDroid profile with?
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading8" class="panel-collapse collapse" id="collapse8" role="tabpanel">
+                        <div class="panel-body">
+                            We currently use a Nexus 5 for profiling, and plan to add more devices later. However, you don’t really have to care that much about the device we use because the performance issues we detect generally exist for other devices.
                         </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="heading23">
-                            <h4 class="panel-title">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion5" href="#collapse23" aria-expanded="true" aria-controls="collapse23">
-                                    Security concerns
-                                </a>
-                            </h4>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading9" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse9" aria-expanded="false" class="collapsed" data-toggle="collapse" href="#collapse9" role="button">
+                                How and when does NimbleDroid change or add versions of Android for profiling?
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading9" class="panel-collapse collapse" id="collapse9" role="tabpanel">
+                        <div class="panel-body">
+                            It is straightforward to support more versions of Android. It just hasn’t reached our top priority yet.
                         </div>
-                        <div id="collapse23" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading23">
-                            <div class="panel-body">
-                                <p>Your input and feedback on our security as well as responsible disclosure is always appreciated. If you have a security concern, please email us at <a href="mailto:contact@nimbledroid.com">contact@nimbledroid.com</a>.</p>
-                            </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading10" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse10" aria-expanded="false" class="collapsed" data-toggle="collapse" href="#collapse10" role="button">
+                                What kind of internet connection does NimbleDroid provide for apps being profiled?
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading10" class="panel-collapse collapse" id="collapse10" role="tabpanel">
+                        <div class="panel-body">
+                            We support wifi for now. We plan to add more network conditions later.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading11" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse11" aria-expanded="false" class="collapsed" data-toggle="collapse" href="#collapse11" role="button">
+                                How does NimbleDroid know that my app finishes startup?
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading11" class="panel-collapse collapse" id="collapse11" role="tabpanel">
+                        <div class="panel-body">
+                            <p>We use a heuristic to tell when an app finishes startup by detecting when (1) the main Activity has been displayed and (2) things like animated progress bars in the main Activity have stopped. Based on our experiments, this heuristic works in most cases.</p>
+                            <p>To identify the main Activity, we run the app at least twice, wait for up to 30 seconds, and check the last Activity displayed. If this is consistent across multiple startups, it is designated the main Activity. Once identified, the app is started and measured multiple times, and the average is reported.</p>
+                            <p>To allow even more precise results, we plan to add a feature to let you use logging to specify exactly when startup is done.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading12" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse12" aria-expanded="false" class="collapsed" data-toggle="collapse" href="#collapse12" role="button">
+                                What exactly is “Cold Start?”
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading12" class="panel-collapse collapse" id="collapse12" role="tabpanel">
+                        <div class="panel-body">
+                            <p>There are three different kinds of app startups:</p>
+                            <ul>
+                                <li>First start, which occurs when a user runs your app for the first time after a fresh installation of your app. During the first start, Android or your app does some extra work, such as initializing SQLite.</li>
+                                <li>Cold start, which occurs when a user runs your app after she hasn’t used your app for a while. If an app is not used for a while, Android typically removes the app from the cache to save memory. Cold start is generally the most typical case, and affects UX the most.</li>
+                                <li>Warm start, which occurs when a user switches away from app then switch back. Your app is still in Android’s cache, so warm start is typically fast.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading13" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse13" aria-expanded="false" class="collapsed" data-toggle="collapse" href="#collapse13" role="button">
+                                What exactly is a “hung method?”
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading13" class="panel-collapse collapse" id="collapse13" role="tabpanel">
+                        <div class="panel-body">
+                            <p>
+                                A hung method is one that runs/blocks the UI thread for longer than 32ms. In Android, the UI thread is the main thread of execution for your app, and the only thread that can update UI. If a method call runs for too long in the UI thread, your app won't be responsive to any user action during the call.  In addition, users will notice a "lag"/"gap"/"stutter"/"choppiness"/"jitter" — to maintain a 60 frames-per-second refresh rate supported by today's most devices, your app must finish drawing each frame withing ~16ms.  We chose 32ms as the threshold for flagging a hung method because it corresponds to two dropped frames.
+                                <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2826883/figure/F2/">On average, humans can detect lag as short as 22ms, and a fourth of the population can perceive lag between 2ms and 16ms</a>
+                                Among the apps we analyzed, we found hung methods that run for over a second! A hung method may be caused by many reasons such as network I/O, expensive computation, and lock contention.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading14" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse14" aria-expanded="false" class="collapsed" data-toggle="collapse" href="#collapse14" role="button">
+                                What exactly is a “hot method?”
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading14" class="panel-collapse collapse" id="collapse14" role="tabpanel">
+                        <div class="panel-body">
+                            <p>
+                                A hot method is one that consumes a large percentage of CPU time. It can steal CPU time from the UI thread or background thread that are doing work on behalf of the UI thread, therefore making your app less responsive.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading15" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse15" aria-expanded="false" class="collapsed" data-toggle="collapse" href="#collapse15" role="button">
+                                How is NimbleDroid different from Android’s profiling tools?
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading15" class="panel-collapse collapse" id="collapse15" role="tabpanel">
+                        <div class="panel-body">
+                            <p>
+                                Unlike other profilers, NimbleDroid does automatic, in-depth performance diagnosis for you, including comparisons to other apps, version monitoring, auto-detection of performance issues, and sometimes auto-optimizations. NimbleDroid is also very easy to use -- simply upload your APK!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 id="automatic">Automatic Optimization (This feature is coming soon)</h3>
+            <div aria-multiselectable="true" class="panel-group" id="accordion3" role="tablist">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading16" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse16" aria-expanded="true" data-toggle="collapse" href="#collapse16" role="button">
+                                What does NimbleDroid do when it automatically optimizes my apk?
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading16" class="panel-collapse collapse" id="collapse16" role="tabpanel">
+                        <div class="panel-body">
+                            We’ll unpack your apk, patch the DEX code to fix the performance issues we know how to fix, and repack everything into a new apk file for you to download.
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading17" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse17" aria-expanded="false" class="collapsed" data-toggle="collapse" href="#collapse17" role="button">
+                                Can I submit my app to the Google Play after it’s been auto-optimized?
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading17" class="panel-collapse collapse" id="collapse17" role="tabpanel">
+                        <div class="panel-body">
+                            Yes, absolutely! You’ll need to sign the apk (as usual) before submitting to Google Play.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 id="workflow">Workflow and Integrations</h3>
+            <div aria-multiselectable="true" class="panel-group" id="accordion4" role="tablist">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading18" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse18" aria-expanded="true" data-toggle="collapse" href="#collapse18" role="button">
+                                What are my options for integrating NimbleDroid with my development workflow?
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading18" class="panel-collapse collapse" id="collapse18" role="tabpanel">
+                        <div class="panel-body">
+                            <p>
+                                We offer an
+                                <a href="https://github.com/NimbleDroid/gradle-profiler">open-source</a>
+                                Gradle plugin which allows you to upload builds automatically from your CI server.  Check out our
+                                <a href="/help/ci">CI integration help page</a>
+                                for instructions on setting it up.
+                            </p>
+                            <p>
+                                We will also offer a REST API in future offerings,
+                                <a href="mailto:support@nimbledroid.com">Contact us</a>
+                                if you want to know more.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 id="security">Security</h3>
+            <p>We understand the security of your company's (pre-release) apps is extremely important. This page describes select measures we employ to ensure your apps are safe. If you have any questions, please don't hesitate to contact us.</p>
+            <div aria-multiselectable="true" class="panel-group" id="accordion5" role="tablist">
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading19" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse19" aria-expanded="true" data-toggle="collapse" href="#collapse19" role="button">
+                                Physical security
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading19" class="panel-collapse collapse" id="collapse19" role="tabpanel">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Our website is hosted in ISO 27001 and FISMA certified data centers managed by Amazon Web Services</li>
+                                <li>Physical access to data centers is strictly controlled both at the perimeter and at building ingress points</li>
+                                <li>Data centers employ onsite security staff, video surveillance, and intrusion detection systems</li>
+                                <li>Authorized staff must pass two-factor authentication a minimum of two times to access data center floors</li>
+                                <li>Data centers are housed in nondescript facilities</li>
+                                <li>Physical security verified by third-party auditorsFor more information see http://aws.amazon.com/security/</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading20" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse20" aria-expanded="true" data-toggle="collapse" href="#collapse20" role="button">
+                                System and operational security
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading20" class="panel-collapse collapse" id="collapse20" role="tabpanel">
+                        <div class="panel-body">
+                            <ul>
+                                <li>Security policies and procedures, regularly reviewed as part of the Amazon Web Services SSAE 16 Type II audit process</li>
+                                <li>Systems access logged and tracked for auditing purposes</li>
+                                <li>Regular system patching processes to provide ongoing protection from exploits</li>
+                                <li>Firewall to prohibit unauthorized system access</li>
+                                <li>Intrusion detection systems to provide an additional layer of protection against unauthorized system access</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading21" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse21" aria-expanded="true" data-toggle="collapse" href="#collapse21" role="button">
+                                File systems and communication
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading21" class="panel-collapse collapse" id="collapse21" role="tabpanel">
+                        <div class="panel-body">
+                            <p>All access to the NimbleDroid website is restricted to HTTPS encrypted connections. All apps are uploaded through HTTPS encrypted connections so that no one can eavesdrop on the network sockets.  Once uploaded, apps are temporarily stored within the Amazon Simple Storage Service, part of the Amazon Web Services and subject to the same high security standards.  Apps are deleted as soon as performance analysis succeeds to provide extremely high assurance for your company’s (pre-release) apps.</p>
+                            <p>User passwords are secured with BCrypt (more specifically, 10 rounds of salted and peppered BCrypt). They are never stored in the database in plaintext and are not readable by staff. Passwords do provide access to the NimbleDroid website, however, and it is the responsibility of the end user to protect his password with care. NimbleDroid also offers and recommends optional OAuth2 login integration with Google for users who would like additional authentication security and convenience.</p>
+                            <p>NimbleDroid never collects or stores passwords for external applications like Google and Slack. Integration with third-party apps is done via either OAuth or API keys.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading22" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse22" aria-expanded="true" data-toggle="collapse" href="#collapse22" role="button">
+                                Credit card safety
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading22" class="panel-collapse collapse" id="collapse22" role="tabpanel">
+                        <div class="panel-body">
+                            <p>
+                                When you purchase a paid NimbleDroid subscription, your credit card data is not transmitted through nor stored on our systems. Instead, we depend on Stripe, a company dedicated to this task. Stripe is certified to PCI Service Provider Level 1, the most stringent level of certification available.
+                                <a href="https://stripe.com/help/security">Stripe's security information</a>
+                                is available online.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" id="heading23" role="tab">
+                        <h4 class="panel-title">
+                            <a aria-controls="collapse23" aria-expanded="true" data-toggle="collapse" href="#collapse23" role="button">
+                                Security concerns
+                            </a>
+                        </h4>
+                    </div>
+                    <div aria-labelledby="heading23" class="panel-collapse collapse" id="collapse23" role="tabpanel">
+                        <div class="panel-body">
+                            <p>
+                                Your input and feedback on our security as well as responsible disclosure is always appreciated. If you have a security concern, please email us at
+                                <a href="mailto:contact@nimbledroid.com">contact@nimbledroid.com</a>.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -625,305 +589,41 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="vendors/scrollreveal.js"></script>
 <script>
-    $(document).ready(function () {
-        $('#myCarousel').carousel({
-            interval: 5000
-        })
-        $('#CarouselQuotes').carousel({
-            interval: 5000
-        })
-
-//        hide(1);
-        hide(2);
-        hide(3);
-//        fadeIn(1);
-
-        // Changing the defaults
-        window.sr = ScrollReveal({ reset: true });
-
-        // Customizing a reveal set
-//    sr.reveal('.row', { duration: 800 });
-        sr.reveal('.revDown', { duration: 800, delay: 60, origin: 'bottom' });
-        sr.reveal('.revLeft', { duration: 800, delay: 60, origin: 'left' });
-        sr.reveal('.revRight', { duration: 800, delay: 60, origin: 'right' });
-        sr.reveal('.revUp', { duration: 800, delay: 60, origin: 'top' });
-
-        $('#myCarousel').on('slide.bs.carousel', function (e) {
-            if ($(e.relatedTarget).hasClass('sec1')) {
-                fadeIn(1);
-                hide(2);
-                hide(3);
-
-            } else if ($(e.relatedTarget).hasClass('sec2')) {
-                fadeIn(2);
-                hide(1);
-                hide(3);
-
-            } else if ($(e.relatedTarget).hasClass('sec3')) {
-                fadeIn(3);
-                hide(1);
-                hide(2);
-
-            }
-        })
+    $(document).on('scroll', function () {
+        var scrollTop = window.pageYOffset + 20;
+        if (scrollTop > 258) {
+            $('.sideNav').css('position', 'fixed').css('top', '100px');
+        }
+        else if (scrollTop <= 258) {
+            $('.sideNav').css('position', 'relative');
+            highLightNav(0);
+        }
+        if(scrollTop>=$('#general').offset().top){
+            highLightNav(1);
+        }
+        if(scrollTop>=$('#profiling').offset().top){
+            highLightNav(2);
+        }
+        if(scrollTop>=$('#automatic').offset().top){
+            highLightNav(3);
+        }
+        if(scrollTop>=$('#workflow').offset().top){
+            highLightNav(4);
+        }
+        if(scrollTop>=$('#security').offset().top){
+            highLightNav(5);
+        }
     })
-
-    function fadeOut(num) {
-        switch (num) {
-            case 3:
-            {
-                setTimeout(function () {
-                    $('#s3e0').removeClass('fadeInLeft').addClass('animated fadeOutLeft')
-                }, 1);
-                setTimeout(function () {
-                    $('#s3e1').removeClass('fadeInRight').addClass('animated fadeOutRight')
-                }, 1);
-                setTimeout(function () {
-                    $('#s3e2').removeClass('fadeInRight').addClass('animated fadeOutRight')
-                }, 1);
-                setTimeout(function () {
-                    $('#s3e3').removeClass('fadeInRight').addClass('animated fadeOutRight')
-                }, 1);
-                setTimeout(function () {
-                    $('#s3e4').removeClass('fadeInRight').addClass('animated fadeOutRight')
-                }, 1);
-                setTimeout(function () {
-                    $('#s3e5').removeClass('fadeInRight').addClass('animated fadeOutRight')
-                }, 1);
-                setTimeout(function () {
-                    $('#s3e6').removeClass('fadeInRight').addClass('animated fadeOutRight')
-                }, 1);
-                setTimeout(function () {
-                    $('#s3e7').removeClass('fadeInRight').addClass('animated fadeOutRight')
-                }, 1);
-                setTimeout(function () {
-                    $('#s3e8').removeClass('fadeInRight').addClass('animated fadeOutRight')
-                }, 1);
-            }
-                break;
-            case 1:
-            {
-                setTimeout(function () {
-                    $('#s1l1').removeClass('fadeInLeft').addClass('animated fadeOutLeft')
-                }, 1);
-                setTimeout(function () {
-                    $('#s1l2').removeClass('fadeInLeft').addClass('animated fadeOutLeft')
-                }, 1);
-                setTimeout(function () {
-                    $('#s1l3').removeClass('fadeInLeft').addClass('animated fadeOutLeft')
-                }, 1);
-                setTimeout(function () {
-                    $('#s1l4').removeClass('fadeInLeft').addClass('animated fadeOutLeft')
-                }, 1);
-                setTimeout(function () {
-                    $('#s1bt1').removeClass('fadeInLeft').addClass('animated fadeOutLeft')
-                }, 1);
-                setTimeout(function () {
-                    $('#s1i1').removeClass('fadeInRight').addClass('animated fadeOutRight')
-                }, 1);
-            }
-                break;
-            case 2:
-            {
-                setTimeout(function () {
-                    $('#s2e1').removeClass('fadeInDown').addClass('animated fadeOutDown')
-                }, 1);
-                setTimeout(function () {
-                    $('#s2e2').removeClass('fadeInDown').addClass('animated fadeOutDown')
-                }, 1);
-                setTimeout(function () {
-                    $('#s2e3').removeClass('fadeInDown').addClass('animated fadeOutDown')
-                }, 1);
-                setTimeout(function () {
-                    $('#s2e4').removeClass('fadeInDown').addClass('animated fadeOutDown')
-                }, 1);
-                setTimeout(function () {
-                    $('#s2e5').removeClass('fadeInDown').addClass('animated fadeOutDown')
-                }, 1);
-                setTimeout(function () {
-                    $('#s2e6').removeClass('fadeInDown').addClass('animated fadeOutDown')
-                }, 1);
-                setTimeout(function () {
-                    $('#s2e7').removeClass('fadeInDown').addClass('animated fadeOutDown')
-                }, 1);
-                setTimeout(function () {
-                    $('#s2e8').removeClass('fadeInDown').addClass('animated fadeOutDown')
-                }, 1);
-            }
-                break;
+    function highLightNav(num){
+        $('#scrollSpySideNav a').removeClass('font-red');
+        if(num>0 && num<6){
+            $($('#scrollSpySideNav a')[num-1]).addClass('font-red')
         }
     }
-    function fadeIn(num) {
-        switch (num) {
-            case 1:
-            {
-                setTimeout(function () {
-                    $('#s1l1').removeClass('fadeOutDown').removeClass('fadeOutLeft').css('opacity', 1).addClass('animated fadeInLeft')
-                }, 1);
-                setTimeout(function () {
-                    $('#s1l2').removeClass('fadeOutDown').removeClass('fadeOutLeft').css('opacity', 1).addClass('animated fadeInLeft')
-                }, 300);
-                setTimeout(function () {
-                    $('#s1l3').removeClass('fadeOutDown').removeClass('fadeOutLeft').css('opacity', 1).addClass('animated fadeInLeft')
-                }, 500);
-                setTimeout(function () {
-                    $('#s1l4').removeClass('fadeOutDown').removeClass('fadeOutLeft').css('opacity', 1).addClass('animated fadeInLeft')
-                }, 700);
-                setTimeout(function () {
-                    $('#s1bt1').removeClass('fadeOutDown').removeClass('fadeOutLeft').css('opacity', 1).addClass('animated fadeInLeft')
-                }, 900);
-                setTimeout(function () {
-                    $('#s1i1').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
-                }, 500);
-            }
-                break;
-            case 2:
-            {
-                setTimeout(function () {
-                    $('#s2e1').removeClass('fadeOutDown').css('opacity', 1).addClass('animated fadeInDown')
-                }, 100);
-                setTimeout(function () {
-                    $('#s2e2').removeClass('fadeOutDown').css('opacity', 1).addClass('animated fadeInDown')
-                }, 200);
-                setTimeout(function () {
-                    $('#s2e3').removeClass('fadeOutDown').css('opacity', 1).addClass('animated fadeInDown')
-                }, 300);
-                setTimeout(function () {
-                    $('#s2e4').removeClass('fadeOutDown').css('opacity', 1).addClass('animated fadeInDown')
-                }, 400);
-                setTimeout(function () {
-                    $('#s2e5').removeClass('fadeOutDown').css('opacity', 1).addClass('animated fadeInDown')
-                }, 500);
-                setTimeout(function () {
-                    $('#s2e6').removeClass('fadeOutDown').css('opacity', 1).addClass('animated fadeInDown')
-                }, 600);
-                setTimeout(function () {
-                    $('#s2e7').removeClass('fadeOutDown').css('opacity', 1).addClass('animated fadeInDown')
-                }, 700);
-                setTimeout(function () {
-                    $('#s2e8').removeClass('fadeOutDown').css('opacity', 1).addClass('animated fadeInDown')
-                }, 800);
-            }
-                break;
-            case 3:
-            {
-                setTimeout(function () {
-                    $('#s3e0').removeClass('fadeOutDown').removeClass('fadeOutLeft').css('opacity', 1).addClass('animated fadeInLeft')
-                }, 100);
-                setTimeout(function () {
-                    $('#s3e1').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
-                }, 100);
-                setTimeout(function () {
-                    $('#s3e2').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
-                }, 200);
-                setTimeout(function () {
-                    $('#s3e3').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
-                }, 300);
-                setTimeout(function () {
-                    $('#s3e4').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
-                }, 400);
-                setTimeout(function () {
-                    $('#s3e5').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
-                }, 500);
-                setTimeout(function () {
-                    $('#s3e6').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
-                }, 600);
-                setTimeout(function () {
-                    $('#s3e7').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
-                }, 700);
-                setTimeout(function () {
-                    $('#s3e8').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight')
-                }, 800);
-            }
-                break;
-        }
-    }
-    function hide(num) {
-        switch (num) {
-            case 3:
-            {
-                setTimeout(function () {
-                    $('#s3e0').removeClass('fadeInLeft').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s3e1').removeClass('fadeInRight').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s3e2').removeClass('fadeInRight').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s3e3').removeClass('fadeInRight').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s3e4').removeClass('fadeInRight').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s3e5').removeClass('fadeInRight').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s3e6').removeClass('fadeInRight').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s3e7').removeClass('fadeInRight').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s3e8').removeClass('fadeInRight').css('opacity', '0')
-                }, 1);
-            }
-                break;
-            case 1:
-            {
-                setTimeout(function () {
-                    $('#s1l1').removeClass('fadeInLeft').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s1l2').removeClass('fadeInLeft').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s1l3').removeClass('fadeInLeft').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s1l4').removeClass('fadeInLeft').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s1bt1').removeClass('fadeInLeft').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s1i1').removeClass('fadeInRight').css('opacity', '0')
-                }, 1);
-            }
-                break;
-            case 2:
-            {
-                setTimeout(function () {
-                    $('#s2e1').removeClass('fadeInDown').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s2e2').removeClass('fadeInDown').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s2e3').removeClass('fadeInDown').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s2e4').removeClass('fadeInDown').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s2e5').removeClass('fadeInDown').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s2e6').removeClass('fadeInDown').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s2e7').removeClass('fadeInDown').css('opacity', '0')
-                }, 1);
-                setTimeout(function () {
-                    $('#s2e8').removeClass('fadeInDown').css('opacity', '0')
-                }, 1);
-            }
-                break;
-        }
-    }
-
 </script>
 </body>
 </html>
+
+
+
+

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Nimbledorid new homepage v3</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="plugins/animate.css">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/css/index.css" rel="stylesheet">
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+
+<!-- Carousel
+================================================== -->
+<style>
+    #crashReport {
+        margin-top: 20px;
+    }
+
+    .resultHeader {
+        background: rgba(205, 86, 86, 1);
+        background: -moz-linear-gradient(top, rgba(205, 86, 86, 1) 0%, rgba(165, 39, 39, 1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(205, 86, 86, 1)), color-stop(100%, rgba(165, 39, 39, 1)));
+        background: -webkit-linear-gradient(top, rgba(205, 86, 86, 1) 0%, rgba(165, 39, 39, 1) 100%);
+        background: -o-linear-gradient(top, rgba(205, 86, 86, 1) 0%, rgba(165, 39, 39, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(205, 86, 86, 1) 0%, rgba(165, 39, 39, 1) 100%);
+        background: linear-gradient(to bottom, rgba(205, 86, 86, 1) 0%, rgba(165, 39, 39, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cd5656', endColorstr='#a52727', GradientType=0);
+        border-radius: 5px;
+        border: 1px solid #d1d1d1;
+        border-bottom: 0px;
+        padding: 15px 20px;
+        color: white;
+    }
+
+    .mainReason {
+        font-family: SofiaProMedium;
+        font-size: 16px;
+    }
+
+    .mainReasonHelper {
+        font-family: SofiaProLightCondensed;
+        font-size: 14px;
+    }
+
+    .fileName {
+        font-family: SofiaProMedium;
+        font-size: 16px;
+        color: red;
+        vertical-align: middle !important;
+        text-align: right;
+        border-right: 1px solid #d1d1d1;
+        padding-right: 15px !important;
+    }
+
+    #crashReport td {
+        vertical-align: baseline;
+        white-space: inherit;
+    }
+
+    .lineTable td {
+        line-height: 30px;
+        padding: 3px 15px;
+        font-size: 15px;
+    }
+
+    .lineTable {
+        width: 100%;
+        border-bottom: 1px solid #d1d1d1;
+    }
+
+    .stackTraceTable {
+        background: #f8f8f8;
+        border: 1px solid #d1d1d1;
+        width: 100%;
+        max-width: 100%;
+
+    }
+
+    .no-padding {
+        padding: 0 !important;
+    }
+
+    .no-border-bottom {
+        border-bottom: 0px;
+    }
+
+    .lineNumber {
+        text-align: right;
+        border-right: 1px solid #d1d1d1;
+        font-size: 14px;
+        font-family: monospace;
+        color: #808080;
+    }
+    .lineTableWrapper .lineTable:last-child{
+        border-bottom: 0px !important;
+    }
+
+</style>
+<div id="crashReport">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 reportWrapper">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 revLeft">
+                <div class="footerLogo"></div>
+                <p class="text-center comAddress">
+                    588 Broadway, Suite 503 <br>
+                    New York, NY 10012
+                </p>
+                <p class="text-center comAddress">contact@nimbledroid.com</p>
+                <p class="text-center comAddress small">&copy; 2016 Nimbledroid, Inc | <a
+                        href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            </div>
+            <div class="col-md-3 footerListWrapper revDown">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Play</a></li>
+                            <li><a href="">Apps</a></li>
+                            <li><a href="">Pricing</a></li>
+                            <li><a href="">Account</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul>
+                            <li><a href="">Help</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Jobs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 footerListWrapperSmall revDown">
+                <ul>
+                    <li>
+                        <div class="row">
+                            <div class="col-md-2"><i class="fa fa-facebook"></i></div>
+                            <div class="col-md-10"><a href="">Facebook</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-md-2"><i class="fa fa-twitter"></i></div>
+                            <div class="col-md-10"><a href="">Twitter</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-md-2"><i class="fa fa-google-plus"></i></div>
+                            <div class="col-md-10"><a href="">Google</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-md-2"><i class="fa fa-linkedin"></i></div>
+                            <div class="col-md-10"><a href="">LinkedIn</a></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 revRight">
+                <h3 class="footerTitle">Keep updated</h3>
+                <button class="btn footerButton">subscribe</button>
+            </div>
+        </div>
+    </div>
+</footer>
+</div><!-- /.container -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="vendors/scrollreveal.js"></script>
+
+<script>
+    var crashResults = {
+        "stacktrace": [
+            {
+                "line": 2184,
+                "m": "android.app.ActivityThread.performLaunchActivity",
+                "file": "ActivityThread.java"
+            },
+            {
+                "line": 2233,
+                "m": "android.app.ActivityThread.handleLaunchActivity",
+                "file": "ActivityThread.java"
+            },
+            {
+                "line": 135,
+                "m": "android.app.ActivityThread.access$800",
+                "file": "ActivityThread.java"
+            },
+            {
+                "line": 1196,
+                "m": "android.app.ActivityThread$H.handleMessage",
+                "file": "ActivityThread.java"
+            },
+            {
+                "line": 102,
+                "m": "android.os.Handler.dispatchMessage",
+                "file": "Handler.java"
+            },
+            {
+                "line": 136,
+                "m": "android.os.Looper.loop",
+                "file": "Looper.java"
+            },
+            {
+                "line": 5001,
+                "m": "android.app.ActivityThread.main",
+                "file": "ActivityThread.java"
+            },
+            {
+                "m": "java.lang.reflect.Method.invokeNative",
+                "file": "Native Method"
+            },
+            {
+                "line": 515,
+                "m": "java.lang.reflect.Method.invoke",
+                "file": "Method.java"
+            },
+            {
+                "line": 785,
+                "m": "com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run",
+                "file": "ZygoteInit.java"
+            },
+            {
+                "line": 601,
+                "m": "com.android.internal.os.ZygoteInit.main",
+                "file": "ZygoteInit.java"
+            },
+            {
+                "m": "dalvik.system.NativeStart.main",
+                "file": "Native Method"
+            }
+        ],
+        "caused_by": [
+            {
+                "stacktrace": [
+                    {
+                        "line": 16,
+                        "m": "com.nimbledroid.randomcrash.SecondActivity.onCreate",
+                        "file": "SecondActivity.java"
+                    },
+                    {
+                        "line": 5231,
+                        "m": "android.app.Activity.performCreate",
+                        "file": "Activity.java"
+                    },
+                    {
+                        "line": 1087,
+                        "m": "android.app.Instrumentation.callActivityOnCreate",
+                        "file": "Instrumentation.java"
+                    },
+                    {
+                        "line": 2148,
+                        "m": "android.app.ActivityThread.performLaunchActivity",
+                        "file": "ActivityThread.java"
+                    }
+                ],
+                "summary": "java.lang.ArithmeticException: divide by zero"
+            }
+        ],
+        "summary": [
+            "FATAL EXCEPTION: main",
+            "Process: com.nimbledroid.randomcrash, PID: 12088",
+            "java.lang.RuntimeException: Unable to start activity ComponentInfo{com.nimbledroid.randomcrash/com.nimbledroid.randomcrash.SecondActivity}: java.lang.ArithmeticException: divide by zero"
+        ]
+    }
+
+    var fileLine = 0;
+
+    function addNewFileLine(data,target) {
+        if(data.line == undefined){
+            data.line = "N/A"
+        }
+        target.append(
+                '<tr>' +
+                '    <td class="fileName">' + data.file + '</td>' +
+                '    <td class="no-padding lineTableWrapper line' + (fileLine++) + '">' +
+                '        <table class="lineTable">' +
+                '            <colgroup><col width="10%"><col width="90%"></colgroup>' +
+                '            <tbody>' +
+                '                <tr>' +
+                '                    <td class="lineNumber">#' + data.line + '</td>' +
+                '                    <td>' + data.m + '</td>' +
+                '                </tr>' +
+                '            </tbody>' +
+                '        </table>' +
+                '    </td>' +
+                '</tr>'
+        )
+    }
+
+    function addNewCodeLine(data) {
+        if(data.line == undefined){
+            data.line = "N/A"
+        }
+        $('.lineTableWrapper.line' + (fileLine - 1)).append(
+                '<table class="lineTable">' +
+                '    <colgroup><col width="10%"><col width="90%"></colgroup>' +
+                '    <tbody>' +
+                '        <tr>' +
+                '            <td class="lineNumber">#' + data.line + '</td>' +
+                '            <td>' + data.m + '</td>' +
+                '        </tr>' +
+                '    </tbody>' +
+                '</table>'
+        )
+    }
+
+    $(document).on('ready', function () {
+        $('.reportWrapper').append(
+                '<div class="resultHeader">' +
+                '    <p class="mainReason">' + crashResults.summary[0] + ' ' + crashResults.summary[1] + '</p>' +
+                '    <p class="mainReasonHelper">' + crashResults.summary[2] + '</p>' +
+                '</div>' +
+                '<table class="table stackTraceTable main"><colgroup><col width="20%"><col width="80%"></colgroup></table>'
+        )
+        for (var si in crashResults.stacktrace) {
+            if (si == 0) {
+                addNewFileLine(crashResults.stacktrace[si],$('.stackTraceTable.main'));
+            }
+            else {
+                if (crashResults.stacktrace[si].file == crashResults.stacktrace[si - 1].file) {
+                    addNewCodeLine(crashResults.stacktrace[si])
+                } else {
+                    addNewFileLine(crashResults.stacktrace[si],$('.stackTraceTable.main'));
+                }
+            }
+        }
+
+        // -=-=-=-=-=-=-=-=-=- start multiple Caused By-=-=-=-=-=-=-=-=-=-
+        for (var ci in crashResults.caused_by) {
+            $('.reportWrapper').append(
+                    '<div class="resultHeader">' +
+                    '    <p class="mainReason">' + crashResults.caused_by[ci].summary +'</p>' +
+                    '</div>' +
+                    '<table class="table stackTraceTable caused_by' + ci + '"><colgroup><col width="20%"><col width="80%"></colgroup></table>'
+            )
+
+            for (var si2 in crashResults.stacktrace) {
+                if (si2 == 0) {
+                    addNewFileLine(crashResults.stacktrace[si2],$('.stackTraceTable.caused_by'+ci));
+                }
+                else {
+                    if (crashResults.stacktrace[si2].file == crashResults.stacktrace[si2 - 1].file) {
+                        addNewCodeLine(crashResults.stacktrace[si2])
+                    } else {
+                        addNewFileLine(crashResults.stacktrace[si2],$('.stackTraceTable.caused_by'+ci));
+                    }
+                }
+            }
+        }
+    });
+
+</script>
+
+</body>
+</html>

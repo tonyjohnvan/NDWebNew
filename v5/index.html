@@ -65,7 +65,7 @@
     <div class="item active sec1">
       <div class="container">
         <div class="row">
-          <div class="col-sm-7 verticalOuter text-right">
+          <div class="col-sm-8 verticalOuter text-right">
             <div class="verticalInner">
               <h1 class="opc08 animated fadeInLeft" id="s1l1">Auto-test Your Android Apps for Critical Bugs. No Coding
                 Required</h1>
@@ -81,7 +81,7 @@
               </button>
             </div>
           </div>
-          <div class="col-sm-5 verticalOuter">
+          <div class="col-sm-4 verticalOuter">
             <div class="verticalInner text-left">
               <img class="animated fadeInRight" id="s1i1" src="assets/img/bot1.png" alt="" width="auto"
                    height="50%">
@@ -264,9 +264,9 @@
       <div class="col-md-6 featureList">
         <div class="verticalOuter">
           <div class="verticalInner">
-            <h2 class="featurette-heading revLeft">Effortless to use, easy to <span class="text-muted">customize</span>
+            <h2 class="featurette-heading revLeft">Effortless to use, easy to <span class="text-muted">Customize</span>
             </h2>
-            <p>
+            <p class="featurette-content revLeft">
               Just upload your production or debug APK and test for crashes, memory leaks, and slowdowns.
               When you’re ready to test custom user flows, use standard Espresso code to generate NimbleDroid profiles.
             </p>
@@ -302,9 +302,9 @@
       <div class="col-md-6 col-md-offset-1 featureList">
         <div class="verticalOuter">
           <div class="verticalInner">
-            <h2 class="featurette-heading revRight">Get results in minutes, <span class="text-muted">not days</span>
+            <h2 class="featurette-heading revRight">Get results in minutes, <span class="text-muted">not Days</span>
             </h2>
-            <p>
+            <p class="featurette-content revRight">
               Since NimbleDroid is automated, your tests are ready within minutes, eliminating the lag time you get with manual QA.
             </p>
             <!--<ul class="featureDetailList">-->
@@ -325,7 +325,7 @@
         <div class="verticalOuter">
           <div class="verticalInner">
             <h2 class="featurette-heading revLeft">Protect your revenue streams with <span class="text-muted">Release Checks</span></h2>
-            <p>
+            <p class="featurette-content revLeft">
               Before you release a new version, analyze your app for issues and catch them before they go out the door.  Track your app performance over time with our trend graph.
             </p>
             <!--<ul class="featureDetailList">-->
@@ -360,9 +360,9 @@
       <div class="col-md-6 col-md-offset-1 featureList">
         <div class="verticalOuter">
           <div class="verticalInner">
-            <h2 class="featurette-heading revRight">Integrate with your CI to find regressions during <span class="text-muted">development</span>
+            <h2 class="featurette-heading revRight">Integrate with your CI to find regressions during <span class="text-muted">Development</span>
             </h2>
-            <p>
+            <p class="featurette-content revRight">
               By integrating with your CI process via our Gradle plugin, you can analyze individual builds to determine when a commit has introduced a regression.
             </p>
             <!--<ul class="featureDetailList">-->
@@ -381,8 +381,8 @@
       <div class="col-md-6 featureList">
         <div class="verticalOuter">
           <div class="verticalInner">
-            <h2 class="featurette-heading revLeft">Identify root causes of issues and <span class="text-muted">fix them fast</span></h2>
-            <p>
+            <h2 class="featurette-heading revLeft">Identify root causes of issues and <span class="text-muted">Fix them Fast</span></h2>
+            <p class="featurette-content revLeft">
               We’ll not only report issues with your app, we will show you exactly where the problem is, like detailed call stacks for slowdowns and reference chains for memory leaks.
             </p>
             <!--<ul class="featureDetailList">-->
@@ -405,24 +405,22 @@
   </div>
 </div>
 
-<div class="statics">
+<div class="targets">
   <div class="container">
+    <h5>What’s in it for</h5>
+    <div class="small-divider"></div>
     <div class="row text-center gradientBorder">
-      <div class="col-md-3 revLeft">
-        <i class="staticsIcon icon1"></i>
-        <p><span class="numbers">63,816</span>Apps Profiled</p>
+      <div class="col-md-4 revLeft">
+        <i class="targetsIcon icon1"></i>
+        <p><span class="numbers">Developers:</span>Pinpoint which code is causing an issue, down to the stack trace or reference chain.  Integrate with CI to get alerted when a build introduces a regression.</p>
       </div>
-      <div class="col-md-3 revUp">
-        <i class="staticsIcon icon2"></i>
-        <p><span class="numbers">1,327</span>Questions Answered</p>
+      <div class="col-md-4 revUp">
+        <i class="targetsIcon icon2"></i>
+        <p><span class="numbers">QA:</span>Before each release, get a detailed report of crashes, memory leaks, and performance for your critical user flows.</p>
       </div>
-      <div class="col-md-3 revUp">
-        <i class="staticsIcon icon3"></i>
-        <p><span class="numbers">957,240</span>Sec Optimized</p>
-      </div>
-      <div class="col-md-3 revRight">
-        <i class="staticsIcon icon4"></i>
-        <p><span class="numbers">93,128</span>Solutions Provided</p>
+      <div class="col-md-4 revRight">
+        <i class="targetsIcon icon3"></i>
+        <p><span class="numbers">Product and Engineering Managers:</span>Measure and track key metrics like Startup time across releases, get alerts when your app becomes too slow.</p>
       </div>
     </div>
   </div>
@@ -580,7 +578,7 @@
 //        fadeIn(1);
 
     // Changing the defaults
-    window.sr = ScrollReveal({ reset: true });
+    window.sr = ScrollReveal({ reset: false });
 
     // Customizing a reveal set
 //    sr.reveal('.row', { duration: 800 });
