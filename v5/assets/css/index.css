@@ -108,8 +108,8 @@ a {
 
 /* Carousel base class */
 .carousel.carousel-big {
-    min-height: 800px;
-    margin-bottom: 60px;
+    min-height: 710px;
+    /*margin-bottom: 60px;*/
     text-align: center;
 }
 
@@ -120,7 +120,7 @@ a {
 
 /* Declare heights because of positioning of img element */
 .carousel.carousel-big .item {
-    min-height: 800px;
+    min-height: 710px;
     background-color: #777;
 }
 
@@ -129,7 +129,7 @@ a {
     top: 0;
     left: 0;
     min-width: 100%;
-    min-height: 800px;
+    min-height: 710px;
 }
 
 .sec1 .container,
@@ -139,7 +139,7 @@ a {
 .sec2 .container .verticalOuter,
 .sec3 .container,
 .sec3 .container .verticalOuter {
-    min-height: 800px;
+    min-height: 710px;
 }
 
 /* MARKETING CONTENT
@@ -173,6 +173,10 @@ a {
     font-weight: 300;
     line-height: 1;
     letter-spacing: -1px;
+}
+
+.featurette-content {
+    font-size: 20px;
 }
 
 /* RESPONSIVE CSS
@@ -565,14 +569,16 @@ h4 {
 }
 
 /*================================== marketing ==================================*/
-.marketing .feature1,
-.marketing .feature3,
-.marketing .feature5 {
+.marketing .feature2,
+.marketing .feature4,
+.marketing .feature6 {
     background: #f7f7f7;
     /*padding: 30px 0;*/
 }
 
-.marketing .feature2 {
+.marketing .feature1,
+.marketing .feature3,
+.marketing .feature5 {
     background: #FFF;
     /*padding: 30px 0;*/
 }
@@ -814,6 +820,28 @@ h3.footerTitle {
     color: #111;
 }
 
-.featurette-content {
-    font-size: 20px;
+
+/* Logo Section
+-------------------------------------------------- */
+.logosWrapB img {
+    padding: 0 20px;
+}
+
+.logosWrapB {
+    padding: 40px 0 5px;
+}
+
+.logoQuoteB {
+    font-family: SofiaProExtraLight;
+    text-transform: uppercase;
+    letter-spacing: 0.6em;
+    color: #666;
+    opacity: 0.9;
+    font-size: 18px;
+    margin: 28px auto;
+    text-align: center;
+}
+
+.logosContainer {
+    background: #f7f7f7;
 }
