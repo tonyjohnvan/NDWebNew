@@ -569,16 +569,16 @@ h4 {
 }
 
 /*================================== marketing ==================================*/
-.marketing .feature2,
-.marketing .feature4,
-.marketing .feature6 {
+.marketing .feature1,
+.marketing .feature3,
+.marketing .feature5 {
     background: #f7f7f7;
     /*padding: 30px 0;*/
 }
 
-.marketing .feature1,
-.marketing .feature3,
-.marketing .feature5 {
+.marketing .feature2,
+.marketing .feature4,
+.marketing .feature6 {
     background: #FFF;
     /*padding: 30px 0;*/
 }
@@ -823,6 +823,10 @@ h3.footerTitle {
 
 /* Logo Section
 -------------------------------------------------- */
+.no-min-height{
+    min-height: inherit !important;
+}
+
 .logosWrapB img {
     padding: 0 20px;
 }
@@ -844,4 +848,8 @@ h3.footerTitle {
 
 .logosContainer {
     background: #f7f7f7;
+}
+
+.logoSectionTop{
+    margin: 30px auto 50px;
 }
