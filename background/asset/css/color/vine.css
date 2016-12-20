@@ -1,0 +1,25 @@
+/*######################################*/
+/*Colors for the template */
+/*######################################*/
+
+.marker,
+.color,
+#newsletter .btn:hover i ,
+.feature i,
+input:focus ~ .title,
+input:valid ~ .title,
+textarea:focus ~ .title,
+textarea:valid ~ .title,
+#counter .soon-label,
+#counter .soon-ring-progress{
+	color:#D21662;
+}
+.bar:before,
+.bar:after,
+.service:hover .service-icon,
+.background.solid{
+	background:#D21662;
+}
+.service:hover .circle-border{
+	border-color:#D21662;
+}

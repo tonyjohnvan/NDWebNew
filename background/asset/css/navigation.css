@@ -1,0 +1,311 @@
+/*######################################*/
+/*Navigation for the template */
+/*######################################*/
+.nav-trigger {
+	position: relative;
+	float: right;
+	height: 45px;
+	width: 45px;
+	margin-top: 18px;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	color: transparent;
+}
+.nav-trigger span,
+.nav-trigger span::before,
+.nav-trigger span::after {
+	position: absolute;
+	width: 28px;
+	height: 3px;
+	background-color: #FFF;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.nav-trigger span {
+	top: 21px;
+	left: 8px;
+	-webkit-transition: background 0.2s 0.5s;
+	-moz-transition: background 0.2s 0.5s;
+	transition: background 0.2s 0.5s;
+}
+.nav-trigger span::before, .nav-trigger span:after {
+	content: '';
+	left: 0;
+	-webkit-transition: -webkit-transform 0.2s 0.5s;
+	-moz-transition: -moz-transform 0.2s 0.5s;
+	transition: transform 0.2s 0.5s;
+}
+.nav-trigger span::before {
+	bottom: 8px; 
+}
+.nav-trigger span::after {
+	top: 8px; 
+}
+.nav-is-visible .nav-trigger span {
+	background-color: rgba(255, 255, 255, 0);
+}
+.nav-is-visible .nav-trigger span::before, .nav-is-visible .nav-trigger span::after {
+	background-color: white;
+}
+.nav-is-visible .nav-trigger span::before {
+	-webkit-transform: translateY(8px) rotate(-45deg);
+	-moz-transform: translateY(8px) rotate(-45deg);
+	-ms-transform: translateY(8px) rotate(-45deg);
+	-o-transform: translateY(8px) rotate(-45deg);
+	transform: translateY(8px) rotate(-45deg);
+}
+.nav-is-visible .nav-trigger span::after {
+	-webkit-transform: translateY(-8px) rotate(45deg);
+	-moz-transform: translateY(-8px) rotate(45deg);
+	-ms-transform: translateY(-8px) rotate(45deg);
+	-o-transform: translateY(-8px) rotate(45deg);
+	transform: translateY(-8px) rotate(45deg);
+}
+.nav-container {
+	z-index:11;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 80px;
+	width: 100%;
+	background-color: #000000;
+	visibility: hidden;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	transform: translateY(-100%);
+	-webkit-transition: -webkit-transform 0.5s 0s, visibility 0s 0.5s;
+	-moz-transition: -moz-transform 0.5s 0s, visibility 0s 0.5s;
+	transition: transform 0.5s 0s, visibility 0s 0.5s;
+}
+.nav-container.nav-is-visible {
+	visibility: visible;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+	-webkit-transition: -webkit-transform 0.5s 0s, visibility 0.5s 0s;
+	-moz-transition: -moz-transform 0.5s 0s, visibility 0.5s 0s;
+	transition: transform 0.5s 0s, visibility 0.5s 0s;
+}
+.nav-menu {
+	position: relative;
+	height: 100%;
+	background-color: #000;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform-origin: center bottom;
+	-moz-transform-origin: center bottom;
+	-ms-transform-origin: center bottom;
+	-o-transform-origin: center bottom;
+	transform-origin: center bottom;
+	-webkit-transform: rotateX(90deg);
+	-moz-transform: rotateX(90deg);
+	-ms-transform: rotateX(90deg);
+	-o-transform: rotateX(90deg);
+	transform: rotateX(90deg);
+	-webkit-transition: -webkit-transform 0.5s;
+	-moz-transition: -moz-transform 0.5s;
+	transition: transform 0.5s;
+}
+.nav-menu::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #000000;
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s 0s, visibility 0.5s 0s;
+	-moz-transition: opacity 0.5s 0s, visibility 0.5s 0s;
+	transition: opacity 0.5s 0s, visibility 0.5s 0s;
+}
+.nav-menu li {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+.nav-menu a {
+	font-family:'Raleway', sans-serif;
+	position: relative;
+	display: block;
+	height: 100%;
+	color: transparent;
+	-webkit-transition: background-color 0.2s;
+	-moz-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+.nav-menu a::before {
+	font-family: FontAwesome,Ionicons;
+	color: #fff ;
+	height: 32px;
+	font-size: 32px;
+	width: 32px;
+	line-height: 32px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	bottom: auto;
+	right: auto;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+.no-touch .nav-menu a:hover,
+.nav-menu .active a,
+.no-touch .nav-menu .active a:hover 	{
+	background-color: rgba(255,255,255,0.1);
+}
+.nav-menu .active a::before {
+	background-position: 0 -32px;
+}
+.nav-is-visible .nav-menu {
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+}
+.nav-is-visible .nav-menu::after {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s 0s, visibility 0s 0.5s;
+	-moz-transition: opacity 0.5s 0s, visibility 0s 0.5s;
+	transition: opacity 0.5s 0s, visibility 0s 0.5s;
+}
+.marker {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 3px;
+	width: 20%;
+	background-color: currentColor;
+	-webkit-transform-origin: center bottom;
+	-moz-transform-origin: center bottom;
+	-ms-transform-origin: center bottom;
+	-o-transform-origin: center bottom;
+	transform-origin: center bottom;
+	-webkit-transform: translateZ(0) rotateX(90deg);
+	-moz-transform: translateZ(0) rotateX(90deg);
+	-ms-transform: translateZ(0) rotateX(90deg);
+	-o-transform: translateZ(0) rotateX(90deg);
+	transform: translateZ(0) rotateX(90deg);
+	-webkit-transition: -webkit-transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;
+	-moz-transition: -moz-transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;
+	transition: transform 0.5s, left 0.5s, color 0.5s, background-color 0.5s;
+}
+.marker::before {
+	position: absolute;
+	bottom: 3px;
+	left: 50%;
+	right: auto;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	height: 0;
+	width: 0;
+	border: 10px solid transparent;
+	border-bottom-color: inherit;
+}
+.nav-is-visible .marker {
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+}
+section {
+	-webkit-transition: -webkit-transform 0.5s;
+	-moz-transition: -moz-transform 0.5s;
+	transition: transform 0.5s;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+section * {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+section.nav-is-visible {
+	-webkit-transform: translateY(80px);
+	-moz-transform: translateY(80px);
+	-ms-transform: translateY(80px);
+	-o-transform: translateY(80px);
+	transform: translateY(80px);
+}
+.header.nav-is-visible {
+	-webkit-transform: translateY(80px);
+	-moz-transform: translateY(80px);
+	-ms-transform: translateY(80px);
+	-o-transform: translateY(80px);
+	transform: translateY(80px);
+}
+.nav-is-visible{
+overflow:hidden !important
+}
+@media only screen and (min-width: 768px) {
+	.nav-container {
+		height: 170px;
+	}
+	.nav-menu a {
+		padding: 7.6em 1em 0;
+		color: #ffffff;
+		font-size: 13px;
+		line-height:0.7rem;
+		text-transform: capitalize;
+		text-decoration: blink;
+		text-transform: uppercase;
+		text-align: center;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.nav-menu a::before {
+		left: 50%;
+		left: 50%;
+		top: 32%;
+		right: auto;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+		transform: translateX(-50%);
+	}
+		section.nav-is-visible {
+		-webkit-transform: translateY(170px);
+		-moz-transform: translateY(170px);
+		-ms-transform: translateY(170px);
+		-o-transform: translateY(170px);
+		transform: translateY(170px);
+	}
+	.header.nav-is-visible {
+		-webkit-transform: translateY(170px);
+		-moz-transform: translateY(170px);
+		-ms-transform: translateY(170px);
+		-o-transform: translateY(170px);
+		transform: translateY(170px);
+	}
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <!-- Main details for search engine optimizer -->
+  <title>Background</title>
+  <!-- END SEO -->
+  <meta charset="UTF-8">
+  <meta content="index, follow" name="robots">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="tab-content navigation">
+
+<!-- BACKGROUND -->
+<section id="origami" class="background origami dark">
+</section>
+<!-- END BACKGROUND -->
+
+
+<!-- JS SCRIPT -->
+<script src="asset/js/jquery.js"></script>
+<script src="asset/js/origami.js"></script>
+<script>
+  $(".origami.dark").each(function() {
+    var container = document.getElementById('origami');
+    var renderer = new FSS.CanvasRenderer();
+    var scene = new FSS.Scene();
+    var light = new FSS.Light('#4D1514', '#DB0606');
+    var geometry = new FSS.Plane(1920, 980, 25, 14);
+    var material = new FSS.Material('#FFFFFF', '#FFFFFF');
+    var mesh = new FSS.Mesh(geometry, material);
+    var now, start = Date.now();function initialise(){scene.add(mesh);scene.add(light);container.appendChild(renderer.element);window.addEventListener('resize',resize);}
+    function resize(){renderer.setSize(container.offsetWidth,container.offsetHeight);}
+
+    function animate() {
+      now = Date.now() - start;
+      light.setPosition(80 * Math.sin(now * 0.001), 80 * Math.cos(now * 0.0001), 168);
+      renderer.render(scene);
+      requestAnimationFrame(animate);
+    }
+    initialise();resize();animate();
+  });
+</script>
+<!-- END JS SCRIPT -->
+</body>
+</html>

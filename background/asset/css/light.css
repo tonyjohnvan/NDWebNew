@@ -1,0 +1,15 @@
+/*######################################*/
+/*Skin for the template */
+/*######################################*/
+.background.pattern{background: url(../img/pattern2.png)repeat center top fixed;}
+.cover{background: url(../img/overlay2.png) rgba(255,255,255,0.5);}
+h1, h2, h3, h4,body,.navigation .nav-menu a::before,.share-text,.form input, .form textarea,.title,#newsletter .btn,.add-icon,.add-title,.add-text a,.service-icon,address,.countdown a{color:#000000 ;}
+body,
+.navigation .nav-container,.navigation .nav-menu::after,.navigation .nav-menu{background:#ffffff}
+.no-touch .navigation .nav-menu a:hover,.navigation .nav-menu .active a,.no-touch .navigation  .nav-menu .active a:hover{background-color: rgba(0,0,0,0.1);}
+.nicescroll-rails div{background:#000000!important;border-color:#000000!important;}
+.nav-trigger span, .nav-trigger span::before, .nav-trigger span::after,.nav-is-visible .nav-trigger span::before, .nav-is-visible .nav-trigger span::after,form.contactform .btn,#counter .soon-ring-progress{background:#000000;}
+.hr.short span:after, .hr.short span:before,.form input, .form textarea,.circle-border,.form input:hover, .form input:focus, .form textarea:hover, .form textarea:focus,.hr span:after, .hr span:before{border-color:#000000 ;}
+form.contactform .btn,.countdown a.close-nav{color:#ffffff}
+.ripple{background-color: rgba(255,255,255,0.25);}
+@media only screen and (min-width: 768px) {.navigation .nav-menu a{color:#000000 ;}}
