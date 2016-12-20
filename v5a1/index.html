@@ -809,7 +809,7 @@
 
     function animate() {
       now = Date.now() - start;
-      light.setPosition(150 * Math.sin(now * 0.001), 100 * Math.cos(now * 0.0005), 168);
+      light.setPosition(300 * Math.sin(now * 0.001), 100 * Math.cos(now * 0.0005), 168);
       renderer.render(scene);
       requestAnimationFrame(animate);
     }
