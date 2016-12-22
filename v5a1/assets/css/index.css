@@ -864,3 +864,19 @@ h3.footerTitle {
 #origami{
     height: 710px;
 }
+
+.exampleLink{
+    text-align: center;
+    padding: 50px auto;
+}
+.exampleLink h2{
+    margin-bottom: 10px;
+}
+.exampleLink .btn-white{
+    height: 34px;
+    line-height: 15px;
+    font-size: 16px;
+    margin-bottom: 100px;
+    vertical-align: sub;
+    margin-left: 28px;
+}
