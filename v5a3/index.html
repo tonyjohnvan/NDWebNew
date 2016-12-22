@@ -345,7 +345,7 @@
 
 
 <!-- BACKGROUND -->
-<!--<section id="origami" class="background origami dark">-->
+<section id="origami" class="background origami dark">
   <div class="targets">
     <div class="container">
       <h5 class="revDown">What’s in it for</h5>
@@ -366,7 +366,7 @@
       </div>
     </div>
   </div>
-<!--</section>-->
+</section>
 
 <div class="blog">
   <div class="container">
@@ -799,28 +799,28 @@
 </script>
 
 <!-- JS SCRIPT -->
-<!--<script src="assets/js/origami.js"></script>-->
-<!--<script>-->
-  <!--$(".origami.dark").each(function() {-->
-    <!--var container = document.getElementById('origami');-->
-    <!--var renderer = new FSS.CanvasRenderer();-->
-    <!--var scene = new FSS.Scene();-->
-    <!--var light = new FSS.Light('#4D1514', '#C50606');-->
-    <!--var geometry = new FSS.Plane(1920, 980, 25, 14);-->
-    <!--var material = new FSS.Material('#FF9278', '#FFC9B1');-->
-    <!--var mesh = new FSS.Mesh(geometry, material);-->
-    <!--var now, start = Date.now();function initialise(){scene.add(mesh);scene.add(light);container.appendChild(renderer.element);window.addEventListener('resize',resize);}-->
-    <!--function resize(){renderer.setSize(container.offsetWidth,container.offsetHeight);}-->
+<script src="assets/js/origami.js"></script>
+<script>
+  $(".origami.dark").each(function() {
+    var container = document.getElementById('origami');
+    var renderer = new FSS.CanvasRenderer();
+    var scene = new FSS.Scene();
+    var light = new FSS.Light('#4D1514', '#C50606');
+    var geometry = new FSS.Plane(1920, 980, 25, 14);
+    var material = new FSS.Material('#FF9278', '#FFC9B1');
+    var mesh = new FSS.Mesh(geometry, material);
+    var now, start = Date.now();function initialise(){scene.add(mesh);scene.add(light);container.appendChild(renderer.element);window.addEventListener('resize',resize);}
+    function resize(){renderer.setSize(container.offsetWidth,container.offsetHeight);}
 
-    <!--function animate() {-->
-      <!--now = Date.now() - start;-->
-      <!--light.setPosition(300 * Math.sin(now * 0.001), 100 * Math.cos(now * 0.0005), 168);-->
-      <!--renderer.render(scene);-->
-      <!--requestAnimationFrame(animate);-->
-    <!--}-->
-    <!--initialise();resize();animate();-->
-  <!--});-->
-<!--</script>-->
+    function animate() {
+      now = Date.now() - start;
+      light.setPosition(300 * Math.sin(now * 0.001), 100 * Math.cos(now * 0.0005), 168);
+      renderer.render(scene);
+      requestAnimationFrame(animate);
+    }
+    initialise();resize();animate();
+  });
+</script>
 
 <script>
   var triangleBGSettings = {
