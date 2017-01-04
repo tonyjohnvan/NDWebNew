@@ -1,0 +1,155 @@
+/*fonts*/
+@font-face {
+    font-family: SofiaProLightCondensed;
+    src: url('../v5a3/assets/fonts/SofiaProLightCondensed.eot');
+    src: url('../v5a3/assets/fonts/SofiaProLightCondensed.eot?#iefix') format('embedded-opentype'), url('../v5a3/assets/fonts/SofiaProLightCondensed.woff2') format('woff2'), url('../v5a3/assets/fonts/SofiaProLightCondensed.woff') format('woff'), url('../v5a3/assets/fonts/SofiaProLightCondensed.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SofiaProRegular;
+    src: url('../v5a3/assets/fonts/SofiaProRegular.eot');
+    src: url('../v5a3/assets/fonts/SofiaProRegular.eot?#iefix') format('embedded-opentype'), url('../v5a3/assets/fonts/SofiaProRegular.woff2') format('woff2'), url('../v5a3/assets/fonts/SofiaProRegular.woff') format('woff'), url('../v5a3/assets/fonts/SofiaProRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SofiaProSoftLight;
+    src: url('../v5a3/assets/fonts/SofiaProSoftLight.eot');
+    src: url('../v5a3/assets/fonts/SofiaProSoftLight.eot?#iefix') format('embedded-opentype'), url('../v5a3/assets/fonts/SofiaProSoftLight.woff2') format('woff2'), url('../v5a3/assets/fonts/SofiaProSoftLight.woff') format('woff'), url('../v5a3/assets/fonts/SofiaProSoftLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SofiaProMedium;
+    src: url('../v5a3/assets/fonts/SofiaProMedium.eot');
+    src: url('../v5a3/assets/fonts/SofiaProMedium.eot?#iefix') format('embedded-opentype'), url('../v5a3/assets/fonts/SofiaProMedium.woff2') format('woff2'), url('../v5a3/assets/fonts/SofiaProMedium.woff') format('woff'), url('../v5a3/assets/fonts/SofiaProMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SofiaProExtraLight;
+    src: url('../v5a3/assets/fonts/SofiaProExtraLight.eot');
+    src: url('../v5a3/assets/fonts/SofiaProExtraLight.eot?#iefix') format('embedded-opentype'), url('../v5a3/assets/fonts/SofiaProExtraLight.woff2') format('woff2'), url('../v5a3/assets/fonts/SofiaProExtraLight.woff') format('woff'), url('../v5a3/assets/fonts/SofiaProExtraLight.ttf') format('truetype');
+}
+
+/*Copy from here*/
+
+#productTour {
+    margin: 50px auto;
+    font-family: SofiaProSoftLight;
+}
+
+#productTour h1 {
+    font-size: 55px;
+    color: #4D4D4D;
+    margin-bottom: 20px;
+}
+
+#productTour .headerWrapper p {
+    font-size: 18px;
+    color: #4D4D4D;
+}
+
+#productTour section {
+    padding: 50px 0;
+}
+
+.moreLink {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #EB0505;
+}
+
+.featureSmall {
+    background: #FAFAFA;
+}
+
+.featureSmall img {
+    width: 45px;
+    height: auto;
+}
+
+.featureSmall h4 {
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #EB0505;
+    margin: 20px auto 10px;
+}
+
+.featureSmall p {
+    font-size: 16px;
+    color: #4D4D4D;
+}
+
+.featureFull h4 {
+    text-transform: uppercase;
+    font-size: 22px;
+    line-height: 35px;
+    color: #EB0505;
+    margin: 20px 5px;
+}
+
+.featureFull i {
+    font-size: 38px;
+    color: #EB0505;
+    margin-left: 8px;
+}
+
+.featureFull p {
+    font-size: 17px;
+    color: #4D4D4D;
+}
+
+.featureFull i.fa-bell {
+    font-size: 30px;
+    color: #EB0505;
+    margin-left: 8px;
+}
+.featureFull i.fa-line-chart {
+    font-size: 25px;
+    color: #EB0505;
+    margin-left: 8px;
+}
+
+.featureFull img {
+    width: 90%;
+    height: auto;
+    border: 10px white solid;
+    border-radius: 8px;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+    margin: 5px auto;
+}
+
+.verticalCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 168px;
+}
+
+.featureFull:nth-child(even) {
+    background: #FAFAFA;
+}
+
+.joinBanner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px;
+    background: url("dottedWorldMap.svg") center center no-repeat #ba2b29;
+    background-size: auto 120%;
+    text-align: center;
+    color: white;
+}
+.joinBanner h3{
+    font-size: 60px;
+    font-family: SofiaProExtraLight;
+}
+.joinBanner span{
+    font-size: 19px;
+}
+
+
+/*Don't copy*/
+.input-group{
+    margin: 30px auto;
+    width: 450px;
+}
+

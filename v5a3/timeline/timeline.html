@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Title</title>
 
-  <link rel="stylesheet" href="../v5a3/plugins/animate.css">
+  <link rel="stylesheet" href="../plugins/animate.css">
 </head>
 <style>
   /* --------------------------------
@@ -12,6 +12,37 @@
 Primary style
 
 -------------------------------- */
+  /*fonts*/
+  @font-face {
+    font-family: SofiaProLightCondensed;
+    src: url('../assets/fonts/SofiaProLightCondensed.eot');
+    src: url('../assets/fonts/SofiaProLightCondensed.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/SofiaProLightCondensed.woff2') format('woff2'), url('../assets/fonts/SofiaProLightCondensed.woff') format('woff'), url('../assets/fonts/SofiaProLightCondensed.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: SofiaProRegular;
+    src: url('../assets/fonts/SofiaProRegular.eot');
+    src: url('../assets/fonts/SofiaProRegular.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/SofiaProRegular.woff2') format('woff2'), url('../assets/fonts/SofiaProRegular.woff') format('woff'), url('../assets/fonts/SofiaProRegular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: SofiaProSoftLight;
+    src: url('../assets/fonts/SofiaProSoftLight.eot');
+    src: url('../assets/fonts/SofiaProSoftLight.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/SofiaProSoftLight.woff2') format('woff2'), url('../assets/fonts/SofiaProSoftLight.woff') format('woff'), url('../assets/fonts/SofiaProSoftLight.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: SofiaProMedium;
+    src: url('../assets/fonts/SofiaProMedium.eot');
+    src: url('../assets/fonts/SofiaProMedium.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/SofiaProMedium.woff2') format('woff2'), url('../assets/fonts/SofiaProMedium.woff') format('woff'), url('../assets/fonts/SofiaProMedium.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: SofiaProExtraLight;
+    src: url('../assets/fonts/SofiaProExtraLight.eot');
+    src: url('../assets/fonts/SofiaProExtraLight.eot?#iefix') format('embedded-opentype'), url('../assets/fonts/SofiaProExtraLight.woff2') format('woff2'), url('../assets/fonts/SofiaProExtraLight.woff') format('woff'), url('../assets/fonts/SofiaProExtraLight.ttf') format('truetype');
+  }
+
   html * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -25,15 +56,15 @@ Primary style
 
   body {
     font-size: 100%;
-    font-family: "Droid Serif", serif;
-    color: #7f8c97;
-    background-color: #e9f0f5;
+    font-family: SofiaProRegular;
+    color: #666666;
+    background-color: #EDEDED;
   }
 
   a {
-    color: #acb7c0;
+    color: #B5B5B5;
     text-decoration: none;
-    font-family: "Open Sans", sans-serif;
+    font-family: SofiaProRegular;
   }
 
   img {
@@ -41,7 +72,7 @@ Primary style
   }
 
   h1, h2 {
-    font-family: "Open Sans", sans-serif;
+    font-family: SofiaProMedium;
     font-weight: bold;
   }
 
@@ -104,7 +135,7 @@ Primary style
     left: 18px;
     height: 100%;
     width: 4px;
-    background: #d7e4ed;
+    background: #BBBBBB;
   }
   @media only screen and (min-width: 1170px) {
     #cd-timeline {
@@ -250,7 +281,7 @@ Primary style
     background: #ffffff;
     border-radius: 0.25em;
     padding: 1em;
-    box-shadow: 0 3px 0 #d7e4ed;
+    box-shadow: 0 3px 0 #BBBBBB;
   }
   .cd-timeline-content::after {
     clear: both;
@@ -475,15 +506,12 @@ Primary style
 
 </style>
 <body>
-<header>
-  <h1>Responsive Vertical Timeline</h1>
-</header>
 
 <section id="cd-timeline" class="cd-container">
   <div class="cd-timeline-block">
     <div class="cd-timeline-img cd-picture">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
-    </div> 
+      <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDExOC43ODMgMTE4Ljc4MyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTE4Ljc4MyAxMTguNzgzOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCI+CjxnPgoJPHBhdGggZD0iTTExNS45NywxMDEuNTk3TDg4LjY2MSw3NC4yODZjNC42NC03LjM4Nyw3LjMzMy0xNi4xMTgsNy4zMzMtMjUuNDg4YzAtMjYuNTA5LTIxLjQ5LTQ3Ljk5Ni00Ny45OTgtNDcuOTk2ICAgUzAsMjIuMjg5LDAsNDguNzk4YzAsMjYuNTEsMjEuNDg3LDQ3Ljk5NSw0Ny45OTYsNDcuOTk1YzEwLjE5NywwLDE5LjY0Mi0zLjE4OCwyNy40MTQtOC42MDVsMjYuOTg0LDI2Ljk4NiAgIGMxLjg3NSwxLjg3Myw0LjMzMywyLjgwNiw2Ljc4OCwyLjgwNmMyLjQ1OCwwLDQuOTEzLTAuOTMzLDYuNzkxLTIuODA2QzExOS43MiwxMTEuNDIzLDExOS43MiwxMDUuMzQ3LDExNS45NywxMDEuNTk3eiAgICBNNDcuOTk2LDgxLjI0M2MtMTcuOTE3LDAtMzIuNDQzLTE0LjUyNS0zMi40NDMtMzIuNDQzczE0LjUyNi0zMi40NDQsMzIuNDQzLTMyLjQ0NGMxNy45MTgsMCwzMi40NDMsMTQuNTI2LDMyLjQ0MywzMi40NDQgICBTNjUuOTE0LDgxLjI0Myw0Ny45OTYsODEuMjQzeiIgZmlsbD0iI0ZGRkZGRiIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" alt="Picture" />
+    </div>
 
     <div class="cd-timeline-content">
       <h2>Auto-discover user flows</h2>
@@ -495,7 +523,7 @@ Primary style
 
   <div class="cd-timeline-block">
     <div class="cd-timeline-img cd-movie">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-movie.svg" alt="Movie">
+      <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTguMS4xLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDIwIDIwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyMCAyMDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI2NHB4IiBoZWlnaHQ9IjY0cHgiPgo8Zz4KCTxnIGlkPSJMYXllcl8xXzg5XyI+CgkJPHBhdGggZD0iTTE2LDE0LjE4NHYtMS44NTFjMC0xLjkzLTEuNTctMy41LTMuNS0zLjVjLTAuODI3LDAtMS41LTAuNjczLTEuNS0xLjVWNS44MTYgICAgQzEyLjE2MSw1LjQwMSwxMyw0LjMwMiwxMywzYzAtMS42NTQtMS4zNDYtMy0zLTNTNywxLjM0Niw3LDNjMCwxLjMwMiwwLjgzOSwyLjQwMSwyLDIuODE1djEuNTE4YzAsMC44MjctMC42NzMsMS41LTEuNSwxLjUgICAgYy0xLjkzLDAtMy41LDEuNTctMy41LDMuNXYxLjg1MUMyLjgzOSwxNC41OTksMiwxNS42OTgsMiwxN2MwLDEuNjU0LDEuMzQ2LDMsMywzczMtMS4zNDYsMy0zYzAtMS4zMDItMC44MzktMi40MDEtMi0yLjgxNnYtMS44NTEgICAgYzAtMC44MjcsMC42NzMtMS41LDEuNS0xLjVjMC45NzksMCwxLjg2NC0wLjQwNywyLjUtMS4wNThjMC42MzYsMC42NTEsMS41MjEsMS4wNTgsMi41LDEuMDU4YzAuODI3LDAsMS41LDAuNjczLDEuNSwxLjV2MS44NTEgICAgYy0xLjE2MSwwLjQxNS0yLDEuNTE0LTIsMi44MTZjMCwxLjY1NCwxLjM0NiwzLDMsM3MzLTEuMzQ2LDMtM0MxOCwxNS42OTgsMTcuMTYxLDE0LjU5OSwxNiwxNC4xODR6IE01LDE4Yy0wLjU1MiwwLTEtMC40NDktMS0xICAgIHMwLjQ0OC0xLDEtMXMxLDAuNDQ5LDEsMVM1LjU1MiwxOCw1LDE4eiBNMTAsMmMwLjU1MiwwLDEsMC40NDksMSwxcy0wLjQ0OCwxLTEsMVM5LDMuNTUxLDksM1M5LjQ0OCwyLDEwLDJ6IE0xNSwxOCAgICBjLTAuNTUyLDAtMS0wLjQ0OS0xLTFzMC40NDgtMSwxLTFzMSwwLjQ0OSwxLDFTMTUuNTUyLDE4LDE1LDE4eiIgZmlsbD0iI0ZGRkZGRiIvPgoJPC9nPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" alt="Movie" />
     </div> 
 
     <div class="cd-timeline-content">
@@ -508,7 +536,7 @@ Primary style
 
   <div class="cd-timeline-block">
     <div class="cd-timeline-img cd-picture">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-picture.svg" alt="Picture">
+      <img src="icon3.png" alt="Picture" />
     </div> 
 
     <div class="cd-timeline-content">
@@ -521,12 +549,13 @@ Primary style
 
   <div class="cd-timeline-block">
     <div class="cd-timeline-img cd-location">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Location">
+      <img src="icon4.png" alt="Location" />
     </div> 
 
     <div class="cd-timeline-content">
       <h2>Detect Memory Leaks</h2>
       <p>For every user flow that NimbleDroid profiles, it searches for memory leaks. In addition to reporting the presence of a leak, the root cause is reported via the reference chain for the leak.  When used in Continuous Integration or as part of a release checklist, it can ensure dangerous leak never make it to production.</p>
+      <img src="detectMemLeak.png" alt="" />
       <a href="#0" class="cd-read-more">Try this Feature</a>
       <span class="cd-date">May 2016</span>
     </div>
@@ -534,12 +563,13 @@ Primary style
 
   <div class="cd-timeline-block">
     <div class="cd-timeline-img cd-location">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-location.svg" alt="Location">
+      <img src="icon5.png" alt="Location" />
     </div> 
 
     <div class="cd-timeline-content">
       <h2>Alerts for slowness, memory leaks, and crashes</h2>
       <p>Once you integrate NimbleDroid with your Continuous Integration you can configure email and Slack alerts to inform you about slowdowns, memory leaks, or app crashes. Stop manually checking your results and automate your way to peace of mind!</p>
+      <img src="Alerts.png" alt="" />
       <a href="#0" class="cd-read-more">Try this Feature</a>
       <span class="cd-date">Oct 2016</span>
     </div>
@@ -547,19 +577,20 @@ Primary style
 
   <div class="cd-timeline-block">
     <div class="cd-timeline-img cd-movie">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-icon-movie.svg" alt="Movie">
+      <img src="icon6.png" alt="Movie" />
     </div> 
 
     <div class="cd-timeline-content">
       <h2>Monitor your performance trending history</h2>
       <p>To really dive into app performance trending you can use our flexible trend graph, which you can use to zoom out to see all uploads or zoom in to see details.</p>
+      <img src="ProfileHistory.png" alt="" />
       <a href="" class="cd-read-more">Try this Feature</a>
       <span class="cd-date">Dec 2016</span>
     </div>
   </div>
 </section>
 
-<script src="../v5a3/assets/js/jquery.js"></script>
+<script src="../assets/js/jquery.js"></script>
 <!--<script>-->
   <!--jQuery(document).ready(function($){-->
     <!--var $timeline_block = $('.cd-timeline-block');-->
