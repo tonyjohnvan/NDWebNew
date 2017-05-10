@@ -1,0 +1,183 @@
+/*fonts*/
+@font-face {
+    font-family: SofiaProLightCondensed;
+    src: url('../fonts/SofiaProLightCondensed.eot');
+    src: url('../fonts/SofiaProLightCondensed.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProLightCondensed.woff2') format('woff2'), url('../fonts/SofiaProLightCondensed.woff') format('woff'), url('../fonts/SofiaProLightCondensed.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SofiaProRegular;
+    src: url('../fonts/SofiaProRegular.eot');
+    src: url('../fonts/SofiaProRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProRegular.woff2') format('woff2'), url('../fonts/SofiaProRegular.woff') format('woff'), url('../fonts/SofiaProRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SofiaProSoftLight;
+    src: url('../fonts/SofiaProSoftLight.eot');
+    src: url('../fonts/SofiaProSoftLight.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProSoftLight.woff2') format('woff2'), url('../fonts/SofiaProSoftLight.woff') format('woff'), url('../fonts/SofiaProSoftLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SofiaProMedium;
+    src: url('../fonts/SofiaProMedium.eot');
+    src: url('../fonts/SofiaProMedium.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProMedium.woff2') format('woff2'), url('../fonts/SofiaProMedium.woff') format('woff'), url('../fonts/SofiaProMedium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: SofiaProExtraLight;
+    src: url('../fonts/SofiaProExtraLight.eot');
+    src: url('../fonts/SofiaProExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProExtraLight.woff2') format('woff2'), url('../fonts/SofiaProExtraLight.woff') format('woff'), url('../fonts/SofiaProExtraLight.ttf') format('truetype');
+}
+
+* {
+    font-family: SofiaProSoftLight;
+}
+
+body {
+    background: #eceff4;
+}
+
+footer {
+    min-height: 250px;
+    background: #282836;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white !important;
+}
+
+.navbar-default {
+    background: #3795FD;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar-brand,
+.navbar-nav a {
+    color: white !important;
+}
+
+#uploadDescription h2 {
+    padding: 20px 0;
+    font-size: 2em;
+}
+
+#uploadDescription {
+    font-size: 1.3em;
+}
+
+#uploadDescription p {
+    margin: 30px auto;
+}
+
+#uploadDescription .requirements {
+    margin: 50px auto 20px;
+    text-transform: uppercase;
+    font-family: SofiaProExtraLight;
+    letter-spacing: 0.1em;
+    opacity: 0.8;
+}
+
+#uploadDescription .requirements:before,
+#uploadDescription .requirements:after {
+    content: ' ';
+    display: inline-block;
+    max-width: 200px;
+    width: 20%;
+    min-width: 150px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px;
+}
+
+.requirementIconWrapper {
+    display: inline-block;
+}
+
+.requirementIconWrapper img {
+    width: 30px;
+    height: auto;
+    margin-right: -15px;
+}
+
+.requirementText {
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: SofiaProExtraLight;
+}
+
+.requirementWrapper {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#uploadWrapper {
+    margin: 80px auto 160px;
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-= uploadPanelLeft -=-=-=-=-=-=-=-=-=-=-=-*/
+
+.uploadPanelLeft {
+    background: #3e4454;
+    min-height: 400px;
+    border-radius: 10px;
+    /*box-shadow: 1px 50px 80px -30px rgba(0,0,0,0.3);*/
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.3);
+    margin: -15px -15px -15px 8.33333333%;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.uploadPanelLeft .titleWrapper h2 {
+    font-family: SofiaProExtraLight;
+    font-size: 1.8em;
+    letter-spacing: 0.2em;
+    font-weight: 100;
+    color: white;
+}
+
+.uploadPanelLeft .titleWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80px;
+}
+
+.uploadLogoSectionWrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.uploadLogoWrap {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.uploadLogoWrap img{
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    padding: 50px;
+    box-sizing: content-box;
+    width: auto;
+    height: 100px;
+    overflow: visible;
+}
+
+.uploadPanelRight {
+    position: relative;
+    z-index: 1;
+    background: #FFF;
+    min-height: calc(400px - 30px);
+    border-radius: 10px;
+    /*box-shadow: 1px 50px 80px -30px rgba(0,0,0,0.3);*/
+    box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+}
