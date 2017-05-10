@@ -157,19 +157,22 @@ footer {
 }
 
 .uploadLogoWrap {
-    width: 200px;
-    height: 200px;
-    margin: auto;
+    margin: 50px auto 20px;
+    border-radius: 50%;
+    border: 2px solid #FFF;
 }
 
 .uploadLogoWrap img{
-    border-radius: 50%;
-    border: 2px solid #FFF;
     padding: 50px;
     box-sizing: content-box;
-    width: auto;
-    height: 100px;
+    height: auto;
+    width: 80px;
     overflow: visible;
+}
+.uploadAppName{
+    color: #FFF;
+    font-family: SofiaProExtraLight;
+    opacity: 0.8;
 }
 
 .uploadPanelRight {
