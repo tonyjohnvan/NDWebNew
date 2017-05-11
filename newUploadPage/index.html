@@ -84,8 +84,8 @@
 
 <section id="uploadWrapper">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-3 uploadPanelLeft">
+    <div class="uploadPanelContainer">
+      <div class="uploadPanelLeft">
         <div class="titleWrapper">
           <h2>UPLOAD</h2>
         </div>
@@ -106,7 +106,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xs-7 uploadPanelRight">
+      <div class="uploadPanelRight">
         <div class="descriptionWrap">
           <h4>Upload your app</h4>
           <p>Let's kick things off by uploading your app. We'll add it to our profile queue while you continue
@@ -161,11 +161,15 @@
 <script>
   $(document).ready(function () {
     $('#backBtn').on('click', function () {
-      console.log("backBtn")
+      enterAppSelection()
     });
     $('#confirmBtn').on('click', function () {
       console.log("confirmBtn")
     });
+
+    function enterAppSelection() {
+      $('.uploadPanelLeft').toggleClass('fullWidth')
+    }
 
     Dropzone.options.ipaUpload = {
       paramName: "ipa", // The name that will be used to transfer the file
