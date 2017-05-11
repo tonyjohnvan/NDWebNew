@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>new upload page</title>
+
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="css/circleprogress.css">
+  <link rel="stylesheet" href="css/dropzone.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">NimbleDroid</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section id="uploadDescription">
+  <div class="container text-center">
+    <h2>Upload App</h2>
+    <p>Uploads are used only for generating a profile that is accessible only to your account. Once profiling is
+      completed, we delete your APK.</p>
+    <div class="requirements">
+      Prerequisites
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="row">
+          <div class="col-xs-3 text-right requirementWrapper">
+            <div class="requirementIconWrapper">
+              <img src="img/gamepad.png" alt="">
+            </div>
+          </div>
+          <div class="col-xs-9 text-left requirementWrapper">
+            <span class="requirementText">Cannot be a game</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row">
+          <div class="col-xs-3 text-right requirementWrapper">
+            <div class="requirementIconWrapper">
+              <img src="img/android.svg" alt="">
+            </div>
+          </div>
+          <div class="col-xs-9 text-left requirementWrapper">
+            <span class="requirementText">Can run on Android 4.4</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row">
+          <div class="col-xs-3 text-right requirementWrapper">
+            <div class="requirementIconWrapper">
+              <img src="img/apple-social-logo-outline.svg" alt="">
+            </div>
+          </div>
+          <div class="col-xs-9 text-left requirementWrapper">
+            <span class="requirementText">Can run on IOS 10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="uploadWrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3 uploadPanelLeft">
+        <div class="titleWrapper">
+          <h2>UPLOAD</h2>
+        </div>
+        <div class="uploadLogoSectionWrapper">
+          <div class="iconNameWrapper">
+            <div class="uploadLogoWrap">
+              <img src="img/apple-big-logo.svg" alt="">
+            </div>
+            <div class="uploadAppName">
+              <span>New iOS App</span>
+            </div>
+          </div>
+        </div>
+        <div class="footerWrapper">
+          <div class="buttonWrap">
+            <span class="glyphicon glyphicon-share-alt flipHorizontal" id="backBtn" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-ok disallowed" id="confirmBtn" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-7 uploadPanelRight">
+        <div class="descriptionWrap">
+          <h4>Upload your app</h4>
+          <p>Let's kick things off by uploading your app. We'll add it to our profile queue while you continue
+            NimbleDroid setup. Your files are kept private and once profiled we'll delete them.</p>
+        </div>
+        <div class="divider"></div>
+        <div class="uploadContainer">
+          <div class="uploadLeftWrap">
+            <form action="/upload/ipa"
+                  class="dropzone"
+                  id="ipaUpload"></form>
+            <div class="desContent">
+              <div class="uploadIcon"></div>
+              <h4>App Bundle file (ipa)</h4>
+              <p>In order to upload a correct App Bundle for us to use, please follow the instruction: </p>
+              <ol>
+                <li><kbd>⌘</kbd> + <kbd>,</kbd> to open the preference settings of Xcode and bla bla bla</li>
+                <li>Ipsum Lorem bla bla bla</li>
+                <li>Zip and Upload</li>
+              </ol>
+            </div>
+          </div>
+          <div class="uploadRightWrap">
+            <form action="/upload/test"
+                  class="dropzone"
+                  id="testUpload"></form>
+            <div class="desContent">
+              <div class="uploadIcon"></div>
+              <h4>TEST Bundle file (zip)</h4>
+              <p>Please make sure include these files inside your zip file: </p>
+              <ol>
+                <li>Test runner bundle</li>
+                <li>Test runner definition file (xctestrun)</li>
+                <li>List of test cases (newline-delimited text file)</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container text-center">this is the footer</div>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/dropzone.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#backBtn').on('click', function () {
+      console.log("backBtn")
+    });
+    $('#confirmBtn').on('click', function () {
+      console.log("confirmBtn")
+    });
+
+    Dropzone.options.ipaUpload = {
+      paramName: "ipa", // The name that will be used to transfer the file
+      maxFiles: 1,
+      uploadMultiple: false,
+      addRemoveLinks: true,
+      init: function () {
+        this.on("addedfile", function (file) {
+          console.log("Added file.");
+          $('.uploadLeftWrap').addClass('haveFile')
+        });
+        this.on("removedfile", function (file) {
+          console.log("removed file.");
+          $('.uploadLeftWrap').removeClass('haveFile')
+        });
+        this.on("maxfilesexceeded", function(file){
+          this.removeAllFiles();
+          this.addFile(file);
+        });
+      }
+    };
+    Dropzone.options.testUpload = {
+      paramName: "ipa", // The name that will be used to transfer the file
+      maxFiles: 1,
+      uploadMultiple: false,
+      addRemoveLinks: true,
+      init: function () {
+        this.on("addedfile", function (file) {
+          console.log("Added file.");
+          $('.uploadRightWrap').addClass('haveFile')
+        });
+        this.on("removedfile", function (file) {
+          console.log("removed file.");
+          $('.uploadRightWrap').removeClass('haveFile')
+        });
+        this.on("maxfilesexceeded", function(file){
+          this.removeAllFiles();
+          this.addFile(file);
+        });
+      }
+    };
+  })
+</script>
+</body>
+</html>
