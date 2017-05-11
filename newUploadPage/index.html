@@ -12,6 +12,8 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
+  <link rel="stylesheet" href="css/circleprogress.css">
+  <link rel="stylesheet" href="css/dropzone.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -36,7 +38,6 @@
     <h2>Upload App</h2>
     <p>Uploads are used only for generating a profile that is accessible only to your account. Once profiling is
       completed, we delete your APK.</p>
-    <kbd>⌘</kbd> + <kbd>,</kbd>
     <div class="requirements">
       Prerequisites
     </div>
@@ -89,25 +90,124 @@
           <h2>UPLOAD</h2>
         </div>
         <div class="uploadLogoSectionWrapper">
-          <div class="uploadLogoWrap">
-            <img src="img/apple-big-logo.svg" alt="">
+          <div class="iconNameWrapper">
+            <div class="uploadLogoWrap">
+              <img src="img/apple-big-logo.svg" alt="">
+            </div>
+            <div class="uploadAppName">
+              <span>New iOS App</span>
+            </div>
           </div>
-          <div class="uploadAppName">
-            <span>New iOS App</span>
+        </div>
+        <div class="footerWrapper">
+          <div class="buttonWrap">
+            <span class="glyphicon glyphicon-share-alt flipHorizontal" id="backBtn" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-ok disallowed" id="confirmBtn" aria-hidden="true"></span>
           </div>
         </div>
       </div>
-      <div class="col-xs-7 uploadPanelRight"></div>
+      <div class="col-xs-7 uploadPanelRight">
+        <div class="descriptionWrap">
+          <h4>Upload your app</h4>
+          <p>Let's kick things off by uploading your app. We'll add it to our profile queue while you continue
+            NimbleDroid setup. Your files are kept private and once profiled we'll delete them.</p>
+        </div>
+        <div class="divider"></div>
+        <div class="uploadContainer">
+          <div class="uploadLeftWrap">
+            <form action="/upload/ipa"
+                  class="dropzone"
+                  id="ipaUpload"></form>
+            <div class="desContent">
+              <div class="uploadIcon"></div>
+              <h4>App Bundle file (ipa)</h4>
+              <p>In order to upload a correct App Bundle for us to use, please follow the instruction: </p>
+              <ol>
+                <li><kbd>⌘</kbd> + <kbd>,</kbd> to open the preference settings of Xcode and bla bla bla</li>
+                <li>Ipsum Lorem bla bla bla</li>
+                <li>Zip and Upload</li>
+              </ol>
+            </div>
+          </div>
+          <div class="uploadRightWrap">
+            <form action="/upload/test"
+                  class="dropzone"
+                  id="testUpload"></form>
+            <div class="desContent">
+              <div class="uploadIcon"></div>
+              <h4>TEST Bundle file (zip)</h4>
+              <p>Please make sure include these files inside your zip file: </p>
+              <ol>
+                <li>Test runner bundle</li>
+                <li>Test runner definition file (xctestrun)</li>
+                <li>List of test cases (newline-delimited text file)</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="container text-center">this is the footer</div>
+
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="js/index.js"></script>
+<script src="js/dropzone.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#backBtn').on('click', function () {
+      console.log("backBtn")
+    });
+    $('#confirmBtn').on('click', function () {
+      console.log("confirmBtn")
+    });
+
+    Dropzone.options.ipaUpload = {
+      paramName: "ipa", // The name that will be used to transfer the file
+      maxFiles: 1,
+      uploadMultiple: false,
+      addRemoveLinks: true,
+      init: function () {
+        this.on("addedfile", function (file) {
+          console.log("Added file.");
+          $('.uploadLeftWrap').addClass('haveFile')
+        });
+        this.on("removedfile", function (file) {
+          console.log("removed file.");
+          $('.uploadLeftWrap').removeClass('haveFile')
+        });
+        this.on("maxfilesexceeded", function(file){
+          this.removeAllFiles();
+          this.addFile(file);
+        });
+      }
+    };
+    Dropzone.options.testUpload = {
+      paramName: "ipa", // The name that will be used to transfer the file
+      maxFiles: 1,
+      uploadMultiple: false,
+      addRemoveLinks: true,
+      init: function () {
+        this.on("addedfile", function (file) {
+          console.log("Added file.");
+          $('.uploadRightWrap').addClass('haveFile')
+        });
+        this.on("removedfile", function (file) {
+          console.log("removed file.");
+          $('.uploadRightWrap').removeClass('haveFile')
+        });
+        this.on("maxfilesexceeded", function(file){
+          this.removeAllFiles();
+          this.addFile(file);
+        });
+      }
+    };
+  })
+</script>
 </body>
 </html>

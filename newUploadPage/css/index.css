@@ -46,6 +46,10 @@ footer {
     color: white !important;
 }
 
+.flipHorizontal {
+    transform: scaleX(-1);
+}
+
 .navbar-default {
     background: #3795FD;
     min-height: 80px;
@@ -148,39 +152,198 @@ footer {
     min-height: 80px;
 }
 
+.uploadPanelLeft .footerWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80px;
+    margin-bottom: 20px;
+}
+
+.uploadPanelLeft .footerWrapper .buttonWrap span {
+    color: white;
+    font-size: 2em;
+    margin: 20px;
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.uploadPanelLeft .footerWrapper .buttonWrap span:hover {
+    opacity: 1.0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.uploadPanelLeft .footerWrapper .buttonWrap span.disallowed {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
 .uploadLogoSectionWrapper {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 450px;
+}
+
+.uploadLogoSectionWrapper .iconNameWrapper {
+    margin: auto;
 }
 
 .uploadLogoWrap {
-    margin: 50px auto 20px;
     border-radius: 50%;
     border: 2px solid #FFF;
 }
 
-.uploadLogoWrap img{
-    padding: 50px;
+.uploadLogoWrap img {
+    padding: 40px;
     box-sizing: content-box;
     height: auto;
-    width: 80px;
-    overflow: visible;
+    width: 65px;
 }
-.uploadAppName{
+
+.uploadAppName {
     color: #FFF;
     font-family: SofiaProExtraLight;
     opacity: 0.8;
+    margin-top: 40px;
 }
 
 .uploadPanelRight {
     position: relative;
     z-index: 1;
     background: #FFF;
-    min-height: calc(400px - 30px);
+    height: calc(630px - 30px);
     border-radius: 10px;
     /*box-shadow: 1px 50px 80px -30px rgba(0,0,0,0.3);*/
     box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    overflow: hidden;
+}
+
+.uploadPanelRight .descriptionWrap {
+    padding: 30px 40px;
+}
+
+.uploadPanelRight .descriptionWrap h4 {
+    text-transform: uppercase;
+}
+
+.uploadPanelRight .descriptionWrap p {
+    font-family: SofiaProRegular;
+    color: #3e4454;
+    opacity: 0.6;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background: #3e4454;
+    opacity: 0.1;
+    margin-right: -30px;
+}
+
+.uploadLeftWrap {
+    width: 50%;
+    height: 100%;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: inset 1px 1px 25px 10px rgba(0,0,0,0.005);
+    opacity: 0.9;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.uploadRightWrap {
+    width: 50%;
+    height: 100%;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-left: 1px solid rgba(62, 68, 84, 0.10);
+    box-shadow: inset 1px 1px 25px 10px rgba(0,0,0,0.005);
+    opacity: 0.9;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.uploadLeftWrap.haveFile .desContent,
+.uploadRightWrap.haveFile .desContent{
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+#ipaUpload,
+#testUpload{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 100;
+}
+.dz-message{
+    display: none;
+}
+
+.uploadContainer {
+    display: flex;
+    height: calc(100% - 150px);
+}
+
+.uploadIcon {
+    width: 40px;
+    height: 40px;
+    background: url(../img/upload.svg) center center no-repeat;
+    background-size: 40px 40px;
+    margin: 20px auto;
+}
+
+.desContent {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    transition: all 0.8s ease;
+}
+
+.desContent h4 {
+    text-transform: uppercase;
+    word-spacing: 4px;
+}
+
+.desContent p {
+    font-family: SofiaProMedium;
+    color: #3e4454;
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+
+.desContent ol {
+    text-align: left;
+}
+
+.desContent ol li {
+    font-family: SofiaProRegular;
+    padding-left: 10px;
+    margin: 10px auto;
+    color: #3e4454;
+    opacity: 0.8;
+}
+
+.desContent ol li kbd {
+    background: transparent;
+    border: 1px solid #00adeb;
+    color: #00adeb;
 }
