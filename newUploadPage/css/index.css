@@ -123,14 +123,15 @@ footer {
     margin: 80px auto 160px;
 }
 
-.uploadPanelContainer{
+.uploadPanelContainer {
     display: flex;
 }
 
 /*-=-=-=-=-=-=-=-=-=-=-= uploadPanelLeft -=-=-=-=-=-=-=-=-=-=-=-*/
-#uploadWrapper .container{
+#uploadWrapper .container {
     position: relative;
 }
+
 .uploadPanelLeft {
     min-width: 180px;
     background: #3e4454;
@@ -144,13 +145,23 @@ footer {
     text-align: center;
     width: 25%;
     /*transition: all 0.6s cubic-bezier(0.895, 0.23, 0.685, 1.12);*/
-    transition: all 0.6s  cubic-bezier(.41,-0.1,.19,1.1);
+    transition: all 0.6s cubic-bezier(.41, -0.1, .19, 1.1);
 }
 
-.uploadPanelLeft.fullWidth{
+.uploadPanelLeft.fullWidth {
     width: 100%;
     box-shadow: 1px 166px 140px -100px rgba(62, 68, 84, 0.92);
-    transition: all 0.6s cubic-bezier(.91,.3,.53,1.2);
+    transition: all 0.6s cubic-bezier(.91, .3, .53, 1.2);
+    height: initial;
+}
+
+.leftContentContainer {
+    transition: all 0.6s cubic-bezier(.41, -0.1, .19, 1.1);
+}
+
+.uploadPanelLeft.fullWidth .leftContentContainer {
+    opacity: 0;
+    pointer-events: none;
 }
 
 .uploadPanelLeft .titleWrapper h2 {
@@ -295,13 +306,13 @@ footer {
 }
 
 .uploadLeftWrap.haveFile .desContent,
-.uploadRightWrap.haveFile .desContent{
+.uploadRightWrap.haveFile .desContent {
     opacity: 0;
     transition: all 0.3s ease;
 }
 
 #ipaUpload,
-#testUpload{
+#testUpload {
     position: absolute;
     top: 0;
     height: 100%;
@@ -311,7 +322,8 @@ footer {
     justify-content: center;
     z-index: 100;
 }
-.dz-message{
+
+.dz-message {
     display: none;
 }
 
@@ -364,4 +376,77 @@ footer {
     background: transparent;
     border: 1px solid #00adeb;
     color: #00adeb;
+}
+
+.uploadPanelLeft.fullWidth .fullWidthContentContainer {
+    opacity: 1;
+    pointer-events: all;
+    transition: all 0.6s cubic-bezier(1, -0.15, .53, 1.25);
+}
+
+.uploadPanelLeft .appsContainer {
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(1, -0.15, .53, 1.25);
+    transition-delay: 0.7s;
+}
+
+.uploadPanelLeft.fullWidth .appsContainer {
+    opacity: 1;
+    pointer-events: all;
+    transition: all 0.6s cubic-bezier(1, -0.15, .53, 1.25);
+}
+
+.uploadPanelLeft .fullWidthContentContainer {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fullWidthContentContainer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: initial;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0, 1.37, .25, 1);
+}
+
+.fullWidthContentContainer .titleWrapper {
+    text-transform: uppercase;
+}
+
+.fullWidthContentContainer .appsContainer {
+    width: 100%;
+    /*height: calc(100% - 80px);*/
+    display: flex;
+    flex-wrap: wrap;
+    /*text-align: center;*/
+    justify-content: flex-start;
+    padding: 0 50px;;
+}
+
+.appWrapper {
+    /*display: inline-block;*/
+    min-width: 160px;
+    width: 160px;
+    height: 200px;
+    background: #eceff4;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px -2px rgba(236, 239, 244, 0.30);
+    margin: 25px;
+    padding: 20px;
+}
+
+.appWrapper .iconWrapper {
+    text-align: center;
+}
+
+.appWrapper .appName {
+    font-size: 1.5em;
+    margin: 15px auto 5px;
+}
+
+.appWrapper .iconWrapper img {
+    width: 90px;
+    height: auto;
 }

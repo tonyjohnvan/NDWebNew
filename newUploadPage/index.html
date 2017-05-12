@@ -85,24 +85,75 @@
 <section id="uploadWrapper">
   <div class="container">
     <div class="uploadPanelContainer">
-      <div class="uploadPanelLeft">
-        <div class="titleWrapper">
-          <h2>UPLOAD</h2>
-        </div>
-        <div class="uploadLogoSectionWrapper">
-          <div class="iconNameWrapper">
-            <div class="uploadLogoWrap">
-              <img src="img/apple-big-logo.svg" alt="">
+      <div class="uploadPanelLeft fullWidth">
+        <div class="leftContentContainer">
+          <div class="titleWrapper">
+            <h2>UPLOAD</h2>
+          </div>
+          <div class="uploadLogoSectionWrapper">
+            <div class="iconNameWrapper">
+              <div class="uploadLogoWrap">
+                <img src="img/apple-big-logo.svg" alt="">
+              </div>
+              <div class="uploadAppName">
+                <span>New iOS App</span>
+              </div>
             </div>
-            <div class="uploadAppName">
-              <span>New iOS App</span>
+          </div>
+          <div class="footerWrapper">
+            <div class="buttonWrap">
+              <span class="glyphicon glyphicon-share-alt flipHorizontal" id="backBtn" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-ok disallowed" id="confirmBtn" aria-hidden="true"></span>
             </div>
           </div>
         </div>
-        <div class="footerWrapper">
-          <div class="buttonWrap">
-            <span class="glyphicon glyphicon-share-alt flipHorizontal" id="backBtn" aria-hidden="true"></span>
-            <span class="glyphicon glyphicon-ok disallowed" id="confirmBtn" aria-hidden="true"></span>
+        <div class="fullWidthContentContainer">
+          <div class="titleWrapper">
+            <h2>Select an app to upload</h2>
+          </div>
+          <div class="appsContainer">
+            <div class="appWrapper">
+              <div class="iconWrapper">
+                <img src="img/tempIcon.png" alt="">
+              </div>
+              <p class="appName">AppName</p>
+              <p class="bundleName">BundleName</p>
+            </div>
+            <div class="appWrapper">
+              <div class="iconWrapper">
+                <img src="img/tempIcon.png" alt="">
+              </div>
+              <p class="appName">AppName</p>
+              <p class="bundleName">BundleName</p>
+            </div>
+            <div class="appWrapper">
+              <div class="iconWrapper">
+                <img src="img/tempIcon.png" alt="">
+              </div>
+              <p class="appName">AppName</p>
+              <p class="bundleName">BundleName</p>
+            </div>
+            <div class="appWrapper">
+              <div class="iconWrapper">
+                <img src="img/tempIcon.png" alt="">
+              </div>
+              <p class="appName">AppName</p>
+              <p class="bundleName">BundleName</p>
+            </div>
+            <div class="appWrapper">
+              <div class="iconWrapper">
+                <img src="img/tempIcon.png" alt="">
+              </div>
+              <p class="appName">AppName</p>
+              <p class="bundleName">BundleName</p>
+            </div>
+            <div class="appWrapper newAppWrap">
+              <div class="iconWrapper">
+                <img src="img/tempIcon.png" alt="">
+              </div>
+              <p class="appName">AppName</p>
+              <p class="bundleName">BundleName</p>
+            </div>
           </div>
         </div>
       </div>
@@ -155,21 +206,54 @@
 
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/jquery.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="js/dropzone.js"></script>
 <script>
+
+
+  function enterAppUpload() {
+    $('.uploadPanelLeft').removeClass('fullWidth')
+    setTimeout(function () {
+      $('.appsContainer').hide()
+    },700)
+  }
+
+  function enterAppSelection() {
+    $('.uploadPanelLeft').addClass('fullWidth')
+    $('.appsContainer').show()
+    setTimeout(function () {
+//      fixHeight()
+    },700)
+  }
+
+  function fixHeight() {
+    if ($('.uploadPanelLeft').hasClass('fullWidth')) {
+      $('.uploadPanelLeft.fullWidth').height(120 + $('.appsContainer').height())
+      $('#uploadWrapper > .container').height($('.uploadPanelLeft.fullWidth').height())
+    } else {
+      $('.uploadPanelLeft').height('initial')
+      $('#uploadWrapper > .container').height('initial')
+    }
+  }
+
+
   $(document).ready(function () {
+
+    //fix Height
+//    fixHeight()
+
     $('#backBtn').on('click', function () {
       enterAppSelection()
+    });
+    $('.appWrapper').on('click', function () {
+      enterAppUpload()
+//      fixHeight()
     });
     $('#confirmBtn').on('click', function () {
       console.log("confirmBtn")
     });
 
-    function enterAppSelection() {
-      $('.uploadPanelLeft').toggleClass('fullWidth')
-    }
 
     Dropzone.options.ipaUpload = {
       paramName: "ipa", // The name that will be used to transfer the file
@@ -185,7 +269,7 @@
           console.log("removed file.");
           $('.uploadLeftWrap').removeClass('haveFile')
         });
-        this.on("maxfilesexceeded", function(file){
+        this.on("maxfilesexceeded", function (file) {
           this.removeAllFiles();
           this.addFile(file);
         });
@@ -205,7 +289,7 @@
           console.log("removed file.");
           $('.uploadRightWrap').removeClass('haveFile')
         });
-        this.on("maxfilesexceeded", function(file){
+        this.on("maxfilesexceeded", function (file) {
           this.removeAllFiles();
           this.addFile(file);
         });
