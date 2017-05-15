@@ -146,6 +146,7 @@ footer {
     width: 25%;
     /*transition: all 0.6s cubic-bezier(0.895, 0.23, 0.685, 1.12);*/
     transition: all 0.6s cubic-bezier(.41, -0.1, .19, 1.1);
+    transition-delay: 0.6s;
 }
 
 .uploadPanelLeft.fullWidth {
@@ -157,6 +158,7 @@ footer {
 
 .leftContentContainer {
     transition: all 0.6s cubic-bezier(.41, -0.1, .19, 1.1);
+    transition-delay: 0.6s;
 }
 
 .uploadPanelLeft.fullWidth .leftContentContainer {
@@ -387,19 +389,45 @@ footer {
 .uploadPanelLeft .appsContainer {
     opacity: 0;
     pointer-events: none;
+    height: 0;
     transition: all 0.6s cubic-bezier(1, -0.15, .53, 1.25);
-    transition-delay: 0.7s;
+    /*transition-delay: 0.6s;*/
 }
 
 .uploadPanelLeft.fullWidth .appsContainer {
     opacity: 1;
     pointer-events: all;
     transition: all 0.6s cubic-bezier(1, -0.15, .53, 1.25);
+    height: auto;
+    transition-delay: 0.6s;
 }
 
-.uploadPanelLeft .fullWidthContentContainer {
+.titleWrapperFull{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80px;
+}
+.titleWrapperFull h2{
+    font-family: SofiaProExtraLight;
+    font-size: 1.8em;
+    letter-spacing: 0.2em;
+    font-weight: 100;
+    color: white;
+}
+
+.uploadPanelLeft .titleWrapperFull{
     opacity: 0;
     pointer-events: none;
+    transition: all 0.6s cubic-bezier(0, 1.37, .25, 1);
+    transition-delay: 0.6s;
+}
+
+.uploadPanelLeft.fullWidth .titleWrapperFull{
+    opacity: 1;
+    pointer-events: all;
+    transition: all 0.6s cubic-bezier(0, 1.37, .25, 1);
+    transition-delay: 0.6s;
 }
 
 .fullWidthContentContainer {
@@ -411,7 +439,7 @@ footer {
     transition: all 0.6s cubic-bezier(0, 1.37, .25, 1);
 }
 
-.fullWidthContentContainer .titleWrapper {
+.fullWidthContentContainer .titleWrapperFull {
     text-transform: uppercase;
 }
 
@@ -420,11 +448,18 @@ footer {
     /*height: calc(100% - 80px);*/
     display: flex;
     flex-wrap: wrap;
-    /*text-align: center;*/
-    justify-content: flex-start;
-    padding: 0 50px;;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /*padding: 0 50px;;*/
 }
 
+.ghostWrapper{
+    width: 160px;
+    height: 200px;
+    margin: 25px;
+    padding: 20px;
+}
 .appWrapper {
     /*display: inline-block;*/
     min-width: 160px;
@@ -449,4 +484,8 @@ footer {
 .appWrapper .iconWrapper img {
     width: 90px;
     height: auto;
+}
+
+.newAppWrap{
+
 }
