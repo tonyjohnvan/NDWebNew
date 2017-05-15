@@ -113,6 +113,8 @@
           </div>
           <div class="appsContainer">
             <div class="appWrapper newAppWrap">
+              <p class="appName"><span class="glyphicon glyphicon-plus"></span></p>
+              <p class="bundleName">New iOS App</p>
             </div>
             <div class="appWrapper">
               <div class="iconWrapper">
@@ -149,10 +151,10 @@
               <p class="appName">AppName</p>
               <p class="bundleName">BundleName</p>
             </div>
-            <div class="ghostWrapper" ></div>
-            <div class="ghostWrapper" ></div>
-            <div class="ghostWrapper" ></div>
-            <div class="ghostWrapper" ></div>
+            <div class="ghostWrapper"></div>
+            <div class="ghostWrapper"></div>
+            <div class="ghostWrapper"></div>
+            <div class="ghostWrapper"></div>
           </div>
         </div>
       </div>
@@ -214,25 +216,18 @@
   function enterAppUpload() {
     $('.uploadPanelLeft').removeClass('fullWidth')
     setTimeout(function () {
-//      $('.appsContainer').hide()
-    },700)
+    }, 600)
   }
 
   function enterAppSelection() {
     $('.uploadPanelLeft').addClass('fullWidth')
-//    $('.appsContainer').show()
     setTimeout(function () {
-//      fixHeight()
-    },700)
+    }, 600)
   }
 
   function fixHeight() {
     if ($('.uploadPanelLeft').hasClass('fullWidth')) {
-      $('.uploadPanelLeft.fullWidth').height(120 + $('.appsContainer').height())
-      $('#uploadWrapper > .container').height($('.uploadPanelLeft.fullWidth').height())
     } else {
-      $('.uploadPanelLeft').height('initial')
-      $('#uploadWrapper > .container').height('initial')
     }
   }
 

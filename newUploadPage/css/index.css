@@ -135,7 +135,7 @@ footer {
 .uploadPanelLeft {
     min-width: 180px;
     background: #3e4454;
-    min-height: 400px;
+    /*min-height: 400px;*/
     border-radius: 10px;
     /*box-shadow: 1px 50px 80px -30px rgba(0,0,0,0.3);*/
     box-shadow: 2px 2px 50px -10px rgba(62, 68, 84, 0.5);
@@ -146,24 +146,27 @@ footer {
     width: 25%;
     /*transition: all 0.6s cubic-bezier(0.895, 0.23, 0.685, 1.12);*/
     transition: all 0.6s cubic-bezier(.41, -0.1, .19, 1.1);
-    transition-delay: 0.6s;
+    /*transition-delay: 0.6s;*/
 }
 
 .uploadPanelLeft.fullWidth {
     width: 100%;
     box-shadow: 1px 166px 140px -100px rgba(62, 68, 84, 0.92);
     transition: all 0.6s cubic-bezier(.91, .3, .53, 1.2);
-    height: initial;
+    /*height: initial;*/
+    min-height: 630px;
 }
 
 .leftContentContainer {
     transition: all 0.6s cubic-bezier(.41, -0.1, .19, 1.1);
-    transition-delay: 0.6s;
+    transition-delay: 0s;
 }
 
 .uploadPanelLeft.fullWidth .leftContentContainer {
     opacity: 0;
     pointer-events: none;
+    transition-delay: 0.3s;
+    height: 0;
 }
 
 .uploadPanelLeft .titleWrapper h2 {
@@ -223,6 +226,8 @@ footer {
 .uploadLogoWrap {
     border-radius: 50%;
     border: 2px solid #FFF;
+    width: intrinsic; /* fix for safari*/
+    margin: auto; /* fix for safari*/
 }
 
 .uploadLogoWrap img {
@@ -230,6 +235,8 @@ footer {
     box-sizing: content-box;
     height: auto;
     width: 65px;
+    /*border: 1px solid white;*/
+    /*border-radius: 50%*/
 }
 
 .uploadAppName {
@@ -381,34 +388,37 @@ footer {
 }
 
 .uploadPanelLeft.fullWidth .fullWidthContentContainer {
+    position: relative;
     opacity: 1;
     pointer-events: all;
+    overflow: auto;
     transition: all 0.6s cubic-bezier(1, -0.15, .53, 1.25);
 }
 
 .uploadPanelLeft .appsContainer {
     opacity: 0;
     pointer-events: none;
-    height: 0;
-    transition: all 0.6s cubic-bezier(1, -0.15, .53, 1.25);
-    /*transition-delay: 0.6s;*/
+    max-height: 0;
+    transition: all 0.6s cubic-bezier(1, -0.15, .53, 1.25), max-height 0.01s linear;
+    overflow: hidden;
 }
 
 .uploadPanelLeft.fullWidth .appsContainer {
     opacity: 1;
     pointer-events: all;
-    transition: all 0.6s cubic-bezier(1, -0.15, .53, 1.25);
-    height: auto;
+    transition: all 0.6s cubic-bezier(1, -0.15, .53, 1.25), max-height 5s linear;
     transition-delay: 0.6s;
+    max-height: 9999px;
 }
 
-.titleWrapperFull{
+.titleWrapperFull {
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 80px;
 }
-.titleWrapperFull h2{
+
+.titleWrapperFull h2 {
     font-family: SofiaProExtraLight;
     font-size: 1.8em;
     letter-spacing: 0.2em;
@@ -416,14 +426,14 @@ footer {
     color: white;
 }
 
-.uploadPanelLeft .titleWrapperFull{
+.uploadPanelLeft .titleWrapperFull {
     opacity: 0;
     pointer-events: none;
     transition: all 0.6s cubic-bezier(0, 1.37, .25, 1);
-    transition-delay: 0.6s;
+    /*transition-delay: 0.6s;*/
 }
 
-.uploadPanelLeft.fullWidth .titleWrapperFull{
+.uploadPanelLeft.fullWidth .titleWrapperFull {
     opacity: 1;
     pointer-events: all;
     transition: all 0.6s cubic-bezier(0, 1.37, .25, 1);
@@ -454,12 +464,13 @@ footer {
     /*padding: 0 50px;;*/
 }
 
-.ghostWrapper{
+.ghostWrapper {
     width: 160px;
     height: 200px;
     margin: 25px;
     padding: 20px;
 }
+
 .appWrapper {
     /*display: inline-block;*/
     min-width: 160px;
@@ -486,6 +497,24 @@ footer {
     height: auto;
 }
 
-.newAppWrap{
+.newAppWrap {
+    background: transparent;
+    border: 2px solid white;
+    position: relative;
+}
 
+.newAppWrap span{
+    color: white;
+    font-size: 40px;
+    opacity: 0.8;
+    padding: 20px;
+    margin-top: 10px;
+}
+.newAppWrap .bundleName{
+    position: absolute;
+    color: white;
+    opacity: 0.8;
+    width: calc(100% - 40px);
+    text-align: center;
+    bottom: 10px;
 }
