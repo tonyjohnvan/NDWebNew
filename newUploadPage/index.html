@@ -92,8 +92,17 @@
           </div>
           <div class="uploadLogoSectionWrapper">
             <div class="iconNameWrapper">
+              <div class="checkmarkWrapper">
+                <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                  <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                  <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                </svg>
+              </div>
+              <div class="uploadSuccessText">
+                <span>Your App has been profiling!</span>
+              </div>
               <div class="uploadLogoWrap">
-                <img src="img/apple-big-logo.svg" alt="">
+                <img id="uploadAppIcon" src="img/apple-big-logo.svg" alt="">
               </div>
               <div class="uploadAppName">
                 <span>New iOS App</span>
@@ -101,9 +110,12 @@
             </div>
           </div>
           <div class="footerWrapper">
-            <div class="buttonWrap">
+            <div class="buttonWrap" id="normalBtns">
               <span class="glyphicon glyphicon-share-alt flipHorizontal" id="backBtn" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-ok disallowed" id="confirmBtn" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-ok" id="confirmBtn" aria-hidden="true"></span>
+            </div>
+            <div class="buttonWrap" id="finishedBtn">
+              <button class="viewProfileBtn">VIEW the profile</button>
             </div>
           </div>
         </div>
@@ -231,6 +243,17 @@
     }
   }
 
+  function uploadFinished() {
+    $('.uploadPanelLeft').addClass('finished')
+    $('.uploadLogoWrap').fadeOut(600)
+    $('.uploadAppName').fadeOut(600)
+    $('#normalBtns').fadeOut(600)
+
+    $('.checkmarkWrapper').delay(1000).fadeIn()
+    $('.uploadSuccessText').delay(1000).fadeIn()
+    $('#finishedBtn').delay(2300).fadeIn()
+  }
+
 
   $(document).ready(function () {
 
@@ -245,7 +268,7 @@
 //      fixHeight()
     });
     $('#confirmBtn').on('click', function () {
-      console.log("confirmBtn")
+      uploadFinished()
     });
 
 

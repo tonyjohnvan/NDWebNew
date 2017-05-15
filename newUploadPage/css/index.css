@@ -155,6 +155,15 @@ footer {
     transition: all 0.6s cubic-bezier(.91, .3, .53, 1.2);
     /*height: initial;*/
     min-height: 630px;
+    margin-bottom: 200px;
+}
+
+.uploadPanelLeft.finished {
+    width: 100%;
+    box-shadow: 1px 166px 140px -100px rgba(62, 68, 84, 0.92);
+    transition: all 0.6s cubic-bezier(.91, .3, .53, 1.2);
+    /*height: initial;*/
+    min-height: 630px;
 }
 
 .leftContentContainer {
@@ -244,6 +253,15 @@ footer {
     font-family: SofiaProExtraLight;
     opacity: 0.8;
     margin-top: 40px;
+}
+
+.uploadSuccessText {
+    color: #FFF;
+    font-family: SofiaProExtraLight;
+    opacity: 1;
+    margin-top: 40px;
+    display: none;
+    font-size: 18px;
 }
 
 .uploadPanelRight {
@@ -459,9 +477,9 @@ footer {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    /*padding: 0 50px;;*/
+    padding: 0 60px;
 }
 
 .ghostWrapper {
@@ -503,18 +521,105 @@ footer {
     position: relative;
 }
 
-.newAppWrap span{
+.newAppWrap span {
     color: white;
     font-size: 40px;
     opacity: 0.8;
     padding: 20px;
     margin-top: 10px;
 }
-.newAppWrap .bundleName{
+
+.newAppWrap .bundleName {
     position: absolute;
     color: white;
     opacity: 0.8;
     width: calc(100% - 40px);
     text-align: center;
     bottom: 10px;
+}
+
+/*animation checkmark*/
+.checkmarkWrapper {
+    display: none;
+}
+
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 1;
+    stroke-miterlimit: 10;
+    stroke: #FFF;
+    fill: #3e4454;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+    background: transparent;
+}
+
+.checkmark {
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    margin: 10% auto;
+    box-shadow: inset 0px 0px 0px #ACACAC;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes scale {
+    0%, 100% {
+        transform: none;
+    }
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #ACACAC;
+    }
+}
+
+button.viewProfileBtn {
+    cursor: pointer !important;
+    background: rgba(255, 255, 255, 0.5);
+    color: #3e4454;
+    border: none;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+button.viewProfileBtn:hover {
+    margin-top: -3px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 15px 28px -10px rgba(0, 0, 0, 0.3);
+}
+
+#finishedBtn {
+    display: none;
+    animation-delay: 1s;
+}
+
+button.viewProfileBtn span {
+    font-size: 16px;
+    padding-right: 10px;
 }
