@@ -128,35 +128,35 @@
               <p class="appName"><span class="glyphicon glyphicon-plus"></span></p>
               <p class="bundleName">New iOS App</p>
             </div>
-            <div class="appWrapper">
+            <div class="appWrapper existingAppWrap">
               <div class="iconWrapper">
                 <img src="img/tempIcon.png" alt="">
               </div>
               <p class="appName">AppName</p>
               <p class="bundleName">BundleName</p>
             </div>
-            <div class="appWrapper">
+            <div class="appWrapper existingAppWrap">
               <div class="iconWrapper">
                 <img src="img/tempIcon.png" alt="">
               </div>
               <p class="appName">AppName</p>
               <p class="bundleName">BundleName</p>
             </div>
-            <div class="appWrapper">
+            <div class="appWrapper existingAppWrap">
               <div class="iconWrapper">
                 <img src="img/tempIcon.png" alt="">
               </div>
               <p class="appName">AppName</p>
               <p class="bundleName">BundleName</p>
             </div>
-            <div class="appWrapper">
+            <div class="appWrapper existingAppWrap">
               <div class="iconWrapper">
                 <img src="img/tempIcon.png" alt="">
               </div>
               <p class="appName">AppName</p>
               <p class="bundleName">BundleName</p>
             </div>
-            <div class="appWrapper">
+            <div class="appWrapper existingAppWrap">
               <div class="iconWrapper">
                 <img src="img/tempIcon.png" alt="">
               </div>
@@ -171,42 +171,53 @@
         </div>
       </div>
       <div class="uploadPanelRight">
-        <div class="descriptionWrap">
-          <h4>Upload your app</h4>
-          <p>Let's kick things off by uploading your app. We'll add it to our profile queue while you continue
-            NimbleDroid setup. Your files are kept private and once profiled we'll delete them.</p>
-        </div>
-        <div class="divider"></div>
-        <div class="uploadContainer">
-          <div class="uploadLeftWrap">
-            <form action="/upload/ipa"
-                  class="dropzone"
-                  id="ipaUpload"></form>
-            <div class="desContent">
-              <div class="uploadIcon"></div>
-              <h4>App Bundle file (ipa)</h4>
-              <p>In order to upload a correct App Bundle for us to use, please follow the instruction: </p>
-              <ol>
-                <li><kbd>⌘</kbd> + <kbd>,</kbd> to open the preference settings of Xcode and bla bla bla</li>
-                <li>Ipsum Lorem bla bla bla</li>
-                <li>Zip and Upload</li>
-              </ol>
+        <div id="existingUpload">
+          <div class="descriptionWrap">
+            <h4>Upload your app</h4>
+            <p>Let's kick things off by uploading your app. We'll add it to our profile queue while you continue
+              NimbleDroid setup. Your files are kept private and once profiled we'll delete them.</p>
+          </div>
+          <div class="divider"></div>
+          <div class="uploadContainer">
+            <div class="uploadLeftWrap">
+              <form action="/upload/ipa"
+                    class="dropzone"
+                    id="ipaUpload"></form>
+              <div class="desContent">
+                <div class="uploadIcon"></div>
+                <h4>App Bundle file (ipa)</h4>
+                <p>In order to upload a correct App Bundle for us to use, please follow the instruction: </p>
+                <ol>
+                  <li><kbd>⌘</kbd> + <kbd>,</kbd> to open the preference settings of Xcode and bla bla bla</li>
+                  <li>Ipsum Lorem bla bla bla</li>
+                  <li>Zip and Upload</li>
+                </ol>
+              </div>
+            </div>
+            <div class="uploadRightWrap">
+              <form action="/upload/test"
+                    class="dropzone"
+                    id="testUpload"></form>
+              <div class="desContent">
+                <div class="uploadIcon"></div>
+                <h4>TEST Bundle file (zip)</h4>
+                <p>Please make sure include these files inside your zip file: </p>
+                <ol>
+                  <li>Test runner bundle</li>
+                  <li>Test runner definition file (xctestrun)</li>
+                  <li>List of test cases (newline-delimited text file)</li>
+                </ol>
+              </div>
             </div>
           </div>
-          <div class="uploadRightWrap">
-            <form action="/upload/test"
-                  class="dropzone"
-                  id="testUpload"></form>
-            <div class="desContent">
-              <div class="uploadIcon"></div>
-              <h4>TEST Bundle file (zip)</h4>
-              <p>Please make sure include these files inside your zip file: </p>
-              <ol>
-                <li>Test runner bundle</li>
-                <li>Test runner definition file (xctestrun)</li>
-                <li>List of test cases (newline-delimited text file)</li>
-              </ol>
-            </div>
+        </div>
+        <div id="newUploadWizard">
+          <div class="topHeader">
+            <ul>
+              <li>1. Upload</li>
+              <li>2. Sharing</li>
+              <li>3. Alerts</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -257,18 +268,22 @@
 
   $(document).ready(function () {
 
-    //fix Height
-//    fixHeight()
-
     $('#backBtn').on('click', function () {
       enterAppSelection()
     });
     $('.appWrapper').on('click', function () {
       enterAppUpload()
-//      fixHeight()
     });
     $('#confirmBtn').on('click', function () {
       uploadFinished()
+    });
+    $('.newAppWrap').on('click', function () {
+      $('#existingUpload').hide()
+      $('#newUploadWizard').show()
+    });
+    $('.existingAppWrap').on('click', function () {
+      $('#existingUpload').show()
+      $('#newUploadWizard').hide()
     });
 
 

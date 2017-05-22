@@ -623,3 +623,7 @@ button.viewProfileBtn span {
     font-size: 16px;
     padding-right: 10px;
 }
+
+#existingUpload{
+    height: 100%;
+}
