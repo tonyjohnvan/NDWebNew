@@ -212,12 +212,124 @@
           </div>
         </div>
         <div id="newUploadWizard">
-          <div class="topHeader">
-            <ul>
-              <li>1. Upload</li>
-              <li>2. Sharing</li>
-              <li>3. Alerts</li>
+          <div class="topHeader vertical-center-wrap">
+            <ul id="wizardStepsWrap">
+              <li class="wizardStep active" onclick="gotoStep(0)">1. Upload</li>
+              <li class="wizardStep" onclick="gotoStep(1)">2. Sharing</li>
+              <li class="wizardStep" onclick="gotoStep(2)">3. Alerts</li>
             </ul>
+          </div>
+          <div class="footerBtns vertical-center-wrap">
+            <div class="btnWraps">
+              <div class="prevBtnWrap">
+                <button class="nd-btn-blue fancy disabled" id="wizardPreviousStep">Previous</button>
+              </div>
+              <div class="nextBtnWrap">
+                <button class="nd-btn-blue fancy" id="wizardNextStep">Next</button>
+              </div>
+            </div>
+          </div>
+          <div class="contentWrap">
+            <div class="wizardStepContainer active" id="step1">
+              <div class="descriptionWrap">
+                <h4>Upload your app</h4>
+                <p>Let's kick things off by uploading your app. We'll add it to our profile queue while you continue
+                  NimbleDroid setup. Your files are kept private and once profiled we'll delete them.</p>
+              </div>
+              <div class="divider"></div>
+              <div class="uploadContainer">
+                <div class="uploadLeftWrap">
+                  <form action="/upload/ipa"
+                        class="dropzone"
+                        id="ipaUploadNew"></form>
+                  <div class="desContent">
+                    <div class="uploadIcon"></div>
+                    <h4>App Bundle file (ipa)</h4>
+                    <p>In order to upload a correct App Bundle for us to use, please follow the instruction: </p>
+                    <ol>
+                      <li><kbd>⌘</kbd> + <kbd>,</kbd> to open the preference settings of Xcode and bla bla bla</li>
+                      <li>Ipsum Lorem bla bla bla</li>
+                      <li>Zip and Upload</li>
+                    </ol>
+                  </div>
+                </div>
+                <div class="uploadRightWrap">
+                  <form action="/upload/test"
+                        class="dropzone"
+                        id="testUploadNew"></form>
+                  <div class="desContent">
+                    <div class="uploadIcon"></div>
+                    <h4>TEST Bundle file (zip)</h4>
+                    <p>Please make sure include these files inside your zip file: </p>
+                    <ol>
+                      <li>Test runner bundle</li>
+                      <li>Test runner definition file (xctestrun)</li>
+                      <li>List of test cases (newline-delimited text file)</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wizardStepContainer" id="step2">
+              <div class="descriptionWrap">
+                <h4>Alerts</h4>
+                <p>Alerts will notify you when profile results meet certain criteria for one or all Scenarios. You can
+                  configure thresholds as well as how alerts are delivered.</p>
+              </div>
+              <div class="divider"></div>
+              <div class="alertChannelSelectWrap">
+                <div class="checkRadioLine" id="enableEmailCheck">
+                  <div class="switch-wrapper">
+                    <input type="checkbox" id="switch" checked/>
+                    <label for="switch"><span><em></em></span></label>
+                  </div> <!-- /siwtch-wrapper -->
+                  <div class="checkBoxLabel">Enable Email Chanel to</div>
+                  <input type="text" placeholder="admin@nimbledroid.com" class="alertEmailAddress fancyInput">
+                </div>
+                <div class="checkRadioLine" id="enableSlackCheck">
+                  <div class="switch-wrapper">
+                    <input type="checkbox" id="switch2" checked/>
+                    <label for="switch2"><span><em></em></span></label>
+                  </div> <!-- /siwtch-wrapper -->
+                  <div class="checkBoxLabel">Enable Slack Chanel</div>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="alertChannelSelectWrap">
+                <h4>For All Scenarios when</h4>
+                <div class="checkRadioLine" id="significantSlow">
+                  <div class="switch-wrapper">
+                    <input type="checkbox" id="switch3" checked/>
+                    <label for="switch3"><span><em></em></span></label>
+                  </div> <!-- /siwtch-wrapper -->
+                  <div class="checkBoxLabel">Slows significantly vs previous upload</div>
+                </div>
+                <div class="checkRadioLine" id="memleak">
+                  <div class="switch-wrapper">
+                    <input type="checkbox" id="switch4" checked/>
+                    <label for="switch4"><span><em></em></span></label>
+                  </div> <!-- /siwtch-wrapper -->
+                  <div class="checkBoxLabel">Detects a memory leak</div>
+                </div>
+                <div class="checkRadioLine" id="appcrash">
+                  <div class="switch-wrapper">
+                    <input type="checkbox" id="switch5" checked/>
+                    <label for="switch5"><span><em></em></span></label>
+                  </div> <!-- /siwtch-wrapper -->
+                  <div class="checkBoxLabel">Detects a app crash</div>
+                </div>
+                <div class="checkRadioLine" id="finished">
+                  <div class="switch-wrapper">
+                    <input type="checkbox" id="switch6" checked/>
+                    <label for="switch6"><span><em></em></span></label>
+                  </div> <!-- /siwtch-wrapper -->
+                  <div class="checkBoxLabel">Finishes profiling</div>
+                </div>
+              </div>
+            </div>
+            <div class="wizardStepContainer" id="step3">
+              This is step3
+            </div>
           </div>
         </div>
       </div>
@@ -265,9 +377,33 @@
     $('#finishedBtn').delay(2300).fadeIn()
   }
 
+  /* -=-=-=-=-=-=-=-=-=-=-=-=-=-
+   *      wizard code here
+   * -=-=-=-=-=-=-=-=-=-=-=-=-=- */
+  function gotoStep(step) {
+
+    if(step <0 || step >2) return false
+
+    $('#wizardPreviousStep').removeClass('disabled')
+    $('#wizardNextStep').removeClass('disabled')
+
+    if (step === 0) {
+      $('#wizardPreviousStep').addClass('disabled')
+    }
+
+    if (step === 2) {
+      $('#wizardNextStep').addClass('disabled')
+    }
+
+    var $wizardStepContainer = $('.wizardStepContainer')
+    $wizardStepContainer.removeClass('active')
+    $($wizardStepContainer[step]).addClass('active')
+    var $wizardStep = $('.wizardStep')
+    $wizardStep.removeClass('active')
+    $($wizardStep[step]).addClass('active')
+  }
 
   $(document).ready(function () {
-
     $('#backBtn').on('click', function () {
       enterAppSelection()
     });
@@ -286,6 +422,18 @@
       $('#newUploadWizard').hide()
     });
 
+    /* -=-=-=-=-=-=-=-=-=-=-=-=-=-
+     *      wizard code here
+     * -=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+    $('#wizardPreviousStep').on('click', function () {
+      var currentWizardStep = $('#wizardStepsWrap').children(".active").index()
+      gotoStep(--currentWizardStep)
+    });
+    $('#wizardNextStep').on('click', function () {
+      var currentWizardStep = $('#wizardStepsWrap').children(".active").index()
+      gotoStep(++currentWizardStep)
+    });
 
     Dropzone.options.ipaUpload = {
       paramName: "ipa", // The name that will be used to transfer the file
@@ -327,6 +475,47 @@
         });
       }
     };
+    Dropzone.options.ipaUploadNew = {
+      paramName: "ipa", // The name that will be used to transfer the file
+      maxFiles: 1,
+      uploadMultiple: false,
+      addRemoveLinks: true,
+      init: function () {
+        this.on("addedfile", function (file) {
+          console.log("Added file.");
+          $('.uploadLeftWrap').addClass('haveFile')
+        });
+        this.on("removedfile", function (file) {
+          console.log("removed file.");
+          $('.uploadLeftWrap').removeClass('haveFile')
+        });
+        this.on("maxfilesexceeded", function (file) {
+          this.removeAllFiles();
+          this.addFile(file);
+        });
+      }
+    };
+    Dropzone.options.testUploadNew = {
+      paramName: "ipa", // The name that will be used to transfer the file
+      maxFiles: 1,
+      uploadMultiple: false,
+      addRemoveLinks: true,
+      init: function () {
+        this.on("addedfile", function (file) {
+          console.log("Added file.");
+          $('.uploadRightWrap').addClass('haveFile')
+        });
+        this.on("removedfile", function (file) {
+          console.log("removed file.");
+          $('.uploadRightWrap').removeClass('haveFile')
+        });
+        this.on("maxfilesexceeded", function (file) {
+          this.removeAllFiles();
+          this.addFile(file);
+        });
+      }
+    };
+
   })
 </script>
 </body>
