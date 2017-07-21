@@ -1,0 +1,187 @@
+/*fonts*/
+@font-face {
+  font-family: SofiaProLightCondensed;
+  src: url('../fonts/SofiaProLightCondensed.eot');
+  src: url('../fonts/SofiaProLightCondensed.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProLightCondensed.woff2') format('woff2'), url('../fonts/SofiaProLightCondensed.woff') format('woff'), url('../fonts/SofiaProLightCondensed.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: SofiaProRegular;
+  src: url('../fonts/SofiaProRegular.eot');
+  src: url('../fonts/SofiaProRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProRegular.woff2') format('woff2'), url('../fonts/SofiaProRegular.woff') format('woff'), url('../fonts/SofiaProRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: SofiaProSoftLight;
+  src: url('../fonts/SofiaProSoftLight.eot');
+  src: url('../fonts/SofiaProSoftLight.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProSoftLight.woff2') format('woff2'), url('../fonts/SofiaProSoftLight.woff') format('woff'), url('../fonts/SofiaProSoftLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: SofiaProMedium;
+  src: url('../fonts/SofiaProMedium.eot');
+  src: url('../fonts/SofiaProMedium.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProMedium.woff2') format('woff2'), url('../fonts/SofiaProMedium.woff') format('woff'), url('../fonts/SofiaProMedium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: SofiaProExtraLight;
+  src: url('../fonts/SofiaProExtraLight.eot');
+  src: url('../fonts/SofiaProExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProExtraLight.woff2') format('woff2'), url('../fonts/SofiaProExtraLight.woff') format('woff'), url('../fonts/SofiaProExtraLight.ttf') format('truetype');
+}
+
+* {
+  outline: none;
+}
+
+body {
+  font-family: SofiaProSoftLight;
+  background: #eef5f9;
+  color: rgb(153, 171, 180);
+  font-weight: 300;
+}
+
+.verticalCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullHeight {
+  height: 100%;
+}
+
+.backbtn {
+  margin-right: 10px;
+}
+
+.justifyLeft {
+  justify-content: flex-start;
+}
+
+.justifyRight {
+  justify-content: flex-end;
+}
+
+button.dropdown {
+  background: transparent url("../assets/dropdown.png") no-repeat center center;
+  border: none;
+  top: -5px;
+}
+
+nav.nav-nimbledriod {
+  padding: 5px 15px;
+  min-height: 77px;
+  height: 77px;
+  margin-bottom: 0;
+  /*box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.1);*/
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 0px 10px;
+  background: #cf3d4c;
+  background-image: -webkit-radial-gradient(closest-corner, rgba(70, 20, 20, 0) 60%, rgba(70, 15, 15, 0.26)), -webkit-linear-gradient(bottom right, #d02f2f, #801212 90%);
+  background-image: radial-gradient(closest-corner, rgba(70, 20, 20, 0) 60%, rgba(70, 15, 15, 0.26)), linear-gradient(to top left, #d02f2f, #801212 90%);
+  border: none;
+  border-radius: 0;
+}
+
+.appBundleName {
+  margin: 0 10px;
+  color: white;
+  font-weight: 400;
+}
+
+.subNav {
+  width: 100%;
+  min-height: 70px;
+  height: 70px;
+  background: white;
+  /*box-shadow: 1px 1px 40px rgba(0,0,0,0.1);*/
+  box-shadow: rgba(0, 0, 0, 0.08) 1px 0px 20px;
+  padding: 0 15px;
+}
+
+.contentWrapper {
+  padding: 15px 30px;
+}
+
+button.selectDropdown {
+  box-shadow: 0 2px 2px 0 rgba(169, 169, 169, 0.07), 0 3px 1px -2px rgba(169, 169, 169, 0.1), 0 1px 5px 0 rgba(169, 169, 169, 0.06);
+  transition: 0.2s ease-in;
+  color: rgb(153, 171, 180);
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(204, 204, 204);
+}
+
+button.selectDropdown:hover {
+  box-shadow: 0 14px 26px -12px rgba(169, 169, 169, 0.21), 0 4px 23px 0 rgba(0, 0, 0, 0.06), 0 8px 10px -5px rgba(169, 169, 169, 0.1);
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  margin-left: 0.3em;
+  vertical-align: middle;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-left: 0.3em solid transparent;
+}
+
+.currentVersion {
+  margin-right: 20px;
+}
+
+.card {
+  border-radius: 4px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.card-header {
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #f7f7f9;
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.card-header:first-child {
+  border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+
+.card-block {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.card-footer {
+  padding: .75rem 1.25rem;
+  background-color: #f7f7f9;
+  border-top: 1px solid rgba(0, 0, 0, .125);
+}
+
+.card-footer:last-child {
+  border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+  font-size: 18px;
+}
+
+.compareWrap{
+  display: inline-block;
+  margin: auto 20px;
+}
+
+.bolderFont{
+  font-weight: bolder;
+  color: #4c606a;
+  font-family: SofiaProMedium;
+  font-size: 16px;
+  margin: auto 10px;
+}
