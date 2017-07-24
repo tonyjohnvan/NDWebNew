@@ -65,13 +65,126 @@
         </button>
       </div>
     </div>
-    <div class="card-block">
-      <h4 class="card-title">Title</h4>
-      <p class="card-text">Text</p>
-      <a href="#" class="btn btn-info">Button</a>
+    <div class="row">
+      <div class="col-md-6 newIssueWrapper">
+        <div class="card-block ribbon-wrapper">
+          <div class="ribbon red">new issues</div>
+          <section>
+            <h5 class="card-title">Scenarios Speed Change (sec) </h5>
+            <div class="teamDashTable verticalCenter">
+              <div id="newIssueGraph"></div>
+            </div>
+          </section>
+          <section>
+            <h5 class="card-title">New Slowdowns</h5>
+            <div class="teamDashTable verticalCenter">
+              <div class="row verticalCenter">
+                <div class="col-xs-3 screenshotTitle"><img src="assets/screenshot.png" alt="">
+                  cart (addItemToCart)
+                </div>
+                <div class="col-xs-3 issueCategory">Hung</div>
+                <div class="col-xs-3 text-center issueMethodName">CreateTeamActivity.onCreate</div>
+                <div class="col-xs-3 text-right issueAmount">+203 <span>ms</span></div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h5 class="card-title">New Memory Leaks</h5>
+            <div class="teamDashTable verticalCenter">
+              <div class="row verticalCenter">
+                <div class="col-xs-3 screenshotTitle"><img src="assets/screenshot.png" alt="">
+                  productDetail
+                </div>
+                <div class="col-xs-6 issueMethodName">com.nimbledroid.shopper.SplashActivity</div>
+                <div class="col-xs-3 text-right issueAmount">+325 <span>KB</span></div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h5 class="card-title">New crashes</h5>
+            <div class="teamDashTable verticalCenter">
+              <div class="row verticalCenter">
+                <div class="col-xs-3 screenshotTitle"><img src="assets/screenshot.png" alt="">
+                  NotificationActivity
+                </div>
+                <div class="col-xs-8 issueMethodName">Profile Crash on upload: <span>Jun 10 - shoe browse update - 3.4.4/234234</span>
+                </div>
+                <div class="col-xs-1 text-right issueAmount">1</div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h5 class="card-title">Missing Scenario</h5>
+            <div class="teamDashTable verticalCenter">
+              <div class="row verticalCenter">
+                <div class="col-xs-3 screenshotTitle"><img src="assets/screenshot.png" alt="">
+                  AccountActivity
+                </div>
+                <div class="col-xs-6 issueMethodName">This Scenario has not been detected for at least
+                  <span>3 uploads</span></div>
+                <div class="col-xs-3 text-right issueAmount">
+                  <a href="#" class="btn btn-info">That's expected</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h5 class="card-title">Method Count INCREASE</h5>
+            <div class="teamDashTable verticalCenter">
+              <div class="row verticalCenter">
+                <div class="col-xs-10 issueMethodName">
+                  Total Method Count Increases vs
+                  <span>Jun 10 - shoe browse update - 3.4.4/234234, Total is 3,097 now</span>
+                </div>
+                <div class="col-xs-2 text-right issueAmount">+172</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="col-md-6 improvementsWrapper">
+        <div class="card-block ribbon-wrapper">
+          <div class="ribbon blue">improvements</div>
+          <section>
+            <h5 class="card-title">Scenarios Speed Change (sec) </h5>
+            <div class="teamDashTable verticalCenter">
+              <div id="newImproveGraph"></div>
+            </div>
+          </section>
+          <section>
+            <h5 class="card-title">Slowdown Fixes</h5>
+            <div class="teamDashTable">
+              <div class="row fullWidth verticalCenter">
+                <div class="col-xs-3 screenshotTitle"><img src="assets/screenshot.png" alt="">
+                  Cold Startup
+                </div>
+                <div class="col-xs-3 issueCategory">Hung</div>
+                <div class="col-xs-3 text-center issueMethodName">CreateTeamActivity.onCreate</div>
+                <div class="col-xs-3 text-right issueAmount">-203 <span>ms</span></div>
+              </div>
+              <div class="row fullWidth verticalCenter">
+                <div class="col-xs-3 screenshotTitle"></div>
+                <div class="col-xs-3 issueCategory">Hung</div>
+                <div class="col-xs-3 text-center issueMethodName">CalligraphyLayoutInflater.inflate</div>
+                <div class="col-xs-3 text-right issueAmount">-160 <span>ms</span></div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h5 class="card-title">Memory Leak Fixes</h5>
+            <div class="teamDashTable verticalCenter">
+              <div class="col-xs-3 screenshotTitle"><img src="assets/screenshot.png" alt="">
+                Cold Startup
+              </div>
+              <div class="col-xs-6 issueMethodName">com.nimbledroid.shopper.SplashActivity</div>
+              <div class="col-xs-3 text-right issueAmount">-217 <span>KB</span></div>
+            </div>
+          </section>
+        </div>
+      </div>
     </div>
     <div class="card-footer text-muted">
-      Total 4 IMPROVEMENTS and  7 NEW ISSUES compared with Jun 10 9.52 am - header style changes - 3.4.4/234234
+      Total 4 IMPROVEMENTS and 7 NEW ISSUES compared with Jun 10 9.52 am - header style changes - 3.4.4/234234
     </div>
   </div>
 </div>
@@ -80,5 +193,112 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script>
+  $(function () {
+    $('#newIssueGraph').highcharts({
+      chart: {
+        type: 'bar',
+        backgroundColor: '#f2f2f2',
+        height: 60*5+60
+      },
+      title: {
+        text: ''
+      },
+      exporting: { enabled: false },
+      xAxis: {
+        categories: [
+          '<div class="verticalCenter"><img src="assets/screenshot.png" height="45"> <p>Cold Startup</p></div>',
+          '<div class="verticalCenter"><img src="assets/screenshot.png" height="45"> <p>firstSignin_medium</p></div>',
+          '<div class="verticalCenter"><img src="assets/screenshot.png" height="45"> <p>Sign In > SignInActivity</p></div>',
+          '<div class="verticalCenter"><img src="assets/screenshot.png" height="45"> <p>Create Team > CreateTeamActivity</p></div>',
+          '<div class="verticalCenter"><img src="assets/screenshot.png" height="45"> <p>scrollHomeFeed (BottomSpinner)</p> </div>',
+        ],
+        labels: {
+          useHTML: true
+        }
+      },
+      credits: {
+        enabled: false
+      },
+      yAxis: {
+        title: {
+          text: 'Startup Time (sec)'
+        },
+        max: 1.0
+      },
+      plotOptions: {
+        series: {
+          stacking: 'normal'
+        }
+      },
+      legend: {
+        enabled: false
+      },
+      series: [{
+        name: 'Startup Time',
+        data: [0.9, 0.5, 0.4, 0.2, 0.2],
+        color: '#f15c80',
+        negativeColor: '#7cb5ec',
+        dataLabels: {
+          enabled: true,
+          inside: false,
+          color: 'black'
+        }
+      }]
+    });
+
+    $('#newImproveGraph').highcharts({
+      chart: {
+        type: 'bar',
+        backgroundColor: '#f2f2f2',
+        height: 60*2+60
+      },
+      title: {
+        text: ''
+      },
+      exporting: { enabled: false },
+      xAxis: {
+        categories: [
+          '<div class="verticalCenter"><img src="assets/screenshot.png" height="45"> <p>Cold Startup</p></div> ',
+          '<div class="verticalCenter"><img src="assets/screenshot.png" height="45"> <p>LandingPageActivity</p></div> ',
+        ],
+        labels: {
+          useHTML: true
+        }
+      },
+      credits: {
+        enabled: false
+      },
+      yAxis: {
+        title: {
+          text: 'Startup Time (sec)'
+        }
+      },
+      legend: {
+        enabled: false
+      },
+      plotOptions: {
+        series: {
+          stacking: 'normal'
+        }
+      },
+      series: [{
+        name: 'Startup Time',
+        data: [-0.1,  -0.9],
+        color: '#f15c80',
+        negativeColor: '#7cb5ec',
+
+        dataLabels: {
+          enabled: true,
+          inside: false,
+          color: 'black'
+        }
+      }]
+    });
+  });
+</script>
 </body>
 </html>
