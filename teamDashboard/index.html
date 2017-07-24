@@ -17,6 +17,9 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+
+  <link rel="stylesheet" href="css/ion.rangeSlider.css" />
+  <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
 </head>
 <body>
 <nav class="navbar navbar-default nav-nimbledriod">
@@ -192,9 +195,11 @@
 
 <div class="trendWrapper">
   <div class="row">
-    <div class="col-xs-3"><h3 class="sectionTitle">Trending</h3></div>
-    <div class="col-xs-6"></div>
-    <div class="col-xs-3 text-right">
+    <div class="col-xs-1"><h3 class="sectionTitle">Trending</h3></div>
+    <div class="col-xs-10">
+      <input type="text" id="ionRangeSelector" name="ionRangeSelector" value="" />
+    </div>
+    <div class="col-xs-1 text-right">
       <button class="btn btn-secondary selectDropdown dropdown-toggle">Last 30 days</button>
     </div>
   </div>
@@ -261,13 +266,15 @@
   </div>
   <div class="coldStartups">
     <div class="row btnWrap">
-      <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn active">Speed</button>
-      <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Memory Usage</button>
-      <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Network</button>
-      <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Disk I/O</button>
-      <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Memory Leaks</button>
-      <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Slowdowns</button>
-      <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">FPS</button>
+      <div class="col-xs-12">
+        <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn active">Speed</button>
+        <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Memory Usage</button>
+        <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Network</button>
+        <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Disk I/O</button>
+        <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Memory Leaks</button>
+        <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Slowdowns</button>
+        <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">FPS</button>
+      </div>
     </div>
 
     <div class="card">
@@ -325,6 +332,8 @@
 <script src="http://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/highcharts-more.js"></script>
 <script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+<script src="js/ion.rangeSlider.js"></script>
 <script>
   $(function () {
     var seriesData = [
@@ -1021,7 +1030,16 @@
 
     });
 
-
+    $('#ionRangeSelector').ionRangeSlider({
+      type: "double",
+      grid: true,
+      min: +moment().subtract(1, "months").format("X"),
+      max: +moment().format("X"),
+      from: +moment().subtract(1, "months").format("X"),
+      prettify: function (num) {
+        return moment(num, "X").format("LL");
+      }
+    })
   });
 </script>
 </body>
