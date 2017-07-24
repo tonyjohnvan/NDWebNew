@@ -184,8 +184,136 @@
       </div>
     </div>
     <div class="card-footer text-muted">
-      Total 4 IMPROVEMENTS and 7 NEW ISSUES compared with Jun 10 9.52 am - header style changes - 3.4.4/234234
+      Total <span class="improvementText">4 IMPROVEMENTS</span> and <span class="issueText">7 NEW ISSUES</span> compared
+      with <span class="versionText"> Jun 10 9.52 am - header style changes - 3.4.4/234234</span>
     </div>
+  </div>
+</div>
+
+<div class="trendWrapper">
+  <div class="row">
+    <div class="col-xs-3"><h3 class="sectionTitle">Trending</h3></div>
+    <div class="col-xs-6"></div>
+    <div class="col-xs-3 text-right">
+      <button class="btn btn-secondary selectDropdown dropdown-toggle">Last 30 days</button>
+    </div>
+  </div>
+  <div class="trendContent">
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="card">
+          <div class="card-header">
+            APK Download Size
+          </div>
+          <div class="card-block">
+            <div class="row">
+              <div class="col-xs-11">
+                <div id="apkFileSizeGraph"></div>
+              </div>
+              <div class="col-xs-1 changeGraphWrap">
+                <div id="apkFileSizeGraphTrend"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer text-muted">
+            <span class="emphasizeText">72 MB</span> Total Size
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="card">
+          <div class="card-header">
+            Method Count
+          </div>
+          <div class="card-block">
+            <div class="row">
+              <div class="col-xs-11">
+                <div id="methodCountGraph"></div>
+              </div>
+              <div class="col-xs-1 changeGraphWrap">
+                <div id="methodCountGraphTrend"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer text-muted">
+            <span class="emphasizeText">72 MB</span> Total Size
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="card">
+          <div class="card-header">
+            Uploads over time
+          </div>
+          <div class="card-block">
+            <div class="row">
+              <div class="col-xs-12">
+                <div id="uploadTrendGraph"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="coldStartups">
+    <div class="row btnWrap">
+      <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn active">Speed</button>
+      <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Memory Usage</button>
+      <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Network</button>
+      <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Disk I/O</button>
+      <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Memory Leaks</button>
+      <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Slowdowns</button>
+      <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">FPS</button>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        Cold StartUP
+      </div>
+      <div class="card-block">
+        <div class="row verticalCenter">
+          <div class="col-xs-1">
+            <img src="assets/screenshotBig.png" alt="">
+          </div>
+          <div class="col-xs-6">
+            <div id="scenario1Graph"></div>
+          </div>
+          <div class="col-xs-5">
+            <div id="scenario1Change"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        <span class="emphasizeText">2.8s</span>, <span class="improvementText">72 MB faster</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        cart (addItemToCart)
+      </div>
+      <div class="card-block">
+        <div class="row verticalCenter">
+          <div class="col-xs-1">
+            <img src="assets/screenshotBig.png" alt="">
+          </div>
+          <div class="col-xs-6">
+            <div id="scenario2Graph"></div>
+          </div>
+          <div class="col-xs-5">
+            <div id="scenario2Change"></div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-muted">
+        <span class="emphasizeText">2.8s</span>, <span class="improvementText">72 MB faster</span>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -195,14 +323,87 @@
 <script src="js/bootstrap.min.js"></script>
 
 <script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
 <script src="http://code.highcharts.com/modules/exporting.js"></script>
 <script>
   $(function () {
+    var seriesData = [
+      ['Jun 11', 30.14],
+      ['Jun 11', 31.11],
+      ['Jun 12', 30.23],
+      ['Jun 12', 30.24],
+      ['Jun 12', 30.21],
+      ['Jun 13', 30.10],
+      ['Jun 13', 31.11],
+      ['Jun 13', 30.41],
+      ['Jun 14', 30.35],
+      ['Jun 16', 30.39],
+      ['Jun 16', 30.50],
+      ['Jun 16', 30.42],
+      ['Jun 17', 30.41],
+      ['Jun 17', 30.34],
+      ['Jun 18', 30.50],
+      ['8:42'  , 30.36],
+      ['10:58' , 30.37],
+      ['12:26' , 30.23],
+      ['15:34' , 30.40],
+      ['18:32' , 30.45],
+      ['20:14' , 30.17],
+    ]
+    var seriesData2 =
+      [
+        ['Jun 11', 3.4],
+        ['Jun 11', 3.1],
+        ['Jun 12', 3.3],
+        ['Jun 12', 3.4],
+        ['Jun 12', 3.1],
+        ['Jun 13', 3.0],
+        ['Jun 13', 3.1],
+        ['Jun 13', 3.1],
+        ['Jun 14', 3.5],
+        ['Jun 16', 3.9],
+        ['Jun 16', 3.0],
+        ['Jun 16', 3.2],
+        ['Jun 17', 3.1],
+        ['Jun 17', 3.4],
+        ['Jun 18', 3.0],
+        ['8:42',   3.6],
+        ['10:58',  3.7],
+        ['12:26',  3.3],
+        ['15:34',  3.0],
+        ['18:32',  3.5],
+        ['20:14',  3.7],
+      ]
+    var seriesData3 = [
+      ['Jun 11',0.8],
+      ['Jun 11',-0.3],
+      ['Jun 12',0.4],
+      ['Jun 12',1.2],
+      ['Jun 12',-0.3],
+      ['Jun 13',0.6],
+      ['Jun 13', 0.4],
+      ['Jun 13', -1.5],
+      ['Jun 14', 0.2],
+      ['Jun 16', 0.7],
+      ['Jun 16', 0.2],
+      ['Jun 16', 0.4],
+      ['Jun 17', 0.4],
+      ['Jun 17', -1.1],
+      ['Jun 18', -0.4],
+      ['8:42',   -0.5],
+      ['10:58',  0.7],
+      ['12:26',  -0.3],
+      ['15:34',  0.0],
+      ['18:32',  -0.5],
+      ['20:14',  0.7],
+    ];
+
+
     $('#newIssueGraph').highcharts({
       chart: {
         type: 'bar',
         backgroundColor: '#f2f2f2',
-        height: 60*5+60
+        height: 60 * 5 + 60
       },
       title: {
         text: ''
@@ -245,21 +446,23 @@
         dataLabels: {
           enabled: true,
           inside: false,
-          color: 'black'
+          color: '#f15c80',
+          format: "+{y}s"
         }
       }]
     });
-
     $('#newImproveGraph').highcharts({
       chart: {
         type: 'bar',
         backgroundColor: '#f2f2f2',
-        height: 60*2+60
+        height: 60 * 2 + 60
       },
       title: {
         text: ''
       },
       exporting: { enabled: false },
+      credits: { enabled: false },
+      legend: { enabled: false },
       xAxis: {
         categories: [
           '<div class="verticalCenter"><img src="assets/screenshot.png" height="45"> <p>Cold Startup</p></div> ',
@@ -269,16 +472,10 @@
           useHTML: true
         }
       },
-      credits: {
-        enabled: false
-      },
       yAxis: {
         title: {
           text: 'Startup Time (sec)'
         }
-      },
-      legend: {
-        enabled: false
       },
       plotOptions: {
         series: {
@@ -287,17 +484,544 @@
       },
       series: [{
         name: 'Startup Time',
-        data: [-0.1,  -0.9],
-        color: '#f15c80',
+        data: [-0.1, -0.9],
+        color: '#7cb5ec',
         negativeColor: '#7cb5ec',
-
         dataLabels: {
           enabled: true,
           inside: false,
-          color: 'black'
+          color: '#7cb5ec',
+          format: "{y}s",
+          style: {
+            "textOutline": "0px contrast"
+          }
         }
       }]
     });
+
+    $('#apkFileSizeGraph').highcharts({
+      chart: {
+        height: 190
+      },
+      title: {
+        text: ''
+      },
+      exporting: { enabled: false },
+      yAxis: {
+        title: {
+          text: 'APK File Size'
+        }
+      },
+      credits: {
+        enabled: false
+      },
+      legend: {
+        enabled: false
+      },
+      xAxis: {
+        tickInterval: 1,
+        labels: {
+          enabled: true,
+          formatter: function () {
+            return seriesData[this.value][0];
+          },
+        }
+      },
+
+      series: [{
+        name: 'Temperature error',
+        type: 'errorbar',
+        data: [
+          [30.293349828773682,  29.9796974641285696],
+          [30.298920503299356,  29.9847375982232265],
+          [30.298920405912443,  29.984737510111258],
+          [30.3105683613820616, 29.9952761364885316],
+          [30.3229466902549016, 30.006475576897292],
+          [30.3298296557772185, 30.0127030218936737],
+          [30.3162742071050815, 30.000438568333169],
+          [30.316274453048243,  30.0004387908531718],
+          [30.3259383609616124, 30.009182326584316],
+          [30.3259388393979012, 30.0091827594552436],
+          [30.354684094779085,  30.0351903714667907],
+          [30.3545962202946935, 30.035110865980913],
+          [30.3863920070623656, 30.063878482580235],
+          [30.3997066028221195, 30.0759250216009653],
+          [30.495160536117956,  30.162288104106722],
+          [30.4929508807776646, 30.160288892132173],
+          [30.498777921838451,  30.1655609769014554],
+          [30.506062365638658,  30.172151664149262],
+          [30.470092837938486,  30.139607805753868],
+          [30.4876947430301053, 30.155533338932],
+          [30.5095759005910927, 30.175330576725274]
+        ],
+        tooltip: {
+          pointFormat: '(error range: {point.low}-{point.high}°C)<br/>'
+        },
+        color: '#D7E6F4'
+      }, {
+        name: 'Startup Time',
+        data: seriesData,
+        color: '#808080'
+      }]
+    });
+    $('#apkFileSizeGraphTrend').highcharts({
+      chart: {
+        type: 'column',
+        height: 190
+      },
+      title: {
+        text: ''
+      },
+      legend: {
+        enabled: false
+      },
+      exporting: {
+        enabled: false
+      },
+      xAxis: {
+        categories: [''],
+        labels: {
+          useHTML: true,
+          enabled: false
+        }
+      },
+      yAxis: {
+        title: {
+          text: ''
+        },
+        labels: {
+          enabled: false
+        },
+        min: -5.0,
+        max: 5.0
+      },
+      credits: {
+        enabled: false
+      },
+      series: [{
+        name: 'Startup Time',
+        data: [-0.8],
+        color: '#f15c80',
+        negativeColor: '#7cb5ec',
+        dataLabels: {
+          enabled: true,
+          inside: false,
+          color: '#7cb5ec',
+          format: "{y}mb",
+          style: {
+            "font-size":"18px",
+            "textOutline": "0px contrast"
+          }
+        }
+      }]
+    });
+
+    $('#methodCountGraph').highcharts({
+      chart: {
+        height: 190
+      },
+      title: {
+        text: ''
+      },
+      exporting: { enabled: false },
+      yAxis: {
+        title: {
+          text: 'APK File Size'
+        }
+      },
+      credits: {
+        enabled: false
+      },
+      legend: {
+        enabled: false
+      },
+      xAxis: {
+        tickInterval: 1,
+        labels: {
+          enabled: true,
+          formatter: function () {
+            return seriesData[this.value][0];
+          },
+        }
+      },
+
+      series: [{
+        name: 'Temperature error',
+        type: 'errorbar',
+        data: [
+          [30.293349828773682,  29.9796974641285696],
+          [30.298920503299356,  29.9847375982232265],
+          [30.298920405912443,  29.984737510111258],
+          [30.3105683613820616, 29.9952761364885316],
+          [30.3229466902549016, 30.006475576897292],
+          [30.3298296557772185, 30.0127030218936737],
+          [30.3162742071050815, 30.000438568333169],
+          [30.316274453048243,  30.0004387908531718],
+          [30.3259383609616124, 30.009182326584316],
+          [30.3259388393979012, 30.0091827594552436],
+          [30.354684094779085,  30.0351903714667907],
+          [30.3545962202946935, 30.035110865980913],
+          [30.3863920070623656, 30.063878482580235],
+          [30.3997066028221195, 30.0759250216009653],
+          [30.495160536117956,  30.162288104106722],
+          [30.4929508807776646, 30.160288892132173],
+          [30.498777921838451,  30.1655609769014554],
+          [30.506062365638658,  30.172151664149262],
+          [30.470092837938486,  30.139607805753868],
+          [30.4876947430301053, 30.155533338932],
+          [30.5095759005910927, 30.175330576725274]
+        ],
+        tooltip: {
+          pointFormat: '(error range: {point.low}-{point.high}°C)<br/>'
+        },
+        color: '#D7E6F4'
+      }, {
+        name: 'Startup Time',
+        data: seriesData,
+        color: '#808080'
+      }]
+    });
+    $('#methodCountGraphTrend').highcharts({
+      chart: {
+        type: 'column',
+        height: 190
+      },
+      title: {
+        text: ''
+      },
+      legend: {
+        enabled: false
+      },
+      exporting: {
+        enabled: false
+      },
+      xAxis: {
+        categories: [''],
+        labels: {
+          useHTML: true,
+          enabled: false
+        }
+      },
+      yAxis: {
+        title: {
+          text: ''
+        },
+        labels: {
+          enabled: false
+        },
+        min: -250.0,
+        max: 250.0
+      },
+      credits: {
+        enabled: false
+      },
+      series: [{
+        name: 'Startup Time',
+        data: [172],
+        color: '#f15c80',
+        negativeColor: '#7cb5ec',
+        dataLabels: {
+          enabled: true,
+          inside: false,
+          color: '#f15c80',
+          format: "+{y}",
+          style: {
+            "font-size":"18px",
+            "textOutline": "0px contrast"
+          }
+        }
+      }]
+    });
+
+    $('#uploadTrendGraph').highcharts({
+      chart: {
+        type: 'column',
+        height: 200
+      },
+      title: {
+        text: ''
+      },
+      exporting: { enabled: false },
+      credits: { enabled: false },
+      xAxis: {
+        categories: [
+          'Jun 1',
+          'Jun 2',
+          'Jun 3',
+          'Jun 4',
+          'Jun 5',
+          'Jun 6',
+          'Jun 7',
+          'Jun 8',
+          'Jun 9',
+          'Jun 10',
+          'Jun 11',
+          'Jun 12',
+          'Jun 13',
+          'Jun 14',
+          'Jun 15',
+          'Jun 16',
+          'Jun 17',
+          'Jun 18',
+          'Jun 19',
+          'Jun 20',
+          'Jun 21',
+          'Jun 22',
+          'Jun 23',
+          'Jun 24',
+          'Jun 25',
+          'Jun 26',
+          'Jun 27',
+          'Jun 28',
+          'Jun 29',
+          'Jun 30'
+        ]
+      },
+      yAxis: {
+        min: 0,
+        title: {
+          text: 'Total Upload per Dev'
+        },
+        stackLabels: {
+          enabled: true,
+          style: {
+            fontWeight: 'bold',
+            color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+          }
+        }
+      },
+      legend: {
+        align: 'center',
+        verticalAlign: 'bottom',
+        floating: false,
+        backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+        borderColor: '#FFF',
+        borderWidth: 1,
+        shadow: false,
+        y: 15
+      },
+      tooltip: {
+        headerFormat: '<b>{point.x}</b><br/>',
+        pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+      },
+      plotOptions: {
+        column: {
+          stacking: 'normal',
+          dataLabels: {
+            enabled: false,
+            color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
+          }
+        }
+      },
+      series: [{
+        name: 'chloe@shopco.com',
+        data: [1, 2, 3, 2, 3, 3, 1, 4, 5, 3, 4, 4, 2, 2, 3, 1, 2, 3, 2, 3, 3, 1, 4, 5, 3, 4, 4, 2],
+        color: '#9f9f9f'
+      }, {
+        name: 'misty.wallace@shopco.com',
+        data: [2, 3, 2, 2, 3, 2, 4, 1, 2, 3, 2, 3, 2, 2, 0, 0, 2, 3, 2, 2, 3, 2, 4, 1, 2, 3, 2, 3, 2, 2],
+        color: '#515151'
+      }, {
+        name: 'walters@shopco.com',
+        data: [2, 3, 4, 2, 1, 2, 3, 4, 5, 3, 0, 2, 2, 3, 2, 1, 2, 3, 4, 2, 1, 2, 3, 4, 5, 3, 0, 2, 2, 3],
+        color: '#212121'
+      }]
+    });
+
+    $('#scenario1Graph').highcharts({
+
+      chart:{
+        height:210
+      },
+      title: {
+        text: 'Speed (absolute) '
+      },
+      exporting: { enabled: false },
+      credits: { enabled: false },
+      legend: { enabled: false },
+      yAxis: {
+        title: {
+          text: 'Scenario Time (S)'
+        }
+      },
+
+      xAxis: {
+        tickInterval: 1,
+        labels: {
+          enabled: true,
+          formatter: function() {
+            return seriesData[this.value][0];
+          }
+        }
+      },
+
+      series: [{
+        name: 'Temperature error',
+        type: 'errorbar',
+        data: [
+          [3.0, 3.2],
+          [3.0, 3.2],
+          [3.0, 3.2],
+          [3.0 ,3.2],
+          [3.0 ,3.7],
+          [3.0 ,3.7],
+          [3.0 ,3.7],
+          [3.0, 3.7],
+          [3.0 ,3.3],
+          [3.0 ,3.3],
+          [3.0, 3.3],
+          [3.0 ,3.5],
+          [3.0 ,3.5],
+          [3.0 ,3.5],
+          [3.0, 3.5],
+          [3.0 ,3.5],
+          [3.0, 3.3],
+          [3.0, 3.3],
+          [3.0, 3.3],
+          [3.0 ,3.3],
+          [3.0 ,3.3]
+        ],
+        tooltip: {
+          pointFormat: '(error range: {point.low}-{point.high}°C)<br/>'
+        },
+        color: '#D7E6F4'
+      },{
+        name: 'Speed (absolute) ',
+        data: seriesData2,
+        color: '#808080'
+      }]
+
+
+    });
+    $('#scenario1Change').highcharts({
+      chart: {
+        type: 'column',
+        height:210
+      },
+      exporting: { enabled: false },
+      credits: { enabled: false },
+      legend: { enabled: false },
+      title: {
+        text: 'Time diff vs previous upload'
+      },
+      xAxis: {
+        tickInterval: 1,
+        labels: {
+          enabled: true,
+          formatter: function() { return seriesData[this.value][0];},
+        }
+      },
+      yAxis: {
+        title: {
+          text: 'Startup time diff(sec)'
+        }
+      },
+      series: [{
+        name: 'Starup Time Diff',
+        data: seriesData3,
+        color: '#f15c80',
+        negativeColor: '#7cb5ec',
+      }]
+
+    });
+    $('#scenario2Graph').highcharts({
+
+      chart:{
+        height:210
+      },
+      title: {
+        text: 'Speed (absolute) '
+      },
+      exporting: { enabled: false },
+      credits: { enabled: false },
+      legend: { enabled: false },
+      yAxis: {
+        title: {
+          text: 'Scenario Time (S)'
+        }
+      },
+
+      xAxis: {
+        tickInterval: 1,
+        labels: {
+          enabled: true,
+          formatter: function() {
+            return seriesData[this.value][0];
+          }
+        }
+      },
+
+      series: [{
+        name: 'Temperature error',
+        type: 'errorbar',
+        data: [
+          [3.0, 3.2],
+          [3.0, 3.2],
+          [3.0, 3.2],
+          [3.0 ,3.2],
+          [3.0 ,3.7],
+          [3.0 ,3.7],
+          [3.0 ,3.7],
+          [3.0, 3.7],
+          [3.0 ,3.3],
+          [3.0 ,3.3],
+          [3.0, 3.3],
+          [3.0 ,3.5],
+          [3.0 ,3.5],
+          [3.0 ,3.5],
+          [3.0, 3.5],
+          [3.0 ,3.5],
+          [3.0, 3.3],
+          [3.0, 3.3],
+          [3.0, 3.3],
+          [3.0 ,3.3],
+          [3.0 ,3.3]
+        ],
+        tooltip: {
+          pointFormat: '(error range: {point.low}-{point.high}°C)<br/>'
+        },
+        color: '#D7E6F4'
+      },{
+        name: 'Speed (absolute) ',
+        data: seriesData2,
+        color: '#808080'
+      }]
+
+
+    });
+    $('#scenario2Change').highcharts({
+      chart: {
+        type: 'column',
+        height:210
+      },
+      exporting: { enabled: false },
+      credits: { enabled: false },
+      legend: { enabled: false },
+      title: {
+        text: 'Time diff vs previous upload'
+      },
+      xAxis: {
+        tickInterval: 1,
+        labels: {
+          enabled: true,
+          formatter: function() { return seriesData[this.value][0];},
+        }
+      },
+      yAxis: {
+        title: {
+          text: 'Startup time diff(sec)'
+        }
+      },
+      series: [{
+        name: 'Starup Time Diff',
+        data: seriesData3,
+        color: '#f15c80',
+        negativeColor: '#7cb5ec',
+      }]
+
+    });
+
+
   });
 </script>
 </body>
