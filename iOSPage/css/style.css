@@ -49,3 +49,16 @@ body {
 .fullHeight {
     height: 100%;
 }
+
+.h-fullscreen {
+    height: 100vh;
+}
+
+.mainHeader {
+    width: 100%;
+}
+
+.nav-nimbledriod {
+    background: transparent;
+    padding: 0px 18px;
+}
