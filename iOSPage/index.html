@@ -18,8 +18,9 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
-  <link rel="stylesheet" href="css/ion.rangeSlider.css" />
-  <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
+  <link rel="stylesheet" href="css/ion.rangeSlider.css"/>
+  <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -27,277 +28,142 @@
 <header class="mainHeader bg-primary" style="background-image: linear-gradient(to top, #7CA3F9 0%, #0161FF 100%);">
 
   <nav class="navbar nav-nimbledriod">
-    <div class="row fullHeight">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="col-sm-4 fullHeight verticalCenter justifyLeft">
-        <a href="/">
-          <img src="assets/back.png" alt="back to Nimbledorid.com" class="backbtn"/>
-          <img src="assets/Logo.png" alt="back to Nimbledorid.com"/>
-        </a>
-      </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="col-sm-4 fullHeight verticalCenter">
-        <a href="/">
-          <img src="assets/shopper_dashboard.png" alt="Shooper Dashbaord"/>
+    <div class="container no-gutter">
+      <div class="navbar-header col-xs-10 col-sm-1">
+        <a class="navbar-brand nav-normal" href="/">
+          <img alt="NimbleDroid" height="37"
+               src="assets/Logo.png">
         </a>
       </div>
-      <div class="col-sm-4 fullHeight verticalCenter justifyRight">
-        <div>
-          <img src="assets/appicon.png" alt="Version select"/>
-          <span class="appBundleName">com.shopco.shopper</span>
-          <button class="dropdown"></button>
-        </div>
+      <div class="navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-right nav-normal">
+          <li class="hidden-xs"><a href="/features">iOS <span class="newSpan">new</span></a></li>
+          <li class="hidden-xs"><a class="btn btn-white upload-btn" id="upload-apk" rel="nofollow" href="">Upload
+            APK</a></li>
+          <li class="hidden-xs"><a href="/features">Features</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+          <li class="hidden-xs">
+            <a class="no-padding-right user-sign-up-link" rel="nofollow" href="/users/sign_up">Sign up</a>
+          </li>
+          <li class="hidden-xs">
+            <a class="bannerDivider">/</a>
+          </li>
+          <li class="hidden-xs">
+            <a class="no-padding-left user-sign-in-link" rel="nofollow" href="/users/sign_in">Sign in</a>
+          </li>
+          <li class="hidden-xs nav-show-search-box">
+            <a href="#" id="sidebar-toggle">
+              <i class="fa fa-search"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" id="sidebar-toggle2">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
   <div class="container text-center verticalCenter h-fullscreen">
-    <div class="row h-full">
+    <div class="row introductionTextWrapper">
       <div class="col-12">
         <h1 class="display-4">Nimbledorid iOS</h1>
         <br>
-        <p class="lead text-white fs-20">Now we can profile iOS apps for Enterprise Users* <br />
+        <p class="lead text-white fs-25">Now we can profile iOS apps for Enterprise Users* <br/>
           Integrated with existing dashboard</p>
       </div>
     </div>
   </div>
+  <div class="previewImageWrapper">
+    <img src="assets/main.png" alt="">
+  </div>
 </header>
 
-<nav class="navbar navbar-default nav-nimbledriod">
-  <div class="row fullHeight">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="col-sm-4 fullHeight verticalCenter justifyLeft">
-      <a href="/">
-        <img src="assets/back.png" alt="back to Nimbledorid.com" class="backbtn"/>
-        <img src="assets/Logo.png" alt="back to Nimbledorid.com"/>
-      </a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="col-sm-4 fullHeight verticalCenter">
-      <a href="/">
-        <img src="assets/shopper_dashboard.png" alt="Shooper Dashbaord"/>
-      </a>
-    </div>
-    <div class="col-sm-4 fullHeight verticalCenter justifyRight">
-      <div>
-        <img src="assets/appicon.png" alt="Version select"/>
-        <span class="appBundleName">com.shopco.shopper</span>
-        <button class="dropdown"></button>
-      </div>
-    </div>
-  </div>
-</nav>
-<div class="subNav">
-  <div class="fullHeight verticalCenter justifyLeft ">
-    <span class="currentVersion">Upload: Jun 11 4:33pm - Rework of Shopping Cart - 3.5.4/842450</span>
-    <button class="btn btn-secondary selectDropdown dropdown-toggle">Change Version</button>
-  </div>
-</div>
-<div class="contentWrapper">
-  <div class="card">
-    <div class="card-header">
-      performance changes
-      <div class="compareWrap">
-        <span class="bolderFont">Compare</span>
-        <button class="btn btn-secondary selectDropdown dropdown-toggle">Jun 11 4:33pm - Rework of Shopping Cart -
-          3.5.4/842450
-        </button>
-        <span class="bolderFont">VS</span>
-        <button class="btn btn-secondary selectDropdown dropdown-toggle">Jun 10 9.52 am - header style changes -
-          3.4.4/234234
-        </button>
-      </div>
-    </div>
+<div class="featureWrapper contentWrapper">
+  <div class=" container">
     <div class="row">
-      <div class="col-md-6 newIssueWrapper">
-        <div class="card-block ribbon-wrapper">
-          <div class="ribbon red">new issues</div>
-          <section>
-            <h5 class="card-title">Scenarios Speed Change (sec) </h5>
-            <div class="teamDashTable verticalCenter">
-              <div id="newIssueGraph"></div>
-            </div>
-          </section>
-          <section>
-            <h5 class="card-title">New Slowdowns</h5>
-            <div class="teamDashTable verticalCenter">
-              <div class="row verticalCenter">
-                <div class="col-xs-3 screenshotTitle"><img src="assets/screenshot.png" alt="">
-                  cart (addItemToCart)
-                </div>
-                <div class="col-xs-3 issueCategory">Hung</div>
-                <div class="col-xs-3 text-center issueMethodName">CreateTeamActivity.onCreate</div>
-                <div class="col-xs-3 text-right issueAmount">+203 <span>ms</span></div>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h5 class="card-title">New Memory Leaks</h5>
-            <div class="teamDashTable verticalCenter">
-              <div class="row verticalCenter">
-                <div class="col-xs-3 screenshotTitle"><img src="assets/screenshot.png" alt="">
-                  productDetail
-                </div>
-                <div class="col-xs-6 issueMethodName">com.nimbledroid.shopper.SplashActivity</div>
-                <div class="col-xs-3 text-right issueAmount">+325 <span>KB</span></div>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h5 class="card-title">New crashes</h5>
-            <div class="teamDashTable verticalCenter">
-              <div class="row verticalCenter">
-                <div class="col-xs-3 screenshotTitle"><img src="assets/screenshot.png" alt="">
-                  NotificationActivity
-                </div>
-                <div class="col-xs-8 issueMethodName">Profile Crash on upload: <span>Jun 10 - shoe browse update - 3.4.4/234234</span>
-                </div>
-                <div class="col-xs-1 text-right issueAmount">1</div>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h5 class="card-title">Missing Scenario</h5>
-            <div class="teamDashTable verticalCenter">
-              <div class="row verticalCenter">
-                <div class="col-xs-3 screenshotTitle"><img src="assets/screenshot.png" alt="">
-                  AccountActivity
-                </div>
-                <div class="col-xs-6 issueMethodName">This Scenario has not been detected for at least
-                  <span>3 uploads</span></div>
-                <div class="col-xs-3 text-right issueAmount">
-                  <a href="#" class="btn btn-info">That's expected</a>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h5 class="card-title">Method Count INCREASE</h5>
-            <div class="teamDashTable verticalCenter">
-              <div class="row verticalCenter">
-                <div class="col-xs-10 issueMethodName">
-                  Total Method Count Increases vs
-                  <span>Jun 10 - shoe browse update - 3.4.4/234234, Total is 3,097 now</span>
-                </div>
-                <div class="col-xs-2 text-right issueAmount">+172</div>
-              </div>
-            </div>
-          </section>
+      <div class="col-md-6">
+        <h2>
+          Easy Setup
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+        </p>
+        <button class="nd-ios-btn">Get Started Now</button>
+      </div>
+      <div class="col-md-6">
+        <div class="featureImageWrapper verticalCenter">
+          <img src="assets/xcode.png" alt="">
         </div>
       </div>
-      <div class="col-md-6 improvementsWrapper">
-        <div class="card-block ribbon-wrapper">
-          <div class="ribbon blue">improvements</div>
-          <section>
-            <h5 class="card-title">Scenarios Speed Change (sec) </h5>
-            <div class="teamDashTable verticalCenter">
-              <div id="newImproveGraph"></div>
-            </div>
-          </section>
-          <section>
-            <h5 class="card-title">Slowdown Fixes</h5>
-            <div class="teamDashTable">
-              <div class="row fullWidth verticalCenter">
-                <div class="col-xs-3 screenshotTitle"><img src="assets/screenshot.png" alt="">
-                  Cold Startup
-                </div>
-                <div class="col-xs-3 issueCategory">Hung</div>
-                <div class="col-xs-3 text-center issueMethodName">CreateTeamActivity.onCreate</div>
-                <div class="col-xs-3 text-right issueAmount">-203 <span>ms</span></div>
-              </div>
-              <div class="row fullWidth verticalCenter">
-                <div class="col-xs-3 screenshotTitle"></div>
-                <div class="col-xs-3 issueCategory">Hung</div>
-                <div class="col-xs-3 text-center issueMethodName">CalligraphyLayoutInflater.inflate</div>
-                <div class="col-xs-3 text-right issueAmount">-160 <span>ms</span></div>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h5 class="card-title">Memory Leak Fixes</h5>
-            <div class="teamDashTable verticalCenter">
-              <div class="col-xs-3 screenshotTitle"><img src="assets/screenshot.png" alt="">
-                Cold Startup
-              </div>
-              <div class="col-xs-6 issueMethodName">com.nimbledroid.shopper.SplashActivity</div>
-              <div class="col-xs-3 text-right issueAmount">-217 <span>KB</span></div>
-            </div>
-          </section>
-        </div>
-      </div>
-    </div>
-    <div class="card-footer text-muted">
-      Total <span class="improvementText">4 IMPROVEMENTS</span> and <span class="issueText">7 NEW ISSUES</span> compared
-      with <span class="versionText"> Jun 10 9.52 am - header style changes - 3.4.4/234234</span>
     </div>
   </div>
 </div>
 
-<div class="trendWrapper">
-  <div class="row verticalCenter">
-    <div class="col-xs-1"><h3 class="sectionTitle">Trending</h3></div>
-    <div class="col-xs-10">
-      <input type="text" id="ionRangeSelector" name="ionRangeSelector" value="" />
-    </div>
-    <div class="col-xs-1 text-right">
-      <button class="btn btn-secondary selectDropdown dropdown-toggle">Last 30 days</button>
-    </div>
-  </div>
-  <div class="trendContent">
+<div class="featureWrapper contentWrapper feature2">
+  <div class="container">
     <div class="row">
-      <div class="col-xs-6">
-        <div class="card">
-          <div class="card-header">
-            APK Download Size
-          </div>
-          <div class="card-block">
+      <div class="col-md-6">
+        <div class="featureImageWrapper verticalCenter">
+          <img src="assets/dashboard.png" alt="">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h2>
+          More than you thought
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor.
+        </p>
+        <div class="row">
+          <div class="col-xs-6 smallFeatureWrap">
             <div class="row">
-              <div class="col-xs-11">
-                <div id="apkFileSizeGraph"></div>
+              <div class="col-xs-3 featureIconWrapper">
+                <img src="assets/stopwatch%20(1).svg" alt="">
               </div>
-              <div class="col-xs-1 changeGraphWrap">
-                <div id="apkFileSizeGraphTrend"></div>
+              <div class="col-xs-9 featureSmallTextWrapper">
+                <h3>Scenario Speed</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
               </div>
             </div>
           </div>
-          <div class="card-footer text-muted">
-            <span class="emphasizeText">72 MB</span> Total Size
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-6">
-        <div class="card">
-          <div class="card-header">
-            Method Count
-          </div>
-          <div class="card-block">
+          <div class="col-xs-6 smallFeatureWrap">
             <div class="row">
-              <div class="col-xs-11">
-                <div id="methodCountGraph"></div>
+              <div class="col-xs-3 featureIconWrapper">
+                <img src="assets/note.svg" alt="">
               </div>
-              <div class="col-xs-1 changeGraphWrap">
-                <div id="methodCountGraphTrend"></div>
+              <div class="col-xs-9 featureSmallTextWrapper">
+                <h3>Custom Scenario</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
               </div>
             </div>
           </div>
-          <div class="card-footer text-muted">
-            <span class="emphasizeText">72 MB</span> Total Size
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="card">
-          <div class="card-header">
-            Uploads over time
-          </div>
-          <div class="card-block">
+          <div class="col-xs-6 smallFeatureWrap">
             <div class="row">
-              <div class="col-xs-12">
-                <div id="uploadTrendGraph"></div>
+              <div class="col-xs-3 featureIconWrapper">
+                <img src="assets/network.svg" alt="">
+              </div>
+              <div class="col-xs-9 featureSmallTextWrapper">
+                <h3>Team Sharing</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 smallFeatureWrap">
+            <div class="row">
+              <div class="col-xs-3 featureIconWrapper">
+                <img src="assets/search%20(1).svg" alt="">
+              </div>
+              <div class="col-xs-9 featureSmallTextWrapper">
+                <h3>History Monitoring</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
               </div>
             </div>
           </div>
@@ -305,63 +171,74 @@
       </div>
     </div>
   </div>
-  <div class="coldStartups">
-    <div class="row btnWrap">
-      <div class="col-xs-12">
-        <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn active">Speed</button>
-        <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Memory Usage</button>
-        <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Network</button>
-        <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Disk I/O</button>
-        <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Memory Leaks</button>
-        <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">Slowdowns</button>
-        <button type="button" class="btn waves-effect waves-light btn-rounded btn-lg categoryBtn">FPS</button>
+</div>
+
+<div class="joinWrap">
+  <div class="container text-center">
+    <h5>See it in action</h5>
+    <h1>
+      *Only for Enterprise Accounts
+    </h1>
+    <div class="smallHorizontalDivider"></div>
+    <p>Currently, we only offer protocols to our Enterprise Users Only. If you're interested in our iOS measurement feature, please Register</p>
+    <div class="row">
+      <div class="col-xs-3">
+        <input type="text" placeholder="Name" class="joinUsInput">
+      </div>
+      <div class="col-xs-3">
+        <input type="text" placeholder="Company" class="joinUsInput">
+      </div>
+      <div class="col-xs-3">
+        <input type="text" placeholder="Email" class="joinUsInput">
+      </div>
+      <div class="col-xs-3">
+        <input type="text" placeholder="Phone" class="joinUsInput">
+      </div>
+      <div class="col-xs-3">
+        <input type="text" placeholder="Org Size" class="joinUsInput">
+      </div>
+      <div class="col-xs-3">
+        <input type="text" placeholder="Dev Size" class="joinUsInput">
+      </div>
+      <div class="col-xs-3">
+        <input type="text" placeholder="Time Zone" class="joinUsInput">
+      </div>
+      <div class="col-xs-3">
+        <button class="joinUsButton">Request Access</button>
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="card">
-      <div class="card-header">
-        Cold StartUP
+<div class="partners">
+  <div class="container text-center">
+    <h5>OUR PARTNERS</h5>
+    <div class="row brandImageWrapRow">
+      <div class="col-xs-2 brandImageWrap">
+        <img src="assets/icon1.png" alt="">
       </div>
-      <div class="card-block">
-        <div class="row verticalCenter">
-          <div class="col-xs-1">
-            <img src="assets/screenshotBig.png" alt="">
-          </div>
-          <div class="col-xs-6">
-            <div id="scenario1Graph"></div>
-          </div>
-          <div class="col-xs-5">
-            <div id="scenario1Change"></div>
-          </div>
-        </div>
+      <div class="col-xs-2 brandImageWrap">
+        <img src="assets/icon2.png" alt="">
       </div>
-      <div class="card-footer text-muted">
-        <span class="emphasizeText">2.8s</span>, <span class="improvementText">72 MB faster</span>
+      <div class="col-xs-2 brandImageWrap">
+        <img src="assets/icon3.png" alt="">
+      </div>
+      <div class="col-xs-2 brandImageWrap">
+        <img src="assets/icon4.png" alt="">
+      </div>
+      <div class="col-xs-2 brandImageWrap">
+        <img src="assets/icon5.png" alt="">
+      </div>
+      <div class="col-xs-2 brandImageWrap">
+        <img src="assets/icon6.png" alt="">
       </div>
     </div>
-
-    <div class="card">
-      <div class="card-header">
-        cart (addItemToCart)
-      </div>
-      <div class="card-block">
-        <div class="row verticalCenter">
-          <div class="col-xs-1">
-            <img src="assets/screenshotBig.png" alt="">
-          </div>
-          <div class="col-xs-6">
-            <div id="scenario2Graph"></div>
-          </div>
-          <div class="col-xs-5">
-            <div id="scenario2Change"></div>
-          </div>
-        </div>
-      </div>
-      <div class="card-footer text-muted">
-        <span class="emphasizeText">2.8s</span>, <span class="improvementText">72 MB faster</span>
-      </div>
-    </div>
-
+    <div class="smallHorizontalDivider"></div>
+    <h1>
+      Join us to make your App Better!
+    </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    <button class="nd-ios-btn">Get Started Now</button>
   </div>
 </div>
 
@@ -369,719 +246,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-
-<script src="http://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/highcharts-more.js"></script>
-<script src="http://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
-<script src="js/ion.rangeSlider.js"></script>
-<script>
-  $(function () {
-    var seriesData = [
-      ['Jun 11', 30.14],
-      ['Jun 11', 31.11],
-      ['Jun 12', 30.23],
-      ['Jun 12', 30.24],
-      ['Jun 12', 30.21],
-      ['Jun 13', 30.10],
-      ['Jun 13', 31.11],
-      ['Jun 13', 30.41],
-      ['Jun 14', 30.35],
-      ['Jun 16', 30.39],
-      ['Jun 16', 30.50],
-      ['Jun 16', 30.42],
-      ['Jun 17', 30.41],
-      ['Jun 17', 30.34],
-      ['Jun 18', 30.50],
-      ['8:42'  , 30.36],
-      ['10:58' , 30.37],
-      ['12:26' , 30.23],
-      ['15:34' , 30.40],
-      ['18:32' , 30.45],
-      ['20:14' , 30.17],
-    ]
-    var seriesData2 =
-      [
-        ['Jun 11', 3.4],
-        ['Jun 11', 3.1],
-        ['Jun 12', 3.3],
-        ['Jun 12', 3.4],
-        ['Jun 12', 3.1],
-        ['Jun 13', 3.0],
-        ['Jun 13', 3.1],
-        ['Jun 13', 3.1],
-        ['Jun 14', 3.5],
-        ['Jun 16', 3.9],
-        ['Jun 16', 3.0],
-        ['Jun 16', 3.2],
-        ['Jun 17', 3.1],
-        ['Jun 17', 3.4],
-        ['Jun 18', 3.0],
-        ['8:42',   3.6],
-        ['10:58',  3.7],
-        ['12:26',  3.3],
-        ['15:34',  3.0],
-        ['18:32',  3.5],
-        ['20:14',  3.7],
-      ]
-    var seriesData3 = [
-      ['Jun 11',0.8],
-      ['Jun 11',-0.3],
-      ['Jun 12',0.4],
-      ['Jun 12',1.2],
-      ['Jun 12',-0.3],
-      ['Jun 13',0.6],
-      ['Jun 13', 0.4],
-      ['Jun 13', -1.5],
-      ['Jun 14', 0.2],
-      ['Jun 16', 0.7],
-      ['Jun 16', 0.2],
-      ['Jun 16', 0.4],
-      ['Jun 17', 0.4],
-      ['Jun 17', -1.1],
-      ['Jun 18', -0.4],
-      ['8:42',   -0.5],
-      ['10:58',  0.7],
-      ['12:26',  -0.3],
-      ['15:34',  0.0],
-      ['18:32',  -0.5],
-      ['20:14',  0.7],
-    ];
-
-
-    $('#newIssueGraph').highcharts({
-      chart: {
-        type: 'bar',
-        backgroundColor: '#f2f2f2',
-        height: 60 * 5 + 60
-      },
-      title: {
-        text: ''
-      },
-      exporting: { enabled: false },
-      xAxis: {
-        categories: [
-          '<div class="verticalCenter"><img src="assets/screenshot.png" height="45"> <p>Cold Startup</p></div>',
-          '<div class="verticalCenter"><img src="assets/screenshot.png" height="45"> <p>firstSignin_medium</p></div>',
-          '<div class="verticalCenter"><img src="assets/screenshot.png" height="45"> <p>Sign In > SignInActivity</p></div>',
-          '<div class="verticalCenter"><img src="assets/screenshot.png" height="45"> <p>Create Team > CreateTeamActivity</p></div>',
-          '<div class="verticalCenter"><img src="assets/screenshot.png" height="45"> <p>scrollHomeFeed (BottomSpinner)</p> </div>',
-        ],
-        labels: {
-          useHTML: true
-        }
-      },
-      credits: {
-        enabled: false
-      },
-      yAxis: {
-        title: {
-          text: 'Startup Time (sec)'
-        },
-        max: 1.0
-      },
-      plotOptions: {
-        series: {
-          stacking: 'normal'
-        }
-      },
-      legend: {
-        enabled: false
-      },
-      series: [{
-        name: 'Startup Time',
-        data: [0.9, 0.5, 0.4, 0.2, 0.2],
-        color: '#f15c80',
-        negativeColor: '#7cb5ec',
-        dataLabels: {
-          enabled: true,
-          inside: false,
-          color: '#f15c80',
-          format: "+{y}s"
-        }
-      }]
-    });
-    $('#newImproveGraph').highcharts({
-      chart: {
-        type: 'bar',
-        backgroundColor: '#f2f2f2',
-        height: 60 * 2 + 60
-      },
-      title: {
-        text: ''
-      },
-      exporting: { enabled: false },
-      credits: { enabled: false },
-      legend: { enabled: false },
-      xAxis: {
-        categories: [
-          '<div class="verticalCenter"><img src="assets/screenshot.png" height="45"> <p>Cold Startup</p></div> ',
-          '<div class="verticalCenter"><img src="assets/screenshot.png" height="45"> <p>LandingPageActivity</p></div> ',
-        ],
-        labels: {
-          useHTML: true
-        }
-      },
-      yAxis: {
-        title: {
-          text: 'Startup Time (sec)'
-        }
-      },
-      plotOptions: {
-        series: {
-          stacking: 'normal'
-        }
-      },
-      series: [{
-        name: 'Startup Time',
-        data: [-0.1, -0.9],
-        color: '#7cb5ec',
-        negativeColor: '#7cb5ec',
-        dataLabels: {
-          enabled: true,
-          inside: false,
-          color: '#7cb5ec',
-          format: "{y}s",
-          style: {
-            "textOutline": "0px contrast"
-          }
-        }
-      }]
-    });
-
-    $('#apkFileSizeGraph').highcharts({
-      chart: {
-        height: 190
-      },
-      title: {
-        text: ''
-      },
-      exporting: { enabled: false },
-      yAxis: {
-        title: {
-          text: 'APK File Size'
-        }
-      },
-      credits: {
-        enabled: false
-      },
-      legend: {
-        enabled: false
-      },
-      xAxis: {
-        tickInterval: 1,
-        labels: {
-          enabled: true,
-          formatter: function () {
-            return seriesData[this.value][0];
-          },
-        }
-      },
-
-      series: [{
-        name: 'Temperature error',
-        type: 'errorbar',
-        data: [
-          [30.293349828773682,  29.9796974641285696],
-          [30.298920503299356,  29.9847375982232265],
-          [30.298920405912443,  29.984737510111258],
-          [30.3105683613820616, 29.9952761364885316],
-          [30.3229466902549016, 30.006475576897292],
-          [30.3298296557772185, 30.0127030218936737],
-          [30.3162742071050815, 30.000438568333169],
-          [30.316274453048243,  30.0004387908531718],
-          [30.3259383609616124, 30.009182326584316],
-          [30.3259388393979012, 30.0091827594552436],
-          [30.354684094779085,  30.0351903714667907],
-          [30.3545962202946935, 30.035110865980913],
-          [30.3863920070623656, 30.063878482580235],
-          [30.3997066028221195, 30.0759250216009653],
-          [30.495160536117956,  30.162288104106722],
-          [30.4929508807776646, 30.160288892132173],
-          [30.498777921838451,  30.1655609769014554],
-          [30.506062365638658,  30.172151664149262],
-          [30.470092837938486,  30.139607805753868],
-          [30.4876947430301053, 30.155533338932],
-          [30.5095759005910927, 30.175330576725274]
-        ],
-        tooltip: {
-          pointFormat: '(error range: {point.low}-{point.high}°C)<br/>'
-        },
-        color: '#D7E6F4'
-      }, {
-        name: 'Startup Time',
-        data: seriesData,
-        color: '#808080'
-      }]
-    });
-    $('#apkFileSizeGraphTrend').highcharts({
-      chart: {
-        type: 'column',
-        height: 190
-      },
-      title: {
-        text: ''
-      },
-      legend: {
-        enabled: false
-      },
-      exporting: {
-        enabled: false
-      },
-      xAxis: {
-        categories: [''],
-        labels: {
-          useHTML: true,
-          enabled: false
-        }
-      },
-      yAxis: {
-        title: {
-          text: ''
-        },
-        labels: {
-          enabled: false
-        },
-        min: -5.0,
-        max: 5.0
-      },
-      credits: {
-        enabled: false
-      },
-      series: [{
-        name: 'Startup Time',
-        data: [-0.8],
-        color: '#f15c80',
-        negativeColor: '#7cb5ec',
-        dataLabels: {
-          enabled: true,
-          inside: false,
-          color: '#7cb5ec',
-          format: "{y}mb",
-          style: {
-            "font-size":"18px",
-            "textOutline": "0px contrast"
-          }
-        }
-      }]
-    });
-
-    $('#methodCountGraph').highcharts({
-      chart: {
-        height: 190
-      },
-      title: {
-        text: ''
-      },
-      exporting: { enabled: false },
-      yAxis: {
-        title: {
-          text: 'APK File Size'
-        }
-      },
-      credits: {
-        enabled: false
-      },
-      legend: {
-        enabled: false
-      },
-      xAxis: {
-        tickInterval: 1,
-        labels: {
-          enabled: true,
-          formatter: function () {
-            return seriesData[this.value][0];
-          },
-        }
-      },
-
-      series: [{
-        name: 'Temperature error',
-        type: 'errorbar',
-        data: [
-          [30.293349828773682,  29.9796974641285696],
-          [30.298920503299356,  29.9847375982232265],
-          [30.298920405912443,  29.984737510111258],
-          [30.3105683613820616, 29.9952761364885316],
-          [30.3229466902549016, 30.006475576897292],
-          [30.3298296557772185, 30.0127030218936737],
-          [30.3162742071050815, 30.000438568333169],
-          [30.316274453048243,  30.0004387908531718],
-          [30.3259383609616124, 30.009182326584316],
-          [30.3259388393979012, 30.0091827594552436],
-          [30.354684094779085,  30.0351903714667907],
-          [30.3545962202946935, 30.035110865980913],
-          [30.3863920070623656, 30.063878482580235],
-          [30.3997066028221195, 30.0759250216009653],
-          [30.495160536117956,  30.162288104106722],
-          [30.4929508807776646, 30.160288892132173],
-          [30.498777921838451,  30.1655609769014554],
-          [30.506062365638658,  30.172151664149262],
-          [30.470092837938486,  30.139607805753868],
-          [30.4876947430301053, 30.155533338932],
-          [30.5095759005910927, 30.175330576725274]
-        ],
-        tooltip: {
-          pointFormat: '(error range: {point.low}-{point.high}°C)<br/>'
-        },
-        color: '#D7E6F4'
-      }, {
-        name: 'Startup Time',
-        data: seriesData,
-        color: '#808080'
-      }]
-    });
-    $('#methodCountGraphTrend').highcharts({
-      chart: {
-        type: 'column',
-        height: 190
-      },
-      title: {
-        text: ''
-      },
-      legend: {
-        enabled: false
-      },
-      exporting: {
-        enabled: false
-      },
-      xAxis: {
-        categories: [''],
-        labels: {
-          useHTML: true,
-          enabled: false
-        }
-      },
-      yAxis: {
-        title: {
-          text: ''
-        },
-        labels: {
-          enabled: false
-        },
-        min: -250.0,
-        max: 250.0
-      },
-      credits: {
-        enabled: false
-      },
-      series: [{
-        name: 'Startup Time',
-        data: [172],
-        color: '#f15c80',
-        negativeColor: '#7cb5ec',
-        dataLabels: {
-          enabled: true,
-          inside: false,
-          color: '#f15c80',
-          format: "+{y}",
-          style: {
-            "font-size":"18px",
-            "textOutline": "0px contrast"
-          }
-        }
-      }]
-    });
-
-    $('#uploadTrendGraph').highcharts({
-      chart: {
-        type: 'column',
-        height: 200
-      },
-      title: {
-        text: ''
-      },
-      exporting: { enabled: false },
-      credits: { enabled: false },
-      xAxis: {
-        categories: [
-          'Jun 1',
-          'Jun 2',
-          'Jun 3',
-          'Jun 4',
-          'Jun 5',
-          'Jun 6',
-          'Jun 7',
-          'Jun 8',
-          'Jun 9',
-          'Jun 10',
-          'Jun 11',
-          'Jun 12',
-          'Jun 13',
-          'Jun 14',
-          'Jun 15',
-          'Jun 16',
-          'Jun 17',
-          'Jun 18',
-          'Jun 19',
-          'Jun 20',
-          'Jun 21',
-          'Jun 22',
-          'Jun 23',
-          'Jun 24',
-          'Jun 25',
-          'Jun 26',
-          'Jun 27',
-          'Jun 28',
-          'Jun 29',
-          'Jun 30'
-        ]
-      },
-      yAxis: {
-        min: 0,
-        title: {
-          text: 'Total Upload per Dev'
-        },
-        stackLabels: {
-          enabled: true,
-          style: {
-            fontWeight: 'bold',
-            color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
-          }
-        }
-      },
-      legend: {
-        align: 'center',
-        verticalAlign: 'bottom',
-        floating: false,
-        backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
-        borderColor: '#FFF',
-        borderWidth: 1,
-        shadow: false,
-        y: 15
-      },
-      tooltip: {
-        headerFormat: '<b>{point.x}</b><br/>',
-        pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
-      },
-      plotOptions: {
-        column: {
-          stacking: 'normal',
-          dataLabels: {
-            enabled: false,
-            color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
-          }
-        }
-      },
-      series: [{
-        name: 'chloe@shopco.com',
-        data: [1, 2, 3, 2, 3, 3, 1, 4, 5, 3, 4, 4, 2, 2, 3, 1, 2, 3, 2, 3, 3, 1, 4, 5, 3, 4, 4, 2],
-        color: '#9f9f9f'
-      }, {
-        name: 'misty.wallace@shopco.com',
-        data: [2, 3, 2, 2, 3, 2, 4, 1, 2, 3, 2, 3, 2, 2, 0, 0, 2, 3, 2, 2, 3, 2, 4, 1, 2, 3, 2, 3, 2, 2],
-        color: '#515151'
-      }, {
-        name: 'walters@shopco.com',
-        data: [2, 3, 4, 2, 1, 2, 3, 4, 5, 3, 0, 2, 2, 3, 2, 1, 2, 3, 4, 2, 1, 2, 3, 4, 5, 3, 0, 2, 2, 3],
-        color: '#212121'
-      }]
-    });
-
-    $('#scenario1Graph').highcharts({
-
-      chart:{
-        height:210
-      },
-      title: {
-        text: 'Speed (absolute) '
-      },
-      exporting: { enabled: false },
-      credits: { enabled: false },
-      legend: { enabled: false },
-      yAxis: {
-        title: {
-          text: 'Scenario Time (S)'
-        }
-      },
-
-      xAxis: {
-        tickInterval: 1,
-        labels: {
-          enabled: true,
-          formatter: function() {
-            return seriesData[this.value][0];
-          }
-        }
-      },
-
-      series: [{
-        name: 'Temperature error',
-        type: 'errorbar',
-        data: [
-          [3.0, 3.2],
-          [3.0, 3.2],
-          [3.0, 3.2],
-          [3.0 ,3.2],
-          [3.0 ,3.7],
-          [3.0 ,3.7],
-          [3.0 ,3.7],
-          [3.0, 3.7],
-          [3.0 ,3.3],
-          [3.0 ,3.3],
-          [3.0, 3.3],
-          [3.0 ,3.5],
-          [3.0 ,3.5],
-          [3.0 ,3.5],
-          [3.0, 3.5],
-          [3.0 ,3.5],
-          [3.0, 3.3],
-          [3.0, 3.3],
-          [3.0, 3.3],
-          [3.0 ,3.3],
-          [3.0 ,3.3]
-        ],
-        tooltip: {
-          pointFormat: '(error range: {point.low}-{point.high}°C)<br/>'
-        },
-        color: '#D7E6F4'
-      },{
-        name: 'Speed (absolute) ',
-        data: seriesData2,
-        color: '#808080'
-      }]
-
-
-    });
-    $('#scenario1Change').highcharts({
-      chart: {
-        type: 'column',
-        height:210
-      },
-      exporting: { enabled: false },
-      credits: { enabled: false },
-      legend: { enabled: false },
-      title: {
-        text: 'Time diff vs previous upload'
-      },
-      xAxis: {
-        tickInterval: 1,
-        labels: {
-          enabled: true,
-          formatter: function() { return seriesData[this.value][0];},
-        }
-      },
-      yAxis: {
-        title: {
-          text: 'Startup time diff(sec)'
-        }
-      },
-      series: [{
-        name: 'Starup Time Diff',
-        data: seriesData3,
-        color: '#f15c80',
-        negativeColor: '#7cb5ec',
-      }]
-
-    });
-    $('#scenario2Graph').highcharts({
-
-      chart:{
-        height:210
-      },
-      title: {
-        text: 'Speed (absolute) '
-      },
-      exporting: { enabled: false },
-      credits: { enabled: false },
-      legend: { enabled: false },
-      yAxis: {
-        title: {
-          text: 'Scenario Time (S)'
-        }
-      },
-
-      xAxis: {
-        tickInterval: 1,
-        labels: {
-          enabled: true,
-          formatter: function() {
-            return seriesData[this.value][0];
-          }
-        }
-      },
-
-      series: [{
-        name: 'Temperature error',
-        type: 'errorbar',
-        data: [
-          [3.0, 3.2],
-          [3.0, 3.2],
-          [3.0, 3.2],
-          [3.0 ,3.2],
-          [3.0 ,3.7],
-          [3.0 ,3.7],
-          [3.0 ,3.7],
-          [3.0, 3.7],
-          [3.0 ,3.3],
-          [3.0 ,3.3],
-          [3.0, 3.3],
-          [3.0 ,3.5],
-          [3.0 ,3.5],
-          [3.0 ,3.5],
-          [3.0, 3.5],
-          [3.0 ,3.5],
-          [3.0, 3.3],
-          [3.0, 3.3],
-          [3.0, 3.3],
-          [3.0 ,3.3],
-          [3.0 ,3.3]
-        ],
-        tooltip: {
-          pointFormat: '(error range: {point.low}-{point.high}°C)<br/>'
-        },
-        color: '#D7E6F4'
-      },{
-        name: 'Speed (absolute) ',
-        data: seriesData2,
-        color: '#808080'
-      }]
-
-
-    });
-    $('#scenario2Change').highcharts({
-      chart: {
-        type: 'column',
-        height:210
-      },
-      exporting: { enabled: false },
-      credits: { enabled: false },
-      legend: { enabled: false },
-      title: {
-        text: 'Time diff vs previous upload'
-      },
-      xAxis: {
-        tickInterval: 1,
-        labels: {
-          enabled: true,
-          formatter: function() { return seriesData[this.value][0];},
-        }
-      },
-      yAxis: {
-        title: {
-          text: 'Startup time diff(sec)'
-        }
-      },
-      series: [{
-        name: 'Starup Time Diff',
-        data: seriesData3,
-        color: '#f15c80',
-        negativeColor: '#7cb5ec',
-      }]
-
-    });
-
-    $('#ionRangeSelector').ionRangeSlider({
-      type: "double",
-      grid: true,
-      min: +moment().subtract(1, "months").format("X"),
-      max: +moment().format("X"),
-      from: +moment().subtract(1, "months").format("X"),
-      prettify: function (num) {
-        return moment(num, "X").format("LL");
-      }
-    })
-  });
-</script>
 </body>
 </html>

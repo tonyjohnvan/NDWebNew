@@ -29,14 +29,31 @@
     src: url('../fonts/SofiaProExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProExtraLight.woff2') format('woff2'), url('../fonts/SofiaProExtraLight.woff') format('woff'), url('../fonts/SofiaProExtraLight.ttf') format('truetype');
 }
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #b5b9bf;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: #b5b9bf;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    color: #b5b9bf;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #b5b9bf;
+}
+
 * {
     outline: none !important;
 }
 
 body {
-    font-family: SofiaProSoftLight;
-    background: #eef5f9;
-    color: rgb(153, 171, 180);
+    font-family: SofiaProRegular;
+
+    background: #FFF;
+    color: #616771;
     font-weight: 300;
 }
 
@@ -51,14 +68,264 @@ body {
 }
 
 .h-fullscreen {
-    height: 100vh;
+    height: calc(100vh - 77px);
 }
 
 .mainHeader {
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .nav-nimbledriod {
     background: transparent;
     padding: 0px 18px;
+}
+
+#upload-apk {
+    background: #ffffff;
+    border-radius: 5px;
+    color: #2B62FF;
+    font-size: 15px;
+    height: 34px;
+    line-height: 5px;
+    margin-top: 9px;
+}
+
+.upload-btn {
+    margin-bottom: 8px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+}
+
+nav.nav-nimbledriod a:hover {
+    background: none;
+    color: rgba(255, 255, 255, 1.0);
+}
+
+nav.nav-nimbledriod a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.4s ease-in-out;
+}
+
+.navbar-brand {
+    padding: 6px 0px;
+}
+
+.bannerDivider {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+nav.nav-nimbledriod {
+    padding: 15px 15px 5px;
+    min-height: 77px;
+    height: 77px;
+    margin-bottom: 0;
+    /*box-shadow: 5px 5px 20px 1px rgba(0,0,0,0.1);*/
+    border: none;
+    border-radius: 0;
+}
+
+.newSpan {
+    background: #ffffff;
+    border-radius: 5px;
+    color: #2B62FF;
+    padding: 2px 3px;
+    top: -10px;
+    font-size: 10px;
+    position: relative;
+}
+
+.display-4 {
+    font-size: 56px;
+    font-family: SofiaProMedium;
+
+}
+
+.fs-25 {
+    font-family: SofiaProExtraLight;
+    font-size: 25px;
+    letter-spacing: 0.15em;
+}
+
+.introductionTextWrapper {
+    margin-top: -300px;
+}
+
+.previewImageWrapper {
+    position: absolute;
+    bottom: -50px;
+    text-align: center;
+    width: 100%;
+}
+
+.previewImageWrapper img {
+    max-width: 900px;
+    width: 100%;
+}
+
+.contentWrapper h2 {
+    color: #37404d;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.contentWrapper p {
+    font-size: 16px;
+    font-family: SofiaProExtraLight;
+    letter-spacing: 0.05em;
+}
+
+.featureWrapper {
+    padding: 70px 0;
+}
+
+.nd-ios-btn {
+    padding: 15px 20px;
+    color: white;
+    font-family: SofiaProExtraLight;
+    background: #0facf3;
+    border-radius: 30px;
+    border: none;
+    letter-spacing: 0.05em;
+    min-width: 200px;
+    margin-top: 50px;
+}
+
+.featureImageWrapper img {
+    width: 95%;
+}
+
+.feature2 {
+    background: #f8f8f8;
+}
+
+.featureSmallTextWrapper h3 {
+    font-size: 22px;
+    margin: 0 0 5px;
+}
+
+.featureSmallTextWrapper p {
+    font-size: 13px;
+    color: #37404d;
+}
+
+.featureSmallTextWrapper {
+    padding-left: 5px;
+}
+
+.featureIconWrapper {
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featureIconWrapper img {
+    width: 38px !important;
+}
+
+.smallFeatureWrap {
+    margin-top: 20px;
+    font-family: SofiaProExtraLight;
+}
+
+.joinWrap {
+    padding: 60px 0;
+}
+
+.joinWrap h5 {
+    font-size: 14px;
+    color: #b5b9bf;
+    text-transform: uppercase;
+}
+
+.joinWrap h1 {
+    font-size: 32px;
+    color: #37404d;
+    font-family: SofiaProMedium;
+    letter-spacing: 0.05em;
+}
+
+.joinWrap p {
+    font-size: 18px;
+    color: #616771;
+    font-family: SofiaProExtraLight;
+    letter-spacing: 0.01em;
+    margin-bottom: 40px;
+}
+
+.smallHorizontalDivider {
+    width: 100px;
+    background: #f2f2f2;
+    height: 1px;
+    display: block;
+    margin: 40px auto;
+}
+
+.joinUsInput {
+    font-family: SofiaProExtraLight;
+    border: 1px solid #ebebeb;
+    background: white;
+    display: inline-block;
+    width: 100%;
+    min-height: 40px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.joinUsButton {
+    border: 1px solid #46da60;
+    background: #46da60;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    min-height: 40px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.partners {
+    background: #f8f8f8;
+    padding: 60px 0;
+}
+
+.brandImageWrap {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.brandImageWrap img {
+    width: 90%
+}
+
+.brandImageWrapRow {
+    margin: 20px auto;
+}
+
+.partners .smallHorizontalDivider{
+    background: #252525;
+}
+
+
+.partners h1 {
+    font-size: 32px;
+    color: #37404d;
+    font-family: SofiaProMedium;
+    letter-spacing: 0.05em;
+}
+
+.partners p {
+    font-size: 18px;
+    color: #616771;
+    font-family: SofiaProExtraLight;
+    letter-spacing: 0.01em;
+    margin-top: 50px;
 }
