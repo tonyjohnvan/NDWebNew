@@ -69,6 +69,7 @@ body {
 
 .h-fullscreen {
     height: calc(100vh - 77px);
+    min-height: 600px;
 }
 
 .mainHeader {
@@ -159,7 +160,7 @@ nav.nav-nimbledriod {
 
 .previewImageWrapper {
     position: absolute;
-    bottom: -50px;
+    bottom: calc(-450px + 40%);
     text-align: center;
     width: 100%;
 }
@@ -328,4 +329,18 @@ nav.nav-nimbledriod {
     font-family: SofiaProExtraLight;
     letter-spacing: 0.01em;
     margin-top: 50px;
+}
+
+.previewImageWrapper img{
+    animation-duration: 2s;
+    animation-delay: 1.4s;
+}
+
+.introductionTextWrapper h1{
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+}
+.introductionTextWrapper p{
+    animation-duration: 2s;
+    animation-delay: 0.8s;
 }
