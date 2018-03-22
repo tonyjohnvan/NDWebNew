@@ -1,0 +1,887 @@
+<html class="gr__nimbledroid_com"><head>
+    <meta charset="utf-8">
+    <meta content="IE=10,chrome=1" http-equiv="X-UA-Compatible">
+    <script type="text/javascript" async="" charset="UTF-8">__jivoConfigOnLoad({"widget_id":"RrF4dO2hnf","site_id":620074,"widget_color":"#F44336","widget_font_color":"light","widget_padding":"100","widget_height":"33","widget_orientation":"bottom","widget_mobile_orientation":"left","font_size":"14","font_family":"Arial","font_type":"normal","locale":"en_US","show_rate_form":1,"hide_ad":1,"secure":1,"contacts_ask":0,"style_string":"jivo_shadow jivo_rounded_corners jivo_gradient jivo_3d_effect jivo_border jivo_3px_border","chat_mode":0?"online":"offline","geoip":"US;NY;New York","botmode":false,"options":1016,"hide_offline":0,"build_number":"1517474380","avatar_url":"\/\/s3-eu-west-1.amazonaws.com\/jivo-userdata","online_widget_label":"Chat with us, we are online!","offline_widget_label":"Send us a message","offline_form_text":"Please leave your message in the form below and we will reply by e-mail","bubble_color":"blue","callback_btn_color":"#F44336","power_button_color":"#F44336","base_url":"\/\/code.jivosite.com","static_host":"cdn.jivosite.com","comet":{"host":"node143.jivosite.com"},"rules":[{"name":"Proactive Invitation on Every Page","enabled":true,"type":"all","conditions":[{"condition":"online","value":true},{"condition":"time_on_page","comparator":"greater","value":"30"},{"condition":"time_on_site","comparator":"greater","value":"30"},{"condition":"time_after_close","comparator":"greater","value":300},{"condition":"time_after_invitation","comparator":"greater","value":"300"}],"commands":[{"command":"proactive","params":{"message":"Hi, let us know if we can answer any questions."}}]},{"name":"Lead Collection When Agents are Offline","enabled":true,"type":"all","conditions":[{"condition":"online","value":false},{"condition":"time_on_page","comparator":"greater","value":"30"},{"condition":"time_on_site","comparator":"greater","value":"30"},{"condition":"time_after_close","comparator":"greater","value":"600"},{"condition":"time_after_invitation","comparator":"greater","value":60}],"commands":[{"command":"open_offline","params":{"title":"Questions? Send us a message","message":"Do you have any questions? Ask us in the form below and we will reply by e-mail"}}]},{"name":"Retaining Message if Agent is not Answering","enabled":true,"type":"all","conditions":[{"condition":"online","value":true},{"condition":"time_after_first_message","comparator":"greater","value":"30"}],"commands":[{"command":"system_message_email","params":{"message":"Our agents must be busy right now - please feel free to ask questions here and we will reply by email."}}]}],"typing_insight":1,"contacts_settings":{"name":{"show":true,"required":false},"email":{"show":true,"required":true},"phone":{"show":false,"required":false}},"social_responce":1});</script><script type="text/javascript" src="https://bam.nr-data.net/1/b54b205f8b?a=4175999&amp;v=1071.385e752&amp;to=dwpeRxBZVVldQ0wLClkAH1sNW1w%3D&amp;rst=2710&amp;ref=https://nimbledroid.com/&amp;ap=84&amp;be=976&amp;fe=2692&amp;dc=2426&amp;perf=%7B%22timing%22:%7B%22of%22:1521482375105,%22n%22:0,%22f%22:270,%22dn%22:73,%22dne%22:73,%22c%22:73,%22s%22:80,%22ce%22:115,%22rq%22:115,%22rp%22:214,%22rpe%22:263,%22dl%22:272,%22di%22:2106,%22ds%22:2106,%22de%22:2459,%22dc%22:2692,%22l%22:2692,%22le%22:2695%7D,%22navigation%22:%7B%7D%7D&amp;jsonp=NREUM.setToken"></script><script type="text/javascript" async="" src="//code.jivosite.com/script/widget/RrF4dO2hnf"></script><script src="https://js-agent.newrelic.com/nr-1071.min.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://d3accju1t3mngt.cloudfront.net/js/pa.min.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"b54b205f8b","applicationID":"4175999","transactionName":"dwpeRxBZVVldQ0wLClkAH1sNW1w=","queueTime":0,"applicationTime":84,"agent":""}</script>
+    <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    <meta content="NimbleDroid, nimbledroid, nimble, android, startup time, performance, auto testing, android development, android testing, android app development, test automation, mobile testing, android test, app testing, mobile app testing, android performance, android profiler, rxjava performance, app performance, app slowness, android slowness, android developer tools, marshmallow performance, lollipop performance, kitkat performance, nougat performance, marshmallow slowness, lollipop slowness, kitkat slowness, nougat slowness, android automation, android app testing, android testing tools, 安卓, 安卓App. 安卓App优化. 安卓App测试, 安卓自动测试, 安卓性能, 性能优化" name="keywords">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="531062155432-r26ed7ullsa131fhlmod804np8q7jkos.apps.googleusercontent.com" name="google-signin-client_id">
+    <title>Home
+        - NimbleDroid | Auto-test Your Android Apps for Critical Issues. No coding required.</title>
+    <meta class="meta-description" content="Auto-test Your Android Apps for Critical Issues. No coding required." name="description">
+    <meta content="Home
+ - NimbleDroid | Auto-test Your Android Apps for Critical Issues. No coding required." itemprop="name">
+    <meta class="meta-description" content="Auto-test Your Android Apps for Critical Issues. No coding required." itemprop="description">
+    <meta class="meta-image" content="http://blog.nimbledroid.comhttps://www.nimbledroid.com/assets/images/robot.png" itemprop="image">
+    <!-- Twitter Card data -->
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="@nimbledroid" name="twitter:site">
+    <meta content="Home
+ - NimbleDroid | Auto-test Your Android Apps for Critical Issues. No coding required." name="twitter:title">
+    <meta class="meta-description" content="Auto-test Your Android Apps for Critical Issues. No coding required." name="twitter:description">
+    <meta content="@nimbledroid" name="twitter:creator">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta class="meta-image" content="http://blog.nimbledroid.comhttps://www.nimbledroid.com/assets/images/robot.png" name="twitter:image:src">
+    <!-- Open Graph data -->
+    <meta content="article" property="og:type">
+    <meta content="http://www.nimbledroid.com/" property="og:url">
+    <meta content="Home
+ - NimbleDroid | Auto-test Your Android Apps for Critical Issues. No coding required." property="og:title">
+    <meta class="meta-image" content="http://blog.nimbledroid.comhttps://www.nimbledroid.com/assets/images/robot.png" property="og:image">
+    <meta class="meta-description" content="Auto-test Your Android Apps for Critical Issues. No coding required." property="og:description">
+    <meta content="NimbleDroid" property="og:site_name">
+    <meta content="413350132099705" property="fb:admins">
+    <meta name="csrf-param" content="authenticity_token">
+    <meta name="csrf-token" content="3TyMYKe4Q53N4iyqAbcdYNqO6o3C6oaQsJGrtZNJreV4qN+AEME16aEAcZysQmgyalJ7Jnf2l5KVkOm0s56jig==">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+    <script src="https://www.nimbledroid.com/webpack/vendor-bundle.js?20180316184254"></script>
+    <script src="https://www.nimbledroid.com/webpack/app-bundle.js?20180316184254"></script><style></style>
+    <link href="https://www.nimbledroid.com/webpack/vendor-bundle.css?20180316184254" rel="stylesheet" type="text/css">
+    <link href="https://www.nimbledroid.com/webpack/app-bundle.css?20180316184254" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" media="all" href="https://www.nimbledroid.com/assets/application_static-af7bfa846488a21b4879865498b77c5a358b99f6eae0568cea1731264f4ea50d.css">
+
+    <script src="https://www.nimbledroid.com/assets/application_static-fe905e1534902d95bbd70e429351a745b3d09d36e918f2b47d4612e390b1f75f.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/google/code-prettify/master/loader/prettify.css">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.nimbledroid.com/assets/favicon-4a49e436fbff5df385ae8801c35b43a30610f9b94e835f9887bf3046b423f540.ico">
+    <script src="//d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.min.js" data-apikey="8f18d92967bb2ebcfa8cc43ad81fb7b1"></script>
+    <script>
+      Bugsnag.notifyReleaseStages = ['production', 'staging'];
+      Bugsnag.releaseStage = 'production';
+    </script>
+    <style type="text/css">#mc_embed_signup input.mce_inline_error { border-color:#6B0505; } #mc_embed_signup div.mce_inline_error { margin: 0 0 1em 0; padding: 5px 10px; background-color:#6B0505; font-weight: bold; z-index: 1; color:#fff; }</style><style type="text/css">.jqstooltip { position: absolute;left: 0px;top: 0px;visibility: hidden;background: rgb(0, 0, 0) transparent;background-color: rgba(0,0,0,0.6);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";color: white;font: 10px arial, san serif;text-align: left;white-space: nowrap;padding: 5px;border: 1px solid white;z-index: 10000;}.jqsfield { color: white;font: 10px arial, san serif;text-align: left;}</style></head>
+<body data-gr-c-s-loaded="true" style="zoom: 1;">
+<div id="page-container">
+    <div class="nocontent" id="banner-and-sidebar">
+        <nav class="navbar navbar-inverse nav-nimbledriod">
+            <div class="container no-gutter">
+                <div class="navbar-header col-xs-10 col-sm-1">
+                    <a class="navbar-brand nav-normal" href="/">
+                        <img alt="NimbleDroid" height="37" src="https://www.nimbledroid.com/assets/logo3-8c02ec9def1e1411c9624c1b3cc64e82f4269b6271ad2710947d1b390a8b9b8c.png">
+                    </a>
+                </div>
+                <div class="navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav navbar-right nav-normal">
+                        <li class="hidden-xs">
+                            <a href="/ios">
+                                <span class="bolderHeader">iOS</span>
+                                <span class="newSpan">new</span>
+                            </a>
+                        </li>
+                        <li class="hidden-xs"><a class="btn btn-white upload-btn" id="upload-apk" rel="nofollow" href="/upload_apk">Upload APK</a></li>
+                        <li class="hidden-xs"><a href="/features">Features</a></li>
+                        <li><a href="/contact_form">Request Demo</a></li>
+                        <li class="hidden-xs">
+                            <a class="no-padding-right user-sign-up-link" rel="nofollow" href="/users/sign_up">Sign up</a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a class="bannerDivider">/</a>
+                        </li>
+                        <li class="hidden-xs">
+                            <a class="no-padding-left user-sign-in-link" rel="nofollow" href="/users/sign_in">Sign in</a>
+                        </li>
+                        <li class="hidden-xs nav-show-search-box">
+                            <div class="btn-group">
+                                <button aria-haspopup="" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="search-icon-nav" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                                <ul class="dropdown-menu search-nav-dropdown">
+                                    <li>
+                                        <form class="nd-search-box" action="/search" accept-charset="UTF-8" method="get">
+                                            <div class="input-group search-full-width-fffix">
+                                                <input type="text" name="q" id="q" class="form-control nd-search-input" placeholder="Search our website">
+                                                <span class="input-group-btn nd-search-btn">
+<button class="btn btn-default" type="submit">
+<i class="fa fa-search"></i>
+</button>
+</span>
+                                            </div>
+                                        </form>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" id="sidebar-toggle">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="sidebar">
+            <div class="top-sec">
+                <ul class="visible-xs-block">
+                    <li><a class="no-padding-right user-sign-up-link" href="/users/sign_up">Sign up</a></li>
+                    <li>
+                        <a class="divider">/</a>
+                    </li>
+                    <li><a class="no-padding-left user-sign-in-link" href="/users/sign_in">Sign in</a></li>
+                </ul>
+                <a class="sidebar-close" href="#">
+                    <i class="fa fa-close"></i>
+                </a>
+            </div>
+            <ul>
+                <li class="visible-xs-block">
+                    <form class="nd-search-box" action="/play/search" accept-charset="UTF-8" method="get">
+                        <div class="input-group">
+                            <input type="text" name="q" id="q" class="form-control nd-search-input" placeholder="Search for your Google Play app">
+                            <span class="input-group-btn nd-search-btn">
+<button class="btn btn-default" type="submit">
+<i class="fa fa-search"></i>
+</button>
+</span>
+                        </div>
+                    </form>
+
+
+                </li>
+                <li><a href="/">Home</a></li>
+                <li><a class="account-link" rel="nofollow" href="/account">My Account</a></li>
+                <li><a href="http://docs.nimbledroid.com/">Documentation</a></li>
+                <li><a href="http://blog.nimbledroid.com">Blog</a></li>
+
+            </ul>
+        </div>
+        <script>
+          (function() {
+            $('#search-icon-nav').on('click', function() {
+              setTimeout((function() {
+                $('.search-full-width-fffix input').focus();
+              }), 100);
+            });
+
+          }).call(this);
+        </script>
+
+    </div>
+    <div class="container-fluid">
+        <div id="flash">
+
+        </div>
+    </div>
+    <div class="homeVersion2">
+        <div class="carousel slide carousel-fade carousel-big" data-ride="carousel" id="heroWelcome">
+            <div class="bgImage full-height">
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="container">
+                            <div class="row verticalOuter divCenter">
+                                <div class="verticalInner">
+                                    <div class="col-md-12 text-center heroTextWrap">
+                                        <div>
+                                            <h1 class="opc08 animated fadeInUp fadeInLeft" id="s1l1" style="opacity: 1;">
+                                                Functional Performance Testing for Android and iOS
+                                            </h1>
+                                            <div class="space"></div>
+                                            <h4 class="opc08 animated fadeInUp fadeInLeft" id="s1l2" style="opacity: 1;">
+                                                Monitor every critical user flow for every build of your mobile app.
+                                            </h4>
+                                            <h4 class="opc08 animated fadeInUp fadeInLeft" id="s1l3" style="opacity: 1;">
+                                                Pinpoint issues that degrade user experience early in the dev cycle.
+                                            </h4>
+                                            <h4 class="opc08 animated fadeInUp fadeInLeft" id="s1l4" style="opacity: 1;">
+                                                Seamlessly integrate with your CI workflow.
+                                            </h4>
+                                            <div class="space animated fadeInUp fadeInLeft" id="s1bt1" style="opacity: 1;">
+                                                <a class="btn btn-white btn-solid" rel="nofollow" href="/contact_form">Request a Demo</a>
+                                                <span class="font-white marginSpace noOpacity">
+or
+</span>
+                                                <a class="upload-btn smaller font-white getStartedText" rel="nofollow" href="/upload_apk">Get Started</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="quotes" id="sec-quotes">
+            <div class="container" id="enterpriseLogoWrapper">
+                <img class="animated fadeInUp" src="https://www.nimbledroid.com/assets/home2/enterprise-pinterest-ce77729f8b6fde74659ce5ea8322021a04f55c6d7faf789ea4e5e0b82cb95756.png" alt="Enterprise pinterest">
+                <img class="animated fadeInUp" src="https://www.nimbledroid.com/assets/home2/enterprise-mozilla-13fdd4ebdf56c6f55515caf457c7a0a722413690c77bac047503849ba4e4bee6.png" alt="Enterprise mozilla">
+                <img class="animated fadeInUp" src="https://www.nimbledroid.com/assets/home2/enterprise-flipkart-190102285de9f25dd24b2db9fd5b934923518654e35569f66ac2880c439fe483.png" alt="Enterprise flipkart">
+                <img class="animated fadeInUp" src="https://www.nimbledroid.com/assets/home2/enterprise-yahoo-1dbf59773a4dcbab119086e033a5ace7d3a78132c591f115b1c24f0c79e9cbe4.png" alt="Enterprise yahoo">
+                <img class="animated fadeInUp" src="https://www.nimbledroid.com/assets/home2/enterprise-anf-3d042ecfcda03935a8aa9b885328de17397a7b028b5a9c95b5d124a32dae1a60.png" alt="Enterprise anf">
+                <img class="animated fadeInUp" src="https://www.nimbledroid.com/assets/home2/enterprise-azimo-7fc0fe9c9a84adf844fdd10cde56a819b10fd5b088abe46ec07ffa46de2f902c.png" alt="Enterprise azimo">
+                <img class="animated fadeInUp" src="https://www.nimbledroid.com/assets/home2/enterprise-runkeeper-5ae023c64c098ff11c9f85a2b80f0bf77ce4c43949955443209d57c4e59c8faa.png" alt="Enterprise runkeeper">
+                <img class="animated fadeInUp" src="https://www.nimbledroid.com/assets/home2/enterprise-rally-4c4881af17b93fbce78a2b265e7bcada335870e63df3147342971cea6905986c.png" alt="Enterprise rally">
+            </div>
+            <div class="container carousel slide" data-ride="carousel2" id="CarouselQuotes">
+                <div class="carousel-inner revUp" role="listbox" data-sr-id="37" style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.06s, opacity 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.06s; transition: transform 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.06s, opacity 0.8s cubic-bezier(0.6, 0.2, 0.1, 1) 0.06s; ">
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-2 text-right">
+                                    <img class="avatar-frame " alt="" height="60" width="60" src="https://www.nimbledroid.com/assets/home/bryan-bf8692932adb04eff100b469343269f382cbb5773487bec1eb35c16fc9ddc994.jpg">
+                                </div>
+                                <div class="col-sm-9 text-left">
+                                    <h5>
+                                        Performance tuning is difficult, tedious and time consuming. NimbleDroid makes the task suck infinitely less. The saving on many dev hours is just a bonus.
+                                    </h5>
+                                    <p class="nametitle"><span class="name">
+Bryan Li
+</span>Senior Mobile Engineering Manager at
+                                        <strong>
+                                            Yahoo!
+                                        </strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-2 text-right">
+                                    <img class="avatar-frame" alt="" height="60" width="60" src="https://www.nimbledroid.com/assets/home/arla-daaa11dd4ffb4743c7b15288fd1c557f6c1eb1fb77d693c7f3f992d6e540cf26.jpg">
+                                </div>
+                                <div class="col-sm-9 text-left">
+                                    <h5 class="smallerQuoteText">
+                                        NimbleDroid easily integrated with our process and produced actionable results. We monitor every critical user flow for every pull request and instantly detect performance regressions.  Peace of mind preventing regressions gives us space and time to focus on delivering an amazing experience to Pinners.
+                                    </h5>
+                                    <p class="nametitle"><span class="name">
+Arla Rosenweig
+</span>Technical Program Manager at
+                                        <strong>
+                                            Pinterest
+                                        </strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-2 text-right">
+                                    <img class="avatar-frame" alt="" height="60" width="60" src="https://www.nimbledroid.com/assets/home/ben-b1fa7fa50fae2bfd68871f674aea223986650f0dc0b4e5439371cbcc46ca5e7a.jpg">
+                                </div>
+                                <div class="col-sm-9 text-left">
+                                    <h5 class="smallerQuoteText">
+                                        I would highly recommend nimbledroid for anyone looking to improve startup performance of their Android application. Over the past few months, nimbledroid have helped us reduce our app startup time by 40% while pinpointing our own and third party SDKs bottlenecks.
+                                    </h5>
+                                    <p class="nametitle"><span class="name">
+Ben Celebicic
+</span>Mobile Practice Lead at
+                                        <strong>
+                                            Abercrombie &amp; fitch
+                                        </strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-2 text-right">
+                                    <img class="avatar-frame" alt="" height="60" width="60" src="https://www.nimbledroid.com/assets/home/marcin-4237cada8ce8fd5b7cb8274565ee08d3545df2a28de95dc89e1074ed84ab3712.jpg">
+                                </div>
+                                <div class="col-sm-9 text-left">
+                                    <h5>
+                                        Network usage tends to be tricky and overlooked. At Azimo, we think about those users for whom every KB matters. NimbleDroid makes the task easier and more pleasant.
+                                    </h5>
+                                    <p class="nametitle"><span class="name">
+Marcin Szulc
+</span>Software Engineer at
+                                        <strong>
+                                            Azimo
+                                        </strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-2 text-right">
+                                    <img class="avatar-frame" alt="" height="60" width="60" src="https://www.nimbledroid.com/assets/home/yasir-4c5a6e3de68eaa6123ba1099578f42af6c3bd432e44486d0bf723a6371f89d4d.jpg">
+                                </div>
+                                <div class="col-sm-9 text-left">
+                                    <h5 class="smallerQuoteText">
+                                        At Flipkart we consider Performance an integral part of the product quality. With Nimbledroid integrated to our CI we have been able to find performance regressions as they happen, enabling us to react to them quickly and fix them at a much cheaper cost. Nimbledroid has helped us left-shift quality in our SDLC
+                                    </h5>
+                                    <p class="nametitle"><span class="name">
+Yasir Mohammad
+</span>Director of Engineering
+                                        <strong>
+                                            Flipkart
+                                        </strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ol class="carousel-indicators revDown" data-sr-id="1" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">
+                    <li class="comLogo1" data-slide-to="0" data-target="#CarouselQuotes" id="logoIndicator1"></li>
+                    <li class="comLogo2 active" data-slide-to="1" data-target="#CarouselQuotes" id="logoIndicator2"></li>
+                    <li class="comLogo3" data-slide-to="2" data-target="#CarouselQuotes" id="logoIndicator3"></li>
+                    <li class="comLogo4" data-slide-to="3" data-target="#CarouselQuotes" id="logoIndicator4"></li>
+                    <li class="comLogo4" data-slide-to="4" data-target="#CarouselQuotes" id="logoIndicator5"></li>
+                </ol>
+            </div>
+        </div>
+        <div class="marketing">
+            <div class="row feature1">
+                <div class="container">
+                    <div class="col-md-6 featureList">
+                        <div class="verticalOuter">
+                            <div class="verticalInner">
+                                <h2 class="featurette-heading revLeft" data-sr-id="14" style="; visibility: visible;  -webkit-transform: translateX(-20px) scale(0.9); opacity: 0;transform: translateX(-20px) scale(0.9); opacity: 0;">
+                                    Get regression alerts instantly
+                                </h2>
+                                <p class="featurette-content revLeft" data-sr-id="15" style="; visibility: visible;  -webkit-transform: translateX(-20px) scale(0.9); opacity: 0;transform: translateX(-20px) scale(0.9); opacity: 0;">
+                                    Alerts for slowdowns, crashes, and other critical issues as soon as problem code is introduced
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 featureImg">
+                        <div class="verticalOuter">
+                            <div class="verticalInner">
+                                <img class="featurette-image img-responsive center-block revRight" src="https://www.nimbledroid.com/assets/home2/sec1-5317f636e67a2cf0a38bb0f8a4c5bb9795593f9e5c587de33a020903e6d2b9aa.png" alt="Sec1" data-sr-id="24" style="; visibility: visible;  -webkit-transform: translateX(20px) scale(0.9); opacity: 0;transform: translateX(20px) scale(0.9); opacity: 0;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row feature2">
+                <div class="container">
+                    <div class="col-md-5 featureImg">
+                        <div class="verticalOuter">
+                            <div class="verticalInner text-right">
+                                <img class="featurette-image img-responsive center-block revRight" src="https://www.nimbledroid.com/assets/home2/sec4-afcc6e335c6fac5c47ca16b67471ee19921e6e47e017d0b03fc279e2e3693304.png" alt="Sec4" data-sr-id="25" style="; visibility: visible;  -webkit-transform: translateX(20px) scale(0.9); opacity: 0;transform: translateX(20px) scale(0.9); opacity: 0;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-md-offset-1 featureList">
+                        <div class="verticalOuter">
+                            <div class="verticalInner">
+                                <h2 class="featurette-heading revRight" data-sr-id="26" style="; visibility: visible;  -webkit-transform: translateX(20px) scale(0.9); opacity: 0;transform: translateX(20px) scale(0.9); opacity: 0;">
+                                    Add to Continuous Integration
+                                </h2>
+                                <p class="featurette-content revRight" data-sr-id="27" style="; visibility: visible;  -webkit-transform: translateX(20px) scale(0.9); opacity: 0;transform: translateX(20px) scale(0.9); opacity: 0;">
+                                    Monitor every build of your app with our CI server integration
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row feature3">
+                <div class="container">
+                    <div class="col-md-6 featureList">
+                        <div class="verticalOuter">
+                            <div class="verticalInner">
+                                <h2 class="featurette-heading revLeft" data-sr-id="16" style="; visibility: visible;  -webkit-transform: translateX(-20px) scale(0.9); opacity: 0;transform: translateX(-20px) scale(0.9); opacity: 0;">
+                                    Find the root cause
+                                </h2>
+                                <p class="featurette-content revLeft" data-sr-id="17" style="; visibility: visible;  -webkit-transform: translateX(-20px) scale(0.9); opacity: 0;transform: translateX(-20px) scale(0.9); opacity: 0;">
+                                    Pinpoint the root cause of issues with fine-grained diagnostics
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="verticalOuter">
+                            <div class="verticalInner">
+                                <img class="featurette-image img-responsive center-block revRight" src="https://www.nimbledroid.com/assets/home2/sec2-972aca1f31e61ef78736c3513975dec7f0481ad97c802d5cd560da2d48e95d9d.png" alt="Sec2" data-sr-id="28" style="; visibility: visible;  -webkit-transform: translateX(20px) scale(0.9); opacity: 0;transform: translateX(20px) scale(0.9); opacity: 0;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row feature4">
+                <div class="container">
+                    <div class="col-md-5 featureImg">
+                        <div class="verticalOuter">
+                            <div class="verticalInner text-right">
+                                <img class="featurette-image img-responsive center-block revRight" src="https://www.nimbledroid.com/assets/home2/secDashboard-cd21e8d1f862b0187e76b059b7c1a08e4f2e53776dfb9f8d512dc118f6c4b0eb.png" alt="Secdashboard" data-sr-id="29" style="; visibility: visible;  -webkit-transform: translateX(20px) scale(0.9); opacity: 0;transform: translateX(20px) scale(0.9); opacity: 0;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-md-offset-1 featureList">
+                        <div class="verticalOuter">
+                            <div class="verticalInner">
+                                <h2 class="featurette-heading revRight" data-sr-id="30" style="; visibility: visible;  -webkit-transform: translateX(20px) scale(0.9); opacity: 0;transform: translateX(20px) scale(0.9); opacity: 0;">
+                                    Track performance history
+                                </h2>
+                                <p class="featurette-content revRight" data-sr-id="31" style="; visibility: visible;  -webkit-transform: translateX(20px) scale(0.9); opacity: 0;transform: translateX(20px) scale(0.9); opacity: 0;">
+                                    Give your team insight into how app performance has changed over time
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row feature5">
+                <div class="container">
+                    <div class="col-md-6 featureList">
+                        <div class="verticalOuter">
+                            <div class="verticalInner">
+                                <h2 class="featurette-heading revLeft" data-sr-id="18" style="; visibility: visible;  -webkit-transform: translateX(-20px) scale(0.9); opacity: 0;transform: translateX(-20px) scale(0.9); opacity: 0;">
+                                    Real Device Cloud
+                                </h2>
+                                <p class="featurette-content revLeft" data-sr-id="19" style="; visibility: visible;  -webkit-transform: translateX(-20px) scale(0.9); opacity: 0;transform: translateX(-20px) scale(0.9); opacity: 0;">
+                                    Get accurate results running on real devices we manage
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 featureImg">
+                        <div class="verticalOuter">
+                            <div class="verticalInner">
+                                <img class="featurette-image img-responsive center-block revRight" src="https://www.nimbledroid.com/assets/home2/sec8-506f25de279e6487c08b333a67301310ce2a8b95ed9a6a63be2eddb5cb94df5d.png" alt="Sec8" data-sr-id="32" style="; visibility: visible;  -webkit-transform: translateX(20px) scale(0.9); opacity: 0;transform: translateX(20px) scale(0.9); opacity: 0;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="targets">
+            <div class="container">
+                <h5 class="revDown" data-sr-id="2" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">
+                    What’s in it for
+                </h5>
+                <div class="small-divider revDown" data-sr-id="3" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;"></div>
+                <div class="row text-center gradientBorder">
+                    <div class="col-md-4 revLeft" data-sr-id="20" style="; visibility: visible;  -webkit-transform: translateX(-20px) scale(0.9); opacity: 0;transform: translateX(-20px) scale(0.9); opacity: 0;">
+                        <i class="targetsIcon icon1"></i>
+                        <p><span class="numbers">
+Developers:
+</span></p><p>
+                        Catch and fix regressions in your code before they go to production.
+                    </p>
+                        <p></p>
+                    </div>
+                    <div class="col-md-4 revUp" data-sr-id="38" style="; visibility: visible;  -webkit-transform: translateY(-20px) scale(0.9); opacity: 0;transform: translateY(-20px) scale(0.9); opacity: 0;">
+                        <i class="targetsIcon icon2"></i>
+                        <p><span class="numbers">
+QA:
+</span></p><p>
+                        Speed up your release checklist and catch hard to find issues.
+                    </p>
+                        <p></p>
+                    </div>
+                    <div class="col-md-4 revRight" data-sr-id="33" style="; visibility: visible;  -webkit-transform: translateX(20px) scale(0.9); opacity: 0;transform: translateX(20px) scale(0.9); opacity: 0;">
+                        <i class="targetsIcon icon3"></i>
+                        <p><span class="numbers">
+Product and Engineering Managers:
+</span></p><p>
+                        Keep your revenue and user engagement high by monitoring critical app metrics.
+                    </p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logosContainer">
+            <div class="container">
+                <div class="row revUp" data-sr-id="39" style="; visibility: visible;  -webkit-transform: translateY(-20px) scale(0.9); opacity: 0;transform: translateY(-20px) scale(0.9); opacity: 0;">
+                    <p class="logoQuoteB">Proudly supported by</p>
+                </div>
+                <div class="row logosWrapB no-min-height">
+                    <img class="sponserLogo revDown" src="https://www.nimbledroid.com/assets/home2/logo1b-bd65002a7ed2ba5cd11b4b43612a39917555b72134f18966650259eba7f13fb8.png" alt="Logo1b" data-sr-id="4" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">
+                    <img class="sponserLogo revDown" src="https://www.nimbledroid.com/assets/home2/logo2b-1cd049ada844787a40f3e20e8cbe63de3e08ef30a19c14b6acf52775a5b7bd90.png" alt="Logo2b" data-sr-id="5" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">
+                    <img class="sponserLogo revDown" src="https://www.nimbledroid.com/assets/home2/logo3b-6298d6ba376bc6180b325a73bb21f74a9507a163239301f62b51611077e534c0.png" alt="Logo3b" data-sr-id="6" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">
+                    <img class="sponserLogo revDown" src="https://www.nimbledroid.com/assets/home2/logo4b-ce47b5e039898443c9f7ad5b028e3794e91e10f17dbce13caa0c80d190f19adf.png" alt="Logo4b" data-sr-id="7" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">
+                    <img class="sponserLogo revDown" src="https://www.nimbledroid.com/assets/home2/logo5b-b9055abbe85b219cf15de2ac70eb9f37a85ec8ba0d46d4f6a072ee089dfb0cd1.png" alt="Logo5b" data-sr-id="8" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">
+                </div>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="container">
+                <div class="row blogSmallHeader">
+                    <div class="col-xs-6 text-left blogTitle">
+                        <p class="subTitle revLeft" data-sr-id="21" style="; visibility: visible;  -webkit-transform: translateX(-20px) scale(0.9); opacity: 0;transform: translateX(-20px) scale(0.9); opacity: 0;">
+                            Recent Posts
+                        </p>
+                    </div>
+                    <div class="col-xs-6 text-right blogTitle revRight" data-sr-id="34" style="; visibility: visible;  -webkit-transform: translateX(20px) scale(0.9); opacity: 0;transform: translateX(20px) scale(0.9); opacity: 0;">
+                        <a href="http://blog.nimbledroid.com/">View Blog Site</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blogCard revLeft" data-sr-id="22" style="; visibility: visible;  -webkit-transform: translateX(-20px) scale(0.9); opacity: 0;transform: translateX(-20px) scale(0.9); opacity: 0;">
+                        <h3>
+                            Guest Post: How NimbleDroid helped Flipkart speed up app startup by 45%
+                        </h3>
+                        <p>
+                            We found Nimbledroid via http://androidweekly.net/ and checked it out starting in 2016. We had been looking for a service to help us identify where exactly in code we needed to improve Flipkart performance time. Over the last five months NimbleDroid has helped us detect and fix several performance bottlenecks, as...
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-6 text-left">
+                                <p class="date">
+                                    May 9, 2017
+                                </p>
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <a href="http://blog.nimbledroid.com/2017/05/09/guest-post-flipkart.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blogCard revUp" data-sr-id="40" style="; visibility: visible;  -webkit-transform: translateY(-20px) scale(0.9); opacity: 0;transform: translateY(-20px) scale(0.9); opacity: 0;">
+                        <h3>
+                            Eight Ways Your Android App Can STOP Leaking Memory
+                        </h3>
+                        <p>
+                            In part one of this blog post “Eight Ways Your Android App Can Leak Memory”, we went over eight different ways your code can cause your Android application to leak memory. Specifically, all eight leaks were leaking an Activity instance, which is particularly dangerous because activities have a very large...
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-6 text-left">
+                                <p class="date">
+                                    Sep 6, 2016
+                                </p>
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <a href="http://blog.nimbledroid.com/2016/09/06/stop-memory-leaks.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blogCard revRight" data-sr-id="35" style="; visibility: visible;  -webkit-transform: translateX(20px) scale(0.9); opacity: 0;transform: translateX(20px) scale(0.9); opacity: 0;">
+                        <h3>
+                            App Diets are not a Fad <br> &zwnj;
+                        </h3>
+                        <p>
+                            In our last post we explored an architecture/library selection that would lead to nearly perfect startup times. Today I wanted to explore another type of performance optimization: APK size. A smaller APK results in faster resource lookup and faster reflection. Image optimization, an important way to cut down APK size,...
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-6 text-left">
+                                <p class="date">
+                                    Jun 15, 2016
+                                </p>
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <a href="http://blog.nimbledroid.com/2016/06/15/app-diets-not-a-fad.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="joinBanner">
+            <div class="container">
+                <h3 class="revUp" data-sr-id="41" style="; visibility: visible;  -webkit-transform: translateY(-20px) scale(0.9); opacity: 0;transform: translateY(-20px) scale(0.9); opacity: 0;">Over 450834 Apps</h3>
+                <span class="revUp" data-sr-id="42" style="; visibility: visible;  -webkit-transform: translateY(-20px) scale(0.9); opacity: 0;transform: translateY(-20px) scale(0.9); opacity: 0;">
+and versions profiled by NimbleDroid, and it’s still counting!
+</span>
+                <div class="searchBoxWrap revDown" data-sr-id="9" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">
+                    <form class="nd-search-box" action="/play/search" accept-charset="UTF-8" method="get">
+                        <div class="input-group">
+                            <input type="text" name="q" id="q" class="form-control nd-search-input" placeholder="Search for your Google Play app">
+                            <span class="input-group-btn nd-search-btn">
+<button class="btn btn-default" type="submit">
+<i class="fa fa-search"></i>
+</button>
+</span>
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="verticalDivider revDown" data-sr-id="10" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">or</div>
+                <a class="btn btn-white revDown" href="https://nimbledroid.com/my_apps/com.nimbledroid.shopper?a=b2c08235-0e17-4174-b2e8-10e36aafc04b" data-sr-id="11" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">See an Example Profile</a>
+            </div>
+        </section>
+    </div>
+    <script>
+      (function() {
+        jQuery(document).ready(function($) {
+          window.sr = ScrollReveal({
+            reset: false
+          });
+          $('#user-quotes-album').click(function() {
+            return $('#user-quotes-album').carousel('pause');
+          });
+          sr.reveal('.revDown', {
+            duration: 800,
+            delay: 60,
+            origin: 'bottom'
+          });
+          sr.reveal('.revLeft', {
+            duration: 800,
+            delay: 60,
+            origin: 'left'
+          });
+          sr.reveal('.revRight', {
+            duration: 800,
+            delay: 60,
+            origin: 'right'
+          });
+          sr.reveal('.revUp', {
+            duration: 800,
+            delay: 60,
+            origin: 'top'
+          });
+          setTimeout((function() {
+            $('#s1l1').removeClass('fadeOutDown').removeClass('fadeOutLeft').css('opacity', 1).addClass('animated fadeInLeft');
+          }), 1);
+          setTimeout((function() {
+            $('#s1l2').removeClass('fadeOutDown').removeClass('fadeOutLeft').css('opacity', 1).addClass('animated fadeInLeft');
+          }), 300);
+          setTimeout((function() {
+            $('#s1l3').removeClass('fadeOutDown').removeClass('fadeOutLeft').css('opacity', 1).addClass('animated fadeInLeft');
+          }), 500);
+          setTimeout((function() {
+            $('#s1l4').removeClass('fadeOutDown').removeClass('fadeOutLeft').css('opacity', 1).addClass('animated fadeInLeft');
+          }), 700);
+          setTimeout((function() {
+            $('#s1bt1').removeClass('fadeOutDown').removeClass('fadeOutLeft').css('opacity', 1).addClass('animated fadeInLeft');
+          }), 900);
+          return setTimeout((function() {
+            $('#s1i1').removeClass('fadeOutDown').removeClass('fadeOutRight').css('opacity', 1).addClass('animated fadeInRight');
+          }), 500);
+        });
+
+      }).call(this);
+    </script>
+    <script>
+      (function(){ var widget_id = 'RrF4dO2hnf';var d=document;var w=window;function l(){
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+    </script>
+
+
+</div>
+<div class="popupBackground">
+    <div class="popup signupForm">
+        <div class="closePanel">
+            <a onclick="closePanel()">Close</a>
+        </div>
+        <div class="popContent">
+            <!-- Begin MailChimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+            <style>
+                #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+            </style>
+            <div id="mc_embed_signup">
+                <form action="//nimbledroid.us11.list-manage.com/subscribe/post?u=fac135320a546db168f0a255f&amp;id=4d88516529" class="validate" id="mc-embedded-subscribe-form" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate">
+                    <div id="mc_embed_signup_scroll">
+                        <h2>Subscribe to our mailing list</h2>
+                        <div class="indicates-required">
+                            <span class="asterisk">*</span>
+                            indicates required
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-EMAIL">
+                                Email Address
+                                <span class="asterisk">*</span>
+                            </label>
+                            <input class="required email" id="mce-EMAIL" name="EMAIL" type="email" value="" aria-required="true">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-FNAME">First Name</label>
+                            <input id="mce-FNAME" name="FNAME" type="text" value="">
+                        </div>
+                        <div class="mc-field-group">
+                            <label for="mce-LNAME">Last Name</label>
+                            <input id="mce-LNAME" name="LNAME" type="text" value="">
+                        </div>
+                        <div class="mc-field-group input-group">
+                            <strong>I'm interested in receiving</strong>
+                            <ul>
+                                <li>
+                                    <input id="mce-group[14769]-14769-0" name="group[14769][1]" type="checkbox" value="1">
+                                    <label for="mce-group[14769]-14769-0">NimbleDroid Newsletters</label>
+                                </li>
+                                <li>
+                                    <input id="mce-group[14769]-14769-1" name="group[14769][2]" type="checkbox" value="2">
+                                    <label for="mce-group[14769]-14769-1">NimbleDroid Product Updates</label>
+                                </li>
+                                <li>
+                                    <input id="mce-group[14769]-14769-2" name="group[14769][4]" type="checkbox" value="4">
+                                    <label for="mce-group[14769]-14769-2">NimbleDroid Promotions</label>
+                                </li>
+                            </ul>
+                            <div class="clear" id="mce-responses">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                                <input name="b_fac135320a546db168f0a255f_4d88516529" tabindex="-1" type="text" value="">
+                            </div>
+                            <div class="clear"></div>
+                            <input class="button" id="mc-embedded-subscribe" name="subscribe" type="submit" value="Subscribe">
+                        </div>
+                        <script src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js" type="text/javascript"></script>
+                        <script>
+                          (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+                        </script>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 revLeft" data-sr-id="23" style="; visibility: visible;  -webkit-transform: translateX(-20px) scale(0.9); opacity: 0;transform: translateX(-20px) scale(0.9); opacity: 0;">
+                <div class="footerLogo"></div>
+                <p class="text-center comAddress">
+                    588 Broadway, Suite 503
+                    <br>
+                    New York, NY 10012
+                </p>
+                <p class="text-center comAddress">contact@nimbledroid.com</p>
+                <p class="text-center comAddress small">
+                    © 2018 Nimbledroid, Inc
+                    ·
+                    <a href="/privacy">Privacy &amp; Terms</a>
+                </p>
+            </div>
+            <div class="col-md-3 footerListWrapper revDown" data-sr-id="12" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <ul>
+                            <li><a href="https://nimbledroid.com">Home</a></li>
+                            <li><a href="/play">Play Apps</a></li>
+                            <li><a href="/contact_form">Request Demo</a></li>
+                            <li><a class="account-link" href="/account">Account</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6">
+                        <ul>
+                            <li><a href="http://docs.nimbledroid.com/">Documentation</a></li>
+                            <li><a href="http://blog.nimbledroid.com">Blog</a></li>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/jobs">Jobs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 footerListWrapperSmall revDown" data-sr-id="13" style="; visibility: visible;  -webkit-transform: translateY(20px) scale(0.9); opacity: 0;transform: translateY(20px) scale(0.9); opacity: 0;">
+                <ul>
+                    <li>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-facebook"></i>
+                            </div>
+                            <div class="col-sm-9">
+                                <a href="https://www.facebook.com/NimbleDroid">Facebook</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-twitter"></i>
+                            </div>
+                            <div class="col-md-9">
+                                <a href="https://twitter.com/nimbledroid">Twitter</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-google-plus"></i>
+                            </div>
+                            <div class="col-sm-9">
+                                <a href="https://plus.google.com/109570463366564630073">Google</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <i class="fa fa-linkedin"></i>
+                            </div>
+                            <div class="col-sm-9">
+                                <a href="https://www.linkedin.com/company/nimbledroid">LinkedIn</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 revRight footerSubscriptionWrap" data-sr-id="36" style="; visibility: visible;  -webkit-transform: translateX(20px) scale(0.9); opacity: 0;transform: translateX(20px) scale(0.9); opacity: 0;">
+                <h3 class="footerTitle">Keep updated</h3>
+                <button class="btn footerButton" onclick="OpenPopupForm()">subscribe</button>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="modal fade" id="signmodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button aria-label="close" class="close" data-dismiss="modal" type="button">
+<span aria-hidden="true">
+×
+</span>
+                </button>
+                <div id="modal-flash">
+                    <div id="modal-message"></div>
+                </div>
+            </div>
+            <div class="modal-body" id="signmodalbody">
+                loading..
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  jQuery(document).ready(function($) {
+    if ("Chrome" =="Internet Explorer") {
+      $('.modal').removeClass('fade');
+    }
+    new AjaxCallManager().init();
+    $('#CarouselQuotes').carousel({interval: 6000});
+    if($('#flash').html().trim().length){
+      $("#flash").delay(6000).fadeOut(400);
+    }
+  });
+
+  function OpenPopupForm(){
+    $('.popupBackground').show();
+  }
+  function closePanel(){
+    $('.popupBackground').hide();
+  }
+
+  (function() {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.src = ('https:' === document.location.protocol ? 'https://' : 'http://' ) + 'd3accju1t3mngt.cloudfront.net/js/pa.min.js';
+    var firstScript = document.getElementsByTagName('script')[0];
+    firstScript.parentNode.insertBefore(script, firstScript);
+  })();
+
+  // google analytics
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-64885510-1', 'auto');
+
+  ga('send', 'pageview');
+</script>
+<div class="jivo-iframe-container-bottom jivo-state-widget jivo-collapsed jivo_shadow jivo_rounded_corners jivo_gradient" id="jivo-iframe-container" style="opacity: 0; visibility: visible; width: 300px; height: 38px; right: 30px; padding-top: 0px; bottom: 0px;"><iframe src="javascript:false" title="" name="jivo_container" id="jivo_container" frameborder="no" style="width: 100%; height: 100%; border: 0px;"></iframe><style type="text/css">div#jivo-iframe-container *{max-height:100%}body#jivo_outer_body{height:100% !important}body#jivo_outer_body div#jivo-iframe-container.jivo-custom-label{z-index:2147483647 !important;-webkit-transition:all .3s cubic-bezier(.39, .24, .21, .99) !important;transition:all .3s cubic-bezier(.39, .24, .21, .99) !important;-webkit-animation-fill-mode:forwards !important}body.jivo-block-scroll{overflow:hidden}.jivo-mobile-widget{overflow:visible}.jivo-mobile-widget body{position:fixed !important;width:100% !important;height:100% !important;max-height:100% !important;min-height:100% !important;overflow:hidden;margin:0;bottom:0}.jivo-mobile-widget.jivo-mobile-overlay body::after{content:"";display:block;position:fixed;top:0;left:0;height:100% !important;width:100% !important;z-index:10;background-color:rgba(0,0,0,0.2)}div#jivo-iframe-container:not(.jivo-c-mobile){z-index:2147483647;-webkit-transition:all .3s cubic-bezier(.39, .24, .21, .99) !important;transition:all .3s cubic-bezier(.39, .24, .21, .99),opacity 0s !important;-webkit-animation-fill-mode:forwards !important;animation-fill-mode:forwards !important;position:fixed !important;transform:scale(1) !important;transform-origin:0 100%;font-size:0 !important;min-width:38px !important;max-width:100% !important;display:inline-block !important;overflow:visible !important;background:transparent !important;max-height:100% !important;min-height:0 !important;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;padding:0;margin:0;top:auto;backface-visibility:hidden}div#jivo-iframe-container:not(.jivo-c-mobile) #jivo-action-container{display:block !important;position:static !important;left:0 !important;right:0 !important;bottom:0 !important;padding:0 !important;margin:0 !important;opacity:1 !important}div#jivo-iframe-container:not(.jivo-c-mobile).jivo-custom-label{transition:none !important}div#jivo-iframe-container:not(.jivo-c-mobile).jivo-custom-label.jivo-state-widget{display:none !important}div#jivo-iframe-container:not(.jivo-c-mobile).jivo-separate-window{bottom:0 !important;top:0 !important;right:0 !important;left:0 !important;width:100% !important;height:100% !important}div#jivo-iframe-container:not(.jivo-c-mobile).jivo_shadow.jivo-opening div#jivo-iframe-container:not(.jivo-c-mobile).jivo_shadow::after{height:100% !important}div#jivo-iframe-container:not(.jivo-c-mobile).jivo_shadow.jivo-state-widget div#jivo-iframe-container:not(.jivo-c-mobile).jivo_shadow.jivo-iframe-container-bottom::after,div#jivo-iframe-container:not(.jivo-c-mobile).jivo_shadow.jivo-state-widget::after{height:38px}div#jivo-iframe-container:not(.jivo-c-mobile).jivo_shadow::after{position:absolute !important;width:100%;bottom:0 !important;right:0 !important;border-radius:3px 30px 0 0 !important;content:" "}div#jivo-iframe-container:not(.jivo-c-mobile).jivo-expanded{overflow:visible !important}div#jivo-iframe-container:not(.jivo-c-mobile).jivo-expanded #jivo_close_button{opacity:1}div#jivo-iframe-container:not(.jivo-c-mobile).jivo-expanded::after{background:transparent;position:absolute !important;width:100% !important;bottom:0 !important;right:0 !important;border-radius:3px 30px 0 0 !important;content:" " !important;height:100% !important}div#jivo-iframe-container:not(.jivo-c-mobile) iframe body{overflow:hidden}div#jivo-iframe-container:not(.jivo-c-mobile).jivo-ie8{border-top-width:2px;border-left-width:2px;border-right-width:2px;border-bottom-width:0;border-style:solid}div#jivo-iframe-container:not(.jivo-c-mobile).jivo-ie8::after{display:none;border-width:0}.jivo-c-mobile{position:fixed !important;height:100% !important;width:100% !important;top:0 !important;left:0 !important;bottom:0 !important;right:0 !important;transition:none !important;margin:0 !important;padding:0 !important;z-index:2147483647 !important;transform:initial !important}html.jivo-site-full-block{position:fixed !important;height:100% !important;width:100% !important}html.jivo-site-full-block body{z-index:auto !important}html.jivo-site-full-block body::after{position:absolute;left:0;right:0;top:0;bottom:0;width:100% !important;height:100% !important;background-color:#fff;content:" ";z-index:2147483646 !important}iframe#jivo_container{z-index:2147483647 !important;position:relative !important;padding:0 !important;margin:auto !important;left:auto !important;right:auto !important;width:100% !important;height:100% !important;max-width:100% !important;min-width:100% !important;min-height:0 !important;max-height:100% !important;display:block !important;background:transparent !important;top:0 !important;bottom:0 !important;opacity:1;visibility:visible;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none}div#jivo-iframe-container.jivo-iframe-container-bottom{right:30px;bottom:0;border-radius:3px 30px 0 0 !important;min-width:300px !important}div#jivo-iframe-container.jivo-iframe-container-bottom.jivo_shadow.jivo-state-widget::after{height:38px;box-shadow:none !important}div#jivo-iframe-container.jivo-iframe-container-bottom.jivo_shadow::after{height:100%;-webkit-box-shadow:0 12px 25px 8px rgba(0,0,0,0.17);-moz-box-shadow:0 12px 25px 8px rgba(0,0,0,0.17);box-shadow:0 12px 25px 8px rgba(0,0,0,0.17)}div#jivo-iframe-container.jivo-iframe-container-bottom.jivo-expanded{bottom:0}div#jivo-iframe-container.jivo-iframe-container-bottom.jivo-ie8{min-width:0 !important;width:300px}div#jivo-iframe-container.jivo-iframe-container-bottom.jivo-ie8.jivo-state-widget-expanded{border-top-width:0;border-left-width:0;border-right-width:0;border-bottom-width:0}div#jivo-iframe-container.jivo-iframe-container-bottom.jivo-wp{bottom:5px !important}div#jivo-iframe-container.jivo-iframe-container-left{left:-48px;bottom:10px}div#jivo-iframe-container.jivo-iframe-container-left.jivo-collapsed{min-height:124px}div#jivo-iframe-container.jivo-iframe-container-left.jivo-state-widget{border-radius:0 30px 3px 0 !important}div#jivo-iframe-container.jivo-iframe-container-left.jivo_shadow.jivo-state-widget::after{width:38px;height:100%;box-shadow:none !important}div#jivo-iframe-container.jivo-iframe-container-left.jivo_shadow.jivo-expanded::after{width:100%}div#jivo-iframe-container.jivo-iframe-container-left.jivo_shadow.jivo-collapsed::after{width:38px;height:100%}div#jivo-iframe-container.jivo-iframe-container-left.jivo_shadow::after{border-radius:0 30px 3px 0 !important;right:auto !important;left:0 !important;-webkit-box-shadow:0 12px 25px 8px rgba(0,0,0,0.17);-moz-box-shadow:0 12px 25px 8px rgba(0,0,0,0.17);box-shadow:0 12px 25px 8px rgba(0,0,0,0.17)}div#jivo-iframe-container.jivo-iframe-container-left.jivo_shadow.jivo-opening::after,div#jivo-iframe-container.jivo-iframe-container-left.jivo_shadow.jivo-closing::after{-webkit-box-shadow:none !important;-moz-box-shadow:none !important;box-shadow:none !important}div#jivo-iframe-container.jivo-iframe-container-left.jivo-expanded{left:0}div#jivo-iframe-container.jivo-iframe-container-right{right:-48px;bottom:10px}div#jivo-iframe-container.jivo-iframe-container-right.jivo-collapsed{min-height:124px}div#jivo-iframe-container.jivo-iframe-container-right.jivo-state-widget{border-radius:30px 0 0 3px !important;overflow:hidden !important}div#jivo-iframe-container.jivo-iframe-container-right.jivo-state-widget::after{box-shadow:none !important}div#jivo-iframe-container.jivo-iframe-container-right.jivo_shadow.jivo-expanded::after{border-radius:3px 30px 0 3px !important;width:100%;visibility:visible;box-shadow:none !important}div#jivo-iframe-container.jivo-iframe-container-right.jivo_shadow::after{top:1px;border-radius:30px 0 0 3px !important;width:38px !important;height:99% !important;-webkit-box-shadow:0 12px 25px 8px rgba(0,0,0,0.17);-moz-box-shadow:0 12px 25px 8px rgba(0,0,0,0.17);box-shadow:0 12px 25px 8px rgba(0,0,0,0.17)}div#jivo-iframe-container.jivo-iframe-container-right.jivo-opening::after,div#jivo-iframe-container.jivo-iframe-container-right.jivo-closing::after{-webkit-box-shadow:none !important;-moz-box-shadow:none !important;box-shadow:none !important}div#jivo-iframe-container.jivo-iframe-container-right.jivo-expanded{right:0}div#jivo-iframe-container.jivo-no-transition{transition:none !important}div#jivo_action{position:absolute !important;top:0 !important;bottom:0 !important;left:-10px !important;right:0 !important;display:block;overflow:visible;max-height:initial !important;-webkit-touch-callout:none !important;user-select:none !important;-webkit-user-select:none !important;-moz-user-select:none !important;-ms-user-select:none !important;direction:ltr !important}div#jivo_action:hover{opacity:.9 !important}div.jivo-visible{left:-25px !important;display:block !important}div#jivo_close_button{margin-top:0 !important;margin-left:-20px !important;width:23px !important;height:23px !important;cursor:pointer !important;overflow:visible !important;opacity:0;-webkit-transition:all .3s cubic-bezier(.39, .24, .21, .99) !important;transition:all .3s cubic-bezier(.39, .24, .21, .99) !important;transition-delay:.3s}div#jivo_close_button.jivo-tablet{width:34px !important;height:34px !important}div#jivo_close_button.jivo-tablet svg{width:34px !important;height:34px !important;left:-10px !important;max-height:initial}div#jivo_close_button svg{width:23px !important;height:23px !important;position:relative !important;top:0 !important;left:0 !important;margin:0 !important;padding:0;display:block !important;opacity:1;visibility:visible !important}div#jivo-mouse-tracker{position:fixed !important;width:auto !important;height:auto !important;max-height:initial !important;z-index:2147483647 !important;left:-300px !important;right:-300px !important;top:-200px !important;bottom:0 !important;display:block;background-color:transparent !important;opacity:0 !important;-webkit-touch-callout:none !important;-webkit-user-select:none !important;-khtml-user-select:none !important;-moz-user-select:none !important;-ms-user-select:none !important;-o-user-select:none !important;user-select:none !important;transform:initial !important}div#jivo-drag-handle{position:absolute !important;top:0 !important;left:0 !important;width:79% !important;height:70px !important;background-color:transparent !important;z-index:2147483647 !important;cursor:move !important;-webkit-touch-callout:none !important;-webkit-user-select:none !important;-khtml-user-select:none !important;-moz-user-select:none !important;-ms-user-select:none !important;-o-user-select:none !important;user-select:none !important}#jivo_magic_iframe{width:100%;height:100%;position:fixed;margin:0;padding:0;left:0;top:0;border:0;z-index:200000;background-color:#fff;-webkit-overflow-scrolling:touch;overflow:auto;filter:none}.jivo-frame-visible{display:block;visibility:visible}.jivo-frame-hidden{display:block;visibility:hidden;width:100%;height:100%;position:absolute;left:-10000px;top:-10000px}.jivo_cobrowsing_element{border:8px solid #c8f70c;-webkit-border-radius:10px;-khtml-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;behavior:url(corners.htc);box-shadow:0 3px 11px rgba(0,0,0,0.2);-webkit-box-shadow:0 3px 11px rgba(0,0,0,0.2);position:absolute;z-index:199998;pointer-events:none;min-height:auto !important;box-sizing:content-box}.jivo_cobrowsing_element .jivo_cobrowsing_element_inner{width:100%;height:100%;background-color:rgba(200,247,12,0.15)}.jivo_cobrowsing_tooltip{position:absolute;width:300px;z-index:199999;min-height:auto !important;display:block}.jivo_cobrowsing_tooltip #jivo_action{height:15px !important;z-index:auto}.jivo_cobrowsing_tooltip #jivo_action #jivo_close_button{margin-left:25px}.jivo_cobrowsing_tooltip>jdiv{font-family:"Arial",sans-serif;font-size:13px;background-color:#3cb868;color:#fff;padding:10px;border:0;border-radius:15px;display:block}.jivo_cobrowsing_tooltip>jdiv::after{width:0;height:0;position:absolute;content:" ";border-left:9px solid transparent;border-right:9px solid transparent;border-top:9px solid #3cb868;left:50%;bottom:-9px;margin-left:-9px}.jivo_cobrowsing_tooltip>jdiv.jivo-top::after{border-top-color:transparent;border-bottom:9px solid #3cb868;top:-17px;bottom:auto}.jivo_cobrowsing_tooltip>jdiv.jivo-top.jivo-left #jivo_action{right:-45px !important;left:initial}.jivo_cobrowsing_tooltip>jdiv.jivo-left #jivo_action{right:-25px !important;left:initial}.jivo_cobrowsing_tooltip>jdiv.jivo-left::after{left:20px;margin:0}.jivo_cobrowsing_tooltip>jdiv.jivo-right::after{right:20px;left:auto;margin:0}.jivo_cobrowsing_tooltip>jdiv .jivo_cobrowsing_tooltip_agent{display:block;font-weight:bold;padding-bottom:2px;color:#fff !important}.jivo_cobrowsing_tooltip>jdiv .jivo_cobrowsing_tooltip_text{color:#fff !important;overflow:hidden;word-wrap:break-word;display:block}#jivo_copyright{position:fixed;display:none;font-family:"Helvetica","Arial",sans-serif;font-weight:normal;font-size:12px;line-height:14px;cursor:pointer;background-color:#414243;color:#fff;padding:11px 15px;min-height:18px !important;z-index:2147483647;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;font-smoothing:antialiased;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}#jivo_copyright a{text-decoration:none;color:#54d181}#jivo_copyright #jivosite-copyright{display:inline-block;width:51px;height:18px;margin:0 0 -4px 5px}#jivo_copyright #jivosite-copyright.jivo-light{background-image:url("data:image/svg+xml,%3Csvg%20width%3D%2249%22%20height%3D%2218%22%20viewBox%3D%220%200%2049%2018%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M7.35%206.347h-.942c-.095%200-.19%200-.283.095-.094.095-.094.19-.094.284v7.01c0%20.096%200%20.19.095.285.094.096.188.096.283.096h.942c.094%200%20.188%200%20.283-.095.094-.094.094-.188.094-.283v-7.01c0-.095%200-.19-.094-.285-.095%200-.19-.095-.283-.095zm8.67%200h-.755c-.282%200-.47.095-.565.19l-2.167%204.737-2.073-4.737c-.095-.19-.19-.19-.377-.19H9.046c-.188%200-.283%200-.283.095-.094.095-.094.19%200%20.284l3.393%207.295c.094.096.188.19.377.19h.094c.188%200%20.283-.094.283-.19l3.392-7.294c.094-.094.094-.19%200-.284%200%200-.094-.095-.283-.095zm4.617-.19c-1.13%200-2.074.38-2.827%201.232-.754.757-1.225%201.705-1.225%202.842%200%201.136.377%202.084%201.225%202.842.753.852%201.696%201.23%202.827%201.23%201.13%200%202.073-.378%202.826-1.23.754-.853%201.13-1.8%201.13-2.842%200-1.137-.376-2.085-1.224-2.843-.755-.758-1.697-1.232-2.733-1.232zm1.6%205.875c-.47.473-1.035.757-1.695.757-.66%200-1.225-.19-1.696-.664-.47-.473-.66-1.042-.66-1.8%200-.663.19-1.326.66-1.705.47-.473%201.037-.662%201.696-.662.66%200%201.225.19%201.696.663.472.475.66%201.043.66%201.706s-.188%201.232-.66%201.706zm8.01-1.61c-.282-.19-.564-.38-.753-.475-.282-.094-.565-.284-1.036-.473-.47-.19-.754-.38-1.037-.57-.187-.188-.376-.378-.376-.567%200-.19.094-.38.283-.474.188-.095.377-.19.754-.19.566%200%201.037.095%201.697.38.283.094.377.094.47-.19l.284-.568c.095-.19.095-.38-.188-.57-.565-.378-1.32-.567-2.26-.567-.85%200-1.51.19-1.98.663-.47.475-.66.948-.66%201.517%200%20.568.19%201.042.566%201.42.377.38.848.664%201.602%201.043.565.284%201.036.474%201.32.663.282.19.376.38.376.663%200%20.19-.094.38-.283.57-.188.093-.47.188-.754.188-.566%200-1.226-.19-1.98-.568-.282-.095-.377-.095-.47.095l-.378.758c-.094.19%200%20.285.095.38.753.568%201.6.757%202.544.757.85%200%201.508-.19%202.074-.663.47-.474.754-.947.754-1.61%200-.38-.095-.664-.19-.948%200-.19-.187-.473-.47-.663zm3.393-4.075h-.942c-.094%200-.188%200-.283.095-.094.095-.094.19-.094.284v7.01c0%20.096%200%20.19.095.285.095.096.19.096.283.096h.942c.095%200%20.19%200%20.283-.095.094-.094.094-.188.094-.283v-7.01c0-.095%200-.19-.094-.285-.094%200-.188-.095-.283-.095zm6.785%206.158c-.094-.19-.283-.284-.47-.19-.378.285-.85.38-1.226.38a.718.718%200%200%201-.472-.19c-.095-.094-.19-.284-.19-.663V7.674h2.074c.095%200%20.19%200%20.283-.095.094%200%20.094-.096.094-.19v-.664c0-.094%200-.19-.095-.284-.094-.095-.188-.095-.283-.095H38.07v-2.18c0-.093%200-.188-.095-.283-.094%200-.094-.095-.283-.095h-.942c-.094%200-.188%200-.283.094-.094.095-.094.19-.094.284v2.18h-.942c-.282%200-.376.094-.376.378v.663c0%20.094%200%20.19.094.284.094.094.19.094.283.094h.943v4.264c0%20.757.19%201.326.47%201.705.284.38.85.568%201.51.568.376%200%20.847-.094%201.224-.19.377-.094.754-.283.942-.378.188-.095.282-.284.188-.474l-.283-.758zm7.35-5.305c-.66-.663-1.508-1.042-2.544-1.042-1.13%200-2.072.38-2.826%201.23-.754.76-1.13%201.707-1.13%202.844%200%201.136.376%202.084%201.13%202.936.754.758%201.696%201.137%202.827%201.137%201.226%200%202.168-.284%202.922-.947.188-.19.188-.38%200-.57l-.47-.662c-.095-.19-.284-.19-.472%200-.66.474-1.225.663-1.885.663-.66%200-1.225-.19-1.696-.664-.472-.473-.66-.947-.66-1.515h5.37c.19%200%20.377-.094.377-.378v-.57c.095-.946-.282-1.8-.942-2.462zm-4.712%202.18c.095-.475.283-.948.66-1.233.377-.38.848-.473%201.414-.473.565%200%201.036.19%201.32.473.376.38.564.758.564%201.232h-3.957zM3.77%206.346H1.13c-.093%200-.188%200-.282.095-.094.095-.094.19-.094.284v.948c0%20.094%200%20.19.094.284.094.095.19.095.283.095h1.32v6.82c0%20.664-.565%201.232-1.225%201.232H1.13c-.093%200-.188%200-.282.095-.094.095-.094.19-.094.284v.948c0%20.094%200%20.19.094.284.094.095.19.095.283.095h.095c1.602%200%202.92-1.326%202.92-2.842V6.82c0-.094%200-.188-.093-.283-.094-.095-.094-.19-.283-.19z%22%20fill%3D%22%23FFF%22%2F%3E%3Cpath%20d%3D%22M4.146%205.78C3.958.946.754.757.754.757c-.19%204.358%203.392%205.02%203.392%205.02z%22%20fill%3D%22%2344BB6E%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-repeat:no-repeat;vertical-align:top;margin-top:10px;background-size:48px 17px}#jivo_copyright #jivosite-copyright.jivo-light.jivo-en{width:54px;margin-top:11px;display:inline-block;height:19px;vertical-align:top;background-image:url("data:image/svg+xml,%3Csvg%20width%3D%2255%22%20height%3D%2218%22%20viewBox%3D%220%200%2055%2018%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M3.5%206H.8c-.1%200-.2%200-.3.1%200%20.1-.1.1-.1.2v1c0%20.1%200%20.2.1.3.1.1.2.1.3.1h1.4v7.2c0%20.7-.6%201.3-1.2%201.3H.8c-.1%200-.2%200-.3.1-.1.1-.1.2-.1.3v1c0%20.1%200%20.2.1.3.1.1.2.1.3.1h.1c1.6%200%202.9-1.4%202.9-3V6.3c0-.1%200-.2-.1-.3h-.2zM7%206H6c-.1%200-.1%200-.2.1s-.1.1-.1.2v7.4c0%20.1%200%20.2.1.3.1.1.2.1.3.1H7c.1%200%20.2%200%20.3-.1.1-.1.1-.2.1-.3V6.3c0-.1%200-.2-.1-.3H7zm8.6%200h-.8c-.3%200-.5.1-.5.2l-2.2%205-2.1-5c0-.2-.2-.2-.3-.2h-1c-.2%200-.3%200-.3.1-.1.1-.1.2%200%20.3l3.4%207.7c.1.1.2.2.3.2h.1c.1%200%20.3-.1.3-.2l3.4-7.7c.1-.1.1-.2%200-.3-.1-.1-.2-.1-.3-.1zm4.6-.2c-1.1%200-2%20.4-2.8%201.3-.8.8-1.2%201.8-1.2%203s.4%202.2%201.2%203c.8.9%201.7%201.3%202.8%201.3%201.1%200%202-.4%202.8-1.3.8-.9%201.2-1.9%201.2-3%200-1.2-.4-2.2-1.2-3-.8-.9-1.8-1.3-2.8-1.3zm1.6%206.1c-.4.5-1%20.8-1.6.8-.7%200-1.2-.2-1.7-.7-.4-.5-.7-1.1-.7-1.9%200-.7.2-1.4.7-1.8.4-.5%201-.7%201.7-.7s1.2.2%201.6.7c.4.5.7%201.1.7%201.8s-.3%201.3-.7%201.8zm9.6-.3c-.2-.2-.4-.1-.5%200l-.2.2-.3.3c-.1.1-.2.1-.3.2-.1.1-.3.2-.4.2-.2%200-.3.1-.5.1-.7%200-1.2-.3-1.6-.8-.4-.5-.7-1.1-.7-1.9%200-.7.2-1.4.7-1.9.5-.5%201-.7%201.7-.7.6%200%201.1.3%201.6.8.2.2.4.2.5.1l.6-.6s0-.2-.2-.4c-.7-.9-1.7-1.4-2.8-1.4-1.1%200-2%20.4-2.8%201.3-.8.8-1.2%201.8-1.2%203s.4%202.2%201.2%203.1c.8.8%201.7%201.2%202.8%201.2%201.3%200%202.3-.6%203-1.7.1-.2.1-.4-.1-.6l-.5-.5zm5.8-5.8c-.8%200-1.5.3-2.3.9V2.5c0-.1%200-.2-.1-.3-.1-.1-.2-.1-.3-.1h-.9c-.1%200-.2%200-.3.1-.1.1-.1.2-.1.3v11.3c0%20.1%200%20.2.1.3.1.1.2.1.3.1h.9c.3%200%20.4-.1.4-.4V8.7c.1-.3.4-.5.7-.8.4-.3.9-.4%201.4-.4.5%200%20.9.2%201.2.6.3.4.4.9.4%201.6v4.2c0%20.1%200%20.2.1.3.1.1.2.1.3.1h.9c.1%200%20.2%200%20.3-.1.1-.1.1-.2.1-.3V9.8c-.1-2.7-1.1-4-3.1-4zm10.1%201c-.2-.4-.5-.6-.8-.8-.4-.2-.9-.3-1.5-.3-1%200-1.9.2-2.7.5-.2.1-.3.2-.3.5l.2.7c.1.3.2.4.4.3.8-.3%201.6-.4%202.2-.4.5%200%20.8.1%201%20.4.2.3.3.8.2%201.4l-.2-.1c-.1%200-.3-.1-.6-.1-.2.1-.4.1-.7.1-1%200-1.7.2-2.3.7-.6.5-.8%201.1-.8%201.9%200%20.8.2%201.5.7%202%20.5.5%201.1.7%201.8.7.9%200%201.7-.3%202.4-1l.2.6c.1.2.2.3.3.3h.6c.1%200%20.2%200%20.3-.1.1-.1.1-.2.1-.3V9.4c0-.6%200-1.1-.1-1.5-.1-.3-.2-.7-.4-1.1zm-1.2%205.1c-.1.2-.4.5-.7.7-.4.2-.7.3-1.1.3-.4%200-.7-.1-.9-.4-.2-.2-.3-.6-.3-.9%200-.4.1-.7.4-1%20.3-.2.7-.4%201.2-.4.3%200%20.6%200%20.9.1.3.1.5.1.5.2v1.4zm8.3%201.4l-.3-.8c-.1-.2-.2-.3-.5-.2-.4.3-.8.4-1.2.4-.2%200-.4-.1-.5-.2-.1-.1-.2-.3-.2-.7V7.5h2.1c.1%200%20.2%200%20.3-.1.1-.1.1-.2.1-.3v-.8c0-.1%200-.2-.1-.3h-2.4V3.7c0-.1%200-.2-.1-.3-.1-.1-.2-.1-.3-.1h-1c-.1%200-.2%200-.3.1-.1.1-.1.2-.1.3V6H49c-.2%200-.4.1-.4.4v.7c0%20.1%200%20.2.1.3.1.1.2.1.3.1h.9V12c0%20.8.1%201.4.4%201.8.3.4.8.6%201.5.6.4%200%20.8-.1%201.2-.2.4-.1.7-.3.9-.4.5-.1.6-.3.5-.5z%22%20fill%3D%22%23FFF%22%2F%3E%3Cpath%20d%3D%22M3.8%205.4C3.6.2.4%200%20.4%200%20.2%204.7%203.8%205.4%203.8%205.4z%22%20fill%3D%22%2344BB6E%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");background-size:50px 16px}#jivo_copyright #jivosite-copyright.jivo-dark{background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2249%22%20height%3D%2218%22%3E%3Cpath%20d%3D%22M7.35%206.347h-.942c-.095%200-.19%200-.283.095-.094.095-.094.19-.094.284v7.01c0%20.096%200%20.19.095.285.094.096.188.096.283.096h.942c.094%200%20.188%200%20.283-.095.094-.094.094-.188.094-.283v-7.01c0-.095%200-.19-.094-.285-.095%200-.19-.095-.283-.095m8.67%200h-.755c-.282%200-.47.095-.565.19l-2.167%204.737-2.073-4.737c-.095-.19-.19-.19-.377-.19H9.046c-.188%200-.283%200-.283.095-.094.095-.094.19%200%20.284l3.393%207.295c.094.096.188.19.377.19h.094c.188%200%20.283-.094.283-.19l3.392-7.294c.094-.094.094-.19%200-.284%200%200-.094-.095-.283-.095m4.617-.19c-1.13%200-2.073.38-2.827%201.232-.754.757-1.225%201.705-1.225%202.842%200%201.136.377%202.084%201.225%202.842.754.852%201.696%201.23%202.827%201.23%201.13%200%202.073-.378%202.827-1.23.753-.853%201.13-1.8%201.13-2.842%200-1.137-.377-2.085-1.225-2.843-.755-.758-1.697-1.232-2.733-1.232m1.602%205.874c-.473.473-1.038.758-1.698.758s-1.225-.19-1.696-.664c-.47-.473-.66-1.042-.66-1.8%200-.663.19-1.326.66-1.705.47-.473%201.037-.662%201.696-.662s1.225.19%201.696.663c.472.475.66%201.043.66%201.706s-.188%201.232-.66%201.706m8.01-1.61c-.283-.19-.565-.38-.754-.475-.283-.094-.565-.284-1.036-.473-.47-.19-.754-.38-1.037-.57-.187-.188-.376-.378-.376-.567%200-.19.094-.38.283-.474.188-.095.377-.19.754-.19.566%200%201.037.095%201.697.38.283.094.377.094.47-.19l.284-.568c.095-.19.095-.38-.188-.57-.565-.378-1.32-.567-2.26-.567-.85%200-1.51.19-1.98.663-.47.475-.66.948-.66%201.517%200%20.568.19%201.042.566%201.42.377.38.848.664%201.602%201.043.565.284%201.036.474%201.32.663.28.19.376.38.376.663%200%20.19-.095.38-.283.57-.188.094-.47.188-.754.188-.566%200-1.226-.19-1.98-.568-.282-.095-.377-.095-.47.095l-.378.758c-.094.19%200%20.285.094.38.754.568%201.602.757%202.545.757.85%200%201.508-.19%202.074-.663.47-.474.754-.947.754-1.61%200-.38-.095-.664-.19-.948%200-.19-.187-.474-.47-.663m3.392-4.073h-.942c-.094%200-.188%200-.283.095-.094.095-.094.19-.094.284v7.01c0%20.096%200%20.19.095.285.095.096.19.096.283.096h.942c.095%200%20.19%200%20.283-.095.094-.094.094-.188.094-.283v-7.01c0-.095%200-.19-.094-.285-.094%200-.188-.095-.283-.095m6.785%206.158c-.094-.19-.283-.284-.47-.19-.378.285-.85.38-1.226.38a.718.718%200%200%201-.472-.19c-.095-.094-.19-.284-.19-.663V7.674h2.074c.094%200%20.19%200%20.283-.095.094%200%20.094-.096.094-.19v-.664c0-.094%200-.19-.095-.284-.094-.095-.19-.095-.283-.095H38.07v-2.18c0-.093%200-.188-.095-.283-.094%200-.094-.095-.283-.095h-.942c-.094%200-.189%200-.283.094s-.094.19-.094.284v2.18h-.942c-.282%200-.376.094-.376.378v.663c0%20.094%200%20.19.094.284.094.094.188.094.283.094h.943v4.264c0%20.757.188%201.326.47%201.705.284.38.85.568%201.51.568.376%200%20.847-.095%201.224-.19.377-.094.754-.283.942-.378.188-.095.282-.284.188-.474l-.283-.758m7.35-5.305c-.66-.663-1.508-1.042-2.544-1.042-1.13%200-2.072.38-2.826%201.23-.754.76-1.13%201.707-1.13%202.844%200%201.136.376%202.084%201.13%202.936.754.758%201.696%201.137%202.827%201.137%201.226%200%202.168-.284%202.922-.947.188-.19.188-.38%200-.568l-.47-.664c-.095-.19-.284-.19-.472%200-.66.474-1.225.664-1.885.664s-1.225-.19-1.696-.664c-.472-.473-.66-.947-.66-1.515h5.37c.19%200%20.377-.094.377-.378v-.57c.095-.946-.282-1.8-.942-2.462m-4.71%202.18c.093-.475.28-.948.658-1.233.377-.38.848-.473%201.414-.473.565%200%201.036.19%201.32.473.376.38.564.758.564%201.232h-3.957M3.77%206.346H1.13c-.093%200-.188%200-.282.095-.094.095-.094.19-.094.284v.948c0%20.094%200%20.19.094.284.094.095.19.095.283.095h1.32v6.82c0%20.664-.565%201.232-1.225%201.232H1.13c-.093%200-.188%200-.282.095-.094.095-.094.19-.094.284v.948c0%20.094%200%20.19.094.284.094.094.19.094.283.094h.095c1.602%200%202.92-1.326%202.92-2.842V6.82c0-.094%200-.188-.093-.283-.094-.095-.094-.19-.283-.19z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%233e414f%22%2F%3E%3Cpath%20d%3D%22M4.146%205.78C3.958.946.754.757.754.757c-.19%204.358%203.392%205.02%203.392%205.02z%22%20fill-rule%3D%22evenodd%22%20fill%3D%22%2344bb6e%22%2F%3E%3C%2Fsvg%3E");background-repeat:no-repeat}#jivo_copyright #jivosite-copyright.jivo-dark.jivo-en{width:54px;background-image:url("data:image/svg+xml,%3Csvg%20width%3D%2255%22%20height%3D%2218%22%20viewBox%3D%220%200%2055%2018%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22M3.5%206H.8c-.1%200-.2%200-.3.1%200%20.1-.1.1-.1.2v1c0%20.1%200%20.2.1.3.1.1.2.1.3.1h1.4v7.2c0%20.7-.6%201.3-1.2%201.3H.8c-.1%200-.2%200-.3.1-.1.1-.1.2-.1.3v1c0%20.1%200%20.2.1.3.1.1.2.1.3.1h.1c1.6%200%202.9-1.4%202.9-3V6.3c0-.1%200-.2-.1-.3h-.2zM7%206H6c-.1%200-.1%200-.2.1s-.1.1-.1.2v7.4c0%20.1%200%20.2.1.3.1.1.2.1.3.1H7c.1%200%20.2%200%20.3-.1.1-.1.1-.2.1-.3V6.3c0-.1%200-.2-.1-.3H7zm8.6%200h-.8c-.3%200-.5.1-.5.2l-2.2%205-2.1-5c0-.2-.2-.2-.3-.2h-1c-.2%200-.3%200-.3.1-.1.1-.1.2%200%20.3l3.4%207.7c.1.1.2.2.3.2h.1c.1%200%20.3-.1.3-.2l3.4-7.7c.1-.1.1-.2%200-.3-.1-.1-.2-.1-.3-.1zm4.6-.2c-1.1%200-2%20.4-2.8%201.3-.8.8-1.2%201.8-1.2%203s.4%202.2%201.2%203c.8.9%201.7%201.3%202.8%201.3%201.1%200%202-.4%202.8-1.3.8-.9%201.2-1.9%201.2-3%200-1.2-.4-2.2-1.2-3-.8-.9-1.8-1.3-2.8-1.3zm1.6%206.1c-.4.5-1%20.8-1.6.8-.7%200-1.2-.2-1.7-.7-.4-.5-.7-1.1-.7-1.9%200-.7.2-1.4.7-1.8.4-.5%201-.7%201.7-.7s1.2.2%201.6.7c.4.5.7%201.1.7%201.8s-.3%201.3-.7%201.8zm9.6-.3c-.2-.2-.4-.1-.5%200l-.2.2-.3.3c-.1.1-.2.1-.3.2-.1.1-.3.2-.4.2-.2%200-.3.1-.5.1-.7%200-1.2-.3-1.6-.8-.4-.5-.7-1.1-.7-1.9%200-.7.2-1.4.7-1.9.5-.5%201-.7%201.7-.7.6%200%201.1.3%201.6.8.2.2.4.2.5.1l.6-.6s0-.2-.2-.4c-.7-.9-1.7-1.4-2.8-1.4-1.1%200-2%20.4-2.8%201.3-.8.8-1.2%201.8-1.2%203s.4%202.2%201.2%203.1c.8.8%201.7%201.2%202.8%201.2%201.3%200%202.3-.6%203-1.7.1-.2.1-.4-.1-.6l-.5-.5zm5.8-5.8c-.8%200-1.5.3-2.3.9V2.5c0-.1%200-.2-.1-.3-.1-.1-.2-.1-.3-.1h-.9c-.1%200-.2%200-.3.1-.1.1-.1.2-.1.3v11.3c0%20.1%200%20.2.1.3.1.1.2.1.3.1h.9c.3%200%20.4-.1.4-.4V8.7c.1-.3.4-.5.7-.8.4-.3.9-.4%201.4-.4.5%200%20.9.2%201.2.6.3.4.4.9.4%201.6v4.2c0%20.1%200%20.2.1.3.1.1.2.1.3.1h.9c.1%200%20.2%200%20.3-.1.1-.1.1-.2.1-.3V9.8c-.1-2.7-1.1-4-3.1-4zm10.1%201c-.2-.4-.5-.6-.8-.8-.4-.2-.9-.3-1.5-.3-1%200-1.9.2-2.7.5-.2.1-.3.2-.3.5l.2.7c.1.3.2.4.4.3.8-.3%201.6-.4%202.2-.4.5%200%20.8.1%201%20.4.2.3.3.8.2%201.4l-.2-.1c-.1%200-.3-.1-.6-.1-.2.1-.4.1-.7.1-1%200-1.7.2-2.3.7-.6.5-.8%201.1-.8%201.9%200%20.8.2%201.5.7%202%20.5.5%201.1.7%201.8.7.9%200%201.7-.3%202.4-1l.2.6c.1.2.2.3.3.3h.6c.1%200%20.2%200%20.3-.1.1-.1.1-.2.1-.3V9.4c0-.6%200-1.1-.1-1.5-.1-.3-.2-.7-.4-1.1zm-1.2%205.1c-.1.2-.4.5-.7.7-.4.2-.7.3-1.1.3-.4%200-.7-.1-.9-.4-.2-.2-.3-.6-.3-.9%200-.4.1-.7.4-1%20.3-.2.7-.4%201.2-.4.3%200%20.6%200%20.9.1.3.1.5.1.5.2v1.4zm8.3%201.4l-.3-.8c-.1-.2-.2-.3-.5-.2-.4.3-.8.4-1.2.4-.2%200-.4-.1-.5-.2-.1-.1-.2-.3-.2-.7V7.5h2.1c.1%200%20.2%200%20.3-.1.1-.1.1-.2.1-.3v-.8c0-.1%200-.2-.1-.3h-2.4V3.7c0-.1%200-.2-.1-.3-.1-.1-.2-.1-.3-.1h-1c-.1%200-.2%200-.3.1-.1.1-.1.2-.1.3V6H49c-.2%200-.4.1-.4.4v.7c0%20.1%200%20.2.1.3.1.1.2.1.3.1h.9V12c0%20.8.1%201.4.4%201.8.3.4.8.6%201.5.6.4%200%20.8-.1%201.2-.2.4-.1.7-.3.9-.4.5-.1.6-.3.5-.5z%22%20fill%3D%22%233E414F%22%2F%3E%3Cpath%20d%3D%22M3.8%205.4C3.6.2.4%200%20.4%200%20.2%204.7%203.8%205.4%203.8%205.4z%22%20fill%3D%22%2344BB6E%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");margin-top:11px;display:inline-block;height:19px;vertical-align:top;background-size:50px 16px}#jivo_copyright #jivo_copyright_corner{position:absolute;width:0;height:0}#jivo_copyright #jivo_copyright_corner.jivo-top{top:-5px;left:10px;border-left:5px solid transparent;border-right:5px solid transparent;border-bottom:5px solid #414243}#jivo_copyright #jivo_copyright_corner.jivo-bottom{bottom:-5px;right:10px;border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #414243}#jivo_copyright #jivo_copyright_corner.jivo-left{top:50%;left:-5px;margin-top:-3px;border-top:5px solid transparent;border-bottom:5px solid transparent;border-right:5px solid #414243}#jivo_copyright #jivo_copyright_corner.jivo-right{top:50%;right:-5px;margin-top:-3px;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:5px solid #414243}.globalClass_ET a,.globalClass_ET svg{-webkit-animation:none 0s!important;animation:none 0s!important;-webkit-backface-visibility:visible!important;backface-visibility:visible!important;background:none!important;border:0 none!important;box-shadow:none!important;box-sizing:content-box!important;bottom:auto!important;caption-side:top!important;clear:none!important;clip:auto!important;cursor:auto!important;display:inline!important;direction:ltr!important;-webkit-box-flex:0!important;-ms-flex:none!important;flex:none!important;height:auto!important;-webkit-hyphens:manual!important;-ms-hyphens:manual!important;hyphens:manual!important;image-rendering:auto!important;-webkit-box-pack:start!important;-ms-flex-pack:start!important;justify-content:flex-start!important;left:auto!important;letter-spacing:normal!important;line-height:normal!important;margin:0!important;max-height:none!important;max-width:none!important;min-height:0!important;min-width:0!important;-o-object-fit:fill!important;object-fit:fill!important;opacity:1!important;-webkit-box-ordinal-group:2!important;-ms-flex-order:1!important;order:1!important;orphans:2!important;outline:0 none!important;overflow:visible!important;padding:0!important;-webkit-perspective:none!important;perspective:none!important;position:static!important;resize:none!important;right:auto!important;text-align:left!important;text-decoration:none!important;text-indent:0!important;text-overflow:clip!important;text-shadow:none!important;text-transform:none!important;top:auto!important;-webkit-transform:none!important;transform:none!important;transition:all 0s ease 0s!important;unicode-bidi:normal!important;-webkit-user-select:none!important;-moz-user-select:none!important;-ms-user-select:none!important;user-select:none!important;vertical-align:baseline!important;white-space:normal!important;width:auto!important;word-break:normal!important;word-spacing:normal!important;word-wrap:normal!important;z-index:auto!important;zoom:normal!important}.globalClass_ET a{-webkit-text-size-adjust:inherit!important}@supports (-ms-ime-align:auto) and (color:unset){.globalClass_ET{position:-ms-device-fixed}}jdiv{-webkit-animation:none 0s;animation:none 0s;-webkit-backface-visibility:visible;backface-visibility:visible;background:none;border:0 none;box-shadow:none;box-sizing:content-box;bottom:auto;caption-side:top;clear:none;clip:auto;cursor:auto;display:inline;direction:ltr;-webkit-box-flex:0;-ms-flex:none;flex:none;height:auto;-webkit-hyphens:manual;-ms-hyphens:manual;hyphens:manual;image-rendering:auto;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;left:auto;letter-spacing:normal;line-height:normal;margin:0;max-height:none;max-width:none;min-height:0;min-width:0;-o-object-fit:fill;object-fit:fill;opacity:1;-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1;orphans:2;outline:0 none;overflow:visible;padding:0;-webkit-perspective:none;perspective:none;position:static;resize:none;right:auto;text-align:left;text-decoration:none;text-indent:0;text-overflow:clip;text-shadow:none;text-transform:none;top:auto;-webkit-transform:none;transform:none;transition:all 0s ease 0s;unicode-bidi:normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;vertical-align:baseline;white-space:normal;width:auto;word-break:normal;word-spacing:normal;word-wrap:normal;z-index:auto;zoom:normal;-webkit-text-size-adjust:inherit}.vkIcon_3c path,.vkIcon_3c svg{fill:#507299!important}.fbIcon_Yq path,.fbIcon_Yq svg{fill:#0084ff!important}.telegramIcon_3f path,.telegramIcon_3f svg{fill:#39afe2!important}.viberIcon_1I path,.viberIcon_1I svg{fill:#fff!important}.message-textIcon_2_ path,.message-textIcon_2_ svg{fill:#05b24b!important}.phone-outgoingIcon_1n path,.phone-outgoingIcon_1n svg{fill:#4185f2!important}.phoneIcon_16 path,.phoneIcon_16 svg{fill:#0076ff!important}.copyright_3R{position:absolute;display:block;cursor:pointer;background-color:#414243;height:38px;line-height:38px!important;padding:0 15px!important;border-radius:4px;box-shadow:0 0 12px 3px rgba(0,0,0,.17)}.copyright_3R svg{cursor:pointer!important}.copyright_3R svg path{pointer-events:all!important}.copyright_3R svg path:last-child{fill:#44bb6e}.copyright_3R._offline_27 .logoIcon_1U g path:last-child{fill:#62666c}.copyright_3R._light_35 .logoIcon_1U g path:first-child{fill:#fff}.copyright_3R._bottom_L1{bottom:48px;right:45px}.copyright_3R._bottom_L1 :after{content:"";display:block;left:0;right:0;bottom:-10px;height:10px;background:transparent}.copyright_3R._right_1u{top:33px;right:7px}.copyright_3R._right_1u :after{content:"";display:block;right:-13px;top:-25px;bottom:-5px;width:15px;background:transparent;position:absolute}.copyright_3R._left_29{top:30px;left:45px}.copyright_3R._left_29 :after{content:"";display:block;right:-13px;top:-25px;bottom:-5px;width:15px;background:transparent;position:absolute}.hide_2U{position:absolute;display:block;height:38px;line-height:38px;padding:0 15px}.logoIcon_1U{display:inline-block;width:48px;height:18px}a.link_32{display:inline-block!important;width:51px!important;height:17px!important;margin:10px 0 4px 3px!important;transition:none!important}a.link_32,a.link_32 .logoIcon_1U{vertical-align:top!important;box-sizing:border-box!important}a.link_32 .logoIcon_1U:hover{cursor:pointer!important}a.link_32 svg{width:51px!important;height:18px!important;display:block!important}.copyright_3R,.text_30{font-family:Helvetica,Arial,sans-serif;font-weight:400;font-size:13px!important;white-space:nowrap}.text_30{-webkit-font-smoothing:antialiased;-webkit-transform:translateZ(0)!important;transform:translateZ(0)!important;line-height:38px!important;color:#fff;display:inline-block!important;vertical-align:middle!important;cursor:default!important}.corner_3z{position:absolute;width:0;height:0}._bottom_L1 .corner_3z{bottom:-4px;right:10px;border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #414243}._left_29 .corner_3z{left:-4px;border-right:5px solid #414243}._left_29 .corner_3z,._right_1u .corner_3z{top:50%;margin-top:-3px;border-top:5px solid transparent;border-bottom:5px solid transparent}._right_1u .corner_3z{right:-4px;border-left:5px solid #414243}.nowrap_QY{white-space:nowrap}.bull_1d{content:"";position:absolute;left:12px;top:12px;width:6px;height:6px;-webkit-border-radius:3px 3px 3px 3px;-khtml-border-radius:3px 3px 3px 3px;-moz-border-radius:3px 3px 3px 3px;-ms-border-radius:3px 3px 3px 3px;-o-border-radius:3px 3px 3px 3px;border-radius:3px 3px 3px 3px;background-color:#3cb868}.jivoLabelButtons_3H{display:block;position:absolute;border-radius:4px;font-family:Helvetica,Arial,sans-serif;font-weight:400;font-size:15px;line-height:20px;background-color:#fff;color:#545d6b;z-index:1000000;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased;font-smoothing:antialiased;max-width:100%;box-shadow:0 5px 20px 0 rgba(0,0,0,.2);width:100%;min-width:300px;max-height:none!important}.jivoLabelButtons_3H._bottom_34{bottom:20px}.jivoLabelButtons_3H._bottom_34:after{content:"";display:block;position:absolute;background:transparent;left:-22px;top:-22px;bottom:-22px;right:-20px;z-index:0}.jivoLabelButtons_3H._right_1S{width:300px;min-width:300px;left:auto;bottom:0}.jivoLabelButtons_3H._right_1S:before{width:23px;height:auto;top:-60px;bottom:-60px;right:-23px;content:"";position:absolute;cursor:default}.jivoLabelButtons_3H._right_1S:after{content:"";display:block;position:absolute;background:transparent;left:-22px;top:-22px;bottom:-22px;right:-22px;z-index:0}.jivoLabelButtons_3H._left_ok{width:300px;min-width:300px;bottom:0}.jivoLabelButtons_3H._left_ok:before{width:60px;bottom:-40px;left:-22px;top:-60px;content:"";position:absolute;cursor:default;background:transparent;z-index:0}.jivoLabelButtons_3H._left_ok:after{content:"";display:block;position:absolute;background:transparent;left:-22px;top:-22px;bottom:-22px;right:-20px;z-index:0}.jivoLabelButtons_3H .callme_Tt{background:transparent url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath d='M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1A16.986 16.986 0 0 1 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8z' fill-rule='evenodd' fill='%2300bd63'/%3E%3C/svg%3E") 30px 50% no-repeat}.jivoLabelButtons_3H .chat_2j{background:transparent url("data:image/svg+xml;charset=utf-8,%3Csvg width='23' height='23' viewBox='0 0 23 23' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3E0641267D-B556-4361-BFAD-3620D814E0BF%3C/title%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath d='M1 14.7V21l4.176-3H21c.56 0 .999-.448.999-1V2c0-.545-.447-1-.999-1H2A.994.994 0 0 0 1 2v12.7z' stroke='%2300BE64' stroke-width='2'/%3E%3Cpath fill='%2300BE64' d='M5 6h14v2H5zM5 11h11v2H5z'/%3E%3C/g%3E%3C/svg%3E") 28px 51% no-repeat}.jivoLabelButtons_3H._right_1S{max-width:300px}.jivoLabelButtons_3H._right_1S .callme_Tt,.jivoLabelButtons_3H._right_1S .chat_2j{clear:inherit}.jivoLabelButtons_3H._right_1S .callme_Tt a,.jivoLabelButtons_3H._right_1S .chat_2j a{padding-right:0}.jivoLabelButtons_3H._left_ok{right:auto}.jivoLabelButtons_3H .callme_Tt,.jivoLabelButtons_3H .chat_2j{width:100%;height:38px;line-height:38px;clear:both;overflow:hidden;cursor:pointer}.jivoLabelButtons_3H :hover+.bottomCorner_34:after,.jivoLabelButtons_3H :hover+.leftCorner_Ts:after,.jivoLabelButtons_3H :hover+.rightCorner_1x:after{border-color:transparent transparent #f4f8fa #f4f8fa!important}.jivoLabelButtons_3H .chat_2j:hover{border-radius:0 0 4px 4px}.jivoLabelButtons_3H .callme_Tt a:hover{border-radius:4px 4px 0 0}.buttonsCorner_3T{position:absolute;width:0;height:0}.buttonsCorner_3T ._bottom_34:after{content:"";position:absolute;width:0;height:0;left:21px;bottom:-18px;box-sizing:border-box;border:10px solid #000;border-color:transparent transparent #fff #fff;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);box-shadow:-3px 3px 5px 0 rgba(0,0,0,.07)}.buttonsCorner_3T ._left_ok{top:52px;left:-10px;margin-top:-2.5px;border-top:5px solid transparent;border-bottom:5px solid transparent;border-right:5px solid #fff}.buttonsCorner_3T ._left_ok:after{content:"";position:absolute;width:0;height:0;left:21px;bottom:-18px;box-sizing:border-box;border:10px solid #fff;border-color:transparent transparent #fff #fff;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);box-shadow:-3px 3px 5px 0 rgba(0,0,0,.07)}.buttonsCorner_3T ._right_1S{top:52px;right:-10px;margin-top:-2.5px;border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:10px solid #fff}.buttonsCorner_3T ._right_1S:after{content:"";position:absolute;width:0;height:0;left:21px;bottom:-18px;box-sizing:border-box;border:10px solid #fff;border-color:transparent transparent #fff #fff;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);box-shadow:-3px 3px 5px 0 rgba(0,0,0,.07)}.bottomCorner_34{border-top-color:#fff}.bottomCorner_34:after{content:"";position:absolute;width:0;height:0;left:25px;bottom:-19px;box-sizing:border-box;border:10px solid #000;border-color:transparent transparent #fff #fff;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);box-shadow:-3px 3px 5px 0 rgba(0,0,0,.07)}.leftCorner_Ts{left:0;border-right-color:#fff}.leftCorner_Ts:after{content:"";position:absolute;width:0;height:0;left:0;bottom:25px;box-sizing:border-box;border:10px solid #000;border-color:transparent transparent #fff #fff;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:rotate(45deg);transform:rotate(45deg);box-shadow:-3px 3px 5px 0 rgba(0,0,0,.07)}.rightCorner_1x{border-left-color:#fff;right:0}.rightCorner_1x:after{content:"";position:absolute;width:0;height:0;left:-1px;bottom:-5px;box-sizing:border-box;border:10px solid #fff;border-color:transparent transparent #fff #fff;-webkit-transform-origin:0 0;transform-origin:0 0;-webkit-transform:rotate(-135deg);transform:rotate(-135deg);box-shadow:-3px 3px 5px 0 rgba(0,0,0,.07)}.labelButton_2w:first-child,.labelButton_2w:first-child .text_A-:hover:first-child{border-radius:4px 4px 0 0}.labelButton_2w:last-child{border-radius:0 0 4px 4px}.labelButton_2w{height:66px;display:block;cursor:pointer;position:relative;z-index:1;max-height:66px}.labelButton_2w:hover{background-color:#f4f8fa;cursor:pointer}.labelButton_2w .title_yB{cursor:pointer}.labelButton_2w .text_A-{box-sizing:border-box!important;padding-left:80px!important;padding-right:15px!important;line-height:20px!important;text-decoration:none;font-size:15px;vertical-align:middle!important;display:table-cell!important;height:66px!important;font-weight:400;color:#545d6b!important;-webkit-transform:translateZ(0)!important;transform:translateZ(0)!important;cursor:pointer;width:310px!important}.labelButton_2w .text_A- .title_yB{cursor:pointer}.labelButton_2w .text_A-:hover{background-color:#f4f8fa;cursor:pointer}.labelButton_2w .text_A-:hover .title_yB{color:#2562c1}.labelButton_2w .text_A- .info_CT{font-size:12px;color:#a2adb9;display:block}.labelButton_2w .text_A- .info_CT:hover{cursor:pointer}.labelButton_2w a,.labelButton_2w jdiv{font-size:15px;font-family:Helvetica,Arial,sans-serif}.labelButton_2w .labelVk_1P{background:transparent url("data:image/svg+xml;charset=utf-8,%3Csvg width='30' height='17' viewBox='0 0 30 17' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M25.82 10.81c.994.972 2.045 1.888 2.937 2.959.395.476.768.967 1.053 1.519.405.785.039 1.65-.665 1.696l-4.37-.002c-1.127.094-2.027-.36-2.783-1.132-.605-.618-1.165-1.274-1.747-1.912a4.14 4.14 0 0 0-.786-.7c-.597-.388-1.115-.27-1.456.354-.347.633-.426 1.335-.46 2.041-.047 1.03-.358 1.302-1.392 1.349-2.209.104-4.306-.23-6.253-1.346-1.718-.984-3.05-2.373-4.208-3.946C3.433 8.63 1.705 5.264.15 1.806-1.802 1.026.058.608.916.593A118.46 118.46 0 0 1 5.195.591c.58.009.963.342 1.187.89.771 1.9 1.715 3.706 2.9 5.381.315.446.637.892 1.095 1.206.507.347.893.232 1.131-.333.152-.359.218-.745.252-1.129.113-1.32.128-2.64-.07-3.956-.122-.821-.584-1.353-1.403-1.508-.417-.08-.355-.235-.153-.474.352-.412.682-.668 1.34-.668h4.94c.777.154.95.503 1.057 1.287l.004 5.494c-.009.303.151 1.203.697 1.404.436.143.724-.207.986-.484 1.183-1.257 2.027-2.742 2.78-4.28.335-.677.623-1.379.902-2.08.207-.521.53-.778 1.117-.766l4.753.004c.141 0 .284.002.42.025.802.137 1.021.482.774 1.265-.39 1.23-1.149 2.253-1.89 3.282-.793 1.099-1.64 2.16-2.427 3.264-.722 1.01-.665 1.518.232 2.394z' fill='%23507299' fill-rule='evenodd'/%3E%3C/svg%3E") 24px 50% no-repeat!important}.labelButton_2w .labelFb_3d{background:transparent url("data:image/svg+xml;charset=utf-8,%3Csvg width='26' height='26' viewBox='0 0 26 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 0C5.82 0 0 5.39 0 12.037c0 3.788 1.89 7.167 4.845 9.373V26l4.426-2.43c1.181.328 2.433.504 3.729.504 7.18 0 13-5.39 13-12.037C26 5.389 20.18 0 13 0zm1.292 16.21l-3.31-3.531-6.46 3.53 7.105-7.542 3.392 3.53 6.379-3.53-7.106 7.543z' fill='%230084FF' fill-rule='evenodd'/%3E%3C/svg%3E") 27px 50% no-repeat!important}.nowrap_1N{white-space:nowrap}.bull_1G{content:"";position:absolute;left:12px;top:12px;width:6px;height:6px;-webkit-border-radius:3px 3px 3px 3px;-khtml-border-radius:3px 3px 3px 3px;-moz-border-radius:3px 3px 3px 3px;-ms-border-radius:3px 3px 3px 3px;-o-border-radius:3px 3px 3px 3px;border-radius:3px 3px 3px 3px;background-color:#3cb868}@-webkit-keyframes fadeOut_3G{0%{opacity:1}99%{opacity:0}to{opacity:0;visibility:hidden;display:none}}@keyframes fadeOut_3G{0%{opacity:1}99%{opacity:0}to{opacity:0;visibility:hidden;display:none}}.label_39{position:fixed;z-index:2147483648;-webkit-backface-visibility:hidden;backface-visibility:hidden;opacity:0;-webkit-animation-duration:.2s;animation-duration:.2s;box-shadow:0 12px 14px 8px rgba(0,0,0,.17);-webkit-filter:blur(0);filter:blur(0)}.label_39:hover{cursor:pointer}.label_39 svg{-webkit-transform:translateZ(0);transform:translateZ(0)}.label_39 .leafCont_2L{position:absolute}.label_39._bottom_3v{min-width:300px}.label_39._bottom_3v,.label_39._left_2d,.label_39._right_1y{bottom:-200px;height:38px;width:auto;right:30px;border-top-left-radius:3px!important;border-top-right-radius:33px!important;transition:opacity .2s ease-in .15s,background-color .2s ease-in,bottom .2s ease-in;opacity:0}.label_39._bottom_3v._init_Tk,.label_39._left_2d._init_Tk,.label_39._right_1y._init_Tk{opacity:1;bottom:0!important}.label_39._bottom_3v .leafCont_2L,.label_39._left_2d .leafCont_2L,.label_39._right_1y .leafCont_2L{right:0}.label_39._bottom_3v._pad50_3K,.label_39._left_2d._pad50_3K,.label_39._right_1y._pad50_3K{right:50%}.label_39._bottom_3v._pad100_GR,.label_39._left_2d._pad100_GR,.label_39._right_1y._pad100_GR{right:30px;left:auto}.label_39._bottom_3v._pad0_em,.label_39._left_2d._pad0_em,.label_39._right_1y._pad0_em{left:30px;right:auto}.label_39._bottom_3v .lbContainer_2X,.label_39._left_2d .lbContainer_2X,.label_39._right_1y .lbContainer_2X{left:0;right:0;max-width:300px}.label_39._bottom_3v .copyContainer_1V,.label_39._left_2d .copyContainer_1V,.label_39._right_1y .copyContainer_1V{right:0;bottom:0}.label_39._bottom_3v .copy_2W,.label_39._left_2d .copy_2W,.label_39._right_1y .copy_2W{position:relative;padding-top:8px;padding-right:32px;padding-left:7px;display:inline-block;height:18px!important;float:right}.label_39._bottom_3v .copy_2W svg,.label_39._left_2d .copy_2W svg,.label_39._right_1y .copy_2W svg{width:54px!important;height:20px!important;color:currentColor!important}.label_39._bottom_3v .text_eD,.label_39._left_2d .text_eD,.label_39._right_1y .text_eD{-webkit-transform:translateZ(0);transform:translateZ(0);margin:0 37px 0 15px;min-width:160px;visibility:visible}.label_39._bottom_3v .text_eD._noAd_3N,.label_39._left_2d .text_eD._noAd_3N,.label_39._right_1y .text_eD._noAd_3N{margin:0 33px 0 15px}.label_39._bottom_3v .text_eD:hover,.label_39._left_2d .text_eD:hover,.label_39._right_1y .text_eD:hover{cursor:pointer}.label_39._right_1y{-webkit-transform:rotate(-90deg) translate(100%)!important;transform:rotate(-90deg) translate(100%)!important;-webkit-transform-origin:100% 8px!important;transform-origin:100% 8px!important;transition:opacity .2s ease-in,background-color .2s ease-in,right .2s ease-in;-webkit-animation-name:labelRight_4R;animation-name:labelRight_4R;min-width:76px;right:0!important}.label_39._right_1y._pad50_3K{-webkit-transform:rotate(-90deg) translate(100%) translateZ(0)!important;transform:rotate(-90deg) translate(100%) translateZ(0)!important;margin-bottom:-38px;-webkit-transform-origin:bottom right!important;transform-origin:bottom right!important;bottom:50%!important;min-width:76px;right:0!important}.label_39._right_1y._pad50_3K._chat_3K{opacity:0;right:-100px!important}.label_39._right_1y._pad100_GR{margin-bottom:-10px;right:30px!important;bottom:0!important}.label_39._right_1y .leafCont_2L{top:0;-webkit-transform:translateZ(0)!important;transform:translateZ(0)!important}.label_39._right_1y .lbContainer_2X{width:300px;top:-20px;-webkit-transform:rotate(90deg) translate3d(-100%,0,0)!important;transform:rotate(90deg) translate3d(-100%,0,0)!important;-webkit-transform-origin:bottom left;transform-origin:bottom left;-webkit-filter:blur(0);filter:blur(0)}.label_39._right_1y .copyContainer_1V{-webkit-transform:rotate(90deg) translate3d(-100%,4px,0)!important;transform:rotate(90deg) translate3d(-100%,4px,0)!important;-webkit-transform-origin:bottom left;transform-origin:bottom left;-webkit-filter:blur(0);filter:blur(0);right:0;bottom:40px}.label_39._left_2d{border-radius:0 0 33px 3px!important;-webkit-transform:rotate(-90deg) translate3d(100%,0,0)!important;transform:rotate(-90deg) translate3d(100%,0,0)!important;-webkit-transform-origin:100% 8px!important;transform-origin:100% 8px!important;transition:opacity .2s ease-in,background-color .2s ease-in,right .2s ease-in;-webkit-animation-name:labelRight_4R;animation-name:labelRight_4R;box-shadow:0 0 14px 8px rgba(0,0,0,.17);min-width:76px}.label_39._left_2d._pad50_3K{right:auto;left:38px;-webkit-transform:rotate(-90deg) translateZ(0) scale(1)!important;transform:rotate(-90deg) translateZ(0) scale(1)!important;bottom:50%!important;-webkit-transform-origin:bottom left!important;transform-origin:bottom left!important}.label_39._left_2d._pad100_GR{right:auto;left:38px;bottom:0;-webkit-transform:rotate(-90deg) translate(20px)!important;transform:rotate(-90deg) translate(20px)!important;-webkit-transform-origin:bottom left!important;transform-origin:bottom left!important}.label_39._left_2d .leafCont_2L{top:0}.label_39._left_2d._chat_3K{opacity:0;left:-100px}.label_39._left_2d .lbContainer_2X{width:300px;top:56px;-webkit-transform:rotate(90deg) translate(0)!important;transform:rotate(90deg) translate(0)!important;-webkit-transform-origin:bottom left;transform-origin:bottom left}.label_39._left_2d .copyContainer_1V{-webkit-transform:rotate(90deg) translate(-100%,4px)!important;transform:rotate(90deg) translate(-100%,4px)!important;-webkit-transform-origin:bottom left;transform-origin:bottom left;right:0;bottom:38px}.label_39 .text_eD{font:inherit;text-indent:0;line-height:38px;vertical-align:top;white-space:nowrap;-webkit-font-smoothing:antialiased;visibility:visible;-webkit-backface-visibility:hidden;backface-visibility:hidden}.label_39 .text_eD:hover{cursor:pointer}.label_39._tablet_2V{transition:none;-webkit-animation-name:none_fS;animation-name:none_fS}.label_39._tablet_2V .hoverBox_3a{display:none}.label_39._tablet_2V .hoverl_6R._ad_7P{right:0}.label_39 .hoverl_6R{z-index:4;position:absolute;top:0;left:0;bottom:0;right:0}.label_39 .hoverl_6R._ad_7P{right:100px}.label_39 .hoverl_6R:hover{cursor:pointer}@-webkit-keyframes webkitBugfix_6a{0%{padding:0}to{padding:0}}.leafBottom_1g{position:absolute;right:0;top:0}.labelStatus_3J{cursor:pointer;width:34px;height:38px;background:url("data:image/svg+xml;charset=utf-8,%3Csvg width='17' height='12' viewBox='0 0 17 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.005 6.62l5.37 4.833c-.18.09-.36.18-.628.18H1.253c-.18 0-.27 0-.448-.09l5.19-4.832 2.147 1.88c.09.09.27.178.358.178.18 0 .268-.09.358-.18l2.147-1.967zM16.463.18c-.18-.09-.447-.18-.626-.18H1.253C.895 0 .626.09.447.268L8.5 7.516 16.463.18zM11.81 5.904L17 10.558V1.073l-5.19 4.832zM0 1.342v9.126c0 .09 0 .18.09.27l5.19-4.743L0 1.342z' fill='%23FFF' fill-rule='evenodd'/%3E%3C/svg%3E") 100% 50% no-repeat;float:left}.labelStatus_3J._dark_1O{background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='17' height='12'%3E%3Cpath d='M11.005 6.62l5.37 4.833c-.18.09-.36.18-.628.18H1.253c-.18 0-.27 0-.448-.09l5.19-4.832 2.147 1.88c.09.09.27.178.358.178.18 0 .268-.09.358-.18l2.147-1.967M16.463.18c-.18-.09-.447-.18-.626-.18H1.253C.895 0 .626.09.447.268L8.5 7.516 16.463.18M11.81 5.904L17 10.558V1.073l-5.19 4.832M0 1.342v9.126c0 .09 0 .18.09.27l5.19-4.743L0 1.342z' fill-rule='evenodd' fill='%23222'/%3E%3Cpath d='M11.005 6.62l5.37 4.833c-.18.09-.36.18-.628.18H1.253c-.18 0-.27 0-.448-.09l5.19-4.832 2.147 1.88c.09.09.27.178.358.178.18 0 .268-.09.358-.18l2.147-1.967M16.463.18c-.18-.09-.447-.18-.626-.18H1.253C.895 0 .626.09.447.268L8.5 7.516 16.463.18M11.81 5.904L17 10.558V1.073l-5.19 4.832M0 1.342v9.126c0 .09 0 .18.09.27l5.19-4.743L0 1.342z' fill-rule='evenodd' fill='%23222'/%3E%3Cpath d='M11.005 6.62l5.37 4.833c-.18.09-.36.18-.628.18H1.253c-.18 0-.27 0-.448-.09l5.19-4.832 2.147 1.88c.09.09.27.178.358.178.18 0 .268-.09.358-.18l2.147-1.967M16.463.18c-.18-.09-.447-.18-.626-.18H1.253C.895 0 .626.09.447.268L8.5 7.516 16.463.18M11.81 5.904L17 10.558V1.073l-5.19 4.832M0 1.342v9.126c0 .09 0 .18.09.27l5.19-4.743L0 1.342z' fill-rule='evenodd' fill='%23222'/%3E%3Cpath d='M11.005 6.62l5.37 4.833c-.18.09-.36.18-.628.18H1.253c-.18 0-.27 0-.448-.09l5.19-4.832 2.147 1.88c.09.09.27.178.358.178.18 0 .268-.09.358-.18l2.147-1.967M16.463.18c-.18-.09-.447-.18-.626-.18H1.253C.895 0 .626.09.447.268L8.5 7.516 16.463.18M11.81 5.904L17 10.558V1.073l-5.19 4.832M0 1.342v9.126c0 .09 0 .18.09.27l5.19-4.743L0 1.342z' fill-rule='evenodd' fill='%23222'/%3E%3C/svg%3E")}.copy_2W:hover~.copyContainer_1V{display:block}.copyContainer_1V{position:absolute;display:none}.copyContainer_1V:hover,.hoverl_6R:hover .lbContainer_2X{display:block}.lbContainer_2X{position:absolute;display:none}.logo_1D{position:relative;display:block}.logo_1D .fallback_1g{display:none;visibility:hidden}.logo_1D .logoIcon_2z g path:first-child{fill:currentColor}.logo_1D .logoIcon_2z g path:last-child{fill:#44bb6e}.logo_1D._no-copyright_Ud{visibility:hidden;display:none}.logo_1D._offline_tG .logoIcon_2z g path:last-child{fill:#62666c}.logo_1D._bottom_2g .hoverBox_10{left:-10px;right:-10px;top:-20px;bottom:-5px;height:48px;max-height:38px!important;background-color:transparent}.logo_1D._right_1- .hoverBox_10{left:-10px;right:-10px;top:-20px;max-height:48px!important;bottom:-8px}.logo_1D._left_Ag .hoverBox_10{left:-10px;right:-10px;top:-10px;bottom:-12px;height:48px}.hoverBox_10{position:absolute;top:0;left:0;bottom:0;right:0;background:transparent;opacity:0;z-index:2;cursor:pointer}.leaf_25{position:absolute;width:31px;height:33px;z-index:1;overflow:hidden}.leaf_25._bottom_DW,.leaf_25._left_MI,.leaf_25._right_3d{right:-.2px;top:0;width:33px;border-radius:0 26px 0 33px}.leaf_25._bottom_DW .cssLeaf_1k,.leaf_25._left_MI .cssLeaf_1k,.leaf_25._right_3d .cssLeaf_1k{width:22px!important;height:33px!important;position:absolute;overflow:visible;right:0;top:0}.leaf_25._bottom_DW .cssLeaf_1k svg,.leaf_25._left_MI .cssLeaf_1k svg,.leaf_25._right_3d .cssLeaf_1k svg{width:22px!important;height:33px!important;color:inherit!important}.leaf_25._bottom_DW .cssLeaf_1k svg path,.leaf_25._left_MI .cssLeaf_1k svg path,.leaf_25._right_3d .cssLeaf_1k svg path{transition:none}.leaf_25._bottom_DW .cssLeaf_1k svg path:first-child,.leaf_25._left_MI .cssLeaf_1k svg path:first-child,.leaf_25._right_3d .cssLeaf_1k svg path:first-child{fill:#3ebc6b}.leaf_25._bottom_DW .cssLeaf_1k svg path:last-child,.leaf_25._left_MI .cssLeaf_1k svg path:last-child,.leaf_25._right_3d .cssLeaf_1k svg path:last-child{display:none}.leaf_25._bottom_DW .triangle_eG,.leaf_25._left_MI .triangle_eG,.leaf_25._right_3d .triangle_eG{border-width:900px 0 0 600px;border-top-color:transparent;position:relative;top:-460px;right:-272px;float:right;width:0;height:0;border-style:solid}.leaf_25._left_MI{right:0;top:5.2px;width:33px;border-radius:0 26px 0 33px;-webkit-transform:scaleY(-1);transform:scaleY(-1)}.leaf_25._offline_3c._left_MI,.leaf_25._offline_3c._right_3d{background:none}.leaf_25._offline_3c .cssLeaf_1k svg path:first-child{fill:currentColor;z-index:2}.leaf_25._offline_3c .cssLeaf_1k svg path:last-child{fill:#fff;fill-opacity:.22;z-index:1;display:block}.bottomLeftSquare_1o,.topRightSquare_3f{width:35px;height:35px;z-index:1}.bottomLeftSquare_1o{background-color:#44bb6e;border-top-right-radius:29px;left:-13px;top:1px}.bottomLeftSquare_1o,.topRightSquare_3f{position:absolute;background-position:30px 33px}.topRightSquare_3f{bottom:0;right:-13px;overflow:hidden;z-index:1;border-bottom-left-radius:29px}.triangle_eG{transition:border-color .2s ease-in;width:0;height:0;border-style:solid;position:absolute}.wrap_mW{position:fixed;bottom:0;z-index:2147483646;opacity:0;visibility:hidden;display:block;-webkit-tap-highlight-color:rgba(0,0,0,0)}.wrap_mW path{fill:initial;transition:initial}.button_1O{width:65px;height:65px;display:block;border-radius:50px;margin-bottom:20px;text-align:center;box-shadow:0 19px 38px 0 rgba(34,36,43,.3);position:relative}.iconWrap_2n{display:block;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-transform:rotateY(0deg);transform:rotateY(0deg);position:absolute;-webkit-backface-visibility:hidden;backface-visibility:hidden;left:0;right:0;top:0;bottom:0}._showLogo_3q .iconWrap_2n{-webkit-animation:wrapAnimation_1_ 18s infinite;animation:wrapAnimation_1_ 18s infinite}._isCallEnabled_2Q .iconWrap_2n{-webkit-animation:firstWrapCallAnimation_1- 7s infinite;animation:firstWrapCallAnimation_1- 7s infinite}._showLogo_3q._isCallEnabled_2Q .iconWrap_2n{-webkit-animation:firstWrapCallAnimation_1- 17.5s infinite;animation:firstWrapCallAnimation_1- 17.5s infinite}._isCallEnabled_2Q .iconWrap2_1O{-webkit-animation:wrapCallNoLogoAnimation_FI 7s infinite;animation:wrapCallNoLogoAnimation_FI 7s infinite}._showLogo_3q._isCallEnabled_2Q .iconWrap2_1O{-webkit-animation:secondWrapCallAnimation_7v 17.5s infinite;animation:secondWrapCallAnimation_7v 17.5s infinite}._isCallEnabled_2Q .iconWrap3_3f{-webkit-animation:wrapCallNoLogoAnimation_FI 7s infinite;animation:wrapCallNoLogoAnimation_FI 7s infinite}._showLogo_3q._isCallEnabled_2Q .iconWrap3_3f{-webkit-animation:thirdWrapCallAnimation_uS 17.5s infinite;animation:thirdWrapCallAnimation_uS 17.5s infinite}.messagesLabel_FQ{display:none;text-align:center;background-color:#fc576b;font-size:12px;font-family:sans-serif;color:#fff;border-radius:16px;padding:3px 7px;-webkit-transform:translateZ(2px);transform:translateZ(2px)}.icons_R9,.messagesLabel_FQ{position:absolute;top:0;right:0}.icons_R9{display:inline-block;left:0;bottom:0;margin:auto;backface-visibility:hidden;-webkit-backface-visibility:hidden;-webkit-transform-style:preserve-3d;transform-style:preserve-3d;background-repeat:no-repeat}.jivoIcon_xI{width:10px;height:35px;-webkit-transform:rotateY(180deg);transform:rotateY(180deg)}.logoIconCloud_q-{width:35px;height:30px;background-position:2px 0}.envelopeIcon_3E,.logoIconCloud_q-{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}.envelopeIcon_3E{width:25px;height:20px;background-position:0 1px}.callbackIcon_26{width:33px;height:33px;-webkit-transform:rotateY(180deg);transform:rotateY(180deg);background-repeat:no-repeat;background-position:0 2px}._isCallEnabled_2Q .callbackIcon_26{-webkit-animation:iconCallAnimation_2U 17.5s infinite;animation:iconCallAnimation_2U 17.5s infinite}@keyframes wrapAnimation_1_{0%,83.3%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}86%,98.1%{-webkit-transform:rotateY(180deg);transform:rotateY(180deg)}to{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}}@keyframes secondWrapCallAnimation_7v{0%,17.14%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}20%,37.14%{-webkit-transform:rotateY(180deg);transform:rotateY(180deg)}40%,57.14%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}60%,97.14%{-webkit-transform:rotateY(180deg);transform:rotateY(180deg)}to{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}}@-webkit-keyframes thirdWrapCallAnimation_uS{0%,17.14%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}20%,37.14%{-webkit-transform:rotateY(180deg);transform:rotateY(180deg)}40%,57.14%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}60%,77.14%{-webkit-transform:rotateY(180deg);transform:rotateY(180deg)}80%,to{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}}@keyframes thirdWrapCallAnimation_uS{0%,17.14%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}20%,37.14%{-webkit-transform:rotateY(180deg);transform:rotateY(180deg)}40%,57.14%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}60%,77.14%{-webkit-transform:rotateY(180deg);transform:rotateY(180deg)}80%,to{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}}@-webkit-keyframes firstWrapCallAnimation_1-{0%,77.14%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}80%,97.14%{-webkit-transform:rotateY(180deg);transform:rotateY(180deg)}to{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}}@keyframes firstWrapCallAnimation_1-{0%,77.14%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}80%,97.14%{-webkit-transform:rotateY(180deg);transform:rotateY(180deg)}to{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}}@keyframes wrapCallNoLogoAnimation_FI{0%,42.86%{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}50%,92.86%{-webkit-transform:rotateY(180deg);transform:rotateY(180deg)}to{-webkit-transform:rotateY(0deg);transform:rotateY(0deg)}}._show_1e.wrap_mW{opacity:1;visibility:visible;z-index:2147483647}._orinationRight_25.wrap_mW{right:0}._orinationRight_25 .button_1O{margin-right:20px}._orinationLeft_3O.wrap_mW{left:0}._orinationLeft_3O .button_1O{margin-left:20px}._animationBtn_Rc.wrap_mW{transition:opacity .15s ease}.container_3P{display:block;position:absolute;z-index:-5;top:-100%;left:-125%}.wrap_2g{display:block;position:relative;width:100%;height:100%;opacity:0}._show_10{opacity:1}._show_10 .overlay_2X{visibility:visible;opacity:.6}._show_10 .menuWrap_2V{bottom:0;opacity:1;visibility:visible}.overlay_2X{display:block;left:0;top:0;height:100%;width:100%;position:absolute;opacity:0;visibility:hidden;background-color:#000;z-index:0;transition:visibility .3s ease,opacity .3s ease}.overlay_2X._extraPadding_YL{padding:3px;margin:-1px}.deviceLandscape_3t{display:none;position:absolute;top:0;bottom:0;left:0;right:0;width:125px;height:115px;margin:auto;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAABzCAQAAAAfg8XeAAAHT0lEQVR42u3daVATVxwA8Ad4BdoRW6U6OrXFWnVab8cba9uxYkc/dHR0nI62Fq+OvUbR8exUHIuIDiIIWiEJb6EeqNUWRxnHSlBEQBB15BYhITaRmIOQc9n994MS7sTIbq7d//8bSV7ej+y7NvNeEPKgkAvqxt9bmbk5f5skktm8sVW7smlSgcCTtLag/Qpnqk42PwXWwqAsS/svzOPgBj96nVUJrIdBeXb94gCPouu/Az24Jizp6z0IHjeXfAYuC1qVOddD4FFvXD0FLo18IirQI+j/zlbLXUu3ahOnegSd3AQuj5jVHkGH31+phTJKL9zhGfQYx1U16YzHlQlWNQBQILPcNOWabtky13ITGpz732gSPYN+wHFV60QIIaQRA1D1TYu1giZBU5AtAw1Bz+Y5NyswpnoNXf3PvSHW4ZZrAKba2uldy5CONjs1D2w+yThD66cYWi5gnk63NOW23AYKoIUylJJ/w5UOeRlKoMXN9Aq/6iWqbHpf2QLxQCbpTAcLdIQqQukqoKwafTkpOvXNjfHFQZyhx/tn7W59A5IklQ3XdPvzw3NCdAKfpyO0d2rn3pakjbXqjIII0/SikPgBPkxPEshSenjHphrJxa98mI6QfL7heQ/vqb0+x4fpecGqNbpuFyQ03Nljt61baQttAbbSDKbWIZAF+q/BDT8ockgV3e200lQcMahnuuG5dBUsoZdQbOVCag1dwQq9NEi7VnGXNPV0kVEtT1fY6+G1skyWbxtSw+h8FujlU5VZlNle+9JdLH7THl3fIHybZfpIupBhumZA7gaNwn7H0mLI+sT+uK5vwINZpr/HMD3nHUh2vGLMiz86wMfoolGVWd0MHpXV8fqMtiVFY/3eCT2V4KX0lDFleZ0HMF2hebt8IkLJQ6yy1r9m79zo51N0IvTRnY5wTXnzL7LQ1seL4l4OW3dTh/dcihfS6WHK7I5TdWlS3Yftn/FoKqgBzIaqCHvleB09oT8lbO82am5sKOzUkf3Yt+QMwOOsg4E+RA/3O72l/X0Ry7PoZbHdtOa0Fc1q0WL7ZXkZ/einelm7T7xx37Lun7d/sOynhD4+RP8rWHW1XRM3Za7tTYW8ip6zsX0rVx/qXYW8iL7pfUWZbUkCqhzDII7QL/inb273kT+/Mqe3FfIaunKwoaxNXnWw9xXyGvrDr9vghsdnRnGGLulTf7lttl4QhQM4Q8+eaFLZ6MqcSUxUyEvo535uW5mriOxAztBvB8jPtLX0yyuYqZBX0E+EmCptcumlcRyiR89u0rbKC89HD+QQvXEdZbvVfC2aqQp5BZ3cB9TLCSypj+AQfbRfEbZNZjT3wzlEnxxWUt1Kfyy9NJND9A1RNjk8epA8jkP0nVvrKNt3xcVVH3CIvmtnXdt8phLGcIi+Z0TdXJgHYRAG82EKLeAQna3g6Vykk3s9go7fxZ/hRa5L0UJxeM1Zt9PxULwV52FwZYohFR6Am+l4PM52LfsFXQSP3EvHE3CJo2oSkMF4EoCh3J10PASfdwhXi08nxScmHWM0ExKPxBeXupO+ClMO6U9E0+L7xfU7wmge7ne0X2mM2+h4IL7wCu1SRkxmp0K0G+ljce2r0PEUdioEse6jz8SNPJ2n83SeztN5Ok/n6Tydp/N0ns7TebqX0AkTIcdybOQgXVwpDE//Fks5RyfgWCFCpyYTTzlHT4eEOwf8T8/hJD2xICaAp/N0ns7TfZjO4R7+WBFCp2Zg7tExpFWJw4hlHJzNYSBMhAI3YjMX6UBocS3hcrrwLZbpIx21dTrl8aFl8R8dJzrgWadrZedYPpyF7nw4Sxe6NXYzQghtH5FamOFCukEjjYSN8D1rGQE76Gr7KzcyMWFPAEK7Zwor0l1Id0nQDhatIl1CTOKqlNsEjX2NDg67uQxIN2a4+AaVR9Ddc2/OqeuWpissqc3RFhE8BDOX6A26HZoQc39dH/MAGGKMtKq4QlfByo4l1K0mn3OATlPaWG3fzmWY45w7ONk76fLq2V3LMC8Ane9f8A91Y7uWkR2sr+EAnexmm9lZgbbSmUJeHpeNZ2GVW+mHnLrgZc2zupahmUE51cu/PCQdT8NKt9IPOvWptxh3dy2DjALSmULytr+gj8JV7qQ3LLcYncJLodN+WtXnlifODW75L4ZHHIiFjunp9fhjduh1oS13nRzZazTLDcEWf4Ss/jXB9UuhwrmXW2WNrf0FXtTpW9Vu8k/FyS8Qwn7Yn9kU+iNU4/T5waTecsG6S7/KulN70WJy9tXapPv9W+mBONnx9g9hkfgwjsNHmc7kqMxLzfA68Xo/jaFuqG9/sgoegS85xhMsbf75A24z/AsfPYdCnbW0U4vDw/AJx9tA2Nr3JIZcaHIB/Fn1xe5OxsNBeCnOxDXYgGlXp5gW0ufpClrNGpqG5gpF7K2ed93jwfg3fA8rsNzVmSYXyVPk555KFBJlr1MlkUquSw5KtkgiJZE3t17dVrTG8mVtqKwv4gMhhP4HwwXxEviqKqAAAAAASUVORK5CYII=") 50% no-repeat}._landscape_3F .overlay_2X{z-index:2;opacity:.9;background-color:#333}._landscape_3F .deviceLandscape_3t{display:block}._landscape_3F .menuWrap_2V{display:none}.menuWrap_2V{position:absolute;width:100%;left:-100%;bottom:-100%;background-color:#fff;visibility:hidden;opacity:0;transition:bottom .3s ease-in-out}.menuTitle_gc{display:block;font-size:16px;color:#8194a4;font-family:sans-serif;margin-left:15px;margin-top:25px;margin-bottom:20px;transition:opacity .3s ease}.menu_Xi,.menuItem_1i{display:block}.menuItem_1i{position:relative;padding-top:3px;margin-bottom:10px;font-size:16px;color:#2f3a44;font-family:sans-serif}.menuItemIcon_gq{width:20px;height:20px;position:absolute;top:10px;left:15px;padding:1px}.menuItemIcon_gq svg{height:19px!important;width:19px!important}.menuItemText_1y{padding:10px;display:inline-block;margin-left:60px;font-size:16px;color:#2f3a44;font-family:sans-serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;max-width:76%}.menuItemTextHighlight_3u{color:red}.copyrightWrap_3g{position:absolute;display:block;top:0;left:0;right:0;margin-top:-35px;text-align:center}.copyright_Iv{display:inline-block}.copyright_Iv a{color:#fff!important;font-size:12px!important;font-family:sans-serif!important}.logoIcon_2E{display:inline-block;vertical-align:middle;margin-left:5px;margin-bottom:-2px}.logoIcon_2E svg{height:15px!important;width:50px!important}.logoIcon_2E svg path{fill:#fff!important}.closeBtn_3r{position:relative;display:block;border-top:1px solid #e9e9e9;padding:20px 0}.closeIcon_2G{color:#314254;position:absolute;left:20px;top:18px;font-size:18px}.closeText_2a{font-size:16px;color:#314254;margin-left:70px;font-family:sans-serif}.wrap_2F{display:block;position:relative;width:100%;height:100%;opacity:0}._show_1l{opacity:1}._show_1l .overlay_3z{visibility:visible;opacity:.6}._show_1l .menuWrap_2D{display:block;bottom:0;opacity:1;visibility:visible}.overlay_3z{display:block;left:0;top:0;height:100%;width:100%;position:absolute;opacity:0;background-color:#000;visibility:hidden;transition:visibility .3s ease,opacity .3s ease}.overlay_3z._extraPadding_1j{padding:3px;margin:-1px}.deviceLandscape_2G{display:none;position:absolute;top:0;bottom:0;left:0;right:0;width:125px;height:115px;margin:auto;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH0AAABzCAQAAAAfg8XeAAAHT0lEQVR42u3daVATVxwA8Ad4BdoRW6U6OrXFWnVab8cba9uxYkc/dHR0nI62Fq+OvUbR8exUHIuIDiIIWiEJb6EeqNUWRxnHSlBEQBB15BYhITaRmIOQc9n994MS7sTIbq7d//8bSV7ej+y7NvNeEPKgkAvqxt9bmbk5f5skktm8sVW7smlSgcCTtLag/Qpnqk42PwXWwqAsS/svzOPgBj96nVUJrIdBeXb94gCPouu/Az24Jizp6z0IHjeXfAYuC1qVOddD4FFvXD0FLo18IirQI+j/zlbLXUu3ahOnegSd3AQuj5jVHkGH31+phTJKL9zhGfQYx1U16YzHlQlWNQBQILPcNOWabtky13ITGpz732gSPYN+wHFV60QIIaQRA1D1TYu1giZBU5AtAw1Bz+Y5NyswpnoNXf3PvSHW4ZZrAKba2uldy5CONjs1D2w+yThD66cYWi5gnk63NOW23AYKoIUylJJ/w5UOeRlKoMXN9Aq/6iWqbHpf2QLxQCbpTAcLdIQqQukqoKwafTkpOvXNjfHFQZyhx/tn7W59A5IklQ3XdPvzw3NCdAKfpyO0d2rn3pakjbXqjIII0/SikPgBPkxPEshSenjHphrJxa98mI6QfL7heQ/vqb0+x4fpecGqNbpuFyQ03Nljt61baQttAbbSDKbWIZAF+q/BDT8ockgV3e200lQcMahnuuG5dBUsoZdQbOVCag1dwQq9NEi7VnGXNPV0kVEtT1fY6+G1skyWbxtSw+h8FujlU5VZlNle+9JdLH7THl3fIHybZfpIupBhumZA7gaNwn7H0mLI+sT+uK5vwINZpr/HMD3nHUh2vGLMiz86wMfoolGVWd0MHpXV8fqMtiVFY/3eCT2V4KX0lDFleZ0HMF2hebt8IkLJQ6yy1r9m79zo51N0IvTRnY5wTXnzL7LQ1seL4l4OW3dTh/dcihfS6WHK7I5TdWlS3Yftn/FoKqgBzIaqCHvleB09oT8lbO82am5sKOzUkf3Yt+QMwOOsg4E+RA/3O72l/X0Ry7PoZbHdtOa0Fc1q0WL7ZXkZ/einelm7T7xx37Lun7d/sOynhD4+RP8rWHW1XRM3Za7tTYW8ip6zsX0rVx/qXYW8iL7pfUWZbUkCqhzDII7QL/inb273kT+/Mqe3FfIaunKwoaxNXnWw9xXyGvrDr9vghsdnRnGGLulTf7lttl4QhQM4Q8+eaFLZ6MqcSUxUyEvo535uW5mriOxAztBvB8jPtLX0yyuYqZBX0E+EmCptcumlcRyiR89u0rbKC89HD+QQvXEdZbvVfC2aqQp5BZ3cB9TLCSypj+AQfbRfEbZNZjT3wzlEnxxWUt1Kfyy9NJND9A1RNjk8epA8jkP0nVvrKNt3xcVVH3CIvmtnXdt8phLGcIi+Z0TdXJgHYRAG82EKLeAQna3g6Vykk3s9go7fxZ/hRa5L0UJxeM1Zt9PxULwV52FwZYohFR6Am+l4PM52LfsFXQSP3EvHE3CJo2oSkMF4EoCh3J10PASfdwhXi08nxScmHWM0ExKPxBeXupO+ClMO6U9E0+L7xfU7wmge7ne0X2mM2+h4IL7wCu1SRkxmp0K0G+ljce2r0PEUdioEse6jz8SNPJ2n83SeztN5Ok/n6Tydp/N0ns7TebqX0AkTIcdybOQgXVwpDE//Fks5RyfgWCFCpyYTTzlHT4eEOwf8T8/hJD2xICaAp/N0ns7TfZjO4R7+WBFCp2Zg7tExpFWJw4hlHJzNYSBMhAI3YjMX6UBocS3hcrrwLZbpIx21dTrl8aFl8R8dJzrgWadrZedYPpyF7nw4Sxe6NXYzQghtH5FamOFCukEjjYSN8D1rGQE76Gr7KzcyMWFPAEK7Zwor0l1Id0nQDhatIl1CTOKqlNsEjX2NDg67uQxIN2a4+AaVR9Ddc2/OqeuWpissqc3RFhE8BDOX6A26HZoQc39dH/MAGGKMtKq4QlfByo4l1K0mn3OATlPaWG3fzmWY45w7ONk76fLq2V3LMC8Ane9f8A91Y7uWkR2sr+EAnexmm9lZgbbSmUJeHpeNZ2GVW+mHnLrgZc2zupahmUE51cu/PCQdT8NKt9IPOvWptxh3dy2DjALSmULytr+gj8JV7qQ3LLcYncJLodN+WtXnlifODW75L4ZHHIiFjunp9fhjduh1oS13nRzZazTLDcEWf4Ss/jXB9UuhwrmXW2WNrf0FXtTpW9Vu8k/FyS8Qwn7Yn9kU+iNU4/T5waTecsG6S7/KulN70WJy9tXapPv9W+mBONnx9g9hkfgwjsNHmc7kqMxLzfA68Xo/jaFuqG9/sgoegS85xhMsbf75A24z/AsfPYdCnbW0U4vDw/AJx9tA2Nr3JIZcaHIB/Fn1xe5OxsNBeCnOxDXYgGlXp5gW0ufpClrNGpqG5gpF7K2ed93jwfg3fA8rsNzVmSYXyVPk555KFBJlr1MlkUquSw5KtkgiJZE3t17dVrTG8mVtqKwv4gMhhP4HwwXxEviqKqAAAAAASUVORK5CYII=") 50% no-repeat}._landscape_9O .overlay_3z{z-index:2;opacity:.9;background-color:#333}._landscape_9O .deviceLandscape_2G{display:block}._landscape_9O .menuWrap_2D{display:none}.menuWrap_2D{position:absolute;z-index:1;width:100%;left:0;bottom:-100%;visibility:hidden;opacity:0;transition:bottom .3s ease-in-out}.menuTitle_1e{display:block;font-size:13px;color:#949494;font-family:sans-serif;text-align:center;padding:20px 0}.menu_3e{display:block;background-color:#f2f2f2;font-size:18px;color:#0076ff;margin:10px;margin-bottom:8px;border-radius:12px}.menuItem_2A{display:block;position:relative;text-align:center;border-top:1px solid #dddde0}.menuItemIcon_V0{display:inline-block;width:16px;height:16px;margin-bottom:2px;vertical-align:middle;margin-left:10px}.menuItemIcon_V0 svg{height:16px!important;width:16px!important}.menuItemText_19{padding:16px 10px;display:inline-block;font-size:18px;color:#0076ff;font-family:sans-serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;max-width:82%}.menuItemTextHighlight_3I{color:red}.copyrightWrap_2o{position:absolute;display:block;top:-35px;left:0;right:0;margin:15px;text-align:center}.copyright_2u{display:inline-block}.copyright_2u a{color:#fff!important;font-size:12px!important;font-family:sans-serif!important}.logoIcon_5N{display:inline-block;vertical-align:middle;margin-left:5px;margin-bottom:-2px}.logoIcon_5N svg{height:15px!important;width:50px!important}.logoIcon_5N svg path{fill:#fff!important}.closeBtn_2k{display:block;padding:16px 0;border-radius:12px;margin:10px;margin-top:0;margin-bottom:15px;text-align:center;background-color:#fff;color:#0076ff;font-size:18px;font-weight:600;font-family:sans-serif}.wrap_3s{bottom:0;right:0;position:fixed;left:auto;top:auto;z-index:-5;opacity:0;visibility:hidden;margin-right:90px;margin-bottom:90px;transition:all .15s ease;display:block;width:70px;height:70px;border-radius:50%;box-shadow:1px 2px 3px 0 rgba(15,65,33,.08),5px 10px 20px 0 rgba(18,43,26,.12)}.wrap_3s:hover{box-shadow:1px 2px 3px 2px rgba(15,65,33,.08),5px 10px 20px 2px rgba(18,43,26,.2)}.wrap_3s._show_3w{z-index:2147483646;opacity:1;visibility:visible}.wrap_3s *,.wrap_3s svg{cursor:pointer!important}.button_3b,.iconWrap_1u{display:block;position:absolute;left:0;right:0;top:0;bottom:0;border-radius:50%;text-align:center}.button_3b{-webkit-animation:animationBtn_36 14s linear infinite;animation:animationBtn_36 14s linear infinite;-webkit-backface-visibility:hidden;backface-visibility:hidden}@-webkit-keyframes animationBtn_36{0%{box-shadow:0 0 0 0;opacity:0}73%{box-shadow:0 0 0 0;opacity:.5}80%{box-shadow:0 0 0 50px;opacity:0}81%{box-shadow:0 0 0 0;opacity:0}83%{box-shadow:0 0 0 0;opacity:.5}90%{box-shadow:0 0 0 50px;opacity:0}91%{box-shadow:0 0 0 0;opacity:0}93%{box-shadow:0 0 0 0;opacity:.5}to{box-shadow:0 0 0 50px;opacity:0}}@keyframes animationBtn_36{0%{box-shadow:0 0 0 0;opacity:0}73%{box-shadow:0 0 0 0;opacity:.5}80%{box-shadow:0 0 0 50px;opacity:0}81%{box-shadow:0 0 0 0;opacity:0}83%{box-shadow:0 0 0 0;opacity:.5}90%{box-shadow:0 0 0 50px;opacity:0}91%{box-shadow:0 0 0 0;opacity:0}93%{box-shadow:0 0 0 0;opacity:.5}to{box-shadow:0 0 0 50px;opacity:0}}.logoCallback_w0{display:inline-block;width:47%;height:47%;margin:29% auto 0;text-align:center;background-position:0 1px;background-repeat:no-repeat}</style><div id="jivo-action-container"><div dir="ltr" id="jivo_action" style="display: none; height: 70px;"><div id="jivo_close_button" class=""><svg id="jivo-icon-closewidget" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><style>.jivo-st0{opacity:.8;fill:#FFF;stroke:#000;enable-background:new}.jivo-st0,.jivo-st1{stroke-width:1.5;stroke-linecap:round}.jivo-st1{fill:none;stroke:#383d45}</style><circle class="jivo-st0" cx="12" cy="12" r="11"></circle><path class="jivo-st1" d="M7.5 16.5l9-9M16.5 16.5l-9-9"></path></svg></div></div><div id="jivo-drag-handle" style="display: none; height: 70px; cursor: move;"></div></div></div><div id="jivo-mouse-tracker" style="display: none;"></div><jdiv><jdiv class="globalClass_ET"><jdiv class="label_39 _bottom_3v _pad100_GR _init_Tk" style="background-color: rgb(244, 67, 54);"><jdiv class="labelStatus_3J"></jdiv><jdiv class="hoverl_6R"></jdiv><jdiv class="text_eD _noAd_3N" style="font-size: 14px; font-family: Arial, Arial; font-weight: normal; font-style: normal; color: rgb(240, 241, 241);">Send us a message</jdiv><jdiv class="leafCont_2L"><jdiv class="leaf_25 _offline_3c _bottom_DW"><jdiv class="triangle_eG" style="border-left-color: rgb(244, 67, 54);"></jdiv><jdiv iconname="leafBottom" class="cssLeaf_1k" style="color: rgb(244, 67, 54);"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="33" viewBox="0 0 22 33">
+    <path fill="#3EBC6B" fill-rule="evenodd" d="M0-.018c12.635 3.131 22 14.546 22 28.15v4.886C9.365 29.887 0 18.472 0 4.868V-.017z"></path>
+    <path fill="#5e5f61" fill-rule="evenodd" d="M0-.018c12.635 3.131 22 14.546 22 28.15v4.886C9.365 29.887 0 18.472 0 4.868V-.017z"></path>
+</svg>
+</jdiv></jdiv></jdiv><jdiv class="copyContainer_1V"><jdiv class="copyright_3R _bottom_L1 _offline_27 _light_35" style="background-color: rgb(244, 67, 54);"><jdiv class="text_30" style="color: rgb(240, 241, 241);">Live Chat Powered by <a href="https://www.jivochat.com?utm_source=nimbledroid.com&amp;utm_medium=link&amp;utm_content=widget_popup&amp;utm_campaign=self_ad" rel="nofollow" target="_blank" id="jivosite-copyright" class="link_32"><jdiv iconname="logo_jivochat" class="logoIcon_1U"><svg xmlns="http://www.w3.org/2000/svg" width="108" height="36" viewBox="0 0 108 36">
+    <g>
+        <path id="text" d="M6.342 11.967H.957c-.2 0-.4 0-.6.2 0 .2-.198.2-.198.4v1.993c0 .2 0 .4.198.6.2.198.4.198.6.198h2.79v14.36c0 1.397-1.196 2.594-2.392 2.594h-.4c-.2 0-.398 0-.598.2-.2.2-.2.398-.2.598v1.994c0 .2 0 .4.2.6.2.198.4.198.6.198h.198c3.192 0 5.785-2.792 5.785-5.984V12.566c0-.2 0-.4-.2-.6h-.398m6.98 0H11.33c-.2 0-.2 0-.4.2s-.2.2-.2.4v14.76c0 .2 0 .398.2.598.2.2.4.2.598.2h1.795c.2 0 .4 0 .598-.2.2-.2.2-.4.2-.598v-14.76c0-.2 0-.4-.198-.6h-.6m17.154 0H28.88c-.598 0-.997.2-.997.4l-4.388 9.973-4.188-9.974c0-.4-.4-.4-.6-.4h-1.993c-.4 0-.598 0-.598.2-.2.2-.2.4 0 .6l6.78 15.357c.2.2.4.4.6.4h.2c.198 0 .597-.2.597-.4l6.782-15.358c.2-.2.2-.4 0-.598-.2-.2-.4-.2-.6-.2m9.176-.4c-2.193.002-3.988.8-5.584 2.594-1.595 1.597-2.393 3.592-2.393 5.985 0 2.393.798 4.388 2.393 5.984 1.596 1.794 3.39 2.592 5.585 2.592s3.99-.798 5.586-2.593c1.596-1.796 2.394-3.79 2.394-5.985 0-2.393-.798-4.388-2.394-5.984-1.596-1.794-3.59-2.591-5.585-2.591m3.193 12.165c-.798.998-1.995 1.596-3.192 1.596-1.395 0-2.392-.398-3.39-1.395-.797-.998-1.396-2.194-1.396-3.79 0-1.396.4-2.792 1.397-3.59.798-.997 1.995-1.396 3.39-1.396 1.398 0 2.395.398 3.193 1.395.797.997 1.396 2.194 1.396 3.59s-.6 2.593-1.397 3.59m19.147-.598c-.398-.4-.797-.2-.997 0l-.4.4-.597.597c-.2.2-.4.2-.6.4-.198.2-.597.398-.796.398-.4 0-.6.2-.998.2-1.396 0-2.393-.6-3.19-1.596-.8-.998-1.397-2.194-1.397-3.79 0-1.396.4-2.792 1.396-3.79.998-.997 1.996-1.396 3.392-1.396 1.197 0 2.194.6 3.19 1.596.4.4.8.4.998.2l1.197-1.197s0-.4-.4-.8c-1.395-1.794-3.39-2.79-5.584-2.79-2.194-.002-3.99.796-5.584 2.59-1.597 1.597-2.395 3.592-2.395 5.985 0 2.393.798 4.388 2.394 6.183 1.594 1.596 3.39 2.394 5.583 2.394 2.593 0 4.588-1.197 5.984-3.39.2-.4.2-.8-.2-1.198l-.997-.997m11.57-11.569c-1.597 0-2.993.6-4.59 1.796V4.986c0-.2 0-.4-.198-.598-.2-.2-.4-.2-.6-.2H66.38c-.2 0-.398 0-.598.2-.2.2-.2.4-.2.598v22.54c0 .198 0 .398.2.597.2.2.4.2.598.2h1.796c.598 0 .797-.2.797-.798V17.353c.2-.6.8-.998 1.398-1.596.797-.598 1.795-.798 2.792-.798.997 0 1.795.398 2.393 1.196.6.798.798 1.795.798 3.19v8.378c0 .2 0 .4.2.6.2.198.4.198.6.198h1.794c.2 0 .4 0 .6-.2.198-.2.198-.398.198-.598v-8.177c-.2-5.386-2.194-7.979-6.183-7.979m20.144 1.995c-.4-.798-.997-1.197-1.596-1.596-.798-.4-1.795-.598-2.992-.598-1.994 0-3.79.398-5.385.996-.398.2-.597.4-.597.998l.4 1.396c.198.598.398.798.796.598a12.823 12.823 0 0 1 4.388-.798c.997 0 1.595.2 1.994.798.4.598.598 1.596.4 2.793l-.4-.2c-.2 0-.598-.198-1.197-.198-.4.2-.797.2-1.396.2-1.995 0-3.392.398-4.588 1.395-1.197.997-1.596 2.194-1.596 3.79s.4 2.992 1.396 3.99c.998.996 2.194 1.395 3.59 1.395 1.796 0 3.39-.598 4.787-1.994l.398 1.196c.2.4.4.6.6.6h1.195c.2 0 .4 0 .6-.2.198-.2.198-.4.198-.6V18.75c0-1.198 0-2.195-.198-2.993-.2-.598-.4-1.396-.798-2.194M91.31 23.735c-.2.4-.797.998-1.396 1.396-.798.4-1.396.6-2.194.6s-1.396-.2-1.795-.798c-.4-.4-.598-1.197-.598-1.795 0-.798.2-1.396.798-1.995.598-.4 1.396-.797 2.393-.797.598 0 1.197 0 1.795.2.6.198.997.198.997.398v2.792m16.555 2.793l-.598-1.596c-.2-.4-.4-.598-.997-.4a3.834 3.834 0 0 1-2.394.8c-.4 0-.798-.2-.997-.4-.2-.2-.4-.598-.4-1.396V14.96h4.19c.198 0 .397 0 .597-.2.2-.2.2-.4.2-.6v-1.594c0-.2 0-.4-.2-.6h-4.788V7.38c0-.2 0-.4-.2-.598-.2-.2-.398-.2-.598-.2h-1.994c-.2 0-.4 0-.6.2-.198.2-.198.398-.198.598v4.587h-1.795c-.4 0-.798.2-.798.798v1.396c0 .2 0 .4.2.6.2.2.398.2.598.2h1.795v8.975c0 1.595.2 2.792.798 3.59.598.798 1.595 1.197 2.99 1.197.8 0 1.597-.2 2.395-.4s1.396-.598 1.795-.797c.997-.2 1.197-.598.997-.997z" fill-rule="evenodd" fill="#3e414f"></path>
+        <path id="leaf" d="M6.94 10.77C6.543.4.16 0 .16 0c-.4 9.374 6.78 10.77 6.78 10.77z" fill-rule="evenodd" fill="#44bb6e"></path>
+    </g>
+</svg></jdiv></a></jdiv><jdiv class="corner_3z" style="border-top-color: rgb(244, 67, 54);"></jdiv></jdiv></jdiv></jdiv></jdiv></jdiv></body></html>

@@ -222,3 +222,126 @@ select.selectDropdown:hover {
   font-size: 20px;
   line-height: 60px;
 }
+
+#mainResults {
+  background: white;
+  padding: 60px 0;
+}
+
+#mainResults h1 {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 5px 0;
+  font-family: SofiaProMedium;
+  border-bottom: 2px solid #9e1e1d;
+}
+
+#reminder {
+  padding: 40px 0;
+  background: #f3f3f3;
+  border-top: 1px solid #e1e1e1
+}
+
+#reminder p {
+  font-family: SofiaProExtraLight;
+  /*text-transform: capitalize;*/
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+#reminder p a {
+  text-transform: uppercase;
+  color: #951e1d;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #951e1d;
+  font-style: italic;
+}
+
+#thankyou {
+  position: relative;
+  margin: 0;
+  min-height: 500px;
+  background: #cf3d4c;
+  background-image: -webkit-radial-gradient(closest-corner, rgba(70, 20, 20, 0) 60%, rgba(70, 15, 15, .26)), -webkit-linear-gradient(bottom right, #d02f2f, #801212 90%);
+  background-image: radial-gradient(closest-corner, rgba(90, 3, 3, .15) 60%, rgba(58, 13, 13, .26)), linear-gradient(to top left, #711313, #6b1a1a 90%);
+}
+
+.thankyoubg {
+  width: 100%;
+  height: 100%;
+  background: url("../img/thankyoubg.png") center center no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
+.welcomeContentWrap {
+  padding: 50px 0;
+}
+
+.welcomeContentWrap h1 {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 5px 0;
+  font-family: SofiaProMedium;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+.welcomeContentWrap p {
+  font-size: 22px;
+  color: white;
+}
+.welcomeContentWrap p.bolder {
+  font-family: SofiaProMedium;
+  font-size: 22px;
+  color: white;
+}
+
+.btn-clear{
+  border-radius: 50px;
+  min-width: 320px;
+  min-height: 50px;
+  line-height: 50px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+.flexView{
+  display: flex;
+  align-content: left;
+  justify-content: left;
+  flex-direction: row;
+}
+
+.contactBox{
+  margin-right: 30px;
+}
+
+.contactBox h3{
+  color: white;
+  font-family: SofiaProMedium;
+  font-size: 26px;
+  letter-spacing: 2px;
+}
+
+.contactBox p.title{
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  opacity: 0.5;
+}
+
+.contactBox p.mail,
+.contactBox p.phone{
+  font-family: SofiaProExtraLight;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 1px;
+}
