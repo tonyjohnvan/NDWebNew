@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>new upload page</title>
+
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="css/circleprogress.css">
+  <link rel="stylesheet" href="css/dropzone.css">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <div class="navigationWrapper verticalCenter">
+          <ul class="verticalCenter">
+            <li><a href="#"> <i class="fa fa-arrow-left"></i> </a></li>
+            <li><a href="#"> <i class="fa fa-dot-circle"></i> </a></li>
+            <li><a href="#"> <i class="fa fa-circle"></i> </a></li>
+            <li><a href="#"> <i class="fa fa-circle"></i> </a></li>
+            <li><a href="#"> <i class="fa fa-circle"></i> </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4 text-center logoWrapper verticalCenter">
+        <img src="img/logo.png" alt="Nimbledroid">
+        <div class="verticalSeparator"></div>
+        <span><strong>Pinterest</strong> Business Report</span>
+      </div>
+      <div class="col-md-4 text-center verticalCenter logoWrapper">
+        <button class="btn btn-default btnBlack">Download PDF</button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section id="welcomePanel">
+  <div class="backImage verticalCenter text-center">
+    <h4>
+      <strong>NimbleDorid </strong>Business Report <br/>
+      for<br/>
+      <strong>Pinterest</strong>
+      <p class="smallText">User Engagement and Regression Report</p>
+    </h4>
+  </div>
+</section>
+
+<section id="timeSelect">
+  <div class="container">
+    <h5>
+      Report Period
+    </h5>
+    <div class="row">
+      <div class="col-md-5 text-left">
+        <select class="btn btn-secondary selectDropdown dropdown-toggle">
+          <option value="0"> Select All Uploads </option>
+          <option value="1"> Deselect Crashes </option>
+          <option value="2"> Deselect Pending </option>
+          <option value="3"> Custom Selection </option>
+        </select>
+      </div>
+      <div class="col-md-3 text-right">
+        <input type="date" class="btn btn-secondary selectDropdown" />
+      </div>
+      <div class="col-md-1 text-center verticalCenter inputWordBetween">
+        to
+      </div>
+      <div class="col-md-3 text-left">
+        <input type="date" class="btn btn-secondary selectDropdown" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container text-center">this is the footer</div>
+
+</footer>
+
+<script src="js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

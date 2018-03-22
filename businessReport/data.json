@@ -1,0 +1,1120 @@
+{
+  "data": {
+    "org": {
+      "trending_data": [
+        {
+          "startup_datetime": [
+            {
+              "y": 0.4,
+              "name": "2018-03-21T17:49:49.622+00:00",
+              "created_at": "2018-03-21T17:49:49.622+00:00",
+              "unit": "s",
+              "pid": "106a397c-fc54-401a-b7b5-7133dd34e1e4",
+              "nid": "482bcc11-cf39-448a-87db-232d94bdad19",
+              "color": "rgba(0,0,0,0.5)",
+              "commit": "b2856428d1d1a0dd32eb8c53c05099c71917346c",
+              "upload_label": null,
+              "screenshot": "/profile/106a397c-fc54-401a-b7b5-7133dd34e1e4/last_screenshot.png",
+              "marker": {
+                "radius": 2,
+                "color": "rgba(0,0,0,0.5)"
+              }
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T17:55:34.930+00:00",
+              "created_at": "2018-03-21T17:55:34.930+00:00",
+              "nid": "dccd166e-f892-4ccf-8195-44b048a45a1b",
+              "pid": null
+            },
+            {
+              "y": 0.3,
+              "name": "2018-03-21T18:29:11.968+00:00",
+              "created_at": "2018-03-21T18:29:11.968+00:00",
+              "unit": "s",
+              "pid": "bd1427ed-1459-4a94-a3df-95d650552286",
+              "nid": "872801e0-cb7d-4686-8e9a-34fd9613ba89",
+              "color": "rgba(0,0,0,0.5)",
+              "commit": "754d5237abd43f22ad63fbae918c3d6c916b6d66",
+              "upload_label": null,
+              "screenshot": "/profile/bd1427ed-1459-4a94-a3df-95d650552286/last_screenshot.png",
+              "marker": {
+                "radius": 2,
+                "color": "rgba(0,0,0,0.5)"
+              }
+            },
+            {
+              "y": 0.4,
+              "name": "2018-03-21T18:36:29.098+00:00",
+              "created_at": "2018-03-21T18:36:29.098+00:00",
+              "unit": "s",
+              "pid": "bb76247d-165b-4ce7-b8ea-47f11f4a234d",
+              "nid": "5b875a8c-d3e3-4d64-aeb6-c9edf7930f6d",
+              "color": "rgba(0,0,0,0.5)",
+              "commit": "a2f22a83a1e7cbe6b79e65b479961e1aea41554c",
+              "upload_label": null,
+              "screenshot": "/profile/bb76247d-165b-4ce7-b8ea-47f11f4a234d/last_screenshot.png",
+              "marker": {
+                "radius": 2,
+                "color": "rgba(0,0,0,0.5)"
+              }
+            },
+            {
+              "y": 0.3,
+              "name": "2018-03-21T18:46:58.082+00:00",
+              "created_at": "2018-03-21T18:46:58.082+00:00",
+              "unit": "s",
+              "pid": "1b33caa4-2418-4d8f-8ba1-a11ecbf2a853",
+              "nid": "bac6f480-25cd-4b39-9363-e2110da9cbaf",
+              "color": "rgba(0,0,0,0.5)",
+              "commit": "8f1fb79186700078039b7de4c854fcd0ef84e3cd",
+              "upload_label": null,
+              "screenshot": "/profile/1b33caa4-2418-4d8f-8ba1-a11ecbf2a853/last_screenshot.png",
+              "marker": {
+                "radius": 2,
+                "color": "rgba(0,0,0,0.5)"
+              }
+            },
+            {
+              "y": 0.3,
+              "name": "2018-03-21T19:01:19.063+00:00",
+              "created_at": "2018-03-21T19:01:19.063+00:00",
+              "unit": "s",
+              "pid": "0ea94284-42e7-4776-ab0b-b2e5b2e9227c",
+              "nid": "edad6485-0d32-4f6c-879f-bfb0e6958dab",
+              "color": "rgba(0,0,0,0.5)",
+              "commit": "a3c514033600ab7bd936810340a65fae8a312236",
+              "upload_label": null,
+              "screenshot": "/profile/0ea94284-42e7-4776-ab0b-b2e5b2e9227c/last_screenshot.png",
+              "marker": {
+                "radius": 2,
+                "color": "rgba(0,0,0,0.5)"
+              }
+            },
+            {
+              "y": 0.4,
+              "name": "2018-03-21T19:05:04.643+00:00",
+              "created_at": "2018-03-21T19:05:04.643+00:00",
+              "unit": "s",
+              "pid": "58debee3-881d-4c1e-ac77-2f6e013df6a0",
+              "nid": "15894765-635d-48ab-9ded-cb861177db38",
+              "color": "rgba(0,0,0,0.5)",
+              "commit": "f97c04c8b4944db22d61dbf587eae808a591ea60",
+              "upload_label": null,
+              "screenshot": "/profile/58debee3-881d-4c1e-ac77-2f6e013df6a0/last_screenshot.png",
+              "marker": {
+                "radius": 2,
+                "color": "rgba(0,0,0,0.5)"
+              }
+            },
+            {
+              "y": 0.4,
+              "name": "2018-03-21T19:05:41.175+00:00",
+              "created_at": "2018-03-21T19:05:41.175+00:00",
+              "unit": "s",
+              "pid": "d69770f9-5478-44f2-a5bb-c2cfd7f45781",
+              "nid": "fd76ec31-3f04-4280-8690-3a7b3cbd8f29",
+              "color": "rgba(0,0,0,0.5)",
+              "commit": "d0991f1c5be2a594f519d1833f73c4cc12161581",
+              "upload_label": null,
+              "screenshot": "/profile/d69770f9-5478-44f2-a5bb-c2cfd7f45781/last_screenshot.png",
+              "marker": {
+                "radius": 2,
+                "color": "rgba(0,0,0,0.5)"
+              }
+            },
+            {
+              "y": 0.2,
+              "name": "2018-03-21T19:25:58.715+00:00",
+              "created_at": "2018-03-21T19:25:58.715+00:00",
+              "unit": "s",
+              "pid": "4f9c24cb-04bf-46ef-b59e-776cefacff76",
+              "nid": "69840751-fdc5-452a-82a5-d3347de62326",
+              "color": "rgba(0,0,0,0.5)",
+              "commit": "31a791ba5fb52d4501d55d53b039be2a3b3317e3",
+              "upload_label": null,
+              "screenshot": "/profile/4f9c24cb-04bf-46ef-b59e-776cefacff76/last_screenshot.png",
+              "marker": {
+                "radius": 2,
+                "color": "rgba(0,0,0,0.5)"
+              }
+            },
+            {
+              "y": 0.4,
+              "name": "2018-03-21T19:55:24.525+00:00",
+              "created_at": "2018-03-21T19:55:24.525+00:00",
+              "unit": "s",
+              "pid": "b039c91a-d12a-45e8-8689-f6dc6505dfc7",
+              "nid": "73387146-4d24-4c9a-a934-a3fd85c15643",
+              "color": "rgba(0,0,0,0.5)",
+              "commit": "b4a0891a093c26144e66c218120b0c486ac1d625",
+              "upload_label": null,
+              "screenshot": "/profile/b039c91a-d12a-45e8-8689-f6dc6505dfc7/last_screenshot.png",
+              "marker": {
+                "radius": 2,
+                "color": "rgba(0,0,0,0.5)"
+              }
+            },
+            {
+              "y": 0.3,
+              "name": "2018-03-21T20:04:40.707+00:00",
+              "created_at": "2018-03-21T20:04:40.707+00:00",
+              "unit": "s",
+              "pid": "8d5c5ace-dee3-44f9-9cdb-c4d40a7c72be",
+              "nid": "9ecbbf62-f981-4785-99f4-4d52f9bc74f3",
+              "color": "rgba(0,0,0,0.5)",
+              "commit": "e840b6ca90c73c6f662cf5cdf289b631db879204",
+              "upload_label": null,
+              "screenshot": "/profile/8d5c5ace-dee3-44f9-9cdb-c4d40a7c72be/last_screenshot.png",
+              "marker": {
+                "radius": 2,
+                "color": "rgba(0,0,0,0.5)"
+              }
+            },
+            {
+              "y": 0.2,
+              "name": "2018-03-21T20:11:48.779+00:00",
+              "created_at": "2018-03-21T20:11:48.779+00:00",
+              "unit": "s",
+              "pid": "24e562c4-1a03-4696-a89a-b464a4f772ff",
+              "nid": "abf05452-6a61-474c-af07-18b2e8331182",
+              "color": "rgba(0,0,0,0.5)",
+              "commit": "b2cb75c398d12573819f9e8596cbdd9e7aad4755",
+              "upload_label": null,
+              "screenshot": "/profile/24e562c4-1a03-4696-a89a-b464a4f772ff/last_screenshot.png",
+              "marker": {
+                "radius": 2,
+                "color": "rgba(0,0,0,0.5)"
+              }
+            },
+            {
+              "y": 0.3,
+              "name": "2018-03-21T20:38:47.505+00:00",
+              "created_at": "2018-03-21T20:38:47.505+00:00",
+              "unit": "s",
+              "pid": "a78b56c8-8694-49aa-8f7b-65a0ac3f0aca",
+              "nid": "c8321367-51ad-463d-81ba-86f191d2896f",
+              "color": "rgba(0,0,0,0.5)",
+              "commit": "13a7e4a0e133922944d1203d9493c272d1228d0c",
+              "upload_label": null,
+              "screenshot": "/profile/a78b56c8-8694-49aa-8f7b-65a0ac3f0aca/last_screenshot.png",
+              "marker": {
+                "radius": 2,
+                "color": "rgba(0,0,0,0.5)"
+              }
+            },
+            {
+              "y": 0.3,
+              "name": "2018-03-21T20:43:49.907+00:00",
+              "created_at": "2018-03-21T20:43:49.907+00:00",
+              "unit": "s",
+              "pid": "f2aa3e55-f0a7-48ab-9f86-90ac16c75bae",
+              "nid": "a752b8d1-cf86-4563-b980-916731fe60bf",
+              "color": "rgba(0,0,0,0.5)",
+              "commit": "394952d3ed2e16fc9d155b977f1348a1f40e553b",
+              "upload_label": null,
+              "screenshot": "/profile/f2aa3e55-f0a7-48ab-9f86-90ac16c75bae/last_screenshot.png",
+              "marker": {
+                "radius": 2,
+                "color": "rgba(0,0,0,0.5)"
+              }
+            },
+            {
+              "y": 0.2,
+              "name": "2018-03-21T21:13:29.322+00:00",
+              "created_at": "2018-03-21T21:13:29.322+00:00",
+              "unit": "s",
+              "pid": "384c8bc6-b380-4c72-8275-db0c4134c1eb",
+              "nid": "458f237f-5f96-4f1c-867b-f4e5f52a8f9c",
+              "color": "rgba(0,0,0,0.5)",
+              "commit": "608037b8037dd33144fad73c907bec256adc109e",
+              "upload_label": null,
+              "screenshot": "/profile/384c8bc6-b380-4c72-8275-db0c4134c1eb/last_screenshot.png",
+              "marker": {
+                "radius": 2,
+                "color": "rgba(0,0,0,0.5)"
+              }
+            },
+            {
+              "y": 0.3,
+              "name": "2018-03-21T21:18:54.660+00:00",
+              "created_at": "2018-03-21T21:18:54.660+00:00",
+              "unit": "s",
+              "pid": "a0bf03ce-76c6-49c4-9403-4e9a1e249390",
+              "nid": "f70f4c79-af93-4a62-9ed7-87c54f5a656c",
+              "color": "rgba(0,0,0,0.5)",
+              "commit": "c4836f2973ca257db894a61d2d2b3afa47f0d0f1",
+              "upload_label": null,
+              "screenshot": "/profile/a0bf03ce-76c6-49c4-9403-4e9a1e249390/last_screenshot.png",
+              "marker": {
+                "radius": 2,
+                "color": "rgba(0,0,0,0.5)"
+              }
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T21:48:23.437+00:00",
+              "created_at": "2018-03-21T21:48:23.437+00:00",
+              "nid": "e5c661e0-cdc1-486b-a1ac-ad172ebff8b1",
+              "pid": "3e35a312-f376-4544-b271-bb9b851ff288"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T21:50:57.880+00:00",
+              "created_at": "2018-03-21T21:50:57.880+00:00",
+              "nid": "f25aadf3-0534-46bf-86a4-6b53b5e468f0",
+              "pid": "7a05446d-ac2a-402d-b892-0e7bb1751146"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:02:14.223+00:00",
+              "created_at": "2018-03-21T22:02:14.223+00:00",
+              "nid": "bee0cee6-04c1-4909-bcc2-2bda70c4a703",
+              "pid": "024b8ff4-cb2d-4d4f-b692-656fa308d422"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:03:10.867+00:00",
+              "created_at": "2018-03-21T22:03:10.867+00:00",
+              "nid": "80cd7ad0-5c4e-4bff-8bcd-a856f9e71fda",
+              "pid": "6c498d2e-feba-4a73-8762-46b926c890ac"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:13:38.937+00:00",
+              "created_at": "2018-03-21T22:13:38.937+00:00",
+              "nid": "8bf7f532-5295-42fc-9493-0f13aff784fc",
+              "pid": "97f5f284-009c-4e47-8a33-2bc471a4a01c"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:14:48.272+00:00",
+              "created_at": "2018-03-21T22:14:48.272+00:00",
+              "nid": "e8668b67-1b38-49e4-b01b-814d01d3f8bc",
+              "pid": null
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:19:06.313+00:00",
+              "created_at": "2018-03-21T22:19:06.313+00:00",
+              "nid": "09709ad3-472b-4eae-8c1c-a48870d17533",
+              "pid": null
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:37:57.757+00:00",
+              "created_at": "2018-03-21T22:37:57.757+00:00",
+              "nid": "dbace280-d3ec-4aab-b557-33bae86be8cc",
+              "pid": null
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T23:09:37.862+00:00",
+              "created_at": "2018-03-21T23:09:37.862+00:00",
+              "nid": "5df443e9-3dce-4036-a31e-e48019abe5c7",
+              "pid": null
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T23:18:14.762+00:00",
+              "created_at": "2018-03-21T23:18:14.762+00:00",
+              "nid": "d9c0430c-c0f9-4398-815b-b3efc52c8c0f",
+              "pid": null
+            }
+          ],
+          "startup_datetime_crash": [
+            [
+              "2018-03-21T17:49:49.622+00:00",
+              null
+            ],
+            {
+              "y": null,
+              "name": "2018-03-21T17:55:34.930+00:00",
+              "created_at": "2018-03-21T17:55:34.930+00:00"
+            },
+            [
+              "2018-03-21T18:29:11.968+00:00",
+              null
+            ],
+            [
+              "2018-03-21T18:36:29.098+00:00",
+              null
+            ],
+            [
+              "2018-03-21T18:46:58.082+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:01:19.063+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:05:04.643+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:05:41.175+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:25:58.715+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:55:24.525+00:00",
+              null
+            ],
+            [
+              "2018-03-21T20:04:40.707+00:00",
+              null
+            ],
+            [
+              "2018-03-21T20:11:48.779+00:00",
+              null
+            ],
+            [
+              "2018-03-21T20:38:47.505+00:00",
+              null
+            ],
+            [
+              "2018-03-21T20:43:49.907+00:00",
+              null
+            ],
+            [
+              "2018-03-21T21:13:29.322+00:00",
+              null
+            ],
+            [
+              "2018-03-21T21:18:54.660+00:00",
+              null
+            ],
+            {
+              "y": null,
+              "name": "2018-03-21T21:48:23.437+00:00",
+              "created_at": "2018-03-21T21:48:23.437+00:00"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T21:50:57.880+00:00",
+              "created_at": "2018-03-21T21:50:57.880+00:00"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:02:14.223+00:00",
+              "created_at": "2018-03-21T22:02:14.223+00:00"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:03:10.867+00:00",
+              "created_at": "2018-03-21T22:03:10.867+00:00"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:13:38.937+00:00",
+              "created_at": "2018-03-21T22:13:38.937+00:00"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:14:48.272+00:00",
+              "created_at": "2018-03-21T22:14:48.272+00:00"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:19:06.313+00:00",
+              "created_at": "2018-03-21T22:19:06.313+00:00"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:37:57.757+00:00",
+              "created_at": "2018-03-21T22:37:57.757+00:00"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T23:09:37.862+00:00",
+              "created_at": "2018-03-21T23:09:37.862+00:00"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T23:18:14.762+00:00",
+              "created_at": "2018-03-21T23:18:14.762+00:00"
+            }
+          ],
+          "startup_datetime_na": [
+            [
+              "2018-03-21T17:49:49.622+00:00",
+              null
+            ],
+            {
+              "y": 0,
+              "name": "2018-03-21T17:55:34.930+00:00",
+              "created_at": "2018-03-21T17:55:34.930+00:00",
+              "color": "#FF0000",
+              "nid": "dccd166e-f892-4ccf-8195-44b048a45a1b",
+              "enableMouseTracking": false,
+              "marker": {
+                "enabled": true,
+                "color": "#FF0000",
+                "width": 8,
+                "height": 58,
+                "symbol": "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAA6CAMAAAC6Y+gfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkY2JmZTFlMS02NzdjLTQ1MjAtODFkZS1mYjQxN2QxZDhhZTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjE5NDkyODg4NDI5MTFFNzgwMzNCODA1Q0FCNEFEODgiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjE5NDkyODc4NDI5MTFFNzgwMzNCODA1Q0FCNEFEODgiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowZmEwNmZkYy1jOWYyLTRmYTQtYmMyNi05MTI4M2EyOTlhZGMiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDoyNzgwYTcxNC1jYzkzLTExN2EtYjFmMi1jZWI1MWU2ODRiZjMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4zznAMAAADAFBMVEX///+ioqJ8fHzb29ugoKB9fX3+/v5/f3+Ojo75+fmrq6vU1NRsbGyoqKjS0tKRkZHy8vKfn597e3vExMSIiIjLy8tvb2+bm5vJycnT09OJiYmYmJjr6+vZ2dnX19f39/fm5uaBgYGsrKy9vb2cnJzGxsbf399qampcXFwpKSkqKiorKyssLCwtLS0uLi4vLy8wMDAxMTEyMjIzMzM0NDQ1NTU2NjY3Nzc4ODg5OTk6Ojo7Ozs8PDw9PT0+Pj4/Pz9AQEBBQUFCQkJDQ0NERERFRUVGRkZHR0dISEhJSUlKSkpLS0tMTExNTU1OTk5PT09QUFBRUVFSUlJTU1NUVFRVVVVWVlZXV1dYWFhZWVlaWlpbW1tcXFxdXV1eXl5fX19gYGBhYWFiYmJjY2NkZGRlZWVmZmZnZ2doaGhpaWlqampra2tsbGxtbW1ubm5vb29wcHBxcXFycnJzc3N0dHR1dXV2dnZ3d3d4eHh5eXl6enp7e3t8fHx9fX1+fn5/f3+AgICBgYGCgoKDg4OEhISFhYWGhoaHh4eIiIiJiYmKioqLi4uMjIyNjY2Ojo6Pj4+QkJCRkZGSkpKTk5OUlJSVlZWWlpaXl5eYmJiZmZmampqbm5ucnJydnZ2enp6fn5+goKChoaGioqKjo6OkpKSlpaWmpqanp6eoqKipqamqqqqrq6usrKytra2urq6vr6+wsLCxsbGysrKzs7O0tLS1tbW2tra3t7e4uLi5ubm6urq7u7u8vLy9vb2+vr6/v7/AwMDBwcHCwsLDw8PExMTFxcXGxsbHx8fIyMjJycnKysrLy8vMzMzNzc3Ozs7Pz8/Q0NDR0dHS0tLT09PU1NTV1dXW1tbX19fY2NjZ2dna2trb29vc3Nzd3d3e3t7f39/g4ODh4eHi4uLj4+Pk5OTl5eXm5ubn5+fo6Ojp6enq6urr6+vs7Ozt7e3u7u7v7+/w8PDx8fHy8vLz8/P09PT19fX29vb39/f4+Pj5+fn6+vr7+/v8/Pz9/f3+/v7///9nNYzgAAAAcUlEQVR42mL4DwSLgJiBmoz/9GB8BzN+HuusBTJO99VMXAGSyqq/dHk1WM39RTm116GKb85G1j7/NZRxpaPvNtTAZzMaT0LVfFqN1dIaMIBYuqb+CpDxb2/1kX8gqfyYOQsWLAAyboMB3QKBmhEHEGAApJy0oAR9PA0AAAAASUVORK5CYII=)"
+              }
+            },
+            [
+              "2018-03-21T18:29:11.968+00:00",
+              null
+            ],
+            [
+              "2018-03-21T18:36:29.098+00:00",
+              null
+            ],
+            [
+              "2018-03-21T18:46:58.082+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:01:19.063+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:05:04.643+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:05:41.175+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:25:58.715+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:55:24.525+00:00",
+              null
+            ],
+            [
+              "2018-03-21T20:04:40.707+00:00",
+              null
+            ],
+            [
+              "2018-03-21T20:11:48.779+00:00",
+              null
+            ],
+            [
+              "2018-03-21T20:38:47.505+00:00",
+              null
+            ],
+            [
+              "2018-03-21T20:43:49.907+00:00",
+              null
+            ],
+            [
+              "2018-03-21T21:13:29.322+00:00",
+              null
+            ],
+            [
+              "2018-03-21T21:18:54.660+00:00",
+              null
+            ],
+            {
+              "y": null,
+              "name": "2018-03-21T21:48:23.437+00:00",
+              "created_at": "2018-03-21T21:48:23.437+00:00",
+              "pid": "3e35a312-f376-4544-b271-bb9b851ff288"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T21:50:57.880+00:00",
+              "created_at": "2018-03-21T21:50:57.880+00:00",
+              "pid": "7a05446d-ac2a-402d-b892-0e7bb1751146"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:02:14.223+00:00",
+              "created_at": "2018-03-21T22:02:14.223+00:00",
+              "pid": "024b8ff4-cb2d-4d4f-b692-656fa308d422"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:03:10.867+00:00",
+              "created_at": "2018-03-21T22:03:10.867+00:00",
+              "pid": "6c498d2e-feba-4a73-8762-46b926c890ac"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:13:38.937+00:00",
+              "created_at": "2018-03-21T22:13:38.937+00:00",
+              "pid": "97f5f284-009c-4e47-8a33-2bc471a4a01c"
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:14:48.272+00:00",
+              "created_at": "2018-03-21T22:14:48.272+00:00",
+              "pid": null
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:19:06.313+00:00",
+              "created_at": "2018-03-21T22:19:06.313+00:00",
+              "pid": null
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T22:37:57.757+00:00",
+              "created_at": "2018-03-21T22:37:57.757+00:00",
+              "pid": null
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T23:09:37.862+00:00",
+              "created_at": "2018-03-21T23:09:37.862+00:00",
+              "pid": null
+            },
+            {
+              "y": null,
+              "name": "2018-03-21T23:18:14.762+00:00",
+              "created_at": "2018-03-21T23:18:14.762+00:00",
+              "pid": null
+            }
+          ],
+          "startup_datetime_error": [
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              "0.258076118445748821828",
+              "0.441923881554251178172"
+            ],
+            [
+              "0.291611131672015317324",
+              "0.441722201661318016016"
+            ],
+            [
+              "0.274944465005348650654",
+              "0.425055534994651349346"
+            ],
+            [
+              "0.268796067524328405245",
+              "0.411203932475671594755"
+            ],
+            [
+              "0.268796067524328405245",
+              "0.411203932475671594755"
+            ],
+            [
+              "0.288796067524328405245",
+              "0.431203932475671594755"
+            ],
+            [
+              "0.211234196550570178760",
+              "0.428765803449429821240"
+            ],
+            [
+              "0.223724465170010935782",
+              "0.456275534829989064218"
+            ],
+            [
+              "0.223724465170010935782",
+              "0.456275534829989064218"
+            ],
+            [
+              "0.170000000000000000000",
+              "0.430000000000000000000"
+            ],
+            [
+              "0.171234196550570178760",
+              "0.388765803449429821240"
+            ],
+            [
+              "0.208076118445748821828",
+              "0.391923881554251178172"
+            ],
+            [
+              "0.188796067524328405245",
+              "0.331203932475671594755"
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ]
+          ],
+          "startup_datetime_pending": [
+            [
+              "2018-03-21T17:49:49.622+00:00",
+              null
+            ],
+            [
+              "2018-03-21T17:55:34.930+00:00",
+              null
+            ],
+            [
+              "2018-03-21T18:29:11.968+00:00",
+              null
+            ],
+            [
+              "2018-03-21T18:36:29.098+00:00",
+              null
+            ],
+            [
+              "2018-03-21T18:46:58.082+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:01:19.063+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:05:04.643+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:05:41.175+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:25:58.715+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:55:24.525+00:00",
+              null
+            ],
+            [
+              "2018-03-21T20:04:40.707+00:00",
+              null
+            ],
+            [
+              "2018-03-21T20:11:48.779+00:00",
+              null
+            ],
+            [
+              "2018-03-21T20:38:47.505+00:00",
+              null
+            ],
+            [
+              "2018-03-21T20:43:49.907+00:00",
+              null
+            ],
+            [
+              "2018-03-21T21:13:29.322+00:00",
+              null
+            ],
+            [
+              "2018-03-21T21:18:54.660+00:00",
+              null
+            ],
+            {
+              "y": 0,
+              "name": "2018-03-21T21:48:23.437+00:00",
+              "created_at": "2018-03-21T21:48:23.437+00:00",
+              "color": "#FF0000",
+              "nid": "e5c661e0-cdc1-486b-a1ac-ad172ebff8b1",
+              "enableMouseTracking": false,
+              "marker": {
+                "enabled": true,
+                "color": "#FF0000",
+                "width": 8,
+                "height": 58,
+                "symbol": "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAA6CAMAAAC6Y+gfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkY2JmZTFlMS02NzdjLTQ1MjAtODFkZS1mYjQxN2QxZDhhZTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODQ0MTZCODRGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODQ0MTZCODNGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4QkE5NEE3OUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4QkE5NEE3QUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvIGyNIAAAAGUExURf///xJlrfqN5NcAAABOSURBVHjarJFJDsAwDAKZ/3+6TeUlSkvUQzhhgQ2SpRsocIpYMBBWHn8RgbuQS1+RKb2X5KX54EIEu/L/a1BSRuAiam5HW/GFjj7uEmAAWjMAWPMeby8AAAAASUVORK5CYII=)"
+              }
+            },
+            {
+              "y": 0,
+              "name": "2018-03-21T21:50:57.880+00:00",
+              "created_at": "2018-03-21T21:50:57.880+00:00",
+              "color": "#FF0000",
+              "nid": "f25aadf3-0534-46bf-86a4-6b53b5e468f0",
+              "enableMouseTracking": false,
+              "marker": {
+                "enabled": true,
+                "color": "#FF0000",
+                "width": 8,
+                "height": 58,
+                "symbol": "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAA6CAMAAAC6Y+gfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkY2JmZTFlMS02NzdjLTQ1MjAtODFkZS1mYjQxN2QxZDhhZTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODQ0MTZCODRGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODQ0MTZCODNGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4QkE5NEE3OUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4QkE5NEE3QUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvIGyNIAAAAGUExURf///xJlrfqN5NcAAABOSURBVHjarJFJDsAwDAKZ/3+6TeUlSkvUQzhhgQ2SpRsocIpYMBBWHn8RgbuQS1+RKb2X5KX54EIEu/L/a1BSRuAiam5HW/GFjj7uEmAAWjMAWPMeby8AAAAASUVORK5CYII=)"
+              }
+            },
+            {
+              "y": 0,
+              "name": "2018-03-21T22:02:14.223+00:00",
+              "created_at": "2018-03-21T22:02:14.223+00:00",
+              "color": "#FF0000",
+              "nid": "bee0cee6-04c1-4909-bcc2-2bda70c4a703",
+              "enableMouseTracking": false,
+              "marker": {
+                "enabled": true,
+                "color": "#FF0000",
+                "width": 8,
+                "height": 58,
+                "symbol": "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAA6CAMAAAC6Y+gfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkY2JmZTFlMS02NzdjLTQ1MjAtODFkZS1mYjQxN2QxZDhhZTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODQ0MTZCODRGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODQ0MTZCODNGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4QkE5NEE3OUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4QkE5NEE3QUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvIGyNIAAAAGUExURf///xJlrfqN5NcAAABOSURBVHjarJFJDsAwDAKZ/3+6TeUlSkvUQzhhgQ2SpRsocIpYMBBWHn8RgbuQS1+RKb2X5KX54EIEu/L/a1BSRuAiam5HW/GFjj7uEmAAWjMAWPMeby8AAAAASUVORK5CYII=)"
+              }
+            },
+            {
+              "y": 0,
+              "name": "2018-03-21T22:03:10.867+00:00",
+              "created_at": "2018-03-21T22:03:10.867+00:00",
+              "color": "#FF0000",
+              "nid": "80cd7ad0-5c4e-4bff-8bcd-a856f9e71fda",
+              "enableMouseTracking": false,
+              "marker": {
+                "enabled": true,
+                "color": "#FF0000",
+                "width": 8,
+                "height": 58,
+                "symbol": "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAA6CAMAAAC6Y+gfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkY2JmZTFlMS02NzdjLTQ1MjAtODFkZS1mYjQxN2QxZDhhZTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODQ0MTZCODRGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODQ0MTZCODNGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4QkE5NEE3OUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4QkE5NEE3QUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvIGyNIAAAAGUExURf///xJlrfqN5NcAAABOSURBVHjarJFJDsAwDAKZ/3+6TeUlSkvUQzhhgQ2SpRsocIpYMBBWHn8RgbuQS1+RKb2X5KX54EIEu/L/a1BSRuAiam5HW/GFjj7uEmAAWjMAWPMeby8AAAAASUVORK5CYII=)"
+              }
+            },
+            {
+              "y": 0,
+              "name": "2018-03-21T22:13:38.937+00:00",
+              "created_at": "2018-03-21T22:13:38.937+00:00",
+              "color": "#FF0000",
+              "nid": "8bf7f532-5295-42fc-9493-0f13aff784fc",
+              "enableMouseTracking": false,
+              "marker": {
+                "enabled": true,
+                "color": "#FF0000",
+                "width": 8,
+                "height": 58,
+                "symbol": "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAA6CAMAAAC6Y+gfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkY2JmZTFlMS02NzdjLTQ1MjAtODFkZS1mYjQxN2QxZDhhZTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODQ0MTZCODRGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODQ0MTZCODNGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4QkE5NEE3OUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4QkE5NEE3QUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvIGyNIAAAAGUExURf///xJlrfqN5NcAAABOSURBVHjarJFJDsAwDAKZ/3+6TeUlSkvUQzhhgQ2SpRsocIpYMBBWHn8RgbuQS1+RKb2X5KX54EIEu/L/a1BSRuAiam5HW/GFjj7uEmAAWjMAWPMeby8AAAAASUVORK5CYII=)"
+              }
+            },
+            {
+              "y": 0,
+              "name": "2018-03-21T22:14:48.272+00:00",
+              "created_at": "2018-03-21T22:14:48.272+00:00",
+              "color": "#FF0000",
+              "nid": "e8668b67-1b38-49e4-b01b-814d01d3f8bc",
+              "enableMouseTracking": false,
+              "marker": {
+                "enabled": true,
+                "color": "#FF0000",
+                "width": 8,
+                "height": 58,
+                "symbol": "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAA6CAMAAAC6Y+gfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkY2JmZTFlMS02NzdjLTQ1MjAtODFkZS1mYjQxN2QxZDhhZTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODQ0MTZCODRGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODQ0MTZCODNGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4QkE5NEE3OUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4QkE5NEE3QUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvIGyNIAAAAGUExURf///xJlrfqN5NcAAABOSURBVHjarJFJDsAwDAKZ/3+6TeUlSkvUQzhhgQ2SpRsocIpYMBBWHn8RgbuQS1+RKb2X5KX54EIEu/L/a1BSRuAiam5HW/GFjj7uEmAAWjMAWPMeby8AAAAASUVORK5CYII=)"
+              }
+            },
+            {
+              "y": 0,
+              "name": "2018-03-21T22:19:06.313+00:00",
+              "created_at": "2018-03-21T22:19:06.313+00:00",
+              "color": "#FF0000",
+              "nid": "09709ad3-472b-4eae-8c1c-a48870d17533",
+              "enableMouseTracking": false,
+              "marker": {
+                "enabled": true,
+                "color": "#FF0000",
+                "width": 8,
+                "height": 58,
+                "symbol": "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAA6CAMAAAC6Y+gfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkY2JmZTFlMS02NzdjLTQ1MjAtODFkZS1mYjQxN2QxZDhhZTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODQ0MTZCODRGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODQ0MTZCODNGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4QkE5NEE3OUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4QkE5NEE3QUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvIGyNIAAAAGUExURf///xJlrfqN5NcAAABOSURBVHjarJFJDsAwDAKZ/3+6TeUlSkvUQzhhgQ2SpRsocIpYMBBWHn8RgbuQS1+RKb2X5KX54EIEu/L/a1BSRuAiam5HW/GFjj7uEmAAWjMAWPMeby8AAAAASUVORK5CYII=)"
+              }
+            },
+            {
+              "y": 0,
+              "name": "2018-03-21T22:37:57.757+00:00",
+              "created_at": "2018-03-21T22:37:57.757+00:00",
+              "color": "#FF0000",
+              "nid": "dbace280-d3ec-4aab-b557-33bae86be8cc",
+              "enableMouseTracking": false,
+              "marker": {
+                "enabled": true,
+                "color": "#FF0000",
+                "width": 8,
+                "height": 58,
+                "symbol": "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAA6CAMAAAC6Y+gfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkY2JmZTFlMS02NzdjLTQ1MjAtODFkZS1mYjQxN2QxZDhhZTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODQ0MTZCODRGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODQ0MTZCODNGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4QkE5NEE3OUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4QkE5NEE3QUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvIGyNIAAAAGUExURf///xJlrfqN5NcAAABOSURBVHjarJFJDsAwDAKZ/3+6TeUlSkvUQzhhgQ2SpRsocIpYMBBWHn8RgbuQS1+RKb2X5KX54EIEu/L/a1BSRuAiam5HW/GFjj7uEmAAWjMAWPMeby8AAAAASUVORK5CYII=)"
+              }
+            },
+            {
+              "y": 0,
+              "name": "2018-03-21T23:09:37.862+00:00",
+              "created_at": "2018-03-21T23:09:37.862+00:00",
+              "color": "#FF0000",
+              "nid": "5df443e9-3dce-4036-a31e-e48019abe5c7",
+              "enableMouseTracking": false,
+              "marker": {
+                "enabled": true,
+                "color": "#FF0000",
+                "width": 8,
+                "height": 58,
+                "symbol": "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAA6CAMAAAC6Y+gfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkY2JmZTFlMS02NzdjLTQ1MjAtODFkZS1mYjQxN2QxZDhhZTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODQ0MTZCODRGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODQ0MTZCODNGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4QkE5NEE3OUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4QkE5NEE3QUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvIGyNIAAAAGUExURf///xJlrfqN5NcAAABOSURBVHjarJFJDsAwDAKZ/3+6TeUlSkvUQzhhgQ2SpRsocIpYMBBWHn8RgbuQS1+RKb2X5KX54EIEu/L/a1BSRuAiam5HW/GFjj7uEmAAWjMAWPMeby8AAAAASUVORK5CYII=)"
+              }
+            },
+            {
+              "y": 0,
+              "name": "2018-03-21T23:18:14.762+00:00",
+              "created_at": "2018-03-21T23:18:14.762+00:00",
+              "color": "#FF0000",
+              "nid": "d9c0430c-c0f9-4398-815b-b3efc52c8c0f",
+              "enableMouseTracking": false,
+              "marker": {
+                "enabled": true,
+                "color": "#FF0000",
+                "width": 8,
+                "height": 58,
+                "symbol": "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAA6CAMAAAC6Y+gfAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3BpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpkY2JmZTFlMS02NzdjLTQ1MjAtODFkZS1mYjQxN2QxZDhhZTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODQ0MTZCODRGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODQ0MTZCODNGOEFEMTFFNzgzQURDRDA4MzQzNDlGQTIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4QkE5NEE3OUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4QkE5NEE3QUY4OTYxMUU3OURFMEZDN0E2QzQ3RENEMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvIGyNIAAAAGUExURf///xJlrfqN5NcAAABOSURBVHjarJFJDsAwDAKZ/3+6TeUlSkvUQzhhgQ2SpRsocIpYMBBWHn8RgbuQS1+RKb2X5KX54EIEu/L/a1BSRuAiam5HW/GFjj7uEmAAWjMAWPMeby8AAAAASUVORK5CYII=)"
+              }
+            }
+          ],
+          "diffing": [
+            [
+              "2018-03-21T17:49:49.622+00:00",
+              0.0
+            ],
+            [
+              "2018-03-21T17:55:34.930+00:00",
+              null
+            ],
+            [
+              "2018-03-21T18:29:11.968+00:00",
+              -0.1
+            ],
+            [
+              "2018-03-21T18:36:29.098+00:00",
+              0.1
+            ],
+            [
+              "2018-03-21T18:46:58.082+00:00",
+              -0.1
+            ],
+            [
+              "2018-03-21T19:01:19.063+00:00",
+              0.0
+            ],
+            [
+              "2018-03-21T19:05:04.643+00:00",
+              0.1
+            ],
+            [
+              "2018-03-21T19:05:41.175+00:00",
+              0.0
+            ],
+            [
+              "2018-03-21T19:25:58.715+00:00",
+              -0.2
+            ],
+            [
+              "2018-03-21T19:55:24.525+00:00",
+              0.2
+            ],
+            [
+              "2018-03-21T20:04:40.707+00:00",
+              -0.1
+            ],
+            [
+              "2018-03-21T20:11:48.779+00:00",
+              -0.1
+            ],
+            [
+              "2018-03-21T20:38:47.505+00:00",
+              0.1
+            ],
+            [
+              "2018-03-21T20:43:49.907+00:00",
+              0.0
+            ],
+            [
+              "2018-03-21T21:13:29.322+00:00",
+              -0.1
+            ],
+            [
+              "2018-03-21T21:18:54.660+00:00",
+              0.1
+            ],
+            [
+              "2018-03-21T21:48:23.437+00:00",
+              null
+            ],
+            [
+              "2018-03-21T21:50:57.880+00:00",
+              null
+            ],
+            [
+              "2018-03-21T22:02:14.223+00:00",
+              null
+            ],
+            [
+              "2018-03-21T22:03:10.867+00:00",
+              null
+            ],
+            [
+              "2018-03-21T22:13:38.937+00:00",
+              null
+            ],
+            [
+              "2018-03-21T22:14:48.272+00:00",
+              null
+            ],
+            [
+              "2018-03-21T22:19:06.313+00:00",
+              null
+            ],
+            [
+              "2018-03-21T22:37:57.757+00:00",
+              null
+            ],
+            [
+              "2018-03-21T23:09:37.862+00:00",
+              null
+            ],
+            [
+              "2018-03-21T23:18:14.762+00:00",
+              null
+            ]
+          ],
+          "min": 0.2,
+          "max": 0.4,
+          "omitted": [
+            [
+              "2018-03-21T17:49:49.622+00:00",
+              null
+            ],
+            [
+              "2018-03-21T17:55:34.930+00:00",
+              null
+            ],
+            [
+              "2018-03-21T18:29:11.968+00:00",
+              null
+            ],
+            [
+              "2018-03-21T18:36:29.098+00:00",
+              null
+            ],
+            [
+              "2018-03-21T18:46:58.082+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:01:19.063+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:05:04.643+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:05:41.175+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:25:58.715+00:00",
+              null
+            ],
+            [
+              "2018-03-21T19:55:24.525+00:00",
+              null
+            ],
+            [
+              "2018-03-21T20:04:40.707+00:00",
+              null
+            ],
+            [
+              "2018-03-21T20:11:48.779+00:00",
+              null
+            ],
+            [
+              "2018-03-21T20:38:47.505+00:00",
+              null
+            ],
+            [
+              "2018-03-21T20:43:49.907+00:00",
+              null
+            ],
+            [
+              "2018-03-21T21:13:29.322+00:00",
+              null
+            ],
+            [
+              "2018-03-21T21:18:54.660+00:00",
+              null
+            ],
+            [
+              "2018-03-21T21:48:23.437+00:00",
+              null
+            ],
+            [
+              "2018-03-21T21:50:57.880+00:00",
+              null
+            ],
+            [
+              "2018-03-21T22:02:14.223+00:00",
+              null
+            ],
+            [
+              "2018-03-21T22:03:10.867+00:00",
+              null
+            ],
+            [
+              "2018-03-21T22:13:38.937+00:00",
+              null
+            ],
+            [
+              "2018-03-21T22:14:48.272+00:00",
+              null
+            ],
+            [
+              "2018-03-21T22:19:06.313+00:00",
+              null
+            ],
+            [
+              "2018-03-21T22:37:57.757+00:00",
+              null
+            ],
+            [
+              "2018-03-21T23:09:37.862+00:00",
+              null
+            ],
+            [
+              "2018-03-21T23:18:14.762+00:00",
+              null
+            ]
+          ]
+        }
+      ],
+      "__typename": "Org"
+    }
+  }
+}

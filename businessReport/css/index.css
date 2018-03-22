@@ -1,0 +1,224 @@
+/*fonts*/
+@font-face {
+  font-family: SofiaProLightCondensed;
+  src: url('../fonts/SofiaProLightCondensed.eot');
+  src: url('../fonts/SofiaProLightCondensed.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProLightCondensed.woff2') format('woff2'), url('../fonts/SofiaProLightCondensed.woff') format('woff'), url('../fonts/SofiaProLightCondensed.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: SofiaProRegular;
+  src: url('../fonts/SofiaProRegular.eot');
+  src: url('../fonts/SofiaProRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProRegular.woff2') format('woff2'), url('../fonts/SofiaProRegular.woff') format('woff'), url('../fonts/SofiaProRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: SofiaProSoftLight;
+  src: url('../fonts/SofiaProSoftLight.eot');
+  src: url('../fonts/SofiaProSoftLight.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProSoftLight.woff2') format('woff2'), url('../fonts/SofiaProSoftLight.woff') format('woff'), url('../fonts/SofiaProSoftLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: SofiaProMedium;
+  src: url('../fonts/SofiaProMedium.eot');
+  src: url('../fonts/SofiaProMedium.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProMedium.woff2') format('woff2'), url('../fonts/SofiaProMedium.woff') format('woff'), url('../fonts/SofiaProMedium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: SofiaProExtraLight;
+  src: url('../fonts/SofiaProExtraLight.eot');
+  src: url('../fonts/SofiaProExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProExtraLight.woff2') format('woff2'), url('../fonts/SofiaProExtraLight.woff') format('woff'), url('../fonts/SofiaProExtraLight.ttf') format('truetype');
+}
+
+* {
+  font-family: SofiaProSoftLight;
+}
+
+body {
+  background: #eceff4;
+  font-family: SofiaProSoftLight;
+}
+
+footer {
+  min-height: 250px;
+  background: #282836;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white !important;
+}
+
+.flipHorizontal {
+  transform: scaleX(-1);
+}
+
+.navbar-default {
+  background: #2b2b2b;
+  min-height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0;
+  border: none;
+  box-shadow: 1px 1px 30px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-=-=- newHomepage -=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.verticalCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoWrapper img {
+  display: inline-block;
+  height: 30px;
+  line-height: 42px;
+}
+
+.logoWrapper {
+  height: 30px;
+}
+
+.logoWrapper span {
+  font-family: SofiaProExtraLight !important;
+  color: white;
+  line-height: 42px;
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+.logoWrapper span strong {
+  font-family: SofiaProMedium !important;
+  color: white;
+  line-height: 42px;
+  font-size: 28px;
+  margin-top: 13px;
+  font-weight: bolder;
+}
+
+.logoWrapper .verticalSeparator {
+  display: inline-block;
+  height: 30px;
+  width: 2px;
+  background: white;
+  margin: 0 10px;
+}
+
+.btnBlack {
+  background: #3b3b3b;
+  border: none;
+  color: #c4c4c4;
+  transition: all ease-in-out 300ms;
+}
+
+.btnBlack:hover {
+  background: #555555;
+  border: none;
+  color: #c4c4c4;
+}
+
+.navigationWrapper {
+  color: white;
+  height: 30px;
+}
+
+.navigationWrapper ul {
+  list-style: none;
+  margin: 5px auto 0;
+}
+
+.navigationWrapper li {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+.navigationWrapper i {
+  color: white;
+  opacity: 0.5;
+  font-size: 18px;
+  transition: all ease-in-out 300ms;
+}
+
+.navigationWrapper i:hover {
+  opacity: 1.0;
+}
+
+#welcomePanel {
+  margin: 0;
+  height: 500px;
+  background: #cf3d4c;
+  background-image: -webkit-radial-gradient(closest-corner, rgba(70, 20, 20, 0) 60%, rgba(70, 15, 15, .26)), -webkit-linear-gradient(bottom right, #d02f2f, #801212 90%);
+  background-image: radial-gradient(closest-corner, rgba(90, 3, 3, .15) 60%, rgba(58, 13, 13, .26)), linear-gradient(to top left, #711313, #6b1a1a 90%);
+}
+
+#welcomePanel .backImage {
+  width: 100%;
+  height: 100%;
+  background: url("../img/HeaderBGIMG2.png") center center no-repeat;
+  background-size: cover;
+}
+
+#welcomePanel .backImage h4 {
+  font-size: 54px;
+  color: white;
+  font-family: SofiaProExtraLight;
+  font-weight: lighter;
+}
+
+#welcomePanel .backImage h4 strong {
+  font-family: SofiaProMedium;
+  font-weight: bolder;
+}
+
+#welcomePanel .backImage .smallText {
+  margin-top: 60px;
+  font-size: 24px;
+}
+
+#timeSelect {
+  padding: 50px 0;
+  background: #f3f3f3;
+  border-top: 1px solid #e1e1e1
+}
+
+#timeSelect h5 {
+  font-family: SofiaProExtraLight;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 26px;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+  line-height: 140%;
+  color: #716666;
+}
+
+input.selectDropdown,
+select.selectDropdown {
+  box-shadow: 0 2px 2px 0 rgba(169, 169, 169, 0.07), 0 3px 1px -2px rgba(169, 169, 169, 0.1), 0 1px 5px 0 rgba(169, 169, 169, 0.06);
+  transition: 0.2s ease-in;
+  color: rgb(153, 171, 180);
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(204, 204, 204);
+  font-size: 17px;
+  height: 60px;
+  min-width: 100%;
+  text-align: center;
+  font-weight: lighter;
+  font-family: SofiaProExtraLight;
+}
+
+input.selectDropdown:hover,
+select.selectDropdown:hover {
+  box-shadow: 0 14px 26px -12px rgba(169, 169, 169, 0.21), 0 4px 23px 0 rgba(0, 0, 0, 0.06), 0 8px 10px -5px rgba(169, 169, 169, 0.1);
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.inputWordBetween {
+  font-size: 20px;
+  line-height: 60px;
+}
